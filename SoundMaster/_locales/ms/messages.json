@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Master Bunyi"
+  },
+  "extDesc": {
+    "message": "Studio Audio Lanjutan dengan EQ, Rangsangan Bes, Mono Downmix, Panic Mute dan Penggalak Kelantangan."
+  },
+  "standardMode": {
+    "message": "Standard"
+  },
+  "extremeMode": {
+    "message": "Ekstrem"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Guna Terakhir"
+  },
+  "loading": {
+    "message": "Memuatkan..."
+  },
+  "activeOn": {
+    "message": "Aktif pada: "
+  },
+  "activeCurrent": {
+    "message": "Aktif pada: halaman semasa"
+  },
+  "errorNoTab": {
+    "message": "Ralat: Tiada tab aktif"
+  },
+  "themeToggleTitle": {
+    "message": "Mod Cerah/Gelap"
+  },
+  "boostToggleTitle": {
+    "message": "Hidup/Mati"
+  },
+  "extremeToggleTitle": {
+    "message": "Mod Ekstrem"
+  },
+  "resetBtnTitle": {
+    "message": "100%"
+  },
+  "langSelectTitle": {
+    "message": "Tukar Bahasa"
+  },
+  "tabVolume": {
+    "message": "Kelantangan"
+  },
+  "tabEQ": {
+    "message": "Penyamaan"
+  },
+  "tabUtils": {
+    "message": "Alatan"
+  },
+  "bassBoost": {
+    "message": "Rangsangan Bes"
+  },
+  "balanceLR": {
+    "message": "Imbangan (K/K)"
+  },
+  "monoMode": {
+    "message": "Mod Mono"
+  },
+  "panicMute": {
+    "message": "Bisukan Lain"
+  },
+  "panicMuteDesc": {
+    "message": "Membisukan semua tab lain yang memainkan audio."
+  },
+  "language": {
+    "message": "Bahasa"
+  },
+  "shortcuts": {
+    "message": "Pintasan:"
+  },
+  "muted": {
+    "message": "Dibisukan!"
+  },
+  "panicUnmute": {
+    "message": "Nyahbisu (Lain-lain)"
+  },
+  "unmuted": {
+    "message": "Nyahbisu!"
+  },
+  "compressorMode": {
+    "message": "Anti-Herotan"
+  },
+  "eqTitle": {
+    "message": "Penyama 10 Jalur"
+  },
+  "eqReset": {
+    "message": "Tetapkan Semula EQ"
+  },
+  "exportEqTitle": {
+    "message": "Eksport EQ"
+  },
+  "importEqTitle": {
+    "message": "Import EQ"
+  },
+  "manageShortcuts": {
+    "message": "Uruskan"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Panik Bisu"
+  },
+  "shortcutToggle": {
+    "message": "Togol"
+  }
+}

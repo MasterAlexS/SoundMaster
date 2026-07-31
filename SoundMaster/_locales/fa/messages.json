@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "استاد صدا"
+  },
+  "extDesc": {
+    "message": "استودیوی صوتی پیشرفته با اکولایزر، تقویت باس، مونو داون‌میکس، بی‌صدا کردن فوری و تقویت‌کننده صدا."
+  },
+  "standardMode": {
+    "message": "استاندارد"
+  },
+  "extremeMode": {
+    "message": "شدید"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "اعمال آخرین"
+  },
+  "loading": {
+    "message": "در حال بارگذاری..."
+  },
+  "activeOn": {
+    "message": "فعال در: "
+  },
+  "activeCurrent": {
+    "message": "فعال در: صفحه فعلی"
+  },
+  "errorNoTab": {
+    "message": "خطا: برگه فعالی یافت نشد"
+  },
+  "themeToggleTitle": {
+    "message": "حالت تاریک/روشن"
+  },
+  "boostToggleTitle": {
+    "message": "روشن/خاموش"
+  },
+  "extremeToggleTitle": {
+    "message": "حالت شدید"
+  },
+  "resetBtnTitle": {
+    "message": "100%"
+  },
+  "langSelectTitle": {
+    "message": "تغییر زبان"
+  },
+  "tabVolume": {
+    "message": "صدا"
+  },
+  "tabEQ": {
+    "message": "اکولایزر"
+  },
+  "tabUtils": {
+    "message": "ابزارها"
+  },
+  "bassBoost": {
+    "message": "تقویت باس"
+  },
+  "balanceLR": {
+    "message": "تعادل (چپ/راست)"
+  },
+  "monoMode": {
+    "message": "حالت مونو"
+  },
+  "panicMute": {
+    "message": "بی‌صدا کردن بقیه"
+  },
+  "panicMuteDesc": {
+    "message": "همه زبانه‌های دیگر در حال پخش صدا را بی‌صدا می‌کند."
+  },
+  "language": {
+    "message": "زبان"
+  },
+  "shortcuts": {
+    "message": "میانبرها:"
+  },
+  "muted": {
+    "message": "بی‌صدا!"
+  },
+  "panicUnmute": {
+    "message": "باصدا کردن (بقیه)"
+  },
+  "unmuted": {
+    "message": "باصدا شد!"
+  },
+  "compressorMode": {
+    "message": "ضد اعوجاج"
+  },
+  "eqTitle": {
+    "message": "اکولایزر 10 باندی"
+  },
+  "eqReset": {
+    "message": "بازنشانی اکولایزر"
+  },
+  "exportEqTitle": {
+    "message": "صادرات EQ"
+  },
+  "importEqTitle": {
+    "message": "EQ وارد کنید"
+  },
+  "manageShortcuts": {
+    "message": "مدیریت کنید"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Panic Mute"
+  },
+  "shortcutToggle": {
+    "message": "تغییر وضعیت دهید"
+  }
+}

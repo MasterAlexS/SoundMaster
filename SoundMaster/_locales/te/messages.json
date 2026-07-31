@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "సౌండ్ మాస్టర్"
+  },
+  "extDesc": {
+    "message": "EQ, బాస్ బూస్ట్, మోనో డౌన్‌మిక్స్, పానిక్ మ్యూట్ మరియు వాల్యూమ్ బూస్టర్‌తో అధునాతన ఆడియో స్టూడియో."
+  },
+  "standardMode": {
+    "message": "సాధారణ"
+  },
+  "extremeMode": {
+    "message": "తీవ్రమైన"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "చివరిగా వర్తించు"
+  },
+  "loading": {
+    "message": "లోడ్ అవుతోంది..."
+  },
+  "activeOn": {
+    "message": "సక్రియం: "
+  },
+  "activeCurrent": {
+    "message": "సక్రియం: ప్రస్తుత పేజీ"
+  },
+  "errorNoTab": {
+    "message": "లోపం: సక్రియ ట్యాబ్ లేదు"
+  },
+  "themeToggleTitle": {
+    "message": "లైట్/డార్క్ మోడ్"
+  },
+  "boostToggleTitle": {
+    "message": "బూస్ట్ ఆన్/ఆఫ్"
+  },
+  "extremeToggleTitle": {
+    "message": "తీవ్రమైన మోడ్"
+  },
+  "resetBtnTitle": {
+    "message": "100% సెట్ చేయండి"
+  },
+  "langSelectTitle": {
+    "message": "భాషను మార్చండి"
+  },
+  "tabVolume": {
+    "message": "వాల్యూమ్"
+  },
+  "tabEQ": {
+    "message": "ఈక్వలైజర్"
+  },
+  "tabUtils": {
+    "message": "ఉపకరణాలు"
+  },
+  "bassBoost": {
+    "message": "బాస్ బూస్ట్"
+  },
+  "balanceLR": {
+    "message": "బ్యాలెన్స్ (L/R)"
+  },
+  "monoMode": {
+    "message": "మోనో మోడ్"
+  },
+  "panicMute": {
+    "message": "ఇతరులను మ్యూట్ చేయి"
+  },
+  "panicMuteDesc": {
+    "message": "ఆడియో ప్లే చేస్తున్న ఇతర ట్యాబ్‌లన్నింటినీ మ్యూట్ చేస్తుంది."
+  },
+  "language": {
+    "message": "భాష"
+  },
+  "shortcuts": {
+    "message": "సత్వరమార్గాలు:"
+  },
+  "muted": {
+    "message": "మ్యూట్ చేయబడింది!"
+  },
+  "panicUnmute": {
+    "message": "అన్‌మ్యూట్ చేయి (ఇతరులను)"
+  },
+  "unmuted": {
+    "message": "అన్‌మ్యూట్ చేయబడింది!"
+  },
+  "compressorMode": {
+    "message": "యాంటీ-డిస్టార్షన్"
+  },
+  "eqTitle": {
+    "message": "10-బ్యాండ్ ఈక్వలైజర్"
+  },
+  "eqReset": {
+    "message": "EQ రీసెట్ చేయండి"
+  },
+  "exportEqTitle": {
+    "message": "EQని ఎగుమతి చేయండి"
+  },
+  "importEqTitle": {
+    "message": "EQని దిగుమతి చేయండి"
+  },
+  "manageShortcuts": {
+    "message": "నిర్వహించండి"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "పానిక్ మ్యూట్"
+  },
+  "shortcutToggle": {
+    "message": "టోగుల్ చేయండి"
+  }
+}

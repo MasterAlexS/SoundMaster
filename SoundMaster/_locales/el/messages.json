@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Κυρίαρχος Ήχου"
+  },
+  "extDesc": {
+    "message": "Προηγμένο στούντιο ήχου με EQ, Ενίσχυση Μπάσων, Mono Downmix, Σίγαση Πανικού και Ενισχυτή Έντασης."
+  },
+  "standardMode": {
+    "message": "Κανονική"
+  },
+  "extremeMode": {
+    "message": "Ακραία"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Εφαρμογή Τελευταίου"
+  },
+  "loading": {
+    "message": "Φόρτωση..."
+  },
+  "activeOn": {
+    "message": "Ενεργό στο: "
+  },
+  "activeCurrent": {
+    "message": "Ενεργό σε: τρέχουσα σελίδα"
+  },
+  "errorNoTab": {
+    "message": "Σφάλμα: Δεν βρέθηκε ενεργή καρτέλα"
+  },
+  "themeToggleTitle": {
+    "message": "Εναλλαγή Φωτεινής/Σκοτεινής"
+  },
+  "boostToggleTitle": {
+    "message": "Εναλλαγή Ενίσχυσης ON/OFF"
+  },
+  "extremeToggleTitle": {
+    "message": "Εναλλαγή Ακραίας Λειτουργίας 1000%"
+  },
+  "resetBtnTitle": {
+    "message": "Ορισμός σε 100%"
+  },
+  "langSelectTitle": {
+    "message": "Αλλαγή Γλώσσας"
+  },
+  "tabVolume": {
+    "message": "Ένταση"
+  },
+  "tabEQ": {
+    "message": "Ισοσταθμιστής"
+  },
+  "tabUtils": {
+    "message": "Εργαλεία"
+  },
+  "bassBoost": {
+    "message": "Ενίσχυση Μπάσων"
+  },
+  "balanceLR": {
+    "message": "Ισορροπία (Α/Δ)"
+  },
+  "monoMode": {
+    "message": "Μονοφωνική"
+  },
+  "panicMute": {
+    "message": "Σίγαση (Άλλα)"
+  },
+  "panicMuteDesc": {
+    "message": "Κάνει σίγαση σε όλες τις άλλες καρτέλες με ήχο."
+  },
+  "language": {
+    "message": "Γλώσσα"
+  },
+  "shortcuts": {
+    "message": "Συντομεύσεις:"
+  },
+  "muted": {
+    "message": "Σε σίγαση!"
+  },
+  "panicUnmute": {
+    "message": "Κατάργηση σίγασης (Άλλα)"
+  },
+  "unmuted": {
+    "message": "Καταργήθηκε η σίγαση!"
+  },
+  "compressorMode": {
+    "message": "Κατά της παραμόρφωσης"
+  },
+  "eqTitle": {
+    "message": "Ισοσταθμιστής 10 ζωνών"
+  },
+  "eqReset": {
+    "message": "Επαναφορά EQ"
+  },
+  "exportEqTitle": {
+    "message": "Εξαγωγή EQ"
+  },
+  "importEqTitle": {
+    "message": "Εισαγωγή EQ"
+  },
+  "manageShortcuts": {
+    "message": "Διαχειρίζομαι"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Σίγαση πανικού"
+  },
+  "shortcutToggle": {
+    "message": "Μπαρέτα"
+  }
+}

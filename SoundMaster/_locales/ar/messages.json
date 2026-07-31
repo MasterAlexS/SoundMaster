@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "سيد الصوت"
+  },
+  "extDesc": {
+    "message": "استوديو صوت متقدم مع معادل صوت، تضخيم جهير، دمج أحادي، كتم سريع ومضخم صوت."
+  },
+  "standardMode": {
+    "message": "قياسي"
+  },
+  "extremeMode": {
+    "message": "متطرف"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "تطبيق الأخير"
+  },
+  "loading": {
+    "message": "جاري التحميل..."
+  },
+  "activeOn": {
+    "message": "نشط على: "
+  },
+  "activeCurrent": {
+    "message": "نشط على: الصفحة الحالية"
+  },
+  "errorNoTab": {
+    "message": "خطأ: لم يتم العثور على علامة تبويب نشطة"
+  },
+  "themeToggleTitle": {
+    "message": "تبديل الوضع الفاتح/الداكن"
+  },
+  "boostToggleTitle": {
+    "message": "تشغيل/إيقاف التعزيز"
+  },
+  "extremeToggleTitle": {
+    "message": "تبديل الوضع المتطرف 1000٪"
+  },
+  "resetBtnTitle": {
+    "message": "تعيين إلى 100٪"
+  },
+  "langSelectTitle": {
+    "message": "تغيير اللغة"
+  },
+  "tabVolume": {
+    "message": "مستوى الصوت"
+  },
+  "tabEQ": {
+    "message": "معادل الصوت"
+  },
+  "tabUtils": {
+    "message": "أدوات"
+  },
+  "bassBoost": {
+    "message": "تضخيم الجهير"
+  },
+  "balanceLR": {
+    "message": "التوازن (يسار/يمين)"
+  },
+  "monoMode": {
+    "message": "وضع أحادي"
+  },
+  "panicMute": {
+    "message": "كتم الصوت (الآخرين)"
+  },
+  "panicMuteDesc": {
+    "message": "يكتم جميع علامات التبويب الأخرى التي تشغل الصوت."
+  },
+  "language": {
+    "message": "اللغة"
+  },
+  "shortcuts": {
+    "message": "اختصارات:"
+  },
+  "muted": {
+    "message": "مكتوم!"
+  },
+  "panicUnmute": {
+    "message": "إلغاء كتم الصوت (الآخرين)"
+  },
+  "unmuted": {
+    "message": "تم إلغاء الكتم!"
+  },
+  "compressorMode": {
+    "message": "منع التشويه"
+  },
+  "eqTitle": {
+    "message": "موازن 10 نطاقات"
+  },
+  "eqReset": {
+    "message": "إعادة ضبط الموازن"
+  },
+  "exportEqTitle": {
+    "message": "معادل التصدير"
+  },
+  "importEqTitle": {
+    "message": "استيراد معادل"
+  },
+  "manageShortcuts": {
+    "message": "يدير"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "كتم الذعر"
+  },
+  "shortcutToggle": {
+    "message": "تبديل"
+  }
+}

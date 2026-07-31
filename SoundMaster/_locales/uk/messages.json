@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Майстер Звуку"
+  },
+  "extDesc": {
+    "message": "Просунута аудіостудія з еквалайзером, підсиленням басів, мономікшуванням, швидким вимкненням звуку та підсилювачем гучності."
+  },
+  "standardMode": {
+    "message": "Стандарт"
+  },
+  "extremeMode": {
+    "message": "Екстрим"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Застосувати"
+  },
+  "loading": {
+    "message": "Завантаження..."
+  },
+  "activeOn": {
+    "message": "Активно на: "
+  },
+  "activeCurrent": {
+    "message": "Активно на: поточній сторінці"
+  },
+  "errorNoTab": {
+    "message": "Помилка: Немає активної вкладки"
+  },
+  "themeToggleTitle": {
+    "message": "Світлий/Темний Режим"
+  },
+  "boostToggleTitle": {
+    "message": "УВІМК/ВИМК"
+  },
+  "extremeToggleTitle": {
+    "message": "Екстрим Режим"
+  },
+  "resetBtnTitle": {
+    "message": "100%"
+  },
+  "langSelectTitle": {
+    "message": "Змінити мову"
+  },
+  "tabVolume": {
+    "message": "Гучність"
+  },
+  "tabEQ": {
+    "message": "Еквалайзер"
+  },
+  "tabUtils": {
+    "message": "Інструменти"
+  },
+  "bassBoost": {
+    "message": "Підсилення басів"
+  },
+  "balanceLR": {
+    "message": "Баланс (Л/П)"
+  },
+  "monoMode": {
+    "message": "Моно режим"
+  },
+  "panicMute": {
+    "message": "Вимкнути звук (Інші)"
+  },
+  "panicMuteDesc": {
+    "message": "Вимикає звук на всіх інших вкладках, що відтворюють аудіо."
+  },
+  "language": {
+    "message": "Мова"
+  },
+  "shortcuts": {
+    "message": "Гарячі клавіші:"
+  },
+  "muted": {
+    "message": "Без звуку!"
+  },
+  "panicUnmute": {
+    "message": "Увімкнути звук (Інші)"
+  },
+  "unmuted": {
+    "message": "Звук увімкнено!"
+  },
+  "compressorMode": {
+    "message": "Усунення спотворень"
+  },
+  "eqTitle": {
+    "message": "10-смуговий еквалайзер"
+  },
+  "eqReset": {
+    "message": "Скинути EQ"
+  },
+  "exportEqTitle": {
+    "message": "Експорт еквалайзера"
+  },
+  "importEqTitle": {
+    "message": "Імпорт еквалайзера"
+  },
+  "manageShortcuts": {
+    "message": "Керувати"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Панічний звук"
+  },
+  "shortcutToggle": {
+    "message": "Перемикач"
+  }
+}

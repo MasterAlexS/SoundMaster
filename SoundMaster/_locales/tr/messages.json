@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Ses Ustası"
+  },
+  "extDesc": {
+    "message": "EQ, Bas Güçlendirici, Mono Downmix, Acil Susturma ve Ses Yükseltici ile Gelişmiş Ses Stüdyosu."
+  },
+  "standardMode": {
+    "message": "Standart"
+  },
+  "extremeMode": {
+    "message": "Ekstrem"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Sonuncuyu Uygula"
+  },
+  "loading": {
+    "message": "Yükleniyor..."
+  },
+  "activeOn": {
+    "message": "Şurada aktif: "
+  },
+  "activeCurrent": {
+    "message": "Şurada aktif: geçerli sayfa"
+  },
+  "errorNoTab": {
+    "message": "Hata: Aktif sekme bulunamadı"
+  },
+  "themeToggleTitle": {
+    "message": "Açık/Koyu Mod"
+  },
+  "boostToggleTitle": {
+    "message": "Yükseltici AÇIK/KAPALI"
+  },
+  "extremeToggleTitle": {
+    "message": "%1000 Ekstrem Mod"
+  },
+  "resetBtnTitle": {
+    "message": "%100 Ayarla"
+  },
+  "langSelectTitle": {
+    "message": "Dili Değiştir"
+  },
+  "tabVolume": {
+    "message": "Ses"
+  },
+  "tabEQ": {
+    "message": "Ekolayzır"
+  },
+  "tabUtils": {
+    "message": "Araçlar"
+  },
+  "bassBoost": {
+    "message": "Bas Güçlendirici"
+  },
+  "balanceLR": {
+    "message": "Denge (S/S)"
+  },
+  "monoMode": {
+    "message": "Mono Modu"
+  },
+  "panicMute": {
+    "message": "Diğerlerini Sustur"
+  },
+  "panicMuteDesc": {
+    "message": "Ses çalan diğer tüm sekmeleri susturur."
+  },
+  "language": {
+    "message": "Dil"
+  },
+  "shortcuts": {
+    "message": "Kısayollar:"
+  },
+  "muted": {
+    "message": "Susturuldu!"
+  },
+  "panicUnmute": {
+    "message": "Sesi Aç (Diğerleri)"
+  },
+  "unmuted": {
+    "message": "Sesi açıldı!"
+  },
+  "compressorMode": {
+    "message": "Bozulma Önleyici"
+  },
+  "eqTitle": {
+    "message": "10 Bantlı Ekolayzır"
+  },
+  "eqReset": {
+    "message": "EQ'yu Sıfırla"
+  },
+  "exportEqTitle": {
+    "message": "EQ'yu dışa aktar"
+  },
+  "importEqTitle": {
+    "message": "EQ'yu içe aktar"
+  },
+  "manageShortcuts": {
+    "message": "Üstesinden gelmek"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Panik Susturma"
+  },
+  "shortcutToggle": {
+    "message": "Değiştir"
+  }
+}

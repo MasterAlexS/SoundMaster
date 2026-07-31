@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Äänimestari"
+  },
+  "extDesc": {
+    "message": "Kehittynyt äänistudio, jossa on taajuuskorjain, basson korostus, monomiksaus, paniikkimykistys ja äänenvoimakkuuden tehostin."
+  },
+  "standardMode": {
+    "message": "Standardi"
+  },
+  "extremeMode": {
+    "message": "Äärimmäinen"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Käytä Viimeisintä"
+  },
+  "loading": {
+    "message": "Ladataan..."
+  },
+  "activeOn": {
+    "message": "Aktiivinen: "
+  },
+  "activeCurrent": {
+    "message": "Aktiivinen: nykyinen sivu"
+  },
+  "errorNoTab": {
+    "message": "Virhe: Aktiivista välilehteä ei löytynyt"
+  },
+  "themeToggleTitle": {
+    "message": "Vaihda Vaalea/Tumma Tila"
+  },
+  "boostToggleTitle": {
+    "message": "Vaihda Vahvistus PÄÄLLE/POIS"
+  },
+  "extremeToggleTitle": {
+    "message": "Vaihda 1000% Äärimmäinen Tila"
+  },
+  "resetBtnTitle": {
+    "message": "Aseta 100%"
+  },
+  "langSelectTitle": {
+    "message": "Vaihda kieli"
+  },
+  "tabVolume": {
+    "message": "Äänenvoimakkuus"
+  },
+  "tabEQ": {
+    "message": "Taajuuskorjain"
+  },
+  "tabUtils": {
+    "message": "Työkalut"
+  },
+  "bassBoost": {
+    "message": "Basson korostus"
+  },
+  "balanceLR": {
+    "message": "Tasapaino (V/O)"
+  },
+  "monoMode": {
+    "message": "Mono-tila"
+  },
+  "panicMute": {
+    "message": "Mykistä muut"
+  },
+  "panicMuteDesc": {
+    "message": "Mykistää kaikki muut ääntä toistavat välilehdet."
+  },
+  "language": {
+    "message": "Kieli"
+  },
+  "shortcuts": {
+    "message": "Pikanäppäimet:"
+  },
+  "muted": {
+    "message": "Mykistetty!"
+  },
+  "panicUnmute": {
+    "message": "Poista mykistys (Muut)"
+  },
+  "unmuted": {
+    "message": "Mykistys poistettu!"
+  },
+  "compressorMode": {
+    "message": "Säröytymisen esto"
+  },
+  "eqTitle": {
+    "message": "10-kaistainen taajuuskorjain"
+  },
+  "eqReset": {
+    "message": "Nollaa EQ"
+  },
+  "exportEqTitle": {
+    "message": "Vie EQ"
+  },
+  "importEqTitle": {
+    "message": "Tuo EQ"
+  },
+  "manageShortcuts": {
+    "message": "Hallitse"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Paniikkimykistys"
+  },
+  "shortcutToggle": {
+    "message": "Vaihda"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Мастер Звука"
+  },
+  "extDesc": {
+    "message": "Продвинутая аудиостудия с эквалайзером, усилением басов, мономикшированием, быстрым отключением звука и усилителем громкости."
+  },
+  "standardMode": {
+    "message": "Стандарт"
+  },
+  "extremeMode": {
+    "message": "Экстрим"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Применить"
+  },
+  "loading": {
+    "message": "Загрузка..."
+  },
+  "activeOn": {
+    "message": "Активно на: "
+  },
+  "activeCurrent": {
+    "message": "Активно на: текущей странице"
+  },
+  "errorNoTab": {
+    "message": "Ошибка: Активная вкладка не найдена"
+  },
+  "themeToggleTitle": {
+    "message": "Темная/Светлая тема"
+  },
+  "boostToggleTitle": {
+    "message": "Вкл/Выкл Усиление"
+  },
+  "extremeToggleTitle": {
+    "message": "Вкл/Выкл 1000% Экстрим"
+  },
+  "resetBtnTitle": {
+    "message": "Установить на 100%"
+  },
+  "langSelectTitle": {
+    "message": "Изменить язык"
+  },
+  "tabVolume": {
+    "message": "Громкость"
+  },
+  "tabEQ": {
+    "message": "Эквалайзер"
+  },
+  "tabUtils": {
+    "message": "Утилиты"
+  },
+  "bassBoost": {
+    "message": "Усиление басов"
+  },
+  "balanceLR": {
+    "message": "Баланс (Л/П)"
+  },
+  "monoMode": {
+    "message": "Моно режим"
+  },
+  "panicMute": {
+    "message": "Без звука (Другие)"
+  },
+  "panicMuteDesc": {
+    "message": "Отключает звук на всех других вкладках."
+  },
+  "language": {
+    "message": "Язык"
+  },
+  "shortcuts": {
+    "message": "Горячие клавиши:"
+  },
+  "muted": {
+    "message": "Без звука!"
+  },
+  "panicUnmute": {
+    "message": "Включить звук (Другие)"
+  },
+  "unmuted": {
+    "message": "Звук включен!"
+  },
+  "compressorMode": {
+    "message": "Устранение искажений"
+  },
+  "eqTitle": {
+    "message": "10-полосный эквалайзер"
+  },
+  "eqReset": {
+    "message": "Сбросить EQ"
+  },
+  "exportEqTitle": {
+    "message": "Экспортировать эквалайзер"
+  },
+  "importEqTitle": {
+    "message": "Импортировать эквалайзер"
+  },
+  "manageShortcuts": {
+    "message": "Управлять"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Паника немая"
+  },
+  "shortcutToggle": {
+    "message": "Переключать"
+  }
+}

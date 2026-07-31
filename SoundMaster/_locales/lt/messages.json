@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Garso Meistras"
+  },
+  "extDesc": {
+    "message": "Pažangi garso studija su ekvalaizeriu, žemųjų dažnių stiprinimu, „Mono Downmix“, greitu nutildymu ir garsumo stiprintuvu."
+  },
+  "standardMode": {
+    "message": "Standartinis"
+  },
+  "extremeMode": {
+    "message": "Ekstremalus"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Taikyti paskutinį"
+  },
+  "loading": {
+    "message": "Kraunama..."
+  },
+  "activeOn": {
+    "message": "Aktyvus: "
+  },
+  "activeCurrent": {
+    "message": "Aktyvus: dabartinis puslapis"
+  },
+  "errorNoTab": {
+    "message": "Klaida: Nėra aktyvaus skirtuko"
+  },
+  "themeToggleTitle": {
+    "message": "Šviesus/Tamsus režimas"
+  },
+  "boostToggleTitle": {
+    "message": "Įjungti/Išjungti"
+  },
+  "extremeToggleTitle": {
+    "message": "Ekstremalus režimas"
+  },
+  "resetBtnTitle": {
+    "message": "100%"
+  },
+  "langSelectTitle": {
+    "message": "Pakeisti kalbą"
+  },
+  "tabVolume": {
+    "message": "Garsumas"
+  },
+  "tabEQ": {
+    "message": "Ekvalaizeris"
+  },
+  "tabUtils": {
+    "message": "Įrankiai"
+  },
+  "bassBoost": {
+    "message": "Bosų stiprinimas"
+  },
+  "balanceLR": {
+    "message": "Balansas (K/D)"
+  },
+  "monoMode": {
+    "message": "Mono režimas"
+  },
+  "panicMute": {
+    "message": "Nutildyti kitus"
+  },
+  "panicMuteDesc": {
+    "message": "Nutildo visus kitus skirtukus, atkuriančius garsą."
+  },
+  "language": {
+    "message": "Kalba"
+  },
+  "shortcuts": {
+    "message": "Spartieji klavišai:"
+  },
+  "muted": {
+    "message": "Nutildyta!"
+  },
+  "panicUnmute": {
+    "message": "Atšaukti nutildymą (Kiti)"
+  },
+  "unmuted": {
+    "message": "Nutildymas atšauktas!"
+  },
+  "compressorMode": {
+    "message": "Apsauga nuo iškraipymų"
+  },
+  "eqTitle": {
+    "message": "10 juostų ekvalaizeris"
+  },
+  "eqReset": {
+    "message": "Atstatyti EQ"
+  },
+  "exportEqTitle": {
+    "message": "Eksportuoti EQ"
+  },
+  "importEqTitle": {
+    "message": "Importuoti EQ"
+  },
+  "manageShortcuts": {
+    "message": "Tvarkyti"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Panikos nutildymas"
+  },
+  "shortcutToggle": {
+    "message": "Perjungti"
+  }
+}

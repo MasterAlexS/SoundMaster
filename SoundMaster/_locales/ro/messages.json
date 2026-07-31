@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Master Sunet"
+  },
+  "extDesc": {
+    "message": "Studio Audio Avansat cu EQ, Amplificare Bass, Mono Downmix, Mute Instant și Amplificator Volum."
+  },
+  "standardMode": {
+    "message": "Standard"
+  },
+  "extremeMode": {
+    "message": "Extrem"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Aplică Ultimul"
+  },
+  "loading": {
+    "message": "Se încarcă..."
+  },
+  "activeOn": {
+    "message": "Activ pe: "
+  },
+  "activeCurrent": {
+    "message": "Activ pe: pagina curentă"
+  },
+  "errorNoTab": {
+    "message": "Eroare: Niciun tab activ găsit"
+  },
+  "themeToggleTitle": {
+    "message": "Comută Mod Luminos/Întunecat"
+  },
+  "boostToggleTitle": {
+    "message": "Pornește/Oprește Amplificarea"
+  },
+  "extremeToggleTitle": {
+    "message": "Comută Modul Extrem 1000%"
+  },
+  "resetBtnTitle": {
+    "message": "Setați la 100%"
+  },
+  "langSelectTitle": {
+    "message": "Schimbă Limba"
+  },
+  "tabVolume": {
+    "message": "Volum"
+  },
+  "tabEQ": {
+    "message": "Egalizator"
+  },
+  "tabUtils": {
+    "message": "Utilitare"
+  },
+  "bassBoost": {
+    "message": "Amplificare Bass"
+  },
+  "balanceLR": {
+    "message": "Balans (S/D)"
+  },
+  "monoMode": {
+    "message": "Mod Mono"
+  },
+  "panicMute": {
+    "message": "Mute Instant (Altele)"
+  },
+  "panicMuteDesc": {
+    "message": "Oprește sunetul în toate celelalte tab-uri."
+  },
+  "language": {
+    "message": "Limbă"
+  },
+  "shortcuts": {
+    "message": "Scurtături:"
+  },
+  "muted": {
+    "message": "Oprit!"
+  },
+  "panicUnmute": {
+    "message": "Unmute Instant (Altele)"
+  },
+  "unmuted": {
+    "message": "Sunet pornit!"
+  },
+  "compressorMode": {
+    "message": "Anti-Distorsiune"
+  },
+  "eqTitle": {
+    "message": "Egalizator 10 Benzi"
+  },
+  "eqReset": {
+    "message": "Resetează EQ"
+  },
+  "exportEqTitle": {
+    "message": "Exportă EQ"
+  },
+  "importEqTitle": {
+    "message": "Importă EQ"
+  },
+  "manageShortcuts": {
+    "message": "Gestionează"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Oprire de Panică"
+  },
+  "shortcutToggle": {
+    "message": "Comutator"
+  }
+}

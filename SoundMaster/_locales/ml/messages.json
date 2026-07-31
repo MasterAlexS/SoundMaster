@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "സൗണ്ട് മാസ്റ്റർ"
+  },
+  "extDesc": {
+    "message": "ഇക്യു, ബാസ് ബൂസ്റ്റ്, മോണോ ഡൗൺമിക്സ്, പാനിക് മ്യൂട്ട്, വോളിയം ബൂസ്റ്റർ എന്നിവയുള്ള വിപുലമായ ഓഡിയോ സ്റ്റുഡിയോ."
+  },
+  "standardMode": {
+    "message": "സ്റ്റാൻഡേർഡ്"
+  },
+  "extremeMode": {
+    "message": "എക്സ്ട്രീം"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "അവസാനത്തേത് പ്രയോഗിക്കുക"
+  },
+  "loading": {
+    "message": "ലോഡുചെയ്യുന്നു..."
+  },
+  "activeOn": {
+    "message": "സജീവം: "
+  },
+  "activeCurrent": {
+    "message": "സജീവം: നിലവിലെ പേജ്"
+  },
+  "errorNoTab": {
+    "message": "പിശക്: സജീവ ടാബ് ഇല്ല"
+  },
+  "themeToggleTitle": {
+    "message": "ലൈറ്റ്/ഡാർക്ക് മോഡ്"
+  },
+  "boostToggleTitle": {
+    "message": "ബൂസ്റ്റ് ഓൺ/ഓഫ്"
+  },
+  "extremeToggleTitle": {
+    "message": "എക്സ്ട്രീം മോഡ്"
+  },
+  "resetBtnTitle": {
+    "message": "100% ആയി സജ്ജീകരിക്കുക"
+  },
+  "langSelectTitle": {
+    "message": "ഭാഷ മാറ്റുക"
+  },
+  "tabVolume": {
+    "message": "വോളിയം"
+  },
+  "tabEQ": {
+    "message": "ഇക്വലൈസർ"
+  },
+  "tabUtils": {
+    "message": "ഉപകരണങ്ങൾ"
+  },
+  "bassBoost": {
+    "message": "ബാസ് ബൂസ്റ്റ്"
+  },
+  "balanceLR": {
+    "message": "ബാലൻസ് (L/R)"
+  },
+  "monoMode": {
+    "message": "മോണോ മോഡ്"
+  },
+  "panicMute": {
+    "message": "മറ്റുള്ളവ നിശബ്ദമാക്കുക"
+  },
+  "panicMuteDesc": {
+    "message": "ഓഡിയോ പ്ലേ ചെയ്യുന്ന മറ്റ് എല്ലാ ടാബുകളും നിശബ്ദമാക്കുന്നു."
+  },
+  "language": {
+    "message": "ഭാഷ"
+  },
+  "shortcuts": {
+    "message": "കുറുക്കുവഴികൾ:"
+  },
+  "muted": {
+    "message": "നിശബ്ദമാക്കി!"
+  },
+  "panicUnmute": {
+    "message": "അൺമ്യൂട്ട് ചെയ്യുക (മറ്റുള്ളവ)"
+  },
+  "unmuted": {
+    "message": "അൺമ്യൂട്ട് ചെയ്തു!"
+  },
+  "compressorMode": {
+    "message": "ആന്റി-ഡിസ്റ്റോർഷൻ"
+  },
+  "eqTitle": {
+    "message": "10-ബാൻഡ് ഇക്വലൈസർ"
+  },
+  "eqReset": {
+    "message": "EQ റീസെറ്റ് ചെയ്യുക"
+  },
+  "exportEqTitle": {
+    "message": "EQ കയറ്റുമതി ചെയ്യുക"
+  },
+  "importEqTitle": {
+    "message": "EQ ഇറക്കുമതി ചെയ്യുക"
+  },
+  "manageShortcuts": {
+    "message": "കൈകാര്യം ചെയ്യുക"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "പരിഭ്രാന്തി നിശബ്ദമാക്കുക"
+  },
+  "shortcutToggle": {
+    "message": "ടോഗിൾ ചെയ്യുക"
+  }
+}

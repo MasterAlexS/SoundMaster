@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Mistr Zvuku"
+  },
+  "extDesc": {
+    "message": "Pokročilé audio studio s EQ, zvýrazněním basů, Mono Downmixem, okamžitým ztlumením a zesilovačem hlasitosti."
+  },
+  "standardMode": {
+    "message": "Standardní"
+  },
+  "extremeMode": {
+    "message": "Extrémní"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Použít Poslední"
+  },
+  "loading": {
+    "message": "Načítání..."
+  },
+  "activeOn": {
+    "message": "Aktivní na: "
+  },
+  "activeCurrent": {
+    "message": "Aktivní na: aktuální stránce"
+  },
+  "errorNoTab": {
+    "message": "Chyba: Nebyla nalezena aktivní karta"
+  },
+  "themeToggleTitle": {
+    "message": "Přepnout Světlý/Tmavý Režim"
+  },
+  "boostToggleTitle": {
+    "message": "Přepnout Zesílení ZAP/VYP"
+  },
+  "extremeToggleTitle": {
+    "message": "Přepnout 1000% Extrémní Režim"
+  },
+  "resetBtnTitle": {
+    "message": "Nastavit na 100%"
+  },
+  "langSelectTitle": {
+    "message": "Změnit jazyk"
+  },
+  "tabVolume": {
+    "message": "Hlasitost"
+  },
+  "tabEQ": {
+    "message": "Ekvalizér"
+  },
+  "tabUtils": {
+    "message": "Nástroje"
+  },
+  "bassBoost": {
+    "message": "Zesílení basů"
+  },
+  "balanceLR": {
+    "message": "Vyvážení (L/P)"
+  },
+  "monoMode": {
+    "message": "Mono režim"
+  },
+  "panicMute": {
+    "message": "Ztlumit ostatní"
+  },
+  "panicMuteDesc": {
+    "message": "Ztlumí všechny ostatní panely přehrávající zvuk."
+  },
+  "language": {
+    "message": "Jazyk"
+  },
+  "shortcuts": {
+    "message": "Zkratky:"
+  },
+  "muted": {
+    "message": "Ztlumeno!"
+  },
+  "panicUnmute": {
+    "message": "Zrušit ztlumení (Ostatní)"
+  },
+  "unmuted": {
+    "message": "Zvuk zapnutý!"
+  },
+  "compressorMode": {
+    "message": "Proti zkreslení"
+  },
+  "eqTitle": {
+    "message": "10-pásmový ekvalizér"
+  },
+  "eqReset": {
+    "message": "Resetovat EQ"
+  },
+  "exportEqTitle": {
+    "message": "Export EQ"
+  },
+  "importEqTitle": {
+    "message": "Import EQ"
+  },
+  "manageShortcuts": {
+    "message": "Spravovat"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Panic Mute"
+  },
+  "shortcutToggle": {
+    "message": "Přepnout"
+  }
+}

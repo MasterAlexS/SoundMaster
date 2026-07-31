@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Bậc thầy Âm thanh"
+  },
+  "extDesc": {
+    "message": "Phòng thu âm thanh nâng cao với EQ, Tăng âm trầm, Giảm âm đơn sắc, Tắt tiếng hoảng loạn và Tăng âm lượng."
+  },
+  "standardMode": {
+    "message": "Tiêu chuẩn"
+  },
+  "extremeMode": {
+    "message": "Cực đại"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Áp dụng gần nhất"
+  },
+  "loading": {
+    "message": "Đang tải..."
+  },
+  "activeOn": {
+    "message": "Hoạt động trên: "
+  },
+  "activeCurrent": {
+    "message": "Hoạt động trên: trang hiện tại"
+  },
+  "errorNoTab": {
+    "message": "Lỗi: Không tìm thấy tab"
+  },
+  "themeToggleTitle": {
+    "message": "Chế độ Sáng/Tối"
+  },
+  "boostToggleTitle": {
+    "message": "BẬT/TẮT"
+  },
+  "extremeToggleTitle": {
+    "message": "Chế độ Cực đại"
+  },
+  "resetBtnTitle": {
+    "message": "100%"
+  },
+  "langSelectTitle": {
+    "message": "Đổi ngôn ngữ"
+  },
+  "tabVolume": {
+    "message": "Âm lượng"
+  },
+  "tabEQ": {
+    "message": "Bộ chỉnh âm"
+  },
+  "tabUtils": {
+    "message": "Công cụ"
+  },
+  "bassBoost": {
+    "message": "Tăng cường âm trầm"
+  },
+  "balanceLR": {
+    "message": "Cân bằng (T/P)"
+  },
+  "monoMode": {
+    "message": "Chế độ Mono"
+  },
+  "panicMute": {
+    "message": "Tắt tiếng các tab khác"
+  },
+  "panicMuteDesc": {
+    "message": "Tắt tiếng tất cả các tab khác đang phát âm thanh."
+  },
+  "language": {
+    "message": "Ngôn ngữ"
+  },
+  "shortcuts": {
+    "message": "Phím tắt:"
+  },
+  "muted": {
+    "message": "Đã tắt tiếng!"
+  },
+  "panicUnmute": {
+    "message": "Bật tiếng (Khác)"
+  },
+  "unmuted": {
+    "message": "Đã bật tiếng!"
+  },
+  "compressorMode": {
+    "message": "Chống méo tiếng"
+  },
+  "eqTitle": {
+    "message": "Bộ cân bằng 10 băng tần"
+  },
+  "eqReset": {
+    "message": "Đặt lại EQ"
+  },
+  "exportEqTitle": {
+    "message": "Xuất EQ"
+  },
+  "importEqTitle": {
+    "message": "Nhập EQ"
+  },
+  "manageShortcuts": {
+    "message": "Quản lý"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Tắt tiếng hoảng loạn"
+  },
+  "shortcutToggle": {
+    "message": "Chuyển đổi"
+  }
+}

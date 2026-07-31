@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Ljudmästare"
+  },
+  "extDesc": {
+    "message": "Avancerad ljudstudio med EQ, basförstärkning, mono-nedmixning, panikdämpning och volymförstärkare."
+  },
+  "standardMode": {
+    "message": "Standard"
+  },
+  "extremeMode": {
+    "message": "Extrem"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Använd Senaste"
+  },
+  "loading": {
+    "message": "Laddar..."
+  },
+  "activeOn": {
+    "message": "Aktiv på: "
+  },
+  "activeCurrent": {
+    "message": "Aktiv på: nuvarande sida"
+  },
+  "errorNoTab": {
+    "message": "Fel: Ingen aktiv flik hittades"
+  },
+  "themeToggleTitle": {
+    "message": "Växla Ljust/Mörkt Läge"
+  },
+  "boostToggleTitle": {
+    "message": "Växla Förstärkning PÅ/AV"
+  },
+  "extremeToggleTitle": {
+    "message": "Växla 1000% Extremt Läge"
+  },
+  "resetBtnTitle": {
+    "message": "Ställ in på 100%"
+  },
+  "langSelectTitle": {
+    "message": "Ändra språk"
+  },
+  "tabVolume": {
+    "message": "Volym"
+  },
+  "tabEQ": {
+    "message": "Equalizer"
+  },
+  "tabUtils": {
+    "message": "Verktyg"
+  },
+  "bassBoost": {
+    "message": "Basförstärkning"
+  },
+  "balanceLR": {
+    "message": "Balans (V/H)"
+  },
+  "monoMode": {
+    "message": "Mono-läge"
+  },
+  "panicMute": {
+    "message": "Dämpa Andra"
+  },
+  "panicMuteDesc": {
+    "message": "Stänger av ljudet för alla andra flikar."
+  },
+  "language": {
+    "message": "Språk"
+  },
+  "shortcuts": {
+    "message": "Genvägar:"
+  },
+  "muted": {
+    "message": "Dämpad!"
+  },
+  "panicUnmute": {
+    "message": "Slå på ljud (Andra)"
+  },
+  "unmuted": {
+    "message": "Ljud påslaget!"
+  },
+  "compressorMode": {
+    "message": "Anti-distorsion"
+  },
+  "eqTitle": {
+    "message": "10-bands equalizer"
+  },
+  "eqReset": {
+    "message": "Återställ EQ"
+  },
+  "exportEqTitle": {
+    "message": "Exportera EQ"
+  },
+  "importEqTitle": {
+    "message": "Importera EQ"
+  },
+  "manageShortcuts": {
+    "message": "Hantera"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Panic Mute"
+  },
+  "shortcutToggle": {
+    "message": "Växla"
+  }
+}

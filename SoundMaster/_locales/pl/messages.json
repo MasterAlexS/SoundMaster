@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Mistrz Dźwięku"
+  },
+  "extDesc": {
+    "message": "Zaawansowane studio audio z korektorem, wzmocnieniem basów, miksowaniem do mono, natychmiastowym wyciszeniem i wzmacniaczem głośności."
+  },
+  "standardMode": {
+    "message": "Standard"
+  },
+  "extremeMode": {
+    "message": "Ekstremalny"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Zastosuj Ostatni"
+  },
+  "loading": {
+    "message": "Ładowanie..."
+  },
+  "activeOn": {
+    "message": "Aktywny na: "
+  },
+  "activeCurrent": {
+    "message": "Aktywny na: bieżącej stronie"
+  },
+  "errorNoTab": {
+    "message": "Błąd: Nie znaleziono aktywnej karty"
+  },
+  "themeToggleTitle": {
+    "message": "Przełącz Jasny/Ciemny Motyw"
+  },
+  "boostToggleTitle": {
+    "message": "Włącz/Wyłącz Wzmocnienie"
+  },
+  "extremeToggleTitle": {
+    "message": "Przełącz Tryb Ekstremalny 1000%"
+  },
+  "resetBtnTitle": {
+    "message": "Ustaw na 100%"
+  },
+  "langSelectTitle": {
+    "message": "Zmień język"
+  },
+  "tabVolume": {
+    "message": "Głośność"
+  },
+  "tabEQ": {
+    "message": "Korektor"
+  },
+  "tabUtils": {
+    "message": "Narzędzia"
+  },
+  "bassBoost": {
+    "message": "Wzmocnienie Basu"
+  },
+  "balanceLR": {
+    "message": "Balans (L/P)"
+  },
+  "monoMode": {
+    "message": "Tryb Mono"
+  },
+  "panicMute": {
+    "message": "Wycisz Inne"
+  },
+  "panicMuteDesc": {
+    "message": "Wycisza wszystkie inne karty odtwarzające dźwięk."
+  },
+  "language": {
+    "message": "Język"
+  },
+  "shortcuts": {
+    "message": "Skróty:"
+  },
+  "muted": {
+    "message": "Wyciszono!"
+  },
+  "panicUnmute": {
+    "message": "Wyłącz wyciszenie (Inne)"
+  },
+  "unmuted": {
+    "message": "Wyłączono wyciszenie!"
+  },
+  "compressorMode": {
+    "message": "Redukcja zniekształceń"
+  },
+  "eqTitle": {
+    "message": "10-pasmowy korektor"
+  },
+  "eqReset": {
+    "message": "Zresetuj EQ"
+  },
+  "exportEqTitle": {
+    "message": "Eksportuj korektor"
+  },
+  "importEqTitle": {
+    "message": "Importuj korektor"
+  },
+  "manageShortcuts": {
+    "message": "Zarządzać"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Wyciszenie paniki"
+  },
+  "shortcutToggle": {
+    "message": "Dźwignia kolankowa"
+  }
+}

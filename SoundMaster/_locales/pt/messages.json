@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Mestre do Som"
+  },
+  "extDesc": {
+    "message": "Estúdio de áudio avançado com EQ, reforço de graves, downmix mono, silenciamento rápido e intensificador de volume."
+  },
+  "standardMode": {
+    "message": "Padrão"
+  },
+  "extremeMode": {
+    "message": "Extremo"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Aplicar Último"
+  },
+  "loading": {
+    "message": "Carregando..."
+  },
+  "activeOn": {
+    "message": "Ativo em: "
+  },
+  "activeCurrent": {
+    "message": "Ativo em: página atual"
+  },
+  "errorNoTab": {
+    "message": "Erro: Nenhuma aba ativa"
+  },
+  "themeToggleTitle": {
+    "message": "Modo Claro/Escuro"
+  },
+  "boostToggleTitle": {
+    "message": "Amplificação ON/OFF"
+  },
+  "extremeToggleTitle": {
+    "message": "Modo Extremo 1000%"
+  },
+  "resetBtnTitle": {
+    "message": "Definir para 100%"
+  },
+  "langSelectTitle": {
+    "message": "Mudar Idioma"
+  },
+  "tabVolume": {
+    "message": "Volume"
+  },
+  "tabEQ": {
+    "message": "Equalizador"
+  },
+  "tabUtils": {
+    "message": "Utilitários"
+  },
+  "bassBoost": {
+    "message": "Reforço de Graves"
+  },
+  "balanceLR": {
+    "message": "Balanço (E/D)"
+  },
+  "monoMode": {
+    "message": "Modo Mono"
+  },
+  "panicMute": {
+    "message": "Silenciar Outros"
+  },
+  "panicMuteDesc": {
+    "message": "Silencia todas as outras guias que reproduzem áudio."
+  },
+  "language": {
+    "message": "Idioma"
+  },
+  "shortcuts": {
+    "message": "Atalhos:"
+  },
+  "muted": {
+    "message": "Silenciado!"
+  },
+  "panicUnmute": {
+    "message": "Ativar som (Outros)"
+  },
+  "unmuted": {
+    "message": "Som ativado!"
+  },
+  "compressorMode": {
+    "message": "Antidistorção"
+  },
+  "eqTitle": {
+    "message": "Equalizador de 10 bandas"
+  },
+  "eqReset": {
+    "message": "Redefinir EQ"
+  },
+  "exportEqTitle": {
+    "message": "Exportar equalizador"
+  },
+  "importEqTitle": {
+    "message": "Importar equalizador"
+  },
+  "manageShortcuts": {
+    "message": "Gerenciar"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Pânico mudo"
+  },
+  "shortcutToggle": {
+    "message": "Alternar"
+  }
+}

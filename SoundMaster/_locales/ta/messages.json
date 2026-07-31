@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "சவுண்ட் மாஸ்டர்"
+  },
+  "extDesc": {
+    "message": "EQ, Bass Boost, Mono Downmix, Panic Mute மற்றும் Volume Booster உடன் மேம்பட்ட ஆடியோ ஸ்டுடியோ."
+  },
+  "standardMode": {
+    "message": "வழக்கமான"
+  },
+  "extremeMode": {
+    "message": "கடுமையான"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "கடைசியாகப் பயன்படுத்து"
+  },
+  "loading": {
+    "message": "ஏற்றுகிறது..."
+  },
+  "activeOn": {
+    "message": "செயலில்: "
+  },
+  "activeCurrent": {
+    "message": "செயலில்: தற்போதைய பக்கம்"
+  },
+  "errorNoTab": {
+    "message": "பிழை: செயலில் உள்ள தாவல் இல்லை"
+  },
+  "themeToggleTitle": {
+    "message": "டார்க்/லைட் மோட்"
+  },
+  "boostToggleTitle": {
+    "message": "பூஸ்ட் ஆன்/ஆஃப்"
+  },
+  "extremeToggleTitle": {
+    "message": "கடுமையான மோட்"
+  },
+  "resetBtnTitle": {
+    "message": "100% ஆக அமை"
+  },
+  "langSelectTitle": {
+    "message": "மொழியை மாற்று"
+  },
+  "tabVolume": {
+    "message": "ஒலி அளவு"
+  },
+  "tabEQ": {
+    "message": "ஈக்வலைசர்"
+  },
+  "tabUtils": {
+    "message": "கருவிகள்"
+  },
+  "bassBoost": {
+    "message": "பாஸ் பூஸ்ட்"
+  },
+  "balanceLR": {
+    "message": "பேலன்ஸ் (L/R)"
+  },
+  "monoMode": {
+    "message": "மோனோ மோடு"
+  },
+  "panicMute": {
+    "message": "மற்றவைகளை மியூட் செய்"
+  },
+  "panicMuteDesc": {
+    "message": "ஆடியோ இயங்கும் மற்ற அனைத்து டேப்களையும் மியூட் செய்கிறது."
+  },
+  "language": {
+    "message": "மொழி"
+  },
+  "shortcuts": {
+    "message": "குறுக்குவழிகள்:"
+  },
+  "muted": {
+    "message": "மியூட் செய்யப்பட்டது!"
+  },
+  "panicUnmute": {
+    "message": "அன்மியூட் செய் (மற்றவைகளை)"
+  },
+  "unmuted": {
+    "message": "அன்மியூட் செய்யப்பட்டது!"
+  },
+  "compressorMode": {
+    "message": "ஆண்டி-டிஸ்டார்ஷன்"
+  },
+  "eqTitle": {
+    "message": "10-பேண்ட் ஈக்வலைசர்"
+  },
+  "eqReset": {
+    "message": "EQ ஐ மீட்டமை"
+  },
+  "exportEqTitle": {
+    "message": "ஏற்றுமதி EQ"
+  },
+  "importEqTitle": {
+    "message": "இறக்குமதி EQ"
+  },
+  "manageShortcuts": {
+    "message": "நிர்வகிக்கவும்"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "பீதி ஊமை"
+  },
+  "shortcutToggle": {
+    "message": "நிலைமாற்று"
+  }
+}

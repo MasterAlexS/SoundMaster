@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "사운드 마스터"
+  },
+  "extDesc": {
+    "message": "EQ, 베이스 부스트, 모노 다운믹스, 패닉 뮤트 및 볼륨 부스터를 갖춘 고급 오디오 스튜디오."
+  },
+  "standardMode": {
+    "message": "표준"
+  },
+  "extremeMode": {
+    "message": "극한"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "마지막 적용"
+  },
+  "loading": {
+    "message": "로딩 중..."
+  },
+  "activeOn": {
+    "message": "활성화 됨: "
+  },
+  "activeCurrent": {
+    "message": "활성화 됨: 현재 페이지"
+  },
+  "errorNoTab": {
+    "message": "오류: 활성 탭을 찾을 수 없음"
+  },
+  "themeToggleTitle": {
+    "message": "라이트/다크 모드 전환"
+  },
+  "boostToggleTitle": {
+    "message": "부스트 켜기/끄기"
+  },
+  "extremeToggleTitle": {
+    "message": "1000% 극한 모드 전환"
+  },
+  "resetBtnTitle": {
+    "message": "100%로 설정"
+  },
+  "langSelectTitle": {
+    "message": "언어 변경"
+  },
+  "tabVolume": {
+    "message": "볼륨"
+  },
+  "tabEQ": {
+    "message": "이퀄라이저"
+  },
+  "tabUtils": {
+    "message": "도구"
+  },
+  "bassBoost": {
+    "message": "베이스 부스트"
+  },
+  "balanceLR": {
+    "message": "좌우 밸런스"
+  },
+  "monoMode": {
+    "message": "모노 모드"
+  },
+  "panicMute": {
+    "message": "기타 음소거"
+  },
+  "panicMuteDesc": {
+    "message": "오디오를 재생 중인 다른 모든 탭을 음소거합니다."
+  },
+  "language": {
+    "message": "언어"
+  },
+  "shortcuts": {
+    "message": "단축키:"
+  },
+  "muted": {
+    "message": "음소거됨!"
+  },
+  "panicUnmute": {
+    "message": "음소거 해제 (기타)"
+  },
+  "unmuted": {
+    "message": "음소거 해제됨!"
+  },
+  "compressorMode": {
+    "message": "왜곡 방지"
+  },
+  "eqTitle": {
+    "message": "10-밴드 이퀄라이저"
+  },
+  "eqReset": {
+    "message": "EQ 초기화"
+  },
+  "exportEqTitle": {
+    "message": "EQ 내보내기"
+  },
+  "importEqTitle": {
+    "message": "EQ 가져오기"
+  },
+  "manageShortcuts": {
+    "message": "관리하다"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "패닉 뮤트"
+  },
+  "shortcutToggle": {
+    "message": "비녀장"
+  }
+}

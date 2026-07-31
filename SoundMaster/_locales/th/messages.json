@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "ซาวด์มาสเตอร์"
+  },
+  "extDesc": {
+    "message": "สตูดิโอเสียงขั้นสูงพร้อม EQ, เพิ่มเสียงเบส, มิกซ์เสียงโมโน, ปิดเสียงด่วน และเพิ่มระดับเสียง"
+  },
+  "standardMode": {
+    "message": "มาตรฐาน"
+  },
+  "extremeMode": {
+    "message": "สุดขีด"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "ใช้ล่าสุด"
+  },
+  "loading": {
+    "message": "กำลังโหลด..."
+  },
+  "activeOn": {
+    "message": "ใช้งานที่: "
+  },
+  "activeCurrent": {
+    "message": "ใช้งานที่: หน้าปัจจุบัน"
+  },
+  "errorNoTab": {
+    "message": "ข้อผิดพลาด: ไม่พบแท็บ"
+  },
+  "themeToggleTitle": {
+    "message": "โหมดมืด/สว่าง"
+  },
+  "boostToggleTitle": {
+    "message": "เปิด/ปิด"
+  },
+  "extremeToggleTitle": {
+    "message": "โหมดสุดขีด"
+  },
+  "resetBtnTitle": {
+    "message": "100%"
+  },
+  "langSelectTitle": {
+    "message": "เปลี่ยนภาษา"
+  },
+  "tabVolume": {
+    "message": "ระดับเสียง"
+  },
+  "tabEQ": {
+    "message": "อีควอไลเซอร์"
+  },
+  "tabUtils": {
+    "message": "เครื่องมือ"
+  },
+  "bassBoost": {
+    "message": "เพิ่มเสียงเบส"
+  },
+  "balanceLR": {
+    "message": "สมดุล (ซ้าย/ขวา)"
+  },
+  "monoMode": {
+    "message": "โหมดโมโน"
+  },
+  "panicMute": {
+    "message": "ปิดเสียงแท็บอื่น"
+  },
+  "panicMuteDesc": {
+    "message": "ปิดเสียงแท็บอื่นๆ ทั้งหมดที่กำลังเล่นเสียง"
+  },
+  "language": {
+    "message": "ภาษา"
+  },
+  "shortcuts": {
+    "message": "ทางลัด:"
+  },
+  "muted": {
+    "message": "ปิดเสียงแล้ว!"
+  },
+  "panicUnmute": {
+    "message": "ยกเลิกปิดเสียง (อื่นๆ)"
+  },
+  "unmuted": {
+    "message": "ยกเลิกปิดเสียงแล้ว!"
+  },
+  "compressorMode": {
+    "message": "ป้องกันเสียงแตก"
+  },
+  "eqTitle": {
+    "message": "อีควอไลเซอร์ 10 แบนด์"
+  },
+  "eqReset": {
+    "message": "รีเซ็ต EQ"
+  },
+  "exportEqTitle": {
+    "message": "ส่งออก EQ"
+  },
+  "importEqTitle": {
+    "message": "นำเข้า EQ"
+  },
+  "manageShortcuts": {
+    "message": "จัดการ"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "ปิดเสียงตื่นตระหนก"
+  },
+  "shortcutToggle": {
+    "message": "สลับ"
+  }
+}

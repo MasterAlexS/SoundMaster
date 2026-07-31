@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Maestro del Sonido"
+  },
+  "extDesc": {
+    "message": "Estudio de audio avanzado con ecualizador, refuerzo de graves, mezcla mono, silencio rápido y potenciador de volumen."
+  },
+  "standardMode": {
+    "message": "Estándar"
+  },
+  "extremeMode": {
+    "message": "Extremo"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Aplicar Último"
+  },
+  "loading": {
+    "message": "Cargando..."
+  },
+  "activeOn": {
+    "message": "Activo en: "
+  },
+  "activeCurrent": {
+    "message": "Activo en: página actual"
+  },
+  "errorNoTab": {
+    "message": "Error: No se encontró pestaña activa"
+  },
+  "themeToggleTitle": {
+    "message": "Alternar Modo Claro/Oscuro"
+  },
+  "boostToggleTitle": {
+    "message": "Alternar Amplificación (ON/OFF)"
+  },
+  "extremeToggleTitle": {
+    "message": "Alternar Modo Extremo 1000%"
+  },
+  "resetBtnTitle": {
+    "message": "Establecer al 100%"
+  },
+  "langSelectTitle": {
+    "message": "Cambiar Idioma"
+  },
+  "tabVolume": {
+    "message": "Volumen"
+  },
+  "tabEQ": {
+    "message": "Ecualizador"
+  },
+  "tabUtils": {
+    "message": "Utilidades"
+  },
+  "bassBoost": {
+    "message": "Potenciador de Graves"
+  },
+  "balanceLR": {
+    "message": "Balance (I/D)"
+  },
+  "monoMode": {
+    "message": "Modo Mono"
+  },
+  "panicMute": {
+    "message": "Silenciar Otros"
+  },
+  "panicMuteDesc": {
+    "message": "Silencia todas las demás pestañas que reproducen audio."
+  },
+  "language": {
+    "message": "Idioma"
+  },
+  "shortcuts": {
+    "message": "Atajos:"
+  },
+  "muted": {
+    "message": "¡Silenciado!"
+  },
+  "panicUnmute": {
+    "message": "Desilenciar (Otros)"
+  },
+  "unmuted": {
+    "message": "¡Desilenciado!"
+  },
+  "compressorMode": {
+    "message": "Antidistorsión"
+  },
+  "eqTitle": {
+    "message": "Ecualizador de 10 bandas"
+  },
+  "eqReset": {
+    "message": "Restablecer EQ"
+  },
+  "exportEqTitle": {
+    "message": "Exportar ecualizador"
+  },
+  "importEqTitle": {
+    "message": "Importar ecualizador"
+  },
+  "manageShortcuts": {
+    "message": "Administrar"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Silencio de pánico"
+  },
+  "shortcutToggle": {
+    "message": "Palanca"
+  }
+}

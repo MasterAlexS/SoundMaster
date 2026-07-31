@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Maître du Son"
+  },
+  "extDesc": {
+    "message": "Studio audio avancé avec égaliseur, amplification des basses, mixage mono, sourdine d'urgence et amplificateur de volume."
+  },
+  "standardMode": {
+    "message": "Standard"
+  },
+  "extremeMode": {
+    "message": "Extrême"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Appliquer le dernier"
+  },
+  "loading": {
+    "message": "Chargement..."
+  },
+  "activeOn": {
+    "message": "Actif sur : "
+  },
+  "activeCurrent": {
+    "message": "Actif sur : la page actuelle"
+  },
+  "errorNoTab": {
+    "message": "Erreur : Aucun onglet actif trouvé"
+  },
+  "themeToggleTitle": {
+    "message": "Basculer Mode Clair/Sombre"
+  },
+  "boostToggleTitle": {
+    "message": "Activer/Désactiver l'Amplification"
+  },
+  "extremeToggleTitle": {
+    "message": "Basculer Mode Extrême 1000%"
+  },
+  "resetBtnTitle": {
+    "message": "Définir à 100%"
+  },
+  "langSelectTitle": {
+    "message": "Changer de Langue"
+  },
+  "tabVolume": {
+    "message": "Volume"
+  },
+  "tabEQ": {
+    "message": "Égaliseur"
+  },
+  "tabUtils": {
+    "message": "Outils"
+  },
+  "bassBoost": {
+    "message": "Amplification Basses"
+  },
+  "balanceLR": {
+    "message": "Balance (G/D)"
+  },
+  "monoMode": {
+    "message": "Mode Mono"
+  },
+  "panicMute": {
+    "message": "Rendre Muet (Autres)"
+  },
+  "panicMuteDesc": {
+    "message": "Rend muet tous les autres onglets lisant du son."
+  },
+  "language": {
+    "message": "Langue"
+  },
+  "shortcuts": {
+    "message": "Raccourcis :"
+  },
+  "muted": {
+    "message": "Muet !"
+  },
+  "panicUnmute": {
+    "message": "Rétablir le son (Autres)"
+  },
+  "unmuted": {
+    "message": "Son rétabli !"
+  },
+  "compressorMode": {
+    "message": "Anti-Distorsion"
+  },
+  "eqTitle": {
+    "message": "Égaliseur 10 bandes"
+  },
+  "eqReset": {
+    "message": "Réinitialiser l'EQ"
+  },
+  "exportEqTitle": {
+    "message": "Exporter l'égaliseur"
+  },
+  "importEqTitle": {
+    "message": "Importer l'égaliseur"
+  },
+  "manageShortcuts": {
+    "message": "Gérer"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Panique muet"
+  },
+  "shortcutToggle": {
+    "message": "Basculer"
+  }
+}

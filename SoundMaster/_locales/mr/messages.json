@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "साउंड मास्टर"
+  },
+  "extDesc": {
+    "message": "EQ, बास बूस्ट, मोनो डाउनमिक्स, पॅनिक म्यूट आणि व्हॉल्यूम बूस्टरसह प्रगत ऑडिओ स्टुडिओ."
+  },
+  "standardMode": {
+    "message": "प्रमाणित"
+  },
+  "extremeMode": {
+    "message": "अत्यंत"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "शेवटचे लागू करा"
+  },
+  "loading": {
+    "message": "लोड होत आहे..."
+  },
+  "activeOn": {
+    "message": "वर सक्रिय: "
+  },
+  "activeCurrent": {
+    "message": "वर सक्रिय: वर्तमान पृष्ठ"
+  },
+  "errorNoTab": {
+    "message": "त्रुटी: कोणताही सक्रिय टॅब नाही"
+  },
+  "themeToggleTitle": {
+    "message": "लाइट/डार्क मोड"
+  },
+  "boostToggleTitle": {
+    "message": "बूस्ट चालू/बंद"
+  },
+  "extremeToggleTitle": {
+    "message": "अत्यंत मोड"
+  },
+  "resetBtnTitle": {
+    "message": "100% सेट करा"
+  },
+  "langSelectTitle": {
+    "message": "भाषा बदला"
+  },
+  "tabVolume": {
+    "message": "आवाज"
+  },
+  "tabEQ": {
+    "message": "इक्वलायझर"
+  },
+  "tabUtils": {
+    "message": "साधने"
+  },
+  "bassBoost": {
+    "message": "बास बूस्ट"
+  },
+  "balanceLR": {
+    "message": "बॅलन्स (L/R)"
+  },
+  "monoMode": {
+    "message": "मोनो मोड"
+  },
+  "panicMute": {
+    "message": "इतर म्यूट करा"
+  },
+  "panicMuteDesc": {
+    "message": "ऑडिओ प्ले करत असलेल्या इतर सर्व टॅब म्यूट करते."
+  },
+  "language": {
+    "message": "भाषा"
+  },
+  "shortcuts": {
+    "message": "शॉर्टकट:"
+  },
+  "muted": {
+    "message": "म्यूट केले!"
+  },
+  "panicUnmute": {
+    "message": "अनम्यूट करा (इतर)"
+  },
+  "unmuted": {
+    "message": "अनम्यूट केले!"
+  },
+  "compressorMode": {
+    "message": "अँटी-डिस्टॉर्शन"
+  },
+  "eqTitle": {
+    "message": "10-बँड इक्वेलायझर"
+  },
+  "eqReset": {
+    "message": "EQ रीसेट करा"
+  },
+  "exportEqTitle": {
+    "message": "EQ निर्यात करा"
+  },
+  "importEqTitle": {
+    "message": "EQ आयात करा"
+  },
+  "manageShortcuts": {
+    "message": "व्यवस्थापित करा"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "घाबरून नि:शब्द"
+  },
+  "shortcutToggle": {
+    "message": "टॉगल करा"
+  }
+}

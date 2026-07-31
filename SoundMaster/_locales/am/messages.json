@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "የድምጽ ማስተር"
+  },
+  "extDesc": {
+    "message": "የላቀ የድምጽ ስቱዲዮ በኢኪው፣ ባስ ማሳደጊያ፣ ሞኖ ዳውንሚክስ፣ ድምጽ አጥፋ እና የድምጽ ማበልጸጊያ።"
+  },
+  "standardMode": {
+    "message": "መደበኛ"
+  },
+  "extremeMode": {
+    "message": "ከፍተኛ"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "የመጨረሻውን ተግብር"
+  },
+  "loading": {
+    "message": "በመጫን ላይ..."
+  },
+  "activeOn": {
+    "message": "ንቁ በ: "
+  },
+  "activeCurrent": {
+    "message": "ንቁ በ: የአሁኑ ገጽ"
+  },
+  "errorNoTab": {
+    "message": "ስህተት: ምንም ንቁ ትር የለም"
+  },
+  "themeToggleTitle": {
+    "message": "ብርሃን/ጨለማ ሁነታ ቀይር"
+  },
+  "boostToggleTitle": {
+    "message": "ማጉላትን አብራ/አጥፋ"
+  },
+  "extremeToggleTitle": {
+    "message": "1000% ከፍተኛ ሁነታ ቀይር"
+  },
+  "resetBtnTitle": {
+    "message": "ወደ 100% አዘጋጅ"
+  },
+  "langSelectTitle": {
+    "message": "ቋንቋ ቀይር"
+  },
+  "tabVolume": {
+    "message": "ድምጽ"
+  },
+  "tabEQ": {
+    "message": "ኢኩዋላይዘር"
+  },
+  "tabUtils": {
+    "message": "መሳሪያዎች"
+  },
+  "bassBoost": {
+    "message": "ባስ ማሳደጊያ"
+  },
+  "balanceLR": {
+    "message": "ሚዛን (L/R)"
+  },
+  "monoMode": {
+    "message": "ሞኖ ሞድ"
+  },
+  "panicMute": {
+    "message": "ድምጽ አጥፋ (ሌሎች)"
+  },
+  "panicMuteDesc": {
+    "message": "ሌሎች ድምጽ የሚያሰሙ ታቦችን ያጠፋል።"
+  },
+  "language": {
+    "message": "ቋንቋ"
+  },
+  "shortcuts": {
+    "message": "አቋራጮች:"
+  },
+  "muted": {
+    "message": "ድምጽ ጠፍቷል!"
+  },
+  "panicUnmute": {
+    "message": "ድምጽ መልስ (ሌሎች)"
+  },
+  "unmuted": {
+    "message": "ድምጽ በርቷል!"
+  },
+  "compressorMode": {
+    "message": "የድምጽ መዛባት መከላከያ"
+  },
+  "eqTitle": {
+    "message": "የ10 ባንድ ኢኳላይዘር"
+  },
+  "eqReset": {
+    "message": "ኢኳላይዘርን ዳግም አስጀምር"
+  },
+  "exportEqTitle": {
+    "message": "EQ ወደ ውጪ ላክ"
+  },
+  "importEqTitle": {
+    "message": "EQ አስመጣ"
+  },
+  "manageShortcuts": {
+    "message": "አስተዳድር"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "ድንጋጤ ድምጸ-ከል አድርግ"
+  },
+  "shortcutToggle": {
+    "message": "ቀያይር"
+  }
+}

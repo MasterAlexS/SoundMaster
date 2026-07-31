@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Mojster Zvoka"
+  },
+  "extDesc": {
+    "message": "Napredni zvočni studio z EQ, ojačitvijo nizkih tonov, Mono Downmix, Panic Mute in Volume Booster."
+  },
+  "standardMode": {
+    "message": "Standardno"
+  },
+  "extremeMode": {
+    "message": "Ekstremno"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Uporabi Zadnje"
+  },
+  "loading": {
+    "message": "Nalaganje..."
+  },
+  "activeOn": {
+    "message": "Aktivno na: "
+  },
+  "activeCurrent": {
+    "message": "Aktivno na: trenutni strani"
+  },
+  "errorNoTab": {
+    "message": "Napaka: Ni aktivnega zavihka"
+  },
+  "themeToggleTitle": {
+    "message": "Svetli/Temni način"
+  },
+  "boostToggleTitle": {
+    "message": "VKLOP/IZKLOP"
+  },
+  "extremeToggleTitle": {
+    "message": "Ekstremni način"
+  },
+  "resetBtnTitle": {
+    "message": "100%"
+  },
+  "langSelectTitle": {
+    "message": "Spremeni jezik"
+  },
+  "tabVolume": {
+    "message": "Glasnost"
+  },
+  "tabEQ": {
+    "message": "Izenačevalnik"
+  },
+  "tabUtils": {
+    "message": "Orodja"
+  },
+  "bassBoost": {
+    "message": "Ojačitev basov"
+  },
+  "balanceLR": {
+    "message": "Ravnovesje (L/D)"
+  },
+  "monoMode": {
+    "message": "Mono način"
+  },
+  "panicMute": {
+    "message": "Utišaj ostale"
+  },
+  "panicMuteDesc": {
+    "message": "Utiša vse druge zavihke, ki predvajajo zvok."
+  },
+  "language": {
+    "message": "Jezik"
+  },
+  "shortcuts": {
+    "message": "Bližnjice:"
+  },
+  "muted": {
+    "message": "Utišano!"
+  },
+  "panicUnmute": {
+    "message": "Vklopi zvok (Ostalo)"
+  },
+  "unmuted": {
+    "message": "Zvok vklopljen!"
+  },
+  "compressorMode": {
+    "message": "Proti popačenju"
+  },
+  "eqTitle": {
+    "message": "10-pasovni izenačevalnik"
+  },
+  "eqReset": {
+    "message": "Ponastavi EQ"
+  },
+  "exportEqTitle": {
+    "message": "Izvoz EQ"
+  },
+  "importEqTitle": {
+    "message": "Uvoz EQ"
+  },
+  "manageShortcuts": {
+    "message": "Upravljaj"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Panic Mute"
+  },
+  "shortcutToggle": {
+    "message": "Preklopi"
+  }
+}

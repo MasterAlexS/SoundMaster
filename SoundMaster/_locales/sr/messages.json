@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Мајстор Звука"
+  },
+  "extDesc": {
+    "message": "Напредни аудио студио са ЕК-ом, појачањем баса, Моно Довнмик-ом, Паниц Муте-ом и појачивачем јачине звука."
+  },
+  "standardMode": {
+    "message": "Стандардно"
+  },
+  "extremeMode": {
+    "message": "Екстремно"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Примени Последње"
+  },
+  "loading": {
+    "message": "Учитавање..."
+  },
+  "activeOn": {
+    "message": "Активно на: "
+  },
+  "activeCurrent": {
+    "message": "Активно на: тренутној страници"
+  },
+  "errorNoTab": {
+    "message": "Грешка: Нема активне картице"
+  },
+  "themeToggleTitle": {
+    "message": "Светли/Тамни Режим"
+  },
+  "boostToggleTitle": {
+    "message": "УКЉ/ИСКЉ"
+  },
+  "extremeToggleTitle": {
+    "message": "Екстремни Режим"
+  },
+  "resetBtnTitle": {
+    "message": "100%"
+  },
+  "langSelectTitle": {
+    "message": "Промени језик"
+  },
+  "tabVolume": {
+    "message": "Јачина звука"
+  },
+  "tabEQ": {
+    "message": "Еквилајзер"
+  },
+  "tabUtils": {
+    "message": "Алати"
+  },
+  "bassBoost": {
+    "message": "Појачање баса"
+  },
+  "balanceLR": {
+    "message": "Баланс (Л/Д)"
+  },
+  "monoMode": {
+    "message": "Моно Режим"
+  },
+  "panicMute": {
+    "message": "Утишај остале"
+  },
+  "panicMuteDesc": {
+    "message": "Утишава све остале картице које репродукују звук."
+  },
+  "language": {
+    "message": "Језик"
+  },
+  "shortcuts": {
+    "message": "Пречице:"
+  },
+  "muted": {
+    "message": "Утишано!"
+  },
+  "panicUnmute": {
+    "message": "Укључи звук (Остале)"
+  },
+  "unmuted": {
+    "message": "Звук укључен!"
+  },
+  "compressorMode": {
+    "message": "Против изобличења"
+  },
+  "eqTitle": {
+    "message": "10-појасни еквилајзер"
+  },
+  "eqReset": {
+    "message": "Ресетуј EQ"
+  },
+  "exportEqTitle": {
+    "message": "Извоз ЕК"
+  },
+  "importEqTitle": {
+    "message": "Импорт ЕК"
+  },
+  "manageShortcuts": {
+    "message": "Управљај"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Паниц Муте"
+  },
+  "shortcutToggle": {
+    "message": "Пребаци"
+  }
+}

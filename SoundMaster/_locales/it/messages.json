@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Maestro del Suono"
+  },
+  "extDesc": {
+    "message": "Studio audio avanzato con EQ, potenziamento bassi, downmix mono, silenziamento rapido e amplificatore di volume."
+  },
+  "standardMode": {
+    "message": "Standard"
+  },
+  "extremeMode": {
+    "message": "Estremo"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Applica Ultimo"
+  },
+  "loading": {
+    "message": "Caricamento..."
+  },
+  "activeOn": {
+    "message": "Attivo su: "
+  },
+  "activeCurrent": {
+    "message": "Attivo su: pagina corrente"
+  },
+  "errorNoTab": {
+    "message": "Errore: Nessuna scheda attiva"
+  },
+  "themeToggleTitle": {
+    "message": "Modalità Chiara/Scura"
+  },
+  "boostToggleTitle": {
+    "message": "Amplificazione ON/OFF"
+  },
+  "extremeToggleTitle": {
+    "message": "Modo Estremo 1000%"
+  },
+  "resetBtnTitle": {
+    "message": "Imposta al 100%"
+  },
+  "langSelectTitle": {
+    "message": "Cambia Lingua"
+  },
+  "tabVolume": {
+    "message": "Volume"
+  },
+  "tabEQ": {
+    "message": "Equalizzatore"
+  },
+  "tabUtils": {
+    "message": "Utilità"
+  },
+  "bassBoost": {
+    "message": "Potenziamento Bassi"
+  },
+  "balanceLR": {
+    "message": "Bilanciamento (S/D)"
+  },
+  "monoMode": {
+    "message": "Modalità Mono"
+  },
+  "panicMute": {
+    "message": "Silenzia Altri"
+  },
+  "panicMuteDesc": {
+    "message": "Silenzia tutte le altre schede che riproducono audio."
+  },
+  "language": {
+    "message": "Lingua"
+  },
+  "shortcuts": {
+    "message": "Scorciatoie:"
+  },
+  "muted": {
+    "message": "Silenzioso!"
+  },
+  "panicUnmute": {
+    "message": "Riattiva audio (Altri)"
+  },
+  "unmuted": {
+    "message": "Audio riattivato!"
+  },
+  "compressorMode": {
+    "message": "Anti-Distorsione"
+  },
+  "eqTitle": {
+    "message": "Equalizzatore a 10 bande"
+  },
+  "eqReset": {
+    "message": "Ripristina EQ"
+  },
+  "exportEqTitle": {
+    "message": "Esporta EQ"
+  },
+  "importEqTitle": {
+    "message": "Importa equalizzatore"
+  },
+  "manageShortcuts": {
+    "message": "Maneggio"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Muto del panico"
+  },
+  "shortcutToggle": {
+    "message": "Attiva/disattiva"
+  }
+}

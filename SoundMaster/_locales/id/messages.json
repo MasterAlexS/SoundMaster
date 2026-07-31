@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Master Suara"
+  },
+  "extDesc": {
+    "message": "Studio Audio Tingkat Lanjut dengan EQ, Peningkatan Bass, Mono Downmix, Panic Mute, dan Penguat Volume."
+  },
+  "standardMode": {
+    "message": "Standar"
+  },
+  "extremeMode": {
+    "message": "Ekstrem"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Terapkan Terakhir"
+  },
+  "loading": {
+    "message": "Memuat..."
+  },
+  "activeOn": {
+    "message": "Aktif di: "
+  },
+  "activeCurrent": {
+    "message": "Aktif di: halaman saat ini"
+  },
+  "errorNoTab": {
+    "message": "Kesalahan: Tidak ada tab aktif"
+  },
+  "themeToggleTitle": {
+    "message": "Mode Terang/Gelap"
+  },
+  "boostToggleTitle": {
+    "message": "Aktifkan/Nonaktifkan"
+  },
+  "extremeToggleTitle": {
+    "message": "Mode Ekstrem"
+  },
+  "resetBtnTitle": {
+    "message": "100%"
+  },
+  "langSelectTitle": {
+    "message": "Ubah Bahasa"
+  },
+  "tabVolume": {
+    "message": "Volume"
+  },
+  "tabEQ": {
+    "message": "Ekualiser"
+  },
+  "tabUtils": {
+    "message": "Alat"
+  },
+  "bassBoost": {
+    "message": "Peningkatan Bass"
+  },
+  "balanceLR": {
+    "message": "Keseimbangan (K/K)"
+  },
+  "monoMode": {
+    "message": "Mode Mono"
+  },
+  "panicMute": {
+    "message": "Bisukan Lainnya"
+  },
+  "panicMuteDesc": {
+    "message": "Membisukan semua tab lain yang memutar audio."
+  },
+  "language": {
+    "message": "Bahasa"
+  },
+  "shortcuts": {
+    "message": "Pintasan:"
+  },
+  "muted": {
+    "message": "Dibisukan!"
+  },
+  "panicUnmute": {
+    "message": "Bunyikan (Lainnya)"
+  },
+  "unmuted": {
+    "message": "Suara diaktifkan!"
+  },
+  "compressorMode": {
+    "message": "Anti-Distorsi"
+  },
+  "eqTitle": {
+    "message": "Equalizer 10-Band"
+  },
+  "eqReset": {
+    "message": "Atur Ulang EQ"
+  },
+  "exportEqTitle": {
+    "message": "Ekspor EQ"
+  },
+  "importEqTitle": {
+    "message": "Impor EQ"
+  },
+  "manageShortcuts": {
+    "message": "Mengelola"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Panik Bisu"
+  },
+  "shortcutToggle": {
+    "message": "Beralih"
+  }
+}

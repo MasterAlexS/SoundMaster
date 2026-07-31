@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "מאסטר סאונד"
+  },
+  "extDesc": {
+    "message": "אולפן שמע מתקדם עם אקוולייזר, הגברת בס, מיקס מונו, השתקת חירום ומגבר עוצמת קול."
+  },
+  "standardMode": {
+    "message": "רגיל"
+  },
+  "extremeMode": {
+    "message": "אקסטרים"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "החל אחרון"
+  },
+  "loading": {
+    "message": "טוען..."
+  },
+  "activeOn": {
+    "message": "פעיל ב: "
+  },
+  "activeCurrent": {
+    "message": "פעיל ב: דף נוכחי"
+  },
+  "errorNoTab": {
+    "message": "שגיאה: אין כרטיסייה פעילה"
+  },
+  "themeToggleTitle": {
+    "message": "מצב בהיר/כהה"
+  },
+  "boostToggleTitle": {
+    "message": "הפעל/כבה"
+  },
+  "extremeToggleTitle": {
+    "message": "מצב אקסטרים"
+  },
+  "resetBtnTitle": {
+    "message": "100%"
+  },
+  "langSelectTitle": {
+    "message": "שנה שפה"
+  },
+  "tabVolume": {
+    "message": "עוצמת קול"
+  },
+  "tabEQ": {
+    "message": "אקוולייזר"
+  },
+  "tabUtils": {
+    "message": "כלים"
+  },
+  "bassBoost": {
+    "message": "הגברת בס"
+  },
+  "balanceLR": {
+    "message": "איזון (שמאל/ימין)"
+  },
+  "monoMode": {
+    "message": "מצב מונו"
+  },
+  "panicMute": {
+    "message": "השתק אחרים"
+  },
+  "panicMuteDesc": {
+    "message": "משתיק את כל שאר הכרטיסיות שמנגנות שמע."
+  },
+  "language": {
+    "message": "שפה"
+  },
+  "shortcuts": {
+    "message": "קיצורי דרך:"
+  },
+  "muted": {
+    "message": "הושתק!"
+  },
+  "panicUnmute": {
+    "message": "בטל השתקה (אחרים)"
+  },
+  "unmuted": {
+    "message": "ההשתקה בוטלה!"
+  },
+  "compressorMode": {
+    "message": "מונע עיוותים"
+  },
+  "eqTitle": {
+    "message": "אקולייזר 10 תדרים"
+  },
+  "eqReset": {
+    "message": "איפוס EQ"
+  },
+  "exportEqTitle": {
+    "message": "Export EQ"
+  },
+  "importEqTitle": {
+    "message": "Import EQ"
+  },
+  "manageShortcuts": {
+    "message": "Manage"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Panic Mute"
+  },
+  "shortcutToggle": {
+    "message": "Toggle"
+  }
+}

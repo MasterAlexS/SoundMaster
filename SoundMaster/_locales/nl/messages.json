@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Geluidsmeester"
+  },
+  "extDesc": {
+    "message": "Geavanceerde audiostudio met EQ, basversterking, mono downmix, paniekdemping en volumeversterker."
+  },
+  "standardMode": {
+    "message": "Standaard"
+  },
+  "extremeMode": {
+    "message": "Extreem"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Laatste Toepassen"
+  },
+  "loading": {
+    "message": "Laden..."
+  },
+  "activeOn": {
+    "message": "Actief op: "
+  },
+  "activeCurrent": {
+    "message": "Actief op: huidige pagina"
+  },
+  "errorNoTab": {
+    "message": "Fout: Geen actief tabblad gevonden"
+  },
+  "themeToggleTitle": {
+    "message": "Licht/Donker Modus Schakelen"
+  },
+  "boostToggleTitle": {
+    "message": "Versterking AAN/UIT Schakelen"
+  },
+  "extremeToggleTitle": {
+    "message": "1000% Extreme Modus Schakelen"
+  },
+  "resetBtnTitle": {
+    "message": "Instellen op 100%"
+  },
+  "langSelectTitle": {
+    "message": "Taal wijzigen"
+  },
+  "tabVolume": {
+    "message": "Volume"
+  },
+  "tabEQ": {
+    "message": "Equalizer"
+  },
+  "tabUtils": {
+    "message": "Hulpmiddelen"
+  },
+  "bassBoost": {
+    "message": "Basversterking"
+  },
+  "balanceLR": {
+    "message": "Balans (L/R)"
+  },
+  "monoMode": {
+    "message": "Mono Modus"
+  },
+  "panicMute": {
+    "message": "Demp Anderen"
+  },
+  "panicMuteDesc": {
+    "message": "Dempt alle andere tabbladen die audio afspelen."
+  },
+  "language": {
+    "message": "Taal"
+  },
+  "shortcuts": {
+    "message": "Sneltoetsen:"
+  },
+  "muted": {
+    "message": "Gedempt!"
+  },
+  "panicUnmute": {
+    "message": "Dempen opheffen (Anderen)"
+  },
+  "unmuted": {
+    "message": "Dempen opgeheven!"
+  },
+  "compressorMode": {
+    "message": "Vervormingsbeveiliging"
+  },
+  "eqTitle": {
+    "message": "10-bands equalizer"
+  },
+  "eqReset": {
+    "message": "EQ resetten"
+  },
+  "exportEqTitle": {
+    "message": "EQ exporteren"
+  },
+  "importEqTitle": {
+    "message": "EQ importeren"
+  },
+  "manageShortcuts": {
+    "message": "Beheren"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Paniek dempen"
+  },
+  "shortcutToggle": {
+    "message": "Schakelaar"
+  }
+}

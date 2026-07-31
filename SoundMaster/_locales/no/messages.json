@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Lydmester"
+  },
+  "extDesc": {
+    "message": "Avansert lydstudio med EQ, bassforsterkning, mono-nedmiksing, panikkdemping og volumforsterker."
+  },
+  "standardMode": {
+    "message": "Standard"
+  },
+  "extremeMode": {
+    "message": "Ekstrem"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Bruk Siste"
+  },
+  "loading": {
+    "message": "Laster..."
+  },
+  "activeOn": {
+    "message": "Aktiv på: "
+  },
+  "activeCurrent": {
+    "message": "Aktiv på: nåværende side"
+  },
+  "errorNoTab": {
+    "message": "Feil: Ingen aktiv fane"
+  },
+  "themeToggleTitle": {
+    "message": "Lys/Mørk modus"
+  },
+  "boostToggleTitle": {
+    "message": "PÅ/AV"
+  },
+  "extremeToggleTitle": {
+    "message": "Ekstrem modus"
+  },
+  "resetBtnTitle": {
+    "message": "100%"
+  },
+  "langSelectTitle": {
+    "message": "Change Language"
+  },
+  "tabVolume": {
+    "message": "Volum"
+  },
+  "tabEQ": {
+    "message": "Equalizer"
+  },
+  "tabUtils": {
+    "message": "Verktøy"
+  },
+  "bassBoost": {
+    "message": "Bassforsterkning"
+  },
+  "balanceLR": {
+    "message": "Balanse (V/H)"
+  },
+  "monoMode": {
+    "message": "Mono Modus"
+  },
+  "panicMute": {
+    "message": "Demp Andre"
+  },
+  "panicMuteDesc": {
+    "message": "Demper alle andre faner som spiller av lyd."
+  },
+  "language": {
+    "message": "Språk"
+  },
+  "shortcuts": {
+    "message": "Snarveier:"
+  },
+  "muted": {
+    "message": "Dempet!"
+  },
+  "panicUnmute": {
+    "message": "Slå på lyd (Andre)"
+  },
+  "unmuted": {
+    "message": "Lyd slått på!"
+  },
+  "compressorMode": {
+    "message": "Anti-forvrengning"
+  },
+  "eqTitle": {
+    "message": "10-bånds equalizer"
+  },
+  "eqReset": {
+    "message": "Tilbakestill EQ"
+  },
+  "exportEqTitle": {
+    "message": "Eksporter EQ"
+  },
+  "importEqTitle": {
+    "message": "Importer EQ"
+  },
+  "manageShortcuts": {
+    "message": "Administrer"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Panikk dempet"
+  },
+  "shortcutToggle": {
+    "message": "Veksle"
+  }
+}

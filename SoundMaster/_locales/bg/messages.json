@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Звуков Майстор"
+  },
+  "extDesc": {
+    "message": "Разширено аудио студио с EQ, усилване на басите, Mono Downmix, Panic Mute и Volume Booster."
+  },
+  "standardMode": {
+    "message": "Стандарт"
+  },
+  "extremeMode": {
+    "message": "Екстремно"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Приложи последно"
+  },
+  "loading": {
+    "message": "Зареждане..."
+  },
+  "activeOn": {
+    "message": "Активно на: "
+  },
+  "activeCurrent": {
+    "message": "Активно на: текущата страница"
+  },
+  "errorNoTab": {
+    "message": "Грешка: Няма активен раздел"
+  },
+  "themeToggleTitle": {
+    "message": "Светъл/Тъмен режим"
+  },
+  "boostToggleTitle": {
+    "message": "Вкл/Изкл"
+  },
+  "extremeToggleTitle": {
+    "message": "Екстремен режим"
+  },
+  "resetBtnTitle": {
+    "message": "100%"
+  },
+  "langSelectTitle": {
+    "message": "Промяна на езика"
+  },
+  "tabVolume": {
+    "message": "Сила на звука"
+  },
+  "tabEQ": {
+    "message": "Еквалайзер"
+  },
+  "tabUtils": {
+    "message": "Инструменти"
+  },
+  "bassBoost": {
+    "message": "Усилване на басите"
+  },
+  "balanceLR": {
+    "message": "Баланс (Л/Д)"
+  },
+  "monoMode": {
+    "message": "Моно режим"
+  },
+  "panicMute": {
+    "message": "Заглушаване (Други)"
+  },
+  "panicMuteDesc": {
+    "message": "Заглушава всички други раздели, възпроизвеждащи аудио."
+  },
+  "language": {
+    "message": "Език"
+  },
+  "shortcuts": {
+    "message": "Преки пътища:"
+  },
+  "muted": {
+    "message": "Заглушено!"
+  },
+  "panicUnmute": {
+    "message": "Включване на звука (Други)"
+  },
+  "unmuted": {
+    "message": "Звукът е включен!"
+  },
+  "compressorMode": {
+    "message": "Анти-дисторция"
+  },
+  "eqTitle": {
+    "message": "10-лентов еквалайзер"
+  },
+  "eqReset": {
+    "message": "Нулиране на EQ"
+  },
+  "exportEqTitle": {
+    "message": "Експортиране на EQ"
+  },
+  "importEqTitle": {
+    "message": "Импортиране на EQ"
+  },
+  "manageShortcuts": {
+    "message": "Управлявайте"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Паник заглушаване"
+  },
+  "shortcutToggle": {
+    "message": "Превключване"
+  }
+}

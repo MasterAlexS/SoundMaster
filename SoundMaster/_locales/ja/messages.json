@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "サウンドマスター"
+  },
+  "extDesc": {
+    "message": "EQ、低音ブースト、モノラルダウンミックス、パニックミュート、音量ブースターを備えた高度なオーディオスタジオ。"
+  },
+  "standardMode": {
+    "message": "標準"
+  },
+  "extremeMode": {
+    "message": "エクストリーム"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "前回を適用"
+  },
+  "loading": {
+    "message": "読み込み中..."
+  },
+  "activeOn": {
+    "message": "アクティブ: "
+  },
+  "activeCurrent": {
+    "message": "アクティブ: 現在のページ"
+  },
+  "errorNoTab": {
+    "message": "エラー：アクティブなタブが見つかりません"
+  },
+  "themeToggleTitle": {
+    "message": "ライト/ダークモード切替"
+  },
+  "boostToggleTitle": {
+    "message": "ブースト ON/OFF"
+  },
+  "extremeToggleTitle": {
+    "message": "1000% エクストリームモード"
+  },
+  "resetBtnTitle": {
+    "message": "100%に設定"
+  },
+  "langSelectTitle": {
+    "message": "言語を変更"
+  },
+  "tabVolume": {
+    "message": "音量"
+  },
+  "tabEQ": {
+    "message": "イコライザー"
+  },
+  "tabUtils": {
+    "message": "ツール"
+  },
+  "bassBoost": {
+    "message": "低音ブースト"
+  },
+  "balanceLR": {
+    "message": "左右バランス"
+  },
+  "monoMode": {
+    "message": "モノラルモード"
+  },
+  "panicMute": {
+    "message": "他をミュート"
+  },
+  "panicMuteDesc": {
+    "message": "音声を再生している他のすべてのタブをミュートします。"
+  },
+  "language": {
+    "message": "言語"
+  },
+  "shortcuts": {
+    "message": "ショートカット:"
+  },
+  "muted": {
+    "message": "ミュート済み!"
+  },
+  "panicUnmute": {
+    "message": "ミュート解除（その他）"
+  },
+  "unmuted": {
+    "message": "ミュート解除！"
+  },
+  "compressorMode": {
+    "message": "音割れ防止"
+  },
+  "eqTitle": {
+    "message": "10バンドイコライザー"
+  },
+  "eqReset": {
+    "message": "EQをリセット"
+  },
+  "exportEqTitle": {
+    "message": "エクスポートEQ"
+  },
+  "importEqTitle": {
+    "message": "インポートEQ"
+  },
+  "manageShortcuts": {
+    "message": "管理"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "パニックミュート"
+  },
+  "shortcutToggle": {
+    "message": "トグル"
+  }
+}

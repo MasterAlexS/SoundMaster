@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "ಸೌಂಡ್ ಮಾಸ್ಟರ್"
+  },
+  "extDesc": {
+    "message": "EQ, ಬಾಸ್ ಬೂಸ್ಟ್, ಮೊನೊ ಡೌನ್‌ಮಿಕ್ಸ್, ಪ್ಯಾನಿಕ್ ಮ್ಯೂಟ್ ಮತ್ತು ವಾಲ್ಯೂಮ್ ಬೂಸ್ಟರ್‌ನೊಂದಿಗೆ ಸುಧಾರಿತ ಆಡಿಯೊ ಸ್ಟುಡಿಯೋ."
+  },
+  "standardMode": {
+    "message": "ಸ್ಟ್ಯಾಂಡರ್ಡ್"
+  },
+  "extremeMode": {
+    "message": "ಎಕ್ಸ್ಟ್ರೀಮ್"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "ಕೊನೆಯದನ್ನು ಅನ್ವಯಿಸಿ"
+  },
+  "loading": {
+    "message": "ಲೋಡ್ ಆಗುತ್ತಿದೆ..."
+  },
+  "activeOn": {
+    "message": "ಸಕ್ರಿಯ: "
+  },
+  "activeCurrent": {
+    "message": "ಸಕ್ರಿಯ: ಪ್ರಸ್ತುತ ಪುಟ"
+  },
+  "errorNoTab": {
+    "message": "ದೋಷ: ಸಕ್ರಿಯ ಟ್ಯಾಬ್ ಇಲ್ಲ"
+  },
+  "themeToggleTitle": {
+    "message": "ಲೈಟ್/ಡಾರ್ಕ್ ಮೋಡ್"
+  },
+  "boostToggleTitle": {
+    "message": "ಬೂಸ್ಟ್ ಆನ್/ಆಫ್"
+  },
+  "extremeToggleTitle": {
+    "message": "ಎಕ್ಸ್ಟ್ರೀಮ್ ಮೋಡ್"
+  },
+  "resetBtnTitle": {
+    "message": "100% ಗೆ ಹೊಂದಿಸಿ"
+  },
+  "langSelectTitle": {
+    "message": "ಭಾಷೆ ಬದಲಾಯಿಸಿ"
+  },
+  "tabVolume": {
+    "message": "ವಾಲ್ಯೂಮ್"
+  },
+  "tabEQ": {
+    "message": "ಈಕ್ವಲೈಸರ್"
+  },
+  "tabUtils": {
+    "message": "ಉಪಕರಣಗಳು"
+  },
+  "bassBoost": {
+    "message": "ಬಾಸ್ ಬೂಸ್ಟ್"
+  },
+  "balanceLR": {
+    "message": "ಬ್ಯಾಲೆನ್ಸ್ (L/R)"
+  },
+  "monoMode": {
+    "message": "ಮೊನೊ ಮೋಡ್"
+  },
+  "panicMute": {
+    "message": "ಇತರರನ್ನು ಮ್ಯೂಟ್ ಮಾಡಿ"
+  },
+  "panicMuteDesc": {
+    "message": "ಆಡಿಯೋ ಪ್ಲೇ ಆಗುತ್ತಿರುವ ಇತರ ಎಲ್ಲಾ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಮ್ಯೂಟ್ ಮಾಡುತ್ತದೆ."
+  },
+  "language": {
+    "message": "ಭಾಷೆ"
+  },
+  "shortcuts": {
+    "message": "ಶಾರ್ಟ್‌ಕಟ್‌ಗಳು:"
+  },
+  "muted": {
+    "message": "ಮ್ಯೂಟ್ ಮಾಡಲಾಗಿದೆ!"
+  },
+  "panicUnmute": {
+    "message": "ಅನ್‌ಮ್ಯೂಟ್ ಮಾಡಿ (ಇತರರು)"
+  },
+  "unmuted": {
+    "message": "ಅನ್‌ಮ್ಯೂಟ್ ಮಾಡಲಾಗಿದೆ!"
+  },
+  "compressorMode": {
+    "message": "ಆಂಟಿ-ಡಿಸ್ಟಾರ್ಷನ್"
+  },
+  "eqTitle": {
+    "message": "10-ಬ್ಯಾಂಡ್ ಈಕ್ವಲೈಜರ್"
+  },
+  "eqReset": {
+    "message": "EQ ಮರುಹೊಂದಿಸಿ"
+  },
+  "exportEqTitle": {
+    "message": "EQ ರಫ್ತು ಮಾಡಿ"
+  },
+  "importEqTitle": {
+    "message": "ಆಮದು EQ"
+  },
+  "manageShortcuts": {
+    "message": "ನಿರ್ವಹಿಸಿ"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "ಪ್ಯಾನಿಕ್ ಮ್ಯೂಟ್"
+  },
+  "shortcutToggle": {
+    "message": "ಟಾಗಲ್ ಮಾಡಿ"
+  }
+}

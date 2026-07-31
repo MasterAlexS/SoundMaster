@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Klangmeister"
+  },
+  "extDesc": {
+    "message": "Erweitertes Audiostudio mit EQ, Bass-Boost, Mono-Downmix, Panic-Mute und Lautstärkebooster."
+  },
+  "standardMode": {
+    "message": "Standard"
+  },
+  "extremeMode": {
+    "message": "Extrem"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Zuletzt anwenden"
+  },
+  "loading": {
+    "message": "Laden..."
+  },
+  "activeOn": {
+    "message": "Aktiv auf: "
+  },
+  "activeCurrent": {
+    "message": "Aktiv auf: aktuelle Seite"
+  },
+  "errorNoTab": {
+    "message": "Fehler: Kein aktiver Tab gefunden"
+  },
+  "themeToggleTitle": {
+    "message": "Hell-/Dunkelmodus umschalten"
+  },
+  "boostToggleTitle": {
+    "message": "Verstärkung EIN/AUS schalten"
+  },
+  "extremeToggleTitle": {
+    "message": "1000% Extrem-Modus umschalten"
+  },
+  "resetBtnTitle": {
+    "message": "Auf 100% setzen"
+  },
+  "langSelectTitle": {
+    "message": "Sprache ändern"
+  },
+  "tabVolume": {
+    "message": "Lautstärke"
+  },
+  "tabEQ": {
+    "message": "Equalizer"
+  },
+  "tabUtils": {
+    "message": "Werkzeuge"
+  },
+  "bassBoost": {
+    "message": "Bass-Verstärker"
+  },
+  "balanceLR": {
+    "message": "Balance (L/R)"
+  },
+  "monoMode": {
+    "message": "Mono-Modus"
+  },
+  "panicMute": {
+    "message": "Andere Stummschalten"
+  },
+  "panicMuteDesc": {
+    "message": "Schaltet alle anderen Tabs mit Audio stumm."
+  },
+  "language": {
+    "message": "Sprache"
+  },
+  "shortcuts": {
+    "message": "Tastenkürzel:"
+  },
+  "muted": {
+    "message": "Stumm!"
+  },
+  "panicUnmute": {
+    "message": "Stummschaltung aufheben (Andere)"
+  },
+  "unmuted": {
+    "message": "Stummschaltung aufgehoben!"
+  },
+  "compressorMode": {
+    "message": "Verzerrungsschutz"
+  },
+  "eqTitle": {
+    "message": "10-Band-Equalizer"
+  },
+  "eqReset": {
+    "message": "EQ zurücksetzen"
+  },
+  "exportEqTitle": {
+    "message": "EQ exportieren"
+  },
+  "importEqTitle": {
+    "message": "EQ importieren"
+  },
+  "manageShortcuts": {
+    "message": "Verwalten"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Panik-Stummschaltung"
+  },
+  "shortcutToggle": {
+    "message": "Umschalten"
+  }
+}

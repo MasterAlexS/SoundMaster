@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Master ng Tunog"
+  },
+  "extDesc": {
+    "message": "Advanced Audio Studio na may EQ, Bass Boost, Mono Downmix, Panic Mute, at Volume Booster."
+  },
+  "standardMode": {
+    "message": "Standard"
+  },
+  "extremeMode": {
+    "message": "Extreme"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Ilapat ang huli"
+  },
+  "loading": {
+    "message": "Naglo-load..."
+  },
+  "activeOn": {
+    "message": "Aktibo sa: "
+  },
+  "activeCurrent": {
+    "message": "Aktibo sa: kasalukuyang pahina"
+  },
+  "errorNoTab": {
+    "message": "Error: Walang aktibong tab"
+  },
+  "themeToggleTitle": {
+    "message": "I-toggle ang Light/Dark"
+  },
+  "boostToggleTitle": {
+    "message": "I-toggle ang Boost"
+  },
+  "extremeToggleTitle": {
+    "message": "Extreme Mode"
+  },
+  "resetBtnTitle": {
+    "message": "Itakda sa 100%"
+  },
+  "langSelectTitle": {
+    "message": "Palitan ang Wika"
+  },
+  "tabVolume": {
+    "message": "Dami"
+  },
+  "tabEQ": {
+    "message": "Equalizer"
+  },
+  "tabUtils": {
+    "message": "Mga Tool"
+  },
+  "bassBoost": {
+    "message": "Pagpapalakas ng Bass"
+  },
+  "balanceLR": {
+    "message": "Balanse (K/K)"
+  },
+  "monoMode": {
+    "message": "Mono Mode"
+  },
+  "panicMute": {
+    "message": "I-mute ang Iba"
+  },
+  "panicMuteDesc": {
+    "message": "I-mute ang lahat ng iba pang tab na nagpe-play ng audio."
+  },
+  "language": {
+    "message": "Wika"
+  },
+  "shortcuts": {
+    "message": "Mga Shortcut:"
+  },
+  "muted": {
+    "message": "Naka-mute!"
+  },
+  "panicUnmute": {
+    "message": "I-unmute (Iba pa)"
+  },
+  "unmuted": {
+    "message": "Na-unmute na!"
+  },
+  "compressorMode": {
+    "message": "Anti-Distortion"
+  },
+  "eqTitle": {
+    "message": "10-Band Equalizer"
+  },
+  "eqReset": {
+    "message": "I-reset ang EQ"
+  },
+  "exportEqTitle": {
+    "message": "Export EQ"
+  },
+  "importEqTitle": {
+    "message": "Import EQ"
+  },
+  "manageShortcuts": {
+    "message": "Manage"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Panic Mute"
+  },
+  "shortcutToggle": {
+    "message": "Toggle"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Hangmester"
+  },
+  "extDesc": {
+    "message": "Fejlett audiostúdió EQ-val, basszuskiemeléssel, mono lekeveréssel, pániknémítással és hangerőnövelővel."
+  },
+  "standardMode": {
+    "message": "Normál"
+  },
+  "extremeMode": {
+    "message": "Extrém"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Utolsó alkalmazása"
+  },
+  "loading": {
+    "message": "Betöltés..."
+  },
+  "activeOn": {
+    "message": "Aktív itt: "
+  },
+  "activeCurrent": {
+    "message": "Aktív itt: jelenlegi oldal"
+  },
+  "errorNoTab": {
+    "message": "Hiba: Nincs aktív lap"
+  },
+  "themeToggleTitle": {
+    "message": "Sötét/Világos mód"
+  },
+  "boostToggleTitle": {
+    "message": "Be/Ki kapcsolás"
+  },
+  "extremeToggleTitle": {
+    "message": "Extrém mód"
+  },
+  "resetBtnTitle": {
+    "message": "100%"
+  },
+  "langSelectTitle": {
+    "message": "Nyelv megváltoztatása"
+  },
+  "tabVolume": {
+    "message": "Hangerő"
+  },
+  "tabEQ": {
+    "message": "Hangszínszabályzó"
+  },
+  "tabUtils": {
+    "message": "Eszközök"
+  },
+  "bassBoost": {
+    "message": "Basszuskiemelés"
+  },
+  "balanceLR": {
+    "message": "Egyensúly (B/J)"
+  },
+  "monoMode": {
+    "message": "Monó Mód"
+  },
+  "panicMute": {
+    "message": "Többi Némítása"
+  },
+  "panicMuteDesc": {
+    "message": "Elnémítja az összes többi hangot lejátszó lapot."
+  },
+  "language": {
+    "message": "Nyelv"
+  },
+  "shortcuts": {
+    "message": "Gyorsbillentyűk:"
+  },
+  "muted": {
+    "message": "Némítva!"
+  },
+  "panicUnmute": {
+    "message": "Némítás feloldása (Többi)"
+  },
+  "unmuted": {
+    "message": "Némítás feloldva!"
+  },
+  "compressorMode": {
+    "message": "Torzításgátló"
+  },
+  "eqTitle": {
+    "message": "10 sávos hangszínszabályzó"
+  },
+  "eqReset": {
+    "message": "EQ visszaállítása"
+  },
+  "exportEqTitle": {
+    "message": "Export EQ"
+  },
+  "importEqTitle": {
+    "message": "Import EQ"
+  },
+  "manageShortcuts": {
+    "message": "Kezelése"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Pánik némítás"
+  },
+  "shortcutToggle": {
+    "message": "Váltás"
+  }
+}

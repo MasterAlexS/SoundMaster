@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Skaņas Meistars"
+  },
+  "extDesc": {
+    "message": "Uzlabota audio studija ar EQ, basu pastiprināšanu, Mono Downmix, Panic Mute un skaļuma pastiprinātāju."
+  },
+  "standardMode": {
+    "message": "Standarta"
+  },
+  "extremeMode": {
+    "message": "Ekstrēms"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Lietot pēdējo"
+  },
+  "loading": {
+    "message": "Ielādē..."
+  },
+  "activeOn": {
+    "message": "Aktīvs: "
+  },
+  "activeCurrent": {
+    "message": "Aktīvs: pašreizējā lapa"
+  },
+  "errorNoTab": {
+    "message": "Kļūda: Nav aktīvas cilnes"
+  },
+  "themeToggleTitle": {
+    "message": "Gaišais/Tumšais režīms"
+  },
+  "boostToggleTitle": {
+    "message": "Ieslēgt/Izslēgt"
+  },
+  "extremeToggleTitle": {
+    "message": "Ekstrēmais režīms"
+  },
+  "resetBtnTitle": {
+    "message": "100%"
+  },
+  "langSelectTitle": {
+    "message": "Mainīt valodu"
+  },
+  "tabVolume": {
+    "message": "Skaļums"
+  },
+  "tabEQ": {
+    "message": "Ekvalaizers"
+  },
+  "tabUtils": {
+    "message": "Rīki"
+  },
+  "bassBoost": {
+    "message": "Basu pastiprināšana"
+  },
+  "balanceLR": {
+    "message": "Balanss (K/L)"
+  },
+  "monoMode": {
+    "message": "Mono režīms"
+  },
+  "panicMute": {
+    "message": "Klusināt citus"
+  },
+  "panicMuteDesc": {
+    "message": "Klusina visas pārējās cilnes, kurās atskaņo skaņu."
+  },
+  "language": {
+    "message": "Valoda"
+  },
+  "shortcuts": {
+    "message": "Īsceļi:"
+  },
+  "muted": {
+    "message": "Apklusināts!"
+  },
+  "panicUnmute": {
+    "message": "Ieslēgt skaņu (Citi)"
+  },
+  "unmuted": {
+    "message": "Skaņa ieslēgta!"
+  },
+  "compressorMode": {
+    "message": "Pretkropļošana"
+  },
+  "eqTitle": {
+    "message": "10 joslu ekvalaizers"
+  },
+  "eqReset": {
+    "message": "Atiestatīt EQ"
+  },
+  "exportEqTitle": {
+    "message": "Eksportēt EQ"
+  },
+  "importEqTitle": {
+    "message": "Importēt EQ"
+  },
+  "manageShortcuts": {
+    "message": "Pārvaldīt"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Panikas klusums"
+  },
+  "shortcutToggle": {
+    "message": "Pārslēgt"
+  }
+}

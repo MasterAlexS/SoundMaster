@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="title-group">
+        <h2 data-i18n="extName">Sound Master</h2>
+        <div id="activeTabInfo" class="tab-info" data-i18n="loading">Loading...</div>
+      </div>
+      <div class="header-controls">
+        <button id="themeToggle" class="icon-btn" data-i18n-title="themeToggleTitle" title="Toggle Light/Dark Mode">🌓</button>
+        <label class="switch" data-i18n-title="boostToggleTitle" title="Toggle Boost ON/OFF">
+          <input type="checkbox" id="masterToggle">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="tabs-nav">
+      <button class="tab-btn active" data-target="tab-volume" data-i18n="tabVolume">Volume</button>
+      <button class="tab-btn" data-target="tab-eq" data-i18n="tabEQ">Equalizer</button>
+      <button class="tab-btn" data-target="tab-utils" data-i18n="tabUtils">Utils</button>
+    </div>
+
+    <div class="tab-content active" id="tab-volume">
+      <div class="limit-toggle-group">
+        <span class="label"><span data-i18n="standardMode">Standard</span> (600%)</span>
+        <label class="switch small" data-i18n-title="extremeToggleTitle" title="Toggle 1000% Extreme Mode">
+          <input type="checkbox" id="limitToggle">
+          <span class="slider round"></span>
+        </label>
+        <span class="label extreme"><span data-i18n="extremeMode">Extreme</span> (1000%)</span>
+      </div>
+
+      <div class="slider-wrapper">
+        <div id="volumeValue" class="glow-green">100%</div>
+        <input type="range" id="volumeSlider" min="0" max="600" step="10" value="100">
+      </div>
+
+      <div class="button-group" style="margin-top: 5px;">
+        <button id="resetBtn" data-i18n-title="resetBtnTitle" title="Set to 100%">100%</button>
+        <button id="applyLastBtn"><span data-i18n="applyLastBtn">Apply Last</span>: <span id="lastVolText">100%</span></button>
+      </div>
+
+      <div class="toggle-group-row" style="margin-top: 12px;">
+        <span class="label"><span data-i18n="compressorMode">Anti-Distortion</span></span>
+        <label class="switch small">
+          <input type="checkbox" id="compressorToggle">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="tab-content" id="tab-eq">
+      <div class="slider-group">
+        <label><span data-i18n="bassBoost">Bass Boost</span> <span id="bassValue">0dB</span></label>
+        <input type="range" id="bassSlider" min="0" max="15" step="1" value="0">
+      </div>
+
+      <div class="eq-section">
+        <div class="eq-header">
+          <div class="eq-title-row">
+            <strong data-i18n="eqTitle">10-Band Equalizer</strong>
+            <label class="switch small" title="Toggle EQ">
+              <input type="checkbox" id="eqToggle" checked>
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="eq-actions">
+            <button id="exportEqBtn" class="small-btn" data-i18n-title="exportEqTitle" title="Export EQ">📤</button>
+            <button id="importEqBtn" class="small-btn" data-i18n-title="importEqTitle" title="Import EQ">📥</button>
+            <button id="resetEqBtn" class="small-btn" data-i18n="eqReset">Reset EQ</button>
+            <input type="file" id="importEqFile" accept=".json" style="display: none;">
+          </div>
+        </div>
+        <div class="eq-sliders">
+          <div class="eq-band"><input type="range" orient="vertical" class="eq-slider" data-band="0" min="-12" max="12" step="1" value="0"><span class="eq-label">32</span><input type="number" class="eq-num" data-band="0" min="-12" max="12" value="0"></div>
+          <div class="eq-band"><input type="range" orient="vertical" class="eq-slider" data-band="1" min="-12" max="12" step="1" value="0"><span class="eq-label">64</span><input type="number" class="eq-num" data-band="1" min="-12" max="12" value="0"></div>
+          <div class="eq-band"><input type="range" orient="vertical" class="eq-slider" data-band="2" min="-12" max="12" step="1" value="0"><span class="eq-label">125</span><input type="number" class="eq-num" data-band="2" min="-12" max="12" value="0"></div>
+          <div class="eq-band"><input type="range" orient="vertical" class="eq-slider" data-band="3" min="-12" max="12" step="1" value="0"><span class="eq-label">250</span><input type="number" class="eq-num" data-band="3" min="-12" max="12" value="0"></div>
+          <div class="eq-band"><input type="range" orient="vertical" class="eq-slider" data-band="4" min="-12" max="12" step="1" value="0"><span class="eq-label">500</span><input type="number" class="eq-num" data-band="4" min="-12" max="12" value="0"></div>
+          <div class="eq-band"><input type="range" orient="vertical" class="eq-slider" data-band="5" min="-12" max="12" step="1" value="0"><span class="eq-label">1k</span><input type="number" class="eq-num" data-band="5" min="-12" max="12" value="0"></div>
+          <div class="eq-band"><input type="range" orient="vertical" class="eq-slider" data-band="6" min="-12" max="12" step="1" value="0"><span class="eq-label">2k</span><input type="number" class="eq-num" data-band="6" min="-12" max="12" value="0"></div>
+          <div class="eq-band"><input type="range" orient="vertical" class="eq-slider" data-band="7" min="-12" max="12" step="1" value="0"><span class="eq-label">4k</span><input type="number" class="eq-num" data-band="7" min="-12" max="12" value="0"></div>
+          <div class="eq-band"><input type="range" orient="vertical" class="eq-slider" data-band="8" min="-12" max="12" step="1" value="0"><span class="eq-label">8k</span><input type="number" class="eq-num" data-band="8" min="-12" max="12" value="0"></div>
+          <div class="eq-band"><input type="range" orient="vertical" class="eq-slider" data-band="9" min="-12" max="12" step="1" value="0"><span class="eq-label">16k</span><input type="number" class="eq-num" data-band="9" min="-12" max="12" value="0"></div>
+        </div>
+      </div>
+      <div class="slider-group">
+        <label><span data-i18n="balanceLR">Balance (L/R)</span> <span id="balanceValue">C</span></label>
+        <input type="range" id="balanceSlider" min="-1" max="1" step="0.1" value="0">
+      </div>
+
+      <div class="toggle-group-row" style="margin-top: 8px;">
+        <span class="label"><span data-i18n="monoMode">Mono Mode</span></span>
+        <label class="switch small">
+          <input type="checkbox" id="monoToggle">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="tab-content" id="tab-utils">
+      <div class="utils-section">
+        <button id="panicMuteBtn" class="danger-btn">Panic Mute (Others)</button>
+        <p class="help-text" data-i18n="panicMuteDesc">Mutes all other tabs playing audio.</p>
+      </div>
+      <div class="utils-section">
+        <label data-i18n="language">Language</label>
+        <select id="langSelect" class="lang-select" data-i18n-title="langSelectTitle" title="Change Language"></select>
+      </div>
+      <div class="utils-section commands-info">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+          <strong data-i18n="shortcuts">Shortcuts:</strong>
+          <span id="manageShortcutsLink" style="color: var(--accent-color); font-size: 11px; cursor: pointer;" data-i18n="manageShortcuts">Manage</span>
+        </div>
+        <div id="firefoxShortcutsMsg" style="display: none; background: rgba(255,165,0,0.2); padding: 8px; border-radius: 6px; font-size: 11px; margin-bottom: 8px;">
+          ℹ️ In Firefox, open <b>about:addons</b> in a new tab, click the ⚙️ icon, and select <i>Manage Extension Shortcuts</i>.
+        </div>
+        <ul id="shortcutsList" class="shortcuts-list">
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

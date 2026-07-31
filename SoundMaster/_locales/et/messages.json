@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Helimeister"
+  },
+  "extDesc": {
+    "message": "Täiustatud audiostuudio EQ, bassivõimenduse, Mono Downmixi, Panic Mute'i ja helivõimendiga."
+  },
+  "standardMode": {
+    "message": "Standard"
+  },
+  "extremeMode": {
+    "message": "Ekstreemne"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Rakenda viimane"
+  },
+  "loading": {
+    "message": "Laadimine..."
+  },
+  "activeOn": {
+    "message": "Aktiivne: "
+  },
+  "activeCurrent": {
+    "message": "Aktiivne: praegune leht"
+  },
+  "errorNoTab": {
+    "message": "Viga: Aktiivset vahekaarti pole"
+  },
+  "themeToggleTitle": {
+    "message": "Hele/Tume režiim"
+  },
+  "boostToggleTitle": {
+    "message": "Sisse/Välja"
+  },
+  "extremeToggleTitle": {
+    "message": "Ekstreemne režiim"
+  },
+  "resetBtnTitle": {
+    "message": "100%"
+  },
+  "langSelectTitle": {
+    "message": "Muuda keelt"
+  },
+  "tabVolume": {
+    "message": "Helitugevus"
+  },
+  "tabEQ": {
+    "message": "Ekvalaiser"
+  },
+  "tabUtils": {
+    "message": "Tööriistad"
+  },
+  "bassBoost": {
+    "message": "Bassi võimendus"
+  },
+  "balanceLR": {
+    "message": "Tasakaal (V/P)"
+  },
+  "monoMode": {
+    "message": "Mono režiim"
+  },
+  "panicMute": {
+    "message": "Vaigista teised"
+  },
+  "panicMuteDesc": {
+    "message": "Vaigistab kõik teised heli esitavad vahelehed."
+  },
+  "language": {
+    "message": "Keel"
+  },
+  "shortcuts": {
+    "message": "Otseteed:"
+  },
+  "muted": {
+    "message": "Vaigistatud!"
+  },
+  "panicUnmute": {
+    "message": "Taasta heli (Teised)"
+  },
+  "unmuted": {
+    "message": "Heli taastatud!"
+  },
+  "compressorMode": {
+    "message": "Moonutuste vastane"
+  },
+  "eqTitle": {
+    "message": "10-ribaline ekvalaiser"
+  },
+  "eqReset": {
+    "message": "Lähtesta EQ"
+  },
+  "exportEqTitle": {
+    "message": "Ekspordi EQ"
+  },
+  "importEqTitle": {
+    "message": "Import EQ"
+  },
+  "manageShortcuts": {
+    "message": "Halda"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Paanika vaigistus"
+  },
+  "shortcutToggle": {
+    "message": "Lülita"
+  }
+}

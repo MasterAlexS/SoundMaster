@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Mestre del So"
+  },
+  "extDesc": {
+    "message": "Estudi d'àudio avançat amb EQ, Bass Boost, Mono Downmix, Panic Mute i Volume Booster."
+  },
+  "standardMode": {
+    "message": "Estàndard"
+  },
+  "extremeMode": {
+    "message": "Extrem"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Aplica últim"
+  },
+  "loading": {
+    "message": "Carregant..."
+  },
+  "activeOn": {
+    "message": "Actiu a: "
+  },
+  "activeCurrent": {
+    "message": "Actiu a: pàgina actual"
+  },
+  "errorNoTab": {
+    "message": "Error: Cap pestanya"
+  },
+  "themeToggleTitle": {
+    "message": "Mode Clar/Fosc"
+  },
+  "boostToggleTitle": {
+    "message": "Activar/Desactivar"
+  },
+  "extremeToggleTitle": {
+    "message": "Mode Extrem"
+  },
+  "resetBtnTitle": {
+    "message": "100%"
+  },
+  "langSelectTitle": {
+    "message": "Canviar d'idioma"
+  },
+  "tabVolume": {
+    "message": "Volum"
+  },
+  "tabEQ": {
+    "message": "Eualitzador"
+  },
+  "tabUtils": {
+    "message": "Utilitats"
+  },
+  "bassBoost": {
+    "message": "Potenciador de Greus"
+  },
+  "balanceLR": {
+    "message": "Balanç (E/D)"
+  },
+  "monoMode": {
+    "message": "Mode Mono"
+  },
+  "panicMute": {
+    "message": "Silenciar (Altres)"
+  },
+  "panicMuteDesc": {
+    "message": "Silencia totes les altres pestanyes que reprodueixen àudio."
+  },
+  "language": {
+    "message": "Idioma"
+  },
+  "shortcuts": {
+    "message": "Dreceres:"
+  },
+  "muted": {
+    "message": "Silenciat!"
+  },
+  "panicUnmute": {
+    "message": "Activar so (Altres)"
+  },
+  "unmuted": {
+    "message": "So activat!"
+  },
+  "compressorMode": {
+    "message": "Anti-distorsió"
+  },
+  "eqTitle": {
+    "message": "Equalitzador de 10 bandes"
+  },
+  "eqReset": {
+    "message": "Restableix EQ"
+  },
+  "exportEqTitle": {
+    "message": "Exporta EQ"
+  },
+  "importEqTitle": {
+    "message": "Importa EQ"
+  },
+  "manageShortcuts": {
+    "message": "Gestionar"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Pànic Mut"
+  },
+  "shortcutToggle": {
+    "message": "Commuta"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "साउंड मास्टर"
+  },
+  "extDesc": {
+    "message": "EQ, बास बूस्ट, मोनो डाउनमिक्स, पैनिक म्यूट और वॉल्यूम बूस्टर के साथ उन्नत ऑडियो स्टूडियो।"
+  },
+  "standardMode": {
+    "message": "मानक"
+  },
+  "extremeMode": {
+    "message": "चरम"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "अंतिम लागू करें"
+  },
+  "loading": {
+    "message": "लोड हो रहा है..."
+  },
+  "activeOn": {
+    "message": "पर सक्रिय: "
+  },
+  "activeCurrent": {
+    "message": "पर सक्रिय: वर्तमान पृष्ठ"
+  },
+  "errorNoTab": {
+    "message": "त्रुटि: कोई सक्रिय टैब नहीं मिला"
+  },
+  "themeToggleTitle": {
+    "message": "लाइट/डार्क मोड टॉगल करें"
+  },
+  "boostToggleTitle": {
+    "message": "बूस्ट चालू/बंद करें"
+  },
+  "extremeToggleTitle": {
+    "message": "1000% चरम मोड टॉगल करें"
+  },
+  "resetBtnTitle": {
+    "message": "100% पर सेट करें"
+  },
+  "langSelectTitle": {
+    "message": "भाषा बदलें"
+  },
+  "tabVolume": {
+    "message": "वॉल्यूम"
+  },
+  "tabEQ": {
+    "message": "इक्वलाइज़र"
+  },
+  "tabUtils": {
+    "message": "उपकरण"
+  },
+  "bassBoost": {
+    "message": "बास बूस्ट"
+  },
+  "balanceLR": {
+    "message": "बैलेंस (L/R)"
+  },
+  "monoMode": {
+    "message": "मोनो मोड"
+  },
+  "panicMute": {
+    "message": "अन्य म्यूट करें"
+  },
+  "panicMuteDesc": {
+    "message": "ऑडियो चला रहे अन्य सभी टैब को म्यूट करता है।"
+  },
+  "language": {
+    "message": "भाषा"
+  },
+  "shortcuts": {
+    "message": "शॉर्टकट:"
+  },
+  "muted": {
+    "message": "म्यूट किया गया!"
+  },
+  "panicUnmute": {
+    "message": "अनम्यूट करें (अन्य)"
+  },
+  "unmuted": {
+    "message": "अनम्यूट किया गया!"
+  },
+  "compressorMode": {
+    "message": "एंटी-डिस्टॉर्शन"
+  },
+  "eqTitle": {
+    "message": "10-बैंड इक्वलाइज़र"
+  },
+  "eqReset": {
+    "message": "EQ रीसेट करें"
+  },
+  "exportEqTitle": {
+    "message": "निर्यात ईक्यू"
+  },
+  "importEqTitle": {
+    "message": "ईक्यू आयात करें"
+  },
+  "manageShortcuts": {
+    "message": "प्रबंधित करना"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "पैनिक म्यूट"
+  },
+  "shortcutToggle": {
+    "message": "टॉगल"
+  }
+}

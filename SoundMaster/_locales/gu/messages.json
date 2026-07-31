@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "સાઉન્ડ માસ્ટર"
+  },
+  "extDesc": {
+    "message": "EQ, બાસ બૂસ્ટ, મોનો ડાઉનમિક્સ, પેનિક મ્યૂટ અને વોલ્યુમ બૂસ્ટર સાથે અદ્યતન ઑડિયો સ્ટુડિયો."
+  },
+  "standardMode": {
+    "message": "માનક"
+  },
+  "extremeMode": {
+    "message": "આત્યંતિક"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "છેલ્લું લાગુ કરો"
+  },
+  "loading": {
+    "message": "લોડ થઈ રહ્યું છે..."
+  },
+  "activeOn": {
+    "message": "પર સક્રિય: "
+  },
+  "activeCurrent": {
+    "message": "પર સક્રિય: વર્તમાન પૃષ્ઠ"
+  },
+  "errorNoTab": {
+    "message": "ભૂલ: કોઈ સક્રિય ટેબ નથી"
+  },
+  "themeToggleTitle": {
+    "message": "લાઇટ/ડાર્ક મોડ"
+  },
+  "boostToggleTitle": {
+    "message": "બૂસ્ટ ચાલુ/બંધ"
+  },
+  "extremeToggleTitle": {
+    "message": "આત્યંતિક મોડ"
+  },
+  "resetBtnTitle": {
+    "message": "100% સેટ કરો"
+  },
+  "langSelectTitle": {
+    "message": "ભાષા બદલો"
+  },
+  "tabVolume": {
+    "message": "વોલ્યુમ"
+  },
+  "tabEQ": {
+    "message": "ઇક્વેલાઇઝર"
+  },
+  "tabUtils": {
+    "message": "ઉપયોગિતાઓ"
+  },
+  "bassBoost": {
+    "message": "બાસ બુસ્ટ"
+  },
+  "balanceLR": {
+    "message": "બેલેન્સ (L/R)"
+  },
+  "monoMode": {
+    "message": "મોનો મોડ"
+  },
+  "panicMute": {
+    "message": "અન્ય મ્યૂટ કરો"
+  },
+  "panicMuteDesc": {
+    "message": "ઑડિયો ચલાવતા અન્ય બધા ટૅબ્સને મ્યૂટ કરે છે."
+  },
+  "language": {
+    "message": "ભાષા"
+  },
+  "shortcuts": {
+    "message": "શોર્ટકટ્સ:"
+  },
+  "muted": {
+    "message": "મ્યૂટ કરેલ!"
+  },
+  "panicUnmute": {
+    "message": "અનમ્યૂટ કરો (અન્ય)"
+  },
+  "unmuted": {
+    "message": "અનમ્યૂટ કર્યું!"
+  },
+  "compressorMode": {
+    "message": "એન્ટી-ડિસ્ટોર્શન"
+  },
+  "eqTitle": {
+    "message": "10-બેન્ડ ઇક્વેલાઇઝર"
+  },
+  "eqReset": {
+    "message": "EQ રીસેટ કરો"
+  },
+  "exportEqTitle": {
+    "message": "EQ નિકાસ કરો"
+  },
+  "importEqTitle": {
+    "message": "EQ આયાત કરો"
+  },
+  "manageShortcuts": {
+    "message": "મેનેજ કરો"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "ગભરાટ મ્યૂટ"
+  },
+  "shortcutToggle": {
+    "message": "ટૉગલ કરો"
+  }
+}

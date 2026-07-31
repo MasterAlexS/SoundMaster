@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "聲音大師"
+  },
+  "extDesc": {
+    "message": "具有均衡器、低音增強、單聲道縮混、緊急靜音和音量增強器的高階音訊工作室。"
+  },
+  "standardMode": {
+    "message": "标准"
+  },
+  "extremeMode": {
+    "message": "极限"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "应用上一次"
+  },
+  "loading": {
+    "message": "加载中..."
+  },
+  "activeOn": {
+    "message": "激活于: "
+  },
+  "activeCurrent": {
+    "message": "激活于: 当前页面"
+  },
+  "errorNoTab": {
+    "message": "错误：未找到活动标签"
+  },
+  "themeToggleTitle": {
+    "message": "切换明暗模式"
+  },
+  "boostToggleTitle": {
+    "message": "开启/关闭音量放大"
+  },
+  "extremeToggleTitle": {
+    "message": "开启/关闭 1000% 极限模式"
+  },
+  "resetBtnTitle": {
+    "message": "设置为 100%"
+  },
+  "langSelectTitle": {
+    "message": "更改語言"
+  },
+  "tabVolume": {
+    "message": "音量"
+  },
+  "tabEQ": {
+    "message": "均衡器"
+  },
+  "tabUtils": {
+    "message": "工具"
+  },
+  "bassBoost": {
+    "message": "低音增強"
+  },
+  "balanceLR": {
+    "message": "左右平衡"
+  },
+  "monoMode": {
+    "message": "單聲道模式"
+  },
+  "panicMute": {
+    "message": "靜音其他標籤"
+  },
+  "panicMuteDesc": {
+    "message": "將所有其他正在播放音訊的標籤靜音。"
+  },
+  "language": {
+    "message": "語言"
+  },
+  "shortcuts": {
+    "message": "快捷鍵:"
+  },
+  "muted": {
+    "message": "已靜音!"
+  },
+  "panicUnmute": {
+    "message": "取消靜音 (其他)"
+  },
+  "unmuted": {
+    "message": "已取消靜音！"
+  },
+  "compressorMode": {
+    "message": "防破音"
+  },
+  "eqTitle": {
+    "message": "10段均衡器"
+  },
+  "eqReset": {
+    "message": "重設EQ"
+  },
+  "exportEqTitle": {
+    "message": "Export EQ"
+  },
+  "importEqTitle": {
+    "message": "Import EQ"
+  },
+  "manageShortcuts": {
+    "message": "Manage"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Panic Mute"
+  },
+  "shortcutToggle": {
+    "message": "Toggle"
+  }
+}

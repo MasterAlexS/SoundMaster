@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Masta wa Sauti"
+  },
+  "extDesc": {
+    "message": "Studio ya Sauti ya Kina iliyo na EQ, Bass Boost, Mono Downmix, Panic Mute, na Nyongeza ya Kiasi."
+  },
+  "standardMode": {
+    "message": "Kawaida"
+  },
+  "extremeMode": {
+    "message": "Kali"
+  },
+  "resetBtn": {
+    "message": "100%"
+  },
+  "applyLastBtn": {
+    "message": "Weka ya Mwisho"
+  },
+  "loading": {
+    "message": "Inapakia..."
+  },
+  "activeOn": {
+    "message": "Imewashwa: "
+  },
+  "activeCurrent": {
+    "message": "Imewashwa: ukurasa wa sasa"
+  },
+  "errorNoTab": {
+    "message": "Hitilafu: Hakuna tabo inayotumika"
+  },
+  "themeToggleTitle": {
+    "message": "Modi ya Giza/Mwangaza"
+  },
+  "boostToggleTitle": {
+    "message": "Washa/Zima Kikuza"
+  },
+  "extremeToggleTitle": {
+    "message": "Modi Kali"
+  },
+  "resetBtnTitle": {
+    "message": "Weka 100%"
+  },
+  "langSelectTitle": {
+    "message": "Badilisha Lugha"
+  },
+  "tabVolume": {
+    "message": "Sauti"
+  },
+  "tabEQ": {
+    "message": "Kusawazisha"
+  },
+  "tabUtils": {
+    "message": "Zana"
+  },
+  "bassBoost": {
+    "message": "Kuongeza Besi"
+  },
+  "balanceLR": {
+    "message": "Usawa (K/K)"
+  },
+  "monoMode": {
+    "message": "Hali ya Mono"
+  },
+  "panicMute": {
+    "message": "Nyamazisha Mengine"
+  },
+  "panicMuteDesc": {
+    "message": "Hunyamazisha vichupo vingine vyote vinavyocheza sauti."
+  },
+  "language": {
+    "message": "Lugha"
+  },
+  "shortcuts": {
+    "message": "Njia za mkato:"
+  },
+  "muted": {
+    "message": "Kimya!"
+  },
+  "panicUnmute": {
+    "message": "Rejesha sauti (Mengine)"
+  },
+  "unmuted": {
+    "message": "Sauti imerejeshwa!"
+  },
+  "compressorMode": {
+    "message": "Kizuia Upotoshaji"
+  },
+  "eqTitle": {
+    "message": "Kisawazisha cha Bendi 10"
+  },
+  "eqReset": {
+    "message": "Weka upya EQ"
+  },
+  "exportEqTitle": {
+    "message": "Hamisha EQ"
+  },
+  "importEqTitle": {
+    "message": "Ingiza EQ"
+  },
+  "manageShortcuts": {
+    "message": "Dhibiti"
+  },
+  "shortcutVolUp": {
+    "message": "Vol +"
+  },
+  "shortcutVolDown": {
+    "message": "Vol -"
+  },
+  "shortcutPanicMute": {
+    "message": "Hofu Nyamaza"
+  },
+  "shortcutToggle": {
+    "message": "Geuza"
+  }
+}
