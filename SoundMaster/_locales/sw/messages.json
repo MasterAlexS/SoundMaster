@@ -12,7 +12,7 @@
     "message": "Kali"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Weka upya"
   },
   "applyLastBtn": {
     "message": "Weka ya Mwisho"
@@ -39,7 +39,7 @@
     "message": "Modi Kali"
   },
   "resetBtnTitle": {
-    "message": "Weka 100%"
+    "message": "Weka kwa Chaguomsingi"
   },
   "langSelectTitle": {
     "message": "Badilisha Lugha"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Geuza"
+  },
+  "syncTabsText": {
+    "message": "Sawazisha Vichupo Vyote"
+  },
+  "syncTabsTitle": {
+    "message": "Tumia sauti ya sasa kwenye vichupo vyote kwenye kikoa hiki"
+  },
+  "syncSuccess": {
+    "message": "✓ Imesawazishwa!"
   }
 }

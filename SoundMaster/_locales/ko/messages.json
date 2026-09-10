@@ -12,7 +12,7 @@
     "message": "극한"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "다시 놓기"
   },
   "applyLastBtn": {
     "message": "마지막 적용"
@@ -39,7 +39,7 @@
     "message": "1000% 극한 모드 전환"
   },
   "resetBtnTitle": {
-    "message": "100%로 설정"
+    "message": "기본값으로 설정"
   },
   "langSelectTitle": {
     "message": "언어 변경"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "비녀장"
+  },
+  "syncTabsText": {
+    "message": "모든 탭 동기화"
+  },
+  "syncTabsTitle": {
+    "message": "이 도메인의 모든 탭에 현재 볼륨 적용"
+  },
+  "syncSuccess": {
+    "message": "✓ 동기화됨!"
   }
 }

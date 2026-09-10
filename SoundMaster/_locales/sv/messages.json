@@ -12,7 +12,7 @@
     "message": "Extrem"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Återställa"
   },
   "applyLastBtn": {
     "message": "Använd Senaste"
@@ -39,7 +39,7 @@
     "message": "Växla 1000% Extremt Läge"
   },
   "resetBtnTitle": {
-    "message": "Ställ in på 100%"
+    "message": "Ställ in som standard"
   },
   "langSelectTitle": {
     "message": "Ändra språk"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Växla"
+  },
+  "syncTabsText": {
+    "message": "Synkronisera alla flikar"
+  },
+  "syncTabsTitle": {
+    "message": "Tillämpa aktuell volym på alla flikar på denna domän"
+  },
+  "syncSuccess": {
+    "message": "✓ Synkroniserad!"
   }
 }

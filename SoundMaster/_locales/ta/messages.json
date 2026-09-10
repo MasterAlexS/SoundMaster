@@ -12,7 +12,7 @@
     "message": "கடுமையான"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "மீட்டமை"
   },
   "applyLastBtn": {
     "message": "கடைசியாகப் பயன்படுத்து"
@@ -39,7 +39,7 @@
     "message": "கடுமையான மோட்"
   },
   "resetBtnTitle": {
-    "message": "100% ஆக அமை"
+    "message": "இயல்புநிலைக்கு அமைக்கவும்"
   },
   "langSelectTitle": {
     "message": "மொழியை மாற்று"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "நிலைமாற்று"
+  },
+  "syncTabsText": {
+    "message": "அனைத்து தாவல்களையும் ஒத்திசை"
+  },
+  "syncTabsTitle": {
+    "message": "இந்த டொமைனில் உள்ள அனைத்து தாவல்களுக்கும் தற்போதைய ஒலியளவைப் பயன்படுத்து"
+  },
+  "syncSuccess": {
+    "message": "✓ ஒத்திசைக்கப்பட்டது!"
   }
 }

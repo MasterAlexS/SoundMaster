@@ -12,7 +12,7 @@
     "message": "Extrem"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Restableix"
   },
   "applyLastBtn": {
     "message": "Aplica últim"
@@ -39,7 +39,7 @@
     "message": "Mode Extrem"
   },
   "resetBtnTitle": {
-    "message": "100%"
+    "message": "Estableix com a predeterminat"
   },
   "langSelectTitle": {
     "message": "Canviar d'idioma"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Commuta"
+  },
+  "syncTabsText": {
+    "message": "Sincronitza totes les pestanyes"
+  },
+  "syncTabsTitle": {
+    "message": "Aplica el volum actual a totes les pestanyes d'aquest domini"
+  },
+  "syncSuccess": {
+    "message": "✓ Sincronitzat!"
   }
 }

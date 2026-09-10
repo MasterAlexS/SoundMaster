@@ -12,7 +12,7 @@
     "message": "エクストリーム"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "リセット"
   },
   "applyLastBtn": {
     "message": "前回を適用"
@@ -39,7 +39,7 @@
     "message": "1000% エクストリームモード"
   },
   "resetBtnTitle": {
-    "message": "100%に設定"
+    "message": "デフォルトに設定"
   },
   "langSelectTitle": {
     "message": "言語を変更"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "トグル"
+  },
+  "syncTabsText": {
+    "message": "すべてのタブを同期"
+  },
+  "syncTabsTitle": {
+    "message": "このドメインのすべてのタブに現在の音量を適用"
+  },
+  "syncSuccess": {
+    "message": "✓ 同期完了！"
   }
 }

@@ -469,7 +469,7 @@ input[type=range]::-moz-range-thumb {
   border: 1px solid var(--border-color);
 }
 
-.slider-group label {
+.slider-group label, .slider-group .slider-header {
   font-size: 13px;
   font-weight: 600;
   display: flex;

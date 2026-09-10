@@ -12,7 +12,7 @@
     "message": "Ekstrem"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Mengatur ulang"
   },
   "applyLastBtn": {
     "message": "Terapkan Terakhir"
@@ -39,7 +39,7 @@
     "message": "Mode Ekstrem"
   },
   "resetBtnTitle": {
-    "message": "100%"
+    "message": "Setel ke Bawaan"
   },
   "langSelectTitle": {
     "message": "Ubah Bahasa"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Beralih"
+  },
+  "syncTabsText": {
+    "message": "Sinkronkan Semua Tab"
+  },
+  "syncTabsTitle": {
+    "message": "Terapkan volume saat ini ke semua tab di domain ini"
+  },
+  "syncSuccess": {
+    "message": "✓ Disinkronkan!"
   }
 }

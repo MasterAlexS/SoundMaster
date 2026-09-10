@@ -12,7 +12,7 @@
     "message": "Екстремно"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Ресетуј"
   },
   "applyLastBtn": {
     "message": "Примени Последње"
@@ -39,7 +39,7 @@
     "message": "Екстремни Режим"
   },
   "resetBtnTitle": {
-    "message": "100%"
+    "message": "Подесите на подразумевано"
   },
   "langSelectTitle": {
     "message": "Промени језик"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Пребаци"
+  },
+  "syncTabsText": {
+    "message": "Синхронизуј све картице"
+  },
+  "syncTabsTitle": {
+    "message": "Примени тренутну јачину звука на све картице на овом домену"
+  },
+  "syncSuccess": {
+    "message": "✓ Синхронизовано!"
   }
 }

@@ -12,7 +12,7 @@
     "message": "Ekstrēms"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Atiestatīt"
   },
   "applyLastBtn": {
     "message": "Lietot pēdējo"
@@ -39,7 +39,7 @@
     "message": "Ekstrēmais režīms"
   },
   "resetBtnTitle": {
-    "message": "100%"
+    "message": "Iestatīt uz Noklusējums"
   },
   "langSelectTitle": {
     "message": "Mainīt valodu"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Pārslēgt"
+  },
+  "syncTabsText": {
+    "message": "Sinhronizēt visas cilnes"
+  },
+  "syncTabsTitle": {
+    "message": "Lietot pašreizējo skaļumu visām šī domēna cilnēm"
+  },
+  "syncSuccess": {
+    "message": "✓ Sinhronizēts!"
   }
 }

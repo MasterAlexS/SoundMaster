@@ -12,7 +12,7 @@
     "message": "Extreme"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Reset"
   },
   "applyLastBtn": {
     "message": "Apply Last"
@@ -39,7 +39,7 @@
     "message": "Toggle 1000% Extreme Mode"
   },
   "resetBtnTitle": {
-    "message": "Set to 100%"
+    "message": "Set to Default"
   },
   "langSelectTitle": {
     "message": "Change Language"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Toggle"
+  },
+  "syncTabsText": {
+    "message": "Sync All Tabs"
+  },
+  "syncTabsTitle": {
+    "message": "Apply current volume to all tabs on this domain"
+  },
+  "syncSuccess": {
+    "message": "✓ Synced!"
   }
 }

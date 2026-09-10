@@ -12,7 +12,7 @@
     "message": "తీవ్రమైన"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "రీసెట్ చేయండి"
   },
   "applyLastBtn": {
     "message": "చివరిగా వర్తించు"
@@ -39,7 +39,7 @@
     "message": "తీవ్రమైన మోడ్"
   },
   "resetBtnTitle": {
-    "message": "100% సెట్ చేయండి"
+    "message": "డిఫాల్ట్‌కి సెట్ చేయండి"
   },
   "langSelectTitle": {
     "message": "భాషను మార్చండి"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "టోగుల్ చేయండి"
+  },
+  "syncTabsText": {
+    "message": "అన్ని ట్యాబ్‌లను సింక్ చేయి"
+  },
+  "syncTabsTitle": {
+    "message": "ఈ డొమైన్‌లోని అన్ని ట్యాబ్‌లకు ప్రస్తుత వాల్యూమ్‌ను వర్తింపజేయి"
+  },
+  "syncSuccess": {
+    "message": "✓ సింక్ చేయబడింది!"
   }
 }

@@ -12,7 +12,7 @@
     "message": "Ακραία"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Επαναφορά"
   },
   "applyLastBtn": {
     "message": "Εφαρμογή Τελευταίου"
@@ -39,7 +39,7 @@
     "message": "Εναλλαγή Ακραίας Λειτουργίας 1000%"
   },
   "resetBtnTitle": {
-    "message": "Ορισμός σε 100%"
+    "message": "Ορίστε σε Προεπιλογή"
   },
   "langSelectTitle": {
     "message": "Αλλαγή Γλώσσας"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Μπαρέτα"
+  },
+  "syncTabsText": {
+    "message": "Συγχρονισμός όλων των καρτελών"
+  },
+  "syncTabsTitle": {
+    "message": "Εφαρμογή της τρέχουσας έντασης σε όλες τις καρτέλες σε αυτόν τον τομέα"
+  },
+  "syncSuccess": {
+    "message": "✓ Συγχρονίστηκε!"
   }
 }

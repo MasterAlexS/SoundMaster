@@ -12,7 +12,7 @@
     "message": "สุดขีด"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "รีเซ็ต"
   },
   "applyLastBtn": {
     "message": "ใช้ล่าสุด"
@@ -39,7 +39,7 @@
     "message": "โหมดสุดขีด"
   },
   "resetBtnTitle": {
-    "message": "100%"
+    "message": "ตั้งเป็นค่าเริ่มต้น"
   },
   "langSelectTitle": {
     "message": "เปลี่ยนภาษา"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "สลับ"
+  },
+  "syncTabsText": {
+    "message": "ซิงค์แท็บทั้งหมด"
+  },
+  "syncTabsTitle": {
+    "message": "ใช้ระดับเสียงปัจจุบันกับแท็บทั้งหมดในโดเมนนี้"
+  },
+  "syncSuccess": {
+    "message": "✓ ซิงค์แล้ว!"
   }
 }

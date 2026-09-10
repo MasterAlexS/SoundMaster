@@ -12,7 +12,7 @@
     "message": "Ekstreemne"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Lähtesta"
   },
   "applyLastBtn": {
     "message": "Rakenda viimane"
@@ -39,7 +39,7 @@
     "message": "Ekstreemne režiim"
   },
   "resetBtnTitle": {
-    "message": "100%"
+    "message": "Seadista Vaikimisi"
   },
   "langSelectTitle": {
     "message": "Muuda keelt"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Lülita"
+  },
+  "syncTabsText": {
+    "message": "Sünkrooni kõik vahelehed"
+  },
+  "syncTabsTitle": {
+    "message": "Rakenda praegune helitugevus kõigile selle domeeni vahelehtedele"
+  },
+  "syncSuccess": {
+    "message": "✓ Sünkroonitud!"
   }
 }

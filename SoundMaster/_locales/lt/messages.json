@@ -12,7 +12,7 @@
     "message": "Ekstremalus"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Nustatyti iš naujo"
   },
   "applyLastBtn": {
     "message": "Taikyti paskutinį"
@@ -39,7 +39,7 @@
     "message": "Ekstremalus režimas"
   },
   "resetBtnTitle": {
-    "message": "100%"
+    "message": "Nustatyti į Numatytuosius"
   },
   "langSelectTitle": {
     "message": "Pakeisti kalbą"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Perjungti"
+  },
+  "syncTabsText": {
+    "message": "Sinchronizuoti visus skirtukus"
+  },
+  "syncTabsTitle": {
+    "message": "Pritaikyti dabartinį garsumą visiems šio domeno skirtukams"
+  },
+  "syncSuccess": {
+    "message": "✓ Sinchronizuota!"
   }
 }

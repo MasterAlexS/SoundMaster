@@ -12,7 +12,7 @@
     "message": "આત્યંતિક"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "રીસેટ કરો"
   },
   "applyLastBtn": {
     "message": "છેલ્લું લાગુ કરો"
@@ -39,7 +39,7 @@
     "message": "આત્યંતિક મોડ"
   },
   "resetBtnTitle": {
-    "message": "100% સેટ કરો"
+    "message": "ડિફૉલ્ટ પર સેટ કરો"
   },
   "langSelectTitle": {
     "message": "ભાષા બદલો"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "ટૉગલ કરો"
+  },
+  "syncTabsText": {
+    "message": "બધા ટૅબ્સ સમન્વયિત કરો"
+  },
+  "syncTabsTitle": {
+    "message": "આ ડોમેન પરનાં બધા ટૅબ્સ પર વર્તમાન વૉલ્યુમ લાગુ કરો"
+  },
+  "syncSuccess": {
+    "message": "✓ સમન્વયિત!"
   }
 }

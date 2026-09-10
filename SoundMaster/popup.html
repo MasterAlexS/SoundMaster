@@ -42,11 +42,14 @@
       </div>
 
       <div class="button-group" style="margin-top: 5px;">
-        <button id="resetBtn" data-i18n-title="resetBtnTitle" title="Set to 100%">100%</button>
+        <button id="resetBtn" data-i18n-title="resetBtnTitle" data-i18n="resetBtn" title="Set to Default">Reset</button>
         <button id="applyLastBtn"><span data-i18n="applyLastBtn">Apply Last</span>: <span id="lastVolText">100%</span></button>
       </div>
+      <div class="button-group" style="margin-top: 5px;">
+        <button id="syncTabsBtn" style="flex: 1;" data-i18n-title="syncTabsTitle" title="Apply current volume to all tabs on this domain"><span data-i18n="syncTabsText">Sync All Tabs</span></button>
+      </div>
 
-      <div class="toggle-group-row" style="margin-top: 12px;">
+      <div class="toggle-group-row" style="margin-top: 5px;">
         <span class="label"><span data-i18n="compressorMode">Anti-Distortion</span></span>
         <label class="switch small">
           <input type="checkbox" id="compressorToggle">
@@ -57,7 +60,16 @@
 
     <div class="tab-content" id="tab-eq">
       <div class="slider-group">
-        <label><span data-i18n="bassBoost">Bass Boost</span> <span id="bassValue">0dB</span></label>
+        <div class="slider-header">
+          <span style="display: flex; align-items: center; gap: 8px;">
+            <strong data-i18n="bassBoost">Bass Boost</strong>
+            <label class="switch small" title="Toggle Bass Boost">
+              <input type="checkbox" id="bassToggle" checked>
+              <span class="slider round"></span>
+            </label>
+          </span>
+          <span id="bassValue">0dB</span>
+        </div>
         <input type="range" id="bassSlider" min="0" max="15" step="1" value="0">
       </div>
 
@@ -91,7 +103,16 @@
         </div>
       </div>
       <div class="slider-group">
-        <label><span data-i18n="balanceLR">Balance (L/R)</span> <span id="balanceValue">C</span></label>
+        <div class="slider-header">
+          <span style="display: flex; align-items: center; gap: 8px;">
+            <strong data-i18n="balanceLR">Balance (L/R)</strong>
+            <label class="switch small" title="Toggle Balance">
+              <input type="checkbox" id="balanceToggle" checked>
+              <span class="slider round"></span>
+            </label>
+          </span>
+          <span id="balanceValue">C</span>
+        </div>
         <input type="range" id="balanceSlider" min="-1" max="1" step="0.1" value="0">
       </div>
 

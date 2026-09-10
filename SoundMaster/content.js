@@ -11,9 +11,11 @@ let mediaSources = [];
 
 let currentVolume = 100;
 let currentBass = 0;
+let isBassEnabled = true;
 let currentEQ = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 let isEqEnabled = true;
 let currentBalance = 0;
+let isBalanceEnabled = true;
 let isMono = false;
 let isCompressorEnabled = false;
 let isBoostEnabled = false;
@@ -113,7 +115,7 @@ function updateAudioNodes() {
 
   if (isBoostEnabled) {
     gainNode.gain.value = currentVolume / 100;
-    bassNode.gain.value = currentBass;
+    bassNode.gain.value = isBassEnabled ? currentBass : 0;
     if (eqNodes.length > 0) {
       if (isEqEnabled) {
         eqNodes.forEach((node, i) => { node.gain.value = currentEQ[i]; });
@@ -121,7 +123,7 @@ function updateAudioNodes() {
         eqNodes.forEach(node => { node.gain.value = 0; });
       }
     }
-    pannerNode.pan.value = currentBalance;
+    pannerNode.pan.value = isBalanceEnabled ? currentBalance : 0;
     
     if (isMono) {
       monoNode.channelCount = 1;
@@ -142,11 +144,24 @@ function updateAudioNodes() {
   }
 }
 
-function hookMediaElements() {
-  const mediaElements = document.querySelectorAll('video, audio');
-  if (mediaElements.length === 0) return;
+function resumeAudioContext() {
+  if (audioCtx && audioCtx.state === 'suspended') {
+    audioCtx.resume().catch(() => { });
+  }
+}
 
-  mediaElements.forEach(el => {
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === 'visible') resumeAudioContext();
+});
+document.addEventListener("click", resumeAudioContext, { passive: true });
+document.addEventListener("keydown", resumeAudioContext, { passive: true });
+
+function hookMediaElements() {
+  const videos = document.getElementsByTagName('video');
+  const audios = document.getElementsByTagName('audio');
+  let newlyHooked = false;
+
+  const processElement = (el) => {
     if (!connectedElements.has(el)) {
       initAudioContext();
       try {
@@ -158,11 +173,16 @@ function hookMediaElements() {
           source.connect(audioCtx.destination);
         }
         connectedElements.add(el);
+        newlyHooked = true;
       } catch (error) {
         console.warn("Sound Master: Could not hook media element.", error);
       }
     }
-  });
+  };
+
+  for (let i = 0; i < videos.length; i++) processElement(videos[i]);
+  for (let i = 0; i < audios.length; i++) processElement(audios[i]);
+  if (newlyHooked) resumeAudioContext();
 }
 
 let hookTimeout;
@@ -178,9 +198,11 @@ function startObserver() {
             hasPotentialMedia = true;
             break;
           }
-          if (node.querySelectorAll && node.querySelectorAll('video, audio').length > 0) {
-            hasPotentialMedia = true;
-            break;
+          if (node.getElementsByTagName) {
+            if (node.getElementsByTagName('video').length > 0 || node.getElementsByTagName('audio').length > 0) {
+              hasPotentialMedia = true;
+              break;
+            }
           }
         }
         if (hasPotentialMedia) break;
@@ -210,9 +232,11 @@ async function autoInit() {
   if (settings && settings.enabled) {
     currentVolume = settings.volume || 100;
     currentBass = settings.bass || 0;
+    isBassEnabled = settings.bassEnabled !== false;
     currentEQ = settings.eq || [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-    isEqEnabled = settings.eqEnabled !== undefined ? settings.eqEnabled : true;
+    isEqEnabled = settings.eqEnabled !== false;
     currentBalance = settings.balance || 0;
+    isBalanceEnabled = settings.balanceEnabled !== false;
     isMono = settings.mono || false;
     isCompressorEnabled = settings.compressor || false;
     isBoostEnabled = true;
@@ -226,12 +250,14 @@ async function autoInit() {
 
 browser.runtime.onMessage.addListener((message) => {
   if (message.action === "updateVolume") {
-    currentVolume = message.volume;
-    isBoostEnabled = message.enabled;
+    if (message.volume !== undefined) currentVolume = message.volume;
+    if (message.enabled !== undefined) isBoostEnabled = message.enabled;
     if (message.bass !== undefined) currentBass = message.bass;
+    if (message.bassEnabled !== undefined) isBassEnabled = message.bassEnabled;
     if (message.eq !== undefined) currentEQ = message.eq;
     if (message.eqEnabled !== undefined) isEqEnabled = message.eqEnabled;
     if (message.balance !== undefined) currentBalance = message.balance;
+    if (message.balanceEnabled !== undefined) isBalanceEnabled = message.balanceEnabled;
     if (message.mono !== undefined) isMono = message.mono;
     if (message.compressor !== undefined) {
       if (isCompressorEnabled !== message.compressor) {

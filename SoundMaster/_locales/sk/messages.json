@@ -12,7 +12,7 @@
     "message": "Extrémny"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Resetovať"
   },
   "applyLastBtn": {
     "message": "Použiť Posledný"
@@ -39,7 +39,7 @@
     "message": "Extrémny Režim"
   },
   "resetBtnTitle": {
-    "message": "100%"
+    "message": "Nastaviť na predvolené"
   },
   "langSelectTitle": {
     "message": "Zmeniť jazyk"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Prepnúť"
+  },
+  "syncTabsText": {
+    "message": "Synchronizovať všetky karty"
+  },
+  "syncTabsTitle": {
+    "message": "Použiť aktuálnu hlasitosť na všetky karty v tejto doméne"
+  },
+  "syncSuccess": {
+    "message": "✓ Synchronizované!"
   }
 }

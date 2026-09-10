@@ -12,7 +12,7 @@
     "message": "Экстрим"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Перезагрузить"
   },
   "applyLastBtn": {
     "message": "Применить"
@@ -39,7 +39,7 @@
     "message": "Вкл/Выкл 1000% Экстрим"
   },
   "resetBtnTitle": {
-    "message": "Установить на 100%"
+    "message": "Установить по умолчанию"
   },
   "langSelectTitle": {
     "message": "Изменить язык"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Переключать"
+  },
+  "syncTabsText": {
+    "message": "Синхронизировать все вкладки"
+  },
+  "syncTabsTitle": {
+    "message": "Применить текущую громкость ко всем вкладкам в этом домене"
+  },
+  "syncSuccess": {
+    "message": "✓ Синхронизировано!"
   }
 }

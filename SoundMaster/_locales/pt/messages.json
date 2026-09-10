@@ -12,7 +12,7 @@
     "message": "Extremo"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Reiniciar"
   },
   "applyLastBtn": {
     "message": "Aplicar Último"
@@ -39,7 +39,7 @@
     "message": "Modo Extremo 1000%"
   },
   "resetBtnTitle": {
-    "message": "Definir para 100%"
+    "message": "Definir como padrão"
   },
   "langSelectTitle": {
     "message": "Mudar Idioma"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Alternar"
+  },
+  "syncTabsText": {
+    "message": "Sincronizar todos os separadores"
+  },
+  "syncTabsTitle": {
+    "message": "Aplicar o volume atual a todos os separadores deste domínio"
+  },
+  "syncSuccess": {
+    "message": "✓ Sincronizado!"
   }
 }

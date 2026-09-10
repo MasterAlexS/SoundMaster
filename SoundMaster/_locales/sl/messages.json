@@ -12,7 +12,7 @@
     "message": "Ekstremno"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Ponastavi"
   },
   "applyLastBtn": {
     "message": "Uporabi Zadnje"
@@ -39,7 +39,7 @@
     "message": "Ekstremni način"
   },
   "resetBtnTitle": {
-    "message": "100%"
+    "message": "Nastavite na privzeto"
   },
   "langSelectTitle": {
     "message": "Spremeni jezik"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Preklopi"
+  },
+  "syncTabsText": {
+    "message": "Sinhroniziraj vse zavihke"
+  },
+  "syncTabsTitle": {
+    "message": "Uporabi trenutno glasnost za vse zavihke na tej domeni"
+  },
+  "syncSuccess": {
+    "message": "✓ Sinhronizirano!"
   }
 }

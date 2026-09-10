@@ -12,7 +12,7 @@
     "message": "Extrémní"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Resetovat"
   },
   "applyLastBtn": {
     "message": "Použít Poslední"
@@ -39,7 +39,7 @@
     "message": "Přepnout 1000% Extrémní Režim"
   },
   "resetBtnTitle": {
-    "message": "Nastavit na 100%"
+    "message": "Nastavit na výchozí"
   },
   "langSelectTitle": {
     "message": "Změnit jazyk"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Přepnout"
+  },
+  "syncTabsText": {
+    "message": "Synchronizovat všechny panely"
+  },
+  "syncTabsTitle": {
+    "message": "Použít aktuální hlasitost na všechny panely v této doméně"
+  },
+  "syncSuccess": {
+    "message": "✓ Synchronizováno!"
   }
 }

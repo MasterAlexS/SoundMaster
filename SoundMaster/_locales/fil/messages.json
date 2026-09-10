@@ -12,7 +12,7 @@
     "message": "Extreme"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Reset"
   },
   "applyLastBtn": {
     "message": "Ilapat ang huli"
@@ -39,7 +39,7 @@
     "message": "Extreme Mode"
   },
   "resetBtnTitle": {
-    "message": "Itakda sa 100%"
+    "message": "Itakda sa Default"
   },
   "langSelectTitle": {
     "message": "Palitan ang Wika"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Toggle"
+  },
+  "syncTabsText": {
+    "message": "I-sync ang lahat ng Tab"
+  },
+  "syncTabsTitle": {
+    "message": "I-apply ang kasalukuyang volume sa lahat ng tab sa domain na ito"
+  },
+  "syncSuccess": {
+    "message": "✓ Naka-sync!"
   }
 }

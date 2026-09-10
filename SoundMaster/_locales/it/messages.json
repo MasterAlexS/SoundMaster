@@ -12,7 +12,7 @@
     "message": "Estremo"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Reset"
   },
   "applyLastBtn": {
     "message": "Applica Ultimo"
@@ -39,7 +39,7 @@
     "message": "Modo Estremo 1000%"
   },
   "resetBtnTitle": {
-    "message": "Imposta al 100%"
+    "message": "Imposta su predefinito"
   },
   "langSelectTitle": {
     "message": "Cambia Lingua"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Attiva/disattiva"
+  },
+  "syncTabsText": {
+    "message": "Sincronizza tutte le schede"
+  },
+  "syncTabsTitle": {
+    "message": "Applica il volume corrente a tutte le schede di questo dominio"
+  },
+  "syncSuccess": {
+    "message": "✓ Sincronizzato!"
   }
 }

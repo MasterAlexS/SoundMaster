@@ -12,7 +12,7 @@
     "message": "Ekstrem"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Nulstil"
   },
   "applyLastBtn": {
     "message": "Anvend Sidste"
@@ -39,7 +39,7 @@
     "message": "Skift 1000% Ekstrem Tilstand"
   },
   "resetBtnTitle": {
-    "message": "Sæt til 100%"
+    "message": "Indstil til standard"
   },
   "langSelectTitle": {
     "message": "Skift sprog"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Skift"
+  },
+  "syncTabsText": {
+    "message": "Synkroniser alle faner"
+  },
+  "syncTabsTitle": {
+    "message": "Anvend aktuel lydstyrke på alle faner på dette domæne"
+  },
+  "syncSuccess": {
+    "message": "✓ Synkroniseret!"
   }
 }

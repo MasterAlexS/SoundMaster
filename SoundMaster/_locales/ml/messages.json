@@ -12,7 +12,7 @@
     "message": "എക്സ്ട്രീം"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "പുനഃസജ്ജമാക്കുക"
   },
   "applyLastBtn": {
     "message": "അവസാനത്തേത് പ്രയോഗിക്കുക"
@@ -39,7 +39,7 @@
     "message": "എക്സ്ട്രീം മോഡ്"
   },
   "resetBtnTitle": {
-    "message": "100% ആയി സജ്ജീകരിക്കുക"
+    "message": "സ്ഥിരസ്ഥിതിയായി സജ്ജമാക്കുക"
   },
   "langSelectTitle": {
     "message": "ഭാഷ മാറ്റുക"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "ടോഗിൾ ചെയ്യുക"
+  },
+  "syncTabsText": {
+    "message": "എല്ലാ ടാബുകളും സമന്വയിപ്പിക്കുക"
+  },
+  "syncTabsTitle": {
+    "message": "ഈ ഡൊമെയ്‌നിലെ എല്ലാ ടാബുകൾക്കും നിലവിലെ വോളിയം പ്രയോഗിക്കുക"
+  },
+  "syncSuccess": {
+    "message": "✓ സമന്വയിപ്പിച്ചു!"
   }
 }

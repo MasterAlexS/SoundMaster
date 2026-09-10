@@ -12,7 +12,7 @@
     "message": "ከፍተኛ"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "ዳግም አስጀምር"
   },
   "applyLastBtn": {
     "message": "የመጨረሻውን ተግብር"
@@ -39,7 +39,7 @@
     "message": "1000% ከፍተኛ ሁነታ ቀይር"
   },
   "resetBtnTitle": {
-    "message": "ወደ 100% አዘጋጅ"
+    "message": "ወደ ነባሪ አዘጋጅ"
   },
   "langSelectTitle": {
     "message": "ቋንቋ ቀይር"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "ቀያይር"
+  },
+  "syncTabsText": {
+    "message": "ሁሉንም ትሮች አመሳስል"
+  },
+  "syncTabsTitle": {
+    "message": "በዚህ ጎራ ላይ ላሉ ሁሉም ትሮች የአሁኑን ድምጽ ተግብር"
+  },
+  "syncSuccess": {
+    "message": "✓ ተመሳስሏል!"
   }
 }

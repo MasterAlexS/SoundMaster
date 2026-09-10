@@ -12,7 +12,7 @@
     "message": "Ekstrem"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Sıfırla"
   },
   "applyLastBtn": {
     "message": "Sonuncuyu Uygula"
@@ -39,7 +39,7 @@
     "message": "%1000 Ekstrem Mod"
   },
   "resetBtnTitle": {
-    "message": "%100 Ayarla"
+    "message": "Varsayılana Ayarla"
   },
   "langSelectTitle": {
     "message": "Dili Değiştir"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Değiştir"
+  },
+  "syncTabsText": {
+    "message": "Tüm Sekmeleri Senkronize Et"
+  },
+  "syncTabsTitle": {
+    "message": "Mevcut sesi bu alandaki tüm sekmelere uygula"
+  },
+  "syncSuccess": {
+    "message": "✓ Senkronize edildi!"
   }
 }

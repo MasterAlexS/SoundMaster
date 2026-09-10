@@ -12,7 +12,7 @@
     "message": "Ekstrem"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Tilbakestill"
   },
   "applyLastBtn": {
     "message": "Bruk Siste"
@@ -39,7 +39,7 @@
     "message": "Ekstrem modus"
   },
   "resetBtnTitle": {
-    "message": "100%"
+    "message": "Sett til standard"
   },
   "langSelectTitle": {
     "message": "Change Language"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Veksle"
+  },
+  "syncTabsText": {
+    "message": "Synkroniser alle faner"
+  },
+  "syncTabsTitle": {
+    "message": "Bruk nåværende volum på alle faner på dette domenet"
+  },
+  "syncSuccess": {
+    "message": "✓ Synkronisert!"
   }
 }

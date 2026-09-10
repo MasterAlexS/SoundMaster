@@ -12,7 +12,7 @@
     "message": "Екстрим"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Скинути"
   },
   "applyLastBtn": {
     "message": "Застосувати"
@@ -39,7 +39,7 @@
     "message": "Екстрим Режим"
   },
   "resetBtnTitle": {
-    "message": "100%"
+    "message": "Встановити за замовчуванням"
   },
   "langSelectTitle": {
     "message": "Змінити мову"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Перемикач"
+  },
+  "syncTabsText": {
+    "message": "Синхронізувати всі вкладки"
+  },
+  "syncTabsTitle": {
+    "message": "Застосувати поточну гучність до всіх вкладок у цьому домені"
+  },
+  "syncSuccess": {
+    "message": "✓ Синхронізовано!"
   }
 }

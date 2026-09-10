@@ -12,7 +12,7 @@
     "message": "شدید"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "بازنشانی کنید"
   },
   "applyLastBtn": {
     "message": "اعمال آخرین"
@@ -39,7 +39,7 @@
     "message": "حالت شدید"
   },
   "resetBtnTitle": {
-    "message": "100%"
+    "message": "روی پیش فرض تنظیم کنید"
   },
   "langSelectTitle": {
     "message": "تغییر زبان"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "تغییر وضعیت دهید"
+  },
+  "syncTabsText": {
+    "message": "همگام‌سازی همه زبانه‌ها"
+  },
+  "syncTabsTitle": {
+    "message": "اعمال صدای فعلی روی همه زبانه‌های این دامنه"
+  },
+  "syncSuccess": {
+    "message": "✓ همگام‌سازی شد!"
   }
 }

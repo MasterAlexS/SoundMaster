@@ -12,7 +12,7 @@
     "message": "Ekstrem"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Tetapkan semula"
   },
   "applyLastBtn": {
     "message": "Guna Terakhir"
@@ -39,7 +39,7 @@
     "message": "Mod Ekstrem"
   },
   "resetBtnTitle": {
-    "message": "100%"
+    "message": "Tetapkan kepada Lalai"
   },
   "langSelectTitle": {
     "message": "Tukar Bahasa"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Togol"
+  },
+  "syncTabsText": {
+    "message": "Segerakkan Semua Tab"
+  },
+  "syncTabsTitle": {
+    "message": "Gunakan kelantangan semasa pada semua tab di domain ini"
+  },
+  "syncSuccess": {
+    "message": "✓ Disegerakkan!"
   }
 }

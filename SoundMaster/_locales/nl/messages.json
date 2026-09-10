@@ -12,7 +12,7 @@
     "message": "Extreem"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Opnieuw instellen"
   },
   "applyLastBtn": {
     "message": "Laatste Toepassen"
@@ -39,7 +39,7 @@
     "message": "1000% Extreme Modus Schakelen"
   },
   "resetBtnTitle": {
-    "message": "Instellen op 100%"
+    "message": "Stel in op Standaard"
   },
   "langSelectTitle": {
     "message": "Taal wijzigen"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Schakelaar"
+  },
+  "syncTabsText": {
+    "message": "Alle tabbladen synchroniseren"
+  },
+  "syncTabsTitle": {
+    "message": "Pas huidig volume toe op alle tabbladen in dit domein"
+  },
+  "syncSuccess": {
+    "message": "✓ Gesynchroniseerd!"
   }
 }

@@ -12,7 +12,7 @@
     "message": "চরম"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "রিসেট করুন"
   },
   "applyLastBtn": {
     "message": "শেষ প্রয়োগ করুন"
@@ -39,7 +39,7 @@
     "message": "চরম মোড"
   },
   "resetBtnTitle": {
-    "message": "100% সেট করুন"
+    "message": "ডিফল্টে সেট করুন"
   },
   "langSelectTitle": {
     "message": "ভাষা পরিবর্তন করুন"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "টগল করুন"
+  },
+  "syncTabsText": {
+    "message": "সব ট্যাব সিঙ্ক করুন"
+  },
+  "syncTabsTitle": {
+    "message": "এই ডোমেনে সমস্ত ট্যাবে বর্তমান ভলিউম প্রয়োগ করুন"
+  },
+  "syncSuccess": {
+    "message": "✓ সিঙ্ক হয়েছে!"
   }
 }

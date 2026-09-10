@@ -25,16 +25,6 @@ browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
   else if (message.action === "getContentSettings") {
     const tabId = sender.tab.id;
     let storageKey = `tab_${tabId}`;
-    try {
-      if (sender.url) {
-        const url = new URL(sender.url);
-        if (url.hostname) {
-          storageKey = `domain_${url.hostname}`;
-        }
-      }
-    } catch (e) {
-      // Keep fallback
-    }
 
     browser.storage.local.get(storageKey).then(res => {
       const state = res[storageKey];
@@ -42,9 +32,39 @@ browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
         sendResponse(state);
         updateTabBadge(tabId, state.enabled, state.volume);
       } else {
-        sendResponse({ enabled: false, volume: 100, bass: 0, eq: [0,0,0,0,0,0,0,0,0,0], eqEnabled: true, balance: 0, mono: false, compressor: false });
+        sendResponse({ enabled: false, volume: 100, bass: 0, bassEnabled: true, eq: [0,0,0,0,0,0,0,0,0,0], eqEnabled: true, balance: 0, balanceEnabled: true, mono: false, compressor: false });
       }
     });
+    return true;
+  }
+  else if (message.action === "syncDomainTabs") {
+    const { domain, state } = message;
+    browser.tabs.query({}).then(tabs => {
+      tabs.forEach(tab => {
+        if (!tab.url) return;
+        try {
+          const u = new URL(tab.url);
+          if (u.hostname === domain) {
+            browser.storage.local.set({ [`tab_${tab.id}`]: state });
+            updateTabBadge(tab.id, state.enabled, state.volume);
+            browser.tabs.sendMessage(tab.id, {
+              action: "updateVolume",
+              volume: state.volume,
+              enabled: state.enabled,
+              bass: state.bass || 0,
+              bassEnabled: state.bassEnabled !== false,
+              eq: state.eq || [0,0,0,0,0,0,0,0,0,0],
+              eqEnabled: state.eqEnabled !== false,
+              balance: state.balance || 0,
+              balanceEnabled: state.balanceEnabled !== false,
+              mono: state.mono || false,
+              compressor: state.compressor || false
+            }).catch(()=>{});
+          }
+        } catch(e){}
+      });
+    });
+    sendResponse({ success: true });
     return true;
   }
 });
@@ -68,13 +88,9 @@ browser.commands.onCommand.addListener(async (command) => {
   const tabId = currentTab.id;
 
   let storageKey = `tab_${tabId}`;
-  try {
-    const url = new URL(currentTab.url);
-    if (url.hostname) storageKey = `domain_${url.hostname}`;
-  } catch(e) {}
 
   const data = await browser.storage.local.get([storageKey, "globalLastVolume"]);
-  let state = data[storageKey] || { enabled: false, volume: 100, extremeMode: false, bass: 0, eq: [0,0,0,0,0,0,0,0,0,0], eqEnabled: true, balance: 0, mono: false, compressor: false };
+  let state = data[storageKey] || { enabled: false, volume: 100, extremeMode: false, bass: 0, bassEnabled: true, eq: [0,0,0,0,0,0,0,0,0,0], eqEnabled: true, balance: 0, balanceEnabled: true, mono: false, compressor: false };
 
   if (command === "toggle-boost") {
     state.enabled = !state.enabled;

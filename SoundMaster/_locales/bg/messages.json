@@ -12,7 +12,7 @@
     "message": "Екстремно"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Нулиране"
   },
   "applyLastBtn": {
     "message": "Приложи последно"
@@ -39,7 +39,7 @@
     "message": "Екстремен режим"
   },
   "resetBtnTitle": {
-    "message": "100%"
+    "message": "Задайте по подразбиране"
   },
   "langSelectTitle": {
     "message": "Промяна на езика"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Превключване"
+  },
+  "syncTabsText": {
+    "message": "Синхронизиране на всички раздели"
+  },
+  "syncTabsTitle": {
+    "message": "Прилагане на текущата сила на звука към всички раздели в този домейн"
+  },
+  "syncSuccess": {
+    "message": "✓ Синхронизирано!"
   }
 }

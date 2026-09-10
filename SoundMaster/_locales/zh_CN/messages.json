@@ -12,7 +12,7 @@
     "message": "极限"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "重置"
   },
   "applyLastBtn": {
     "message": "应用上一次"
@@ -39,7 +39,7 @@
     "message": "开启/关闭 1000% 极限模式"
   },
   "resetBtnTitle": {
-    "message": "设置为 100%"
+    "message": "设置为默认值"
   },
   "langSelectTitle": {
     "message": "更改语言"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Toggle"
+  },
+  "syncTabsText": {
+    "message": "同步所有标签页"
+  },
+  "syncTabsTitle": {
+    "message": "将当前音量应用于此域上的所有标签页"
+  },
+  "syncSuccess": {
+    "message": "✓ 已同步！"
   }
 }

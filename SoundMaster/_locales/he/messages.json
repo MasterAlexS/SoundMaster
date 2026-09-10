@@ -12,7 +12,7 @@
     "message": "אקסטרים"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "איפוס"
   },
   "applyLastBtn": {
     "message": "החל אחרון"
@@ -39,7 +39,7 @@
     "message": "מצב אקסטרים"
   },
   "resetBtnTitle": {
-    "message": "100%"
+    "message": "הגדר לברירת מחדל"
   },
   "langSelectTitle": {
     "message": "שנה שפה"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Toggle"
+  },
+  "syncTabsText": {
+    "message": "סנכרן את כל הכרטיסיות"
+  },
+  "syncTabsTitle": {
+    "message": "החל את עוצמת הקול הנוכחית על כל הכרטיסיות בדומיין זה"
+  },
+  "syncSuccess": {
+    "message": "✓ מסונכרן!"
   }
 }

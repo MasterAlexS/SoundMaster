@@ -12,7 +12,7 @@
     "message": "Äärimmäinen"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Nollaa"
   },
   "applyLastBtn": {
     "message": "Käytä Viimeisintä"
@@ -39,7 +39,7 @@
     "message": "Vaihda 1000% Äärimmäinen Tila"
   },
   "resetBtnTitle": {
-    "message": "Aseta 100%"
+    "message": "Aseta oletusarvoksi"
   },
   "langSelectTitle": {
     "message": "Vaihda kieli"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Vaihda"
+  },
+  "syncTabsText": {
+    "message": "Synkronoi kaikki välilehdet"
+  },
+  "syncTabsTitle": {
+    "message": "Käytä nykyistä äänenvoimakkuutta kaikkiin tämän verkkotunnuksen välilehtiin"
+  },
+  "syncSuccess": {
+    "message": "✓ Synkronoitu!"
   }
 }

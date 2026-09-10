@@ -12,7 +12,7 @@
     "message": "Ekstremalny"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Nastawić"
   },
   "applyLastBtn": {
     "message": "Zastosuj Ostatni"
@@ -39,7 +39,7 @@
     "message": "Przełącz Tryb Ekstremalny 1000%"
   },
   "resetBtnTitle": {
-    "message": "Ustaw na 100%"
+    "message": "Ustaw na domyślne"
   },
   "langSelectTitle": {
     "message": "Zmień język"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Dźwignia kolankowa"
+  },
+  "syncTabsText": {
+    "message": "Synchronizuj wszystkie karty"
+  },
+  "syncTabsTitle": {
+    "message": "Zastosuj bieżącą głośność do wszystkich kart w tej domenie"
+  },
+  "syncSuccess": {
+    "message": "✓ Zsynchronizowano!"
   }
 }

@@ -12,7 +12,7 @@
     "message": "Extrem"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Zurücksetzen"
   },
   "applyLastBtn": {
     "message": "Zuletzt anwenden"
@@ -39,7 +39,7 @@
     "message": "1000% Extrem-Modus umschalten"
   },
   "resetBtnTitle": {
-    "message": "Auf 100% setzen"
+    "message": "Auf Standard setzen"
   },
   "langSelectTitle": {
     "message": "Sprache ändern"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Umschalten"
+  },
+  "syncTabsText": {
+    "message": "Alle Tabs synchronisieren"
+  },
+  "syncTabsTitle": {
+    "message": "Aktuelle Lautstärke auf alle Tabs dieser Domain anwenden"
+  },
+  "syncSuccess": {
+    "message": "✓ Synchronisiert!"
   }
 }

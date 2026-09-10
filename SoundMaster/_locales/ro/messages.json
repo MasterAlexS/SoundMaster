@@ -12,7 +12,7 @@
     "message": "Extrem"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Resetați"
   },
   "applyLastBtn": {
     "message": "Aplică Ultimul"
@@ -39,7 +39,7 @@
     "message": "Comută Modul Extrem 1000%"
   },
   "resetBtnTitle": {
-    "message": "Setați la 100%"
+    "message": "Setați la Implicit"
   },
   "langSelectTitle": {
     "message": "Schimbă Limba"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Comutator"
+  },
+  "syncTabsText": {
+    "message": "Sincronizează Toate Taburile"
+  },
+  "syncTabsTitle": {
+    "message": "Aplică volumul curent la toate taburile de pe acest domeniu"
+  },
+  "syncSuccess": {
+    "message": "✓ Sincronizat!"
   }
 }

@@ -12,7 +12,7 @@
     "message": "ಎಕ್ಸ್ಟ್ರೀಮ್"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "ಮರುಹೊಂದಿಸಿ"
   },
   "applyLastBtn": {
     "message": "ಕೊನೆಯದನ್ನು ಅನ್ವಯಿಸಿ"
@@ -39,7 +39,7 @@
     "message": "ಎಕ್ಸ್ಟ್ರೀಮ್ ಮೋಡ್"
   },
   "resetBtnTitle": {
-    "message": "100% ಗೆ ಹೊಂದಿಸಿ"
+    "message": "ಡೀಫಾಲ್ಟ್‌ಗೆ ಹೊಂದಿಸಿ"
   },
   "langSelectTitle": {
     "message": "ಭಾಷೆ ಬದಲಾಯಿಸಿ"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "ಟಾಗಲ್ ಮಾಡಿ"
+  },
+  "syncTabsText": {
+    "message": "ಎಲ್ಲಾ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಸಿಂಕ್ ಮಾಡಿ"
+  },
+  "syncTabsTitle": {
+    "message": "ಈ ಡೊಮೇನ್‌ನಲ್ಲಿರುವ ಎಲ್ಲಾ ಟ್ಯಾಬ್‌ಗಳಿಗೆ ಪ್ರಸ್ತುತ ವಾಲ್ಯೂಮ್ ಅನ್ನು ಅನ್ವಯಿಸಿ"
+  },
+  "syncSuccess": {
+    "message": "✓ ಸಿಂಕ್ ಆಗಿದೆ!"
   }
 }

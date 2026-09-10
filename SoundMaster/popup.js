@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const volumeSlider = document.getElementById("volumeSlider");
   const volumeValue = document.getElementById("volumeValue");
   const applyLastBtn = document.getElementById("applyLastBtn");
+  const syncTabsBtn = document.getElementById("syncTabsBtn");
   const resetBtn = document.getElementById("resetBtn");
   const activeTabInfo = document.getElementById("activeTabInfo");
   const themeToggle = document.getElementById("themeToggle");
@@ -15,6 +16,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const tabContents = document.querySelectorAll(".tab-content");
   const bassSlider = document.getElementById("bassSlider");
   const bassValue = document.getElementById("bassValue");
+  const bassToggle = document.getElementById("bassToggle");
   const eqToggle = document.getElementById("eqToggle");
   const eqSection = document.querySelector(".eq-sliders");
   const eqSliders = document.querySelectorAll(".eq-slider");
@@ -25,6 +27,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const importEqFile = document.getElementById("importEqFile");
   const balanceSlider = document.getElementById("balanceSlider");
   const balanceValue = document.getElementById("balanceValue");
+  const balanceToggle = document.getElementById("balanceToggle");
   const monoToggle = document.getElementById("monoToggle");
   const compressorToggle = document.getElementById("compressorToggle");
   const panicMuteBtn = document.getElementById("panicMuteBtn");
@@ -122,10 +125,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   function isProcessingNeeded(vol = null) {
     const currentVol = vol !== null ? vol : parseInt(volumeSlider.value, 10);
-    const bass = parseInt(bassSlider.value, 10);
+    const bass = bassToggle.checked ? parseInt(bassSlider.value, 10) : 0;
     const eq = getEqValues();
     const hasEq = eqToggle.checked && eq.some(v => v !== 0);
-    const balance = parseFloat(balanceSlider.value);
+    const balance = balanceToggle.checked ? parseFloat(balanceSlider.value) : 0;
     const mono = monoToggle.checked;
     const compressor = compressorToggle.checked;
     return currentVol !== 100 || bass !== 0 || hasEq || balance !== 0 || mono || compressor;
@@ -198,12 +201,14 @@ document.addEventListener("DOMContentLoaded", async () => {
       volumeSlider.max = state.extremeMode ? "1000" : "600";
       volumeSlider.value = state.volume;
       bassSlider.value = state.bass || 0;
+      bassToggle.checked = state.bassEnabled !== false;
       setEqValues(state.eq || [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
-      eqToggle.checked = state.eqEnabled !== undefined ? state.eqEnabled : true;
+      eqToggle.checked = state.eqEnabled !== false;
       eqSection.style.opacity = eqToggle.checked ? "1" : "0.5";
       eqSliders.forEach(s => s.disabled = !eqToggle.checked);
       eqNums.forEach(n => n.disabled = !eqToggle.checked);
       balanceSlider.value = state.balance || 0;
+      balanceToggle.checked = state.balanceEnabled !== false;
       monoToggle.checked = state.mono || false;
       compressorToggle.checked = state.compressor || false;
       updateUIText();
@@ -271,6 +276,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   let tabId = null;
   let storageKey = null;
+  let domainKey = null;
   let urlObj = null;
 
   function updateTabInfoDisplay() {
@@ -293,18 +299,31 @@ document.addEventListener("DOMContentLoaded", async () => {
     try {
       urlObj = new URL(currentTab.url);
       if (urlObj.hostname) {
-        storageKey = "domain_" + urlObj.hostname;
+        domainKey = "domain_" + urlObj.hostname;
       }
     } catch (e) { }
   }
 
+  if (!domainKey && syncTabsBtn) {
+    syncTabsBtn.parentElement.style.display = "none";
+  }
+
   updateTabInfoDisplay();
 
-  let tabState = { enabled: false, volume: 100, extremeMode: false, bass: 0, balance: 0, mono: false };
+  let tabState = { enabled: false, volume: 100, extremeMode: false, bass: 0, bassEnabled: true, eq: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], eqEnabled: true, balance: 0, balanceEnabled: true, mono: false, compressor: false };
+  let domainState = null;
+
   if (storageKey) {
     const tabData = await browser.storage.local.get([storageKey]);
     if (tabData[storageKey]) {
       tabState = { ...tabState, ...tabData[storageKey] };
+    }
+  }
+
+  if (domainKey) {
+    const dData = await browser.storage.local.get([domainKey]);
+    if (dData[domainKey]) {
+      domainState = dData[domainKey];
     }
   }
 
@@ -313,16 +332,39 @@ document.addEventListener("DOMContentLoaded", async () => {
   volumeSlider.max = tabState.extremeMode ? "1000" : "600";
   volumeSlider.value = tabState.volume;
   bassSlider.value = tabState.bass || 0;
+  bassToggle.checked = tabState.bassEnabled !== false;
   setEqValues(tabState.eq || [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
-  eqToggle.checked = tabState.eqEnabled !== undefined ? tabState.eqEnabled : true;
+  eqToggle.checked = tabState.eqEnabled !== false;
   eqSection.style.opacity = eqToggle.checked ? "1" : "0.5";
-  eqSliders.forEach(s => s.disabled = !eqToggle.checked);
-  eqNums.forEach(n => n.disabled = !eqToggle.checked);
   balanceSlider.value = tabState.balance || 0;
+  balanceToggle.checked = tabState.balanceEnabled !== false;
   monoToggle.checked = tabState.mono || false;
   compressorToggle.checked = tabState.compressor || false;
 
   updateUIText();
+
+  function updateBalanceText() {
+    let balVal = parseFloat(balanceSlider.value);
+    if (balVal === 0) balanceValue.textContent = "C";
+    else if (balVal < 0) balanceValue.textContent = "L" + Math.round(Math.abs(balVal) * 100);
+    else balanceValue.textContent = "R" + Math.round(balVal * 100);
+  }
+
+  function formatStateSummary(state) {
+    if (!state) return getMessage("resetBtn") || "Reset";
+    let parts = [];
+    if (state.volume !== 100) parts.push(state.volume + "%");
+    if (state.compressor) parts.push("AD");
+    if (state.bassEnabled !== false && state.bass > 0) parts.push("BB " + state.bass + "dB");
+    if (state.eqEnabled !== false && state.eq && state.eq.some(v => v !== 0)) parts.push("CEQ");
+    if (state.balanceEnabled !== false && state.balance !== 0) {
+      let b = state.balance;
+      parts.push("B " + (b < 0 ? "L" + Math.round(Math.abs(b) * 100) : "R" + Math.round(b * 100)));
+    }
+    if (state.mono) parts.push("MM");
+    if (parts.length === 0) return getMessage("resetBtn") || "Reset";
+    return parts.join(", ");
+  }
 
   function updateUIText(val = null) {
     const currentVol = val !== null ? val : parseInt(volumeSlider.value, 10);
@@ -344,13 +386,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     volumeValue.className = "";
     document.documentElement.style.setProperty('--dynamic-accent', dynamicColor);
 
-    if (lastVolText) lastVolText.textContent = globalLastVolume + "%";
+    if (lastVolText) {
+      if (domainState) {
+        lastVolText.textContent = formatStateSummary(domainState);
+      } else {
+        lastVolText.textContent = globalLastVolume === 100 ? (getMessage("resetBtn") || "Reset") : globalLastVolume + "%";
+      }
+    }
 
     bassValue.textContent = bassSlider.value + "dB";
-    let balVal = parseFloat(balanceSlider.value);
-    if (balVal === 0) balanceValue.textContent = "C";
-    else if (balVal < 0) balanceValue.textContent = "L" + Math.round(Math.abs(balVal) * 100);
-    else balanceValue.textContent = "R" + Math.round(balVal * 100);
+    updateBalanceText();
   }
 
   async function syncState() {
@@ -359,21 +404,26 @@ document.addEventListener("DOMContentLoaded", async () => {
     const isEnabled = masterToggle.checked;
     const isExtreme = limitToggle.checked;
     const currentBass = parseInt(bassSlider.value);
+    const isBassEnabled = bassToggle.checked;
     const currentEq = getEqValues();
     const isEqEnabled = eqToggle.checked;
     const currentBalance = parseFloat(balanceSlider.value);
+    const isBalanceEnabled = balanceToggle.checked;
     const isMono = monoToggle.checked;
     const isCompressor = compressorToggle.checked;
 
-    tabState = { enabled: isEnabled, volume: currentVol, extremeMode: isExtreme, bass: currentBass, eq: currentEq, eqEnabled: isEqEnabled, balance: currentBalance, mono: isMono, compressor: isCompressor };
+    tabState = { enabled: isEnabled, volume: currentVol, extremeMode: isExtreme, bass: currentBass, bassEnabled: isBassEnabled, eq: currentEq, eqEnabled: isEqEnabled, balance: currentBalance, balanceEnabled: isBalanceEnabled, mono: isMono, compressor: isCompressor };
 
     const dataToSave = { [storageKey]: tabState };
+    if (domainKey) {
+      domainState = tabState;
+      dataToSave[domainKey] = tabState;
+    }
     if (isEnabled && currentVol !== 100) {
       globalLastVolume = currentVol;
       dataToSave.globalLastVolume = globalLastVolume;
     }
     await browser.storage.local.set(dataToSave);
-
     updateUIText();
 
     try {
@@ -382,9 +432,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         volume: currentVol,
         enabled: isEnabled,
         bass: currentBass,
+        bassEnabled: isBassEnabled,
         eq: currentEq,
         eqEnabled: isEqEnabled,
         balance: currentBalance,
+        balanceEnabled: isBalanceEnabled,
         mono: isMono,
         compressor: isCompressor
       });
@@ -423,9 +475,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         volume: currentVol,
         enabled: masterToggle.checked,
         bass: parseInt(bassSlider.value),
+        bassEnabled: bassToggle.checked,
         eq: getEqValues(),
         eqEnabled: eqToggle.checked,
         balance: parseFloat(balanceSlider.value),
+        balanceEnabled: balanceToggle.checked,
         mono: monoToggle.checked,
         compressor: compressorToggle.checked
       });
@@ -443,29 +497,113 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (!isExtreme && parseInt(volumeSlider.value) > 600) volumeSlider.value = "600";
     syncState();
   });
-  applyLastBtn.addEventListener("click", () => {
+  applyLastBtn.addEventListener("click", async () => {
+    if (domainKey) {
+      const data = await browser.storage.local.get([domainKey]);
+      if (data[domainKey]) {
+        const dState = data[domainKey];
+        if (dState.extremeMode) { limitToggle.checked = true; volumeSlider.max = "1000"; }
+        volumeSlider.value = dState.volume;
+        bassSlider.value = dState.bass || 0;
+        bassToggle.checked = dState.bassEnabled !== false;
+        setEqValues(dState.eq || [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+        eqToggle.checked = dState.eqEnabled !== false;
+        balanceSlider.value = dState.balance || 0;
+        balanceToggle.checked = dState.balanceEnabled !== false;
+        monoToggle.checked = dState.mono || false;
+        compressorToggle.checked = dState.compressor || false;
+        masterToggle.checked = isProcessingNeeded();
+        syncState();
+        return;
+      }
+    }
     if (globalLastVolume > 600) { limitToggle.checked = true; volumeSlider.max = "1000"; }
     volumeSlider.value = globalLastVolume;
     masterToggle.checked = isProcessingNeeded(globalLastVolume);
     syncState();
   });
+
+  syncTabsBtn?.addEventListener("click", () => {
+    if (urlObj && urlObj.hostname) {
+      const originalHtml = syncTabsBtn.innerHTML;
+      syncTabsBtn.innerHTML = getMessage("syncSuccess") || "✓ Synced!";
+      browser.runtime.sendMessage({
+        action: "syncDomainTabs",
+        domain: urlObj.hostname,
+        state: tabState
+      });
+      setTimeout(() => {
+        syncTabsBtn.innerHTML = originalHtml;
+      }, 2000);
+    }
+  });
+
   resetBtn.addEventListener("click", () => {
     volumeSlider.value = "100";
+    
+    bassToggle.checked = false;
+    bassSlider.value = "0";
+    
+    eqToggle.checked = false;
+    setEqValues([0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+    eqSection.style.opacity = "0.5";
+    
+    balanceToggle.checked = false;
+    balanceSlider.value = "0";
+    
+    monoToggle.checked = false;
+    compressorToggle.checked = false;
+
     masterToggle.checked = isProcessingNeeded(100);
     syncState();
   });
 
-  bassSlider.addEventListener("input", () => { updateUIText(); masterToggle.checked = isProcessingNeeded(); });
+  bassSlider.addEventListener("input", () => {
+    if (bassSlider.value === "0") {
+      bassToggle.checked = false;
+    } else if (!bassToggle.checked) {
+      bassToggle.checked = true;
+    }
+    updateUIText();
+    masterToggle.checked = isProcessingNeeded();
+  });
   bassSlider.addEventListener("change", () => syncState());
-  balanceSlider.addEventListener("input", () => { updateUIText(); masterToggle.checked = isProcessingNeeded(); });
+  
+  balanceSlider.addEventListener("input", () => {
+    if (parseFloat(balanceSlider.value) === 0) {
+      balanceToggle.checked = false;
+    } else if (!balanceToggle.checked) {
+      balanceToggle.checked = true;
+    }
+    updateUIText();
+    masterToggle.checked = isProcessingNeeded();
+  });
   balanceSlider.addEventListener("change", () => syncState());
   monoToggle.addEventListener("change", () => { masterToggle.checked = isProcessingNeeded(); syncState(); });
   compressorToggle.addEventListener("change", () => { masterToggle.checked = isProcessingNeeded(); syncState(); });
 
+  bassToggle.addEventListener("change", () => {
+    if (bassToggle.checked && bassSlider.value === "0") {
+      bassToggle.checked = false;
+    }
+    masterToggle.checked = isProcessingNeeded();
+    syncState();
+  });
+
+  balanceToggle.addEventListener("change", () => {
+    if (balanceToggle.checked && parseFloat(balanceSlider.value) === 0) {
+      balanceToggle.checked = false;
+    }
+    masterToggle.checked = isProcessingNeeded();
+    syncState();
+  });
+
   eqToggle.addEventListener("change", () => {
+    const allZero = Array.from(eqSliders).every(s => parseInt(s.value, 10) === 0);
+    if (eqToggle.checked && allZero) {
+      eqToggle.checked = false;
+    }
     eqSection.style.opacity = eqToggle.checked ? "1" : "0.5";
-    eqSliders.forEach(s => s.disabled = !eqToggle.checked);
-    eqNums.forEach(n => n.disabled = !eqToggle.checked);
     masterToggle.checked = isProcessingNeeded();
     syncState();
   });
@@ -479,6 +617,14 @@ document.addEventListener("DOMContentLoaded", async () => {
   eqSliders.forEach((slider, index) => {
     slider.addEventListener("input", () => {
       eqNums[index].value = slider.value;
+      const allZero = Array.from(eqSliders).every(s => parseInt(s.value, 10) === 0);
+      if (allZero) {
+        eqToggle.checked = false;
+        eqSection.style.opacity = "0.5";
+      } else if (!eqToggle.checked) {
+        eqToggle.checked = true;
+        eqSection.style.opacity = "1";
+      }
       masterToggle.checked = isProcessingNeeded();
     });
     slider.addEventListener("change", () => syncState());
@@ -492,6 +638,16 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (val > 12) val = 12;
       numInput.value = val;
       eqSliders[index].value = val;
+      
+      const allZero = Array.from(eqSliders).every(s => parseInt(s.value, 10) === 0);
+      if (allZero) {
+        eqToggle.checked = false;
+        eqSection.style.opacity = "0.5";
+      } else if (!eqToggle.checked) {
+        eqToggle.checked = true;
+        eqSection.style.opacity = "1";
+      }
+      
       masterToggle.checked = isProcessingNeeded();
       syncState();
     });

@@ -12,7 +12,7 @@
     "message": "Extremo"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Reiniciar"
   },
   "applyLastBtn": {
     "message": "Aplicar Último"
@@ -39,7 +39,7 @@
     "message": "Alternar Modo Extremo 1000%"
   },
   "resetBtnTitle": {
-    "message": "Establecer al 100%"
+    "message": "Establecer por defecto"
   },
   "langSelectTitle": {
     "message": "Cambiar Idioma"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Palanca"
+  },
+  "syncTabsText": {
+    "message": "Sincronizar pestañas"
+  },
+  "syncTabsTitle": {
+    "message": "Aplicar el volumen actual a todas las pestañas de este dominio"
+  },
+  "syncSuccess": {
+    "message": "✓ ¡Sincronizado!"
   }
 }

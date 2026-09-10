@@ -12,7 +12,7 @@
     "message": "Cực đại"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Cài lại"
   },
   "applyLastBtn": {
     "message": "Áp dụng gần nhất"
@@ -39,7 +39,7 @@
     "message": "Chế độ Cực đại"
   },
   "resetBtnTitle": {
-    "message": "100%"
+    "message": "Đặt thành mặc định"
   },
   "langSelectTitle": {
     "message": "Đổi ngôn ngữ"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Chuyển đổi"
+  },
+  "syncTabsText": {
+    "message": "Đồng bộ hóa tất cả các thẻ"
+  },
+  "syncTabsTitle": {
+    "message": "Áp dụng âm lượng hiện tại cho tất cả các thẻ trên miền này"
+  },
+  "syncSuccess": {
+    "message": "✓ Đã đồng bộ!"
   }
 }

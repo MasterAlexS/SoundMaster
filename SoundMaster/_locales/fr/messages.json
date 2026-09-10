@@ -12,7 +12,7 @@
     "message": "Extrême"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Réinitialiser"
   },
   "applyLastBtn": {
     "message": "Appliquer le dernier"
@@ -39,7 +39,7 @@
     "message": "Basculer Mode Extrême 1000%"
   },
   "resetBtnTitle": {
-    "message": "Définir à 100%"
+    "message": "Définir par défaut"
   },
   "langSelectTitle": {
     "message": "Changer de Langue"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Basculer"
+  },
+  "syncTabsText": {
+    "message": "Synchroniser les onglets"
+  },
+  "syncTabsTitle": {
+    "message": "Appliquer le volume actuel à tous les onglets de ce domaine"
+  },
+  "syncSuccess": {
+    "message": "✓ Synchronisé !"
   }
 }

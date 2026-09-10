@@ -12,7 +12,7 @@
     "message": "अत्यंत"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "रीसेट करा"
   },
   "applyLastBtn": {
     "message": "शेवटचे लागू करा"
@@ -39,7 +39,7 @@
     "message": "अत्यंत मोड"
   },
   "resetBtnTitle": {
-    "message": "100% सेट करा"
+    "message": "डीफॉल्ट वर सेट करा"
   },
   "langSelectTitle": {
     "message": "भाषा बदला"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "टॉगल करा"
+  },
+  "syncTabsText": {
+    "message": "सर्व टॅब समक्रमित करा"
+  },
+  "syncTabsTitle": {
+    "message": "या डोमेनवरील सर्व टॅबवर वर्तमान व्हॉल्यूम लागू करा"
+  },
+  "syncSuccess": {
+    "message": "✓ समक्रमित केले!"
   }
 }

@@ -12,7 +12,7 @@
     "message": "متطرف"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "إعادة ضبط"
   },
   "applyLastBtn": {
     "message": "تطبيق الأخير"
@@ -39,7 +39,7 @@
     "message": "تبديل الوضع المتطرف 1000٪"
   },
   "resetBtnTitle": {
-    "message": "تعيين إلى 100٪"
+    "message": "تعيين على الافتراضي"
   },
   "langSelectTitle": {
     "message": "تغيير اللغة"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "تبديل"
+  },
+  "syncTabsText": {
+    "message": "مزامنة جميع علامات التبويب"
+  },
+  "syncTabsTitle": {
+    "message": "تطبيق مستوى الصوت الحالي على جميع علامات التبويب في هذا النطاق"
+  },
+  "syncSuccess": {
+    "message": "✓ تمت المزامنة!"
   }
 }

@@ -12,7 +12,7 @@
     "message": "Extrém"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "Reset"
   },
   "applyLastBtn": {
     "message": "Utolsó alkalmazása"
@@ -39,7 +39,7 @@
     "message": "Extrém mód"
   },
   "resetBtnTitle": {
-    "message": "100%"
+    "message": "Állítsa alapértelmezettre"
   },
   "langSelectTitle": {
     "message": "Nyelv megváltoztatása"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "Váltás"
+  },
+  "syncTabsText": {
+    "message": "Összes lap szinkronizálása"
+  },
+  "syncTabsTitle": {
+    "message": "Jelenlegi hangerő alkalmazása a domain összes lapján"
+  },
+  "syncSuccess": {
+    "message": "✓ Szinkronizálva!"
   }
 }

@@ -12,7 +12,7 @@
     "message": "चरम"
   },
   "resetBtn": {
-    "message": "100%"
+    "message": "रीसेट करें"
   },
   "applyLastBtn": {
     "message": "अंतिम लागू करें"
@@ -39,7 +39,7 @@
     "message": "1000% चरम मोड टॉगल करें"
   },
   "resetBtnTitle": {
-    "message": "100% पर सेट करें"
+    "message": "डिफॉल्ट पर सेट करें"
   },
   "langSelectTitle": {
     "message": "भाषा बदलें"
@@ -112,5 +112,14 @@
   },
   "shortcutToggle": {
     "message": "टॉगल"
+  },
+  "syncTabsText": {
+    "message": "सभी टैब सिंक करें"
+  },
+  "syncTabsTitle": {
+    "message": "इस डोमेन के सभी टैब पर वर्तमान वॉल्यूम लागू करें"
+  },
+  "syncSuccess": {
+    "message": "✓ सिंक हो गया!"
   }
 }
