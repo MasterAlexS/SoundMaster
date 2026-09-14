@@ -102,10 +102,10 @@
     "message": "Pārvaldīt"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Palielināt skaļumu"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Samazināt skaļumu"
   },
   "shortcutPanicMute": {
     "message": "Panikas klusums"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Sinhronizēts!"
+  },
+  "presetCustom": {
+    "message": "Pielāgots"
+  },
+  "presetAcoustic": {
+    "message": "Akustisks"
+  },
+  "presetElectronic": {
+    "message": "Elektroniskā"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetRock": {
+    "message": "Roks"
+  },
+  "presetVocal": {
+    "message": "Vokālā pastiprinātājs"
+  },
+  "presetTreble": {
+    "message": "Augsto frekvenču reducētājs"
+  },
+  "presetSpoken": {
+    "message": "Izrunātais vārds"
+  },
+  "compareBtnTitle": {
+    "message": "Turiet, lai salīdzinātu (apiet)"
+  },
+  "speedTitle": {
+    "message": "Atskaņošanas ātrums"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Atiestatīt ātrumu"
+  },
+  "pitchShiftTitle": {
+    "message": "Toņa maiņa"
+  },
+  "reverbTitle": {
+    "message": "Koncertzāle (3D reverb)"
+  },
+  "customPresetsGroup": {
+    "message": "Pielāgoti sākotnējie iestatījumi"
+  },
+  "defaultPresetsGroup": {
+    "message": "Iepriekš definētie iestatījumi"
+  },
+  "savePresetTitle": {
+    "message": "Saglabāt sākotnējo iestatījumu"
+  },
+  "deletePresetTitle": {
+    "message": "Dzēst sākotnējo iestatījumu"
+  },
+  "promptPresetName": {
+    "message": "Ievadiet jaunā EQ priekšiestatījuma nosaukumu:"
+  },
+  "confirmDeletePreset": {
+    "message": "Vai neatgriezeniski dzēst šo sākotnējo iestatījumu?"
+  },
+  "modalCancel": {
+    "message": "Atcelt"
+  },
+  "modalConfirm": {
+    "message": "Labi"
+  },
+  "errorInvalidEq": {
+    "message": "Nederīgs EQ faila formāts."
+  },
+  "errorParseEq": {
+    "message": "Kļūda, parsējot failu."
   }
 }

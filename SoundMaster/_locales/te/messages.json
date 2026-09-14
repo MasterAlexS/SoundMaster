@@ -102,10 +102,10 @@
     "message": "నిర్వహించండి"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "వాల్యూమ్ పెంచు"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "వాల్యూమ్ తగ్గించు"
   },
   "shortcutPanicMute": {
     "message": "పానిక్ మ్యూట్"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ సింక్ చేయబడింది!"
+  },
+  "presetCustom": {
+    "message": "కస్టమ్"
+  },
+  "presetAcoustic": {
+    "message": "అకౌస్టిక్"
+  },
+  "presetElectronic": {
+    "message": "ఎలక్ట్రానిక్"
+  },
+  "presetPop": {
+    "message": "పాప్"
+  },
+  "presetRock": {
+    "message": "రాక్"
+  },
+  "presetVocal": {
+    "message": "వోకల్ బూస్టర్"
+  },
+  "presetTreble": {
+    "message": "ట్రిబుల్ రిడ్యూసర్"
+  },
+  "presetSpoken": {
+    "message": "మాట్లాడిన మాట"
+  },
+  "compareBtnTitle": {
+    "message": "సరిపోల్చడానికి పట్టుకోండి (బైపాస్)"
+  },
+  "speedTitle": {
+    "message": "ప్లేబ్యాక్ వేగం"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "వేగాన్ని రీసెట్ చేయండి"
+  },
+  "pitchShiftTitle": {
+    "message": "పిచ్ షిఫ్ట్"
+  },
+  "reverbTitle": {
+    "message": "కాన్సర్ట్ హాల్ (3D రెవెర్బ్)"
+  },
+  "customPresetsGroup": {
+    "message": "అనుకూల ప్రీసెట్లు"
+  },
+  "defaultPresetsGroup": {
+    "message": "ముందే నిర్వచించబడిన ప్రీసెట్లు"
+  },
+  "savePresetTitle": {
+    "message": "సేవ్ చేయి"
+  },
+  "deletePresetTitle": {
+    "message": "ప్రీసెట్‌ను తొలగించండి"
+  },
+  "promptPresetName": {
+    "message": "కొత్త EQ ప్రీసెట్ కోసం పేరును నమోదు చేయండి:"
+  },
+  "confirmDeletePreset": {
+    "message": "ఈ ప్రీసెట్‌ని శాశ్వతంగా తొలగించాలా?"
+  },
+  "modalCancel": {
+    "message": "రద్దు చేయి"
+  },
+  "modalConfirm": {
+    "message": "సరే"
+  },
+  "errorInvalidEq": {
+    "message": "చెల్లని EQ ఫైల్ ఫార్మాట్."
+  },
+  "errorParseEq": {
+    "message": "ఫైల్ పార్స్ చేయడంలో లోపం."
   }
 }

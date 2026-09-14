@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const applyLastBtn = document.getElementById("applyLastBtn");
   const syncTabsBtn = document.getElementById("syncTabsBtn");
   const resetBtn = document.getElementById("resetBtn");
+  const resetVolumeBtn = document.getElementById("resetVolumeBtn");
   const activeTabInfo = document.getElementById("activeTabInfo");
   const themeToggle = document.getElementById("themeToggle");
   const lastVolText = document.getElementById("lastVolText");
@@ -32,6 +33,23 @@ document.addEventListener("DOMContentLoaded", async () => {
   const compressorToggle = document.getElementById("compressorToggle");
   const panicMuteBtn = document.getElementById("panicMuteBtn");
 
+  const eqPresetSelect = document.getElementById("eqPresetSelect");
+  const customPresetsGroup = document.getElementById("customPresetsGroup");
+  const savePresetBtn = document.getElementById("savePresetBtn");
+  const deletePresetBtn = document.getElementById("deletePresetBtn");
+  const compareBtn = document.getElementById("compareBtn");
+  const speedToggle = document.getElementById("speedToggle");
+  const speedSlider = document.getElementById("speedSlider");
+  const speedValue = document.getElementById("speedValue");
+  const resetSpeedBtn = document.getElementById("resetSpeedBtn");
+  const pitchSlider = document.getElementById("pitchSlider");
+  const pitchValue = document.getElementById("pitchValue");
+  const resetPitchBtn = document.getElementById("resetPitchBtn");
+  const pitchToggle = document.getElementById("pitchToggle");
+  const resetBassBtn = document.getElementById("resetBassBtn");
+  const resetBalanceBtn = document.getElementById("resetBalanceBtn");
+  const reverbToggle = document.getElementById("reverbToggle");
+
   tabBtns.forEach(btn => {
     btn.addEventListener("click", () => {
       tabBtns.forEach(b => b.classList.remove("active"));
@@ -41,21 +59,24 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   });
 
-  document.getElementById("manageShortcutsLink")?.addEventListener("click", () => {
-    const isFirefox = navigator.userAgent.toLowerCase().includes("firefox");
-    if (isFirefox) {
-      const msg = document.getElementById("firefoxShortcutsMsg");
-      if (msg) msg.style.display = msg.style.display === "none" ? "block" : "none";
-    } else {
-      browser.tabs.create({ url: "chrome://extensions/shortcuts" }).catch(() => {
+  let manageShortcutsLink = document.getElementById("manageShortcutsLink");
+  if (manageShortcutsLink) {
+    manageShortcutsLink.addEventListener("click", () => {
+      const isFirefox = navigator.userAgent.toLowerCase().includes("firefox");
+      if (isFirefox) {
         const msg = document.getElementById("firefoxShortcutsMsg");
-        if (msg) {
-          msg.innerHTML = "Please go to <b>chrome://extensions/shortcuts</b> to manage them.";
-          msg.style.display = "block";
-        }
-      });
-    }
-  });
+        if (msg) msg.style.display = msg.style.display === "none" ? "block" : "none";
+      } else {
+        browser.tabs.create({ url: "chrome://extensions/shortcuts" }).catch(() => {
+          const msg = document.getElementById("firefoxShortcutsMsg");
+          if (msg) {
+            msg.innerHTML = "Please go to <b>chrome://extensions/shortcuts</b> to manage them.";
+            msg.style.display = "block";
+          }
+        });
+      }
+    });
+  }
 
   async function loadShortcutsUI() {
     let disabledCommands = {};
@@ -111,6 +132,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     } catch (e) { }
   }
 
+  function eqArraysEqual(arr1, arr2) {
+    if (arr1.length !== arr2.length) return false;
+    for (let i = 0; i < arr1.length; i++) {
+      if (arr1[i] !== arr2[i]) return false;
+    }
+    return true;
+  }
+
   function getEqValues() {
     return Array.from(eqSliders).map(slider => parseInt(slider.value, 10));
   }
@@ -131,7 +160,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     const balance = balanceToggle.checked ? parseFloat(balanceSlider.value) : 0;
     const mono = monoToggle.checked;
     const compressor = compressorToggle.checked;
-    return currentVol !== 100 || bass !== 0 || hasEq || balance !== 0 || mono || compressor;
+    const currentSpeed = parseFloat(speedSlider.value);
+    const isSpeedEnabled = speedToggle.checked;
+    const currentPitch = parseInt(pitchSlider.value, 10);
+    const isPitchEnabled = pitchToggle.checked;
+    const reverb = reverbToggle.checked;
+    return currentVol !== 100 || bass !== 0 || (currentSpeed !== 1.0 && isSpeedEnabled) || (currentPitch !== 0 && isPitchEnabled) || reverb || hasEq || balance !== 0 || mono || compressor;
   }
 
   let panicMuteTimeout;
@@ -211,6 +245,14 @@ document.addEventListener("DOMContentLoaded", async () => {
       balanceToggle.checked = state.balanceEnabled !== false;
       monoToggle.checked = state.mono || false;
       compressorToggle.checked = state.compressor || false;
+      speedSlider.value = state.speed || 1.0;
+      speedValue.textContent = (state.speed || 1.0).toFixed(1) + "x";
+      speedToggle.checked = state.speedEnabled !== false && state.speed !== 1.0;
+      pitchSlider.value = state.pitch || 0;
+      let pVal = state.pitch || 0;
+      pitchValue.textContent = (pVal > 0 ? "+" + pVal : pVal) + "st";
+      pitchToggle.checked = state.pitchEnabled !== false && state.pitch !== 0;
+      reverbToggle.checked = state.reverb || false;
       updateUIText();
     }
   });
@@ -240,7 +282,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   function applyTranslations() {
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const msg = getMessage(el.getAttribute('data-i18n'));
-      if (msg) el.textContent = msg;
+      if (msg) {
+        if (el.tagName === 'OPTGROUP') {
+          el.label = msg;
+        } else {
+          el.textContent = msg;
+        }
+      }
     });
     document.querySelectorAll('[data-i18n-title]').forEach(el => {
       const msg = getMessage(el.getAttribute('data-i18n-title'));
@@ -310,7 +358,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   updateTabInfoDisplay();
 
-  let tabState = { enabled: false, volume: 100, extremeMode: false, bass: 0, bassEnabled: true, eq: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], eqEnabled: true, balance: 0, balanceEnabled: true, mono: false, compressor: false };
+  let tabState = { enabled: false, volume: 100, extremeMode: false, bass: 0, bassEnabled: false, eq: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], eqEnabled: false, balance: 0, balanceEnabled: false, mono: false, compressor: false, speed: 1.0, speedEnabled: false, pitch: 0, pitchEnabled: false, reverb: false };
   let domainState = null;
 
   if (storageKey) {
@@ -340,6 +388,14 @@ document.addEventListener("DOMContentLoaded", async () => {
   balanceToggle.checked = tabState.balanceEnabled !== false;
   monoToggle.checked = tabState.mono || false;
   compressorToggle.checked = tabState.compressor || false;
+  speedSlider.value = tabState.speed || 1.0;
+  speedValue.textContent = (tabState.speed || 1.0).toFixed(1) + "x";
+  speedToggle.checked = tabState.speedEnabled !== false && tabState.speed !== 1.0;
+  pitchSlider.value = tabState.pitch || 0;
+  let pVal = tabState.pitch || 0;
+  pitchValue.textContent = (pVal > 0 ? "+" + pVal : pVal) + "st";
+  pitchToggle.checked = tabState.pitchEnabled !== false && tabState.pitch !== 0;
+  reverbToggle.checked = tabState.reverb || false;
 
   updateUIText();
 
@@ -351,7 +407,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   function formatStateSummary(state) {
-    if (!state) return getMessage("resetBtn") || "Reset";
+    if (!state) return "100%";
     let parts = [];
     if (state.volume !== 100) parts.push(state.volume + "%");
     if (state.compressor) parts.push("AD");
@@ -362,7 +418,11 @@ document.addEventListener("DOMContentLoaded", async () => {
       parts.push("B " + (b < 0 ? "L" + Math.round(Math.abs(b) * 100) : "R" + Math.round(b * 100)));
     }
     if (state.mono) parts.push("MM");
-    if (parts.length === 0) return getMessage("resetBtn") || "Reset";
+    if (state.speedEnabled !== false && state.speed && state.speed !== 1.0) parts.push(state.speed.toFixed(1) + "xS");
+    if (state.pitchEnabled !== false && state.pitch && state.pitch !== 0) parts.push((state.pitch > 0 ? "+" + state.pitch : state.pitch) + "stP");
+    if (state.reverb) parts.push("3DR");
+
+    if (parts.length === 0) return "100%";
     return parts.join(", ");
   }
 
@@ -411,8 +471,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     const isBalanceEnabled = balanceToggle.checked;
     const isMono = monoToggle.checked;
     const isCompressor = compressorToggle.checked;
+    const isSpeedEnabled = speedToggle.checked;
+    const currentSpeed = parseFloat(speedSlider.value);
+    const isPitchEnabled = pitchToggle.checked;
+    const currentPitch = parseInt(pitchSlider.value);
+    const isReverb = reverbToggle.checked;
 
-    tabState = { enabled: isEnabled, volume: currentVol, extremeMode: isExtreme, bass: currentBass, bassEnabled: isBassEnabled, eq: currentEq, eqEnabled: isEqEnabled, balance: currentBalance, balanceEnabled: isBalanceEnabled, mono: isMono, compressor: isCompressor };
+    tabState = { enabled: isEnabled, volume: currentVol, extremeMode: isExtreme, bass: currentBass, bassEnabled: isBassEnabled, eq: currentEq, eqEnabled: isEqEnabled, balance: currentBalance, balanceEnabled: isBalanceEnabled, mono: isMono, compressor: isCompressor, speed: currentSpeed, speedEnabled: isSpeedEnabled, pitch: currentPitch, pitchEnabled: isPitchEnabled, reverb: isReverb };
 
     const dataToSave = { [storageKey]: tabState };
     if (domainKey) {
@@ -433,6 +498,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         enabled: isEnabled,
         bass: currentBass,
         bassEnabled: isBassEnabled,
+        speed: currentSpeed,
+        speedEnabled: isSpeedEnabled,
+        pitch: currentPitch,
+        pitchEnabled: isPitchEnabled,
+        reverb: isReverb,
         eq: currentEq,
         eqEnabled: isEqEnabled,
         balance: currentBalance,
@@ -476,6 +546,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         enabled: masterToggle.checked,
         bass: parseInt(bassSlider.value),
         bassEnabled: bassToggle.checked,
+        speed: parseFloat(speedSlider.value),
+        speedEnabled: speedToggle.checked,
+        pitch: parseInt(pitchSlider.value),
+        pitchEnabled: pitchToggle.checked,
+        reverb: reverbToggle.checked,
         eq: getEqValues(),
         eqEnabled: eqToggle.checked,
         balance: parseFloat(balanceSlider.value),
@@ -510,8 +585,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         eqToggle.checked = dState.eqEnabled !== false;
         balanceSlider.value = dState.balance || 0;
         balanceToggle.checked = dState.balanceEnabled !== false;
-        monoToggle.checked = dState.mono || false;
-        compressorToggle.checked = dState.compressor || false;
+        speedSlider.value = dState.speed || 1.0;
+        speedValue.textContent = parseFloat(speedSlider.value).toFixed(1) + "x";
+        speedToggle.checked = dState.speedEnabled !== false;
+        pitchSlider.value = dState.pitch || 0;
+        let pVal = parseInt(pitchSlider.value);
+        pitchValue.textContent = (pVal > 0 ? "+" + pVal : pVal) + "st";
+        pitchToggle.checked = dState.pitchEnabled !== false;
+        reverbToggle.checked = dState.reverb || false;
         masterToggle.checked = isProcessingNeeded();
         syncState();
         return;
@@ -523,37 +604,67 @@ document.addEventListener("DOMContentLoaded", async () => {
     syncState();
   });
 
-  syncTabsBtn?.addEventListener("click", () => {
-    if (urlObj && urlObj.hostname) {
-      const originalHtml = syncTabsBtn.innerHTML;
-      syncTabsBtn.innerHTML = getMessage("syncSuccess") || "✓ Synced!";
-      browser.runtime.sendMessage({
-        action: "syncDomainTabs",
-        domain: urlObj.hostname,
-        state: tabState
-      });
-      setTimeout(() => {
-        syncTabsBtn.innerHTML = originalHtml;
-      }, 2000);
-    }
-  });
+  if (syncTabsBtn) {
+    syncTabsBtn.addEventListener("click", () => {
+      if (urlObj && urlObj.hostname) {
+        const originalHtml = syncTabsBtn.innerHTML;
+        syncTabsBtn.innerHTML = getMessage("syncSuccess") || "✓ Synced!";
+        browser.runtime.sendMessage({
+          action: "syncDomainTabs",
+          domain: urlObj.hostname,
+          state: tabState
+        });
+        setTimeout(() => {
+          syncTabsBtn.innerHTML = originalHtml;
+        }, 2000);
+      }
+    });
+  }
 
-  resetBtn.addEventListener("click", () => {
+  function resetAll() {
+    masterToggle.checked = false;
     volumeSlider.value = "100";
-    
+    volumeValue.textContent = "100%";
+    volumeValue.className = "glow-green";
+    volumeValue.style.color = "";
+    volumeValue.style.textShadow = "";
+    document.documentElement.style.setProperty('--dynamic-accent', 'var(--accent-color)');
+
+    limitToggle.checked = false;
+
     bassToggle.checked = false;
     bassSlider.value = "0";
-    
+    bassValue.textContent = "0dB";
+
     eqToggle.checked = false;
     setEqValues([0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
-    eqSection.style.opacity = "0.5";
-    
+    eqPresetSelect.value = "custom";
+    deletePresetBtn.style.display = "none";
+
     balanceToggle.checked = false;
     balanceSlider.value = "0";
-    
+    balanceValue.textContent = "C";
+
     monoToggle.checked = false;
     compressorToggle.checked = false;
 
+    speedToggle.checked = false;
+    speedSlider.value = "1.0";
+    speedValue.textContent = "1.0x";
+    pitchToggle.checked = false;
+    pitchSlider.value = "0";
+    pitchValue.textContent = "0st";
+    reverbToggle.checked = false;
+
+    masterToggle.checked = isProcessingNeeded(100);
+    syncState();
+  }
+
+  resetBtn.addEventListener("click", resetAll);
+
+  resetVolumeBtn.addEventListener("click", () => {
+    volumeSlider.value = "100";
+    updateUIText(100);
     masterToggle.checked = isProcessingNeeded(100);
     syncState();
   });
@@ -568,19 +679,234 @@ document.addEventListener("DOMContentLoaded", async () => {
     masterToggle.checked = isProcessingNeeded();
   });
   bassSlider.addEventListener("change", () => syncState());
-  
+
   balanceSlider.addEventListener("input", () => {
+    updateBalanceText();
     if (parseFloat(balanceSlider.value) === 0) {
       balanceToggle.checked = false;
     } else if (!balanceToggle.checked) {
       balanceToggle.checked = true;
     }
-    updateUIText();
     masterToggle.checked = isProcessingNeeded();
   });
   balanceSlider.addEventListener("change", () => syncState());
+  balanceToggle.addEventListener("change", () => { masterToggle.checked = isProcessingNeeded(); syncState(); });
   monoToggle.addEventListener("change", () => { masterToggle.checked = isProcessingNeeded(); syncState(); });
   compressorToggle.addEventListener("change", () => { masterToggle.checked = isProcessingNeeded(); syncState(); });
+
+  speedSlider.addEventListener("input", () => {
+    speedValue.textContent = parseFloat(speedSlider.value).toFixed(1) + "x";
+    if (parseFloat(speedSlider.value) === 1.0) {
+      speedToggle.checked = false;
+    } else if (!speedToggle.checked) {
+      speedToggle.checked = true;
+    }
+    updateUIText();
+    masterToggle.checked = isProcessingNeeded();
+  });
+  speedSlider.addEventListener("change", () => syncState());
+  speedToggle.addEventListener("change", () => {
+    if (parseFloat(speedSlider.value) === 1.0) {
+      speedToggle.checked = false;
+    }
+    masterToggle.checked = isProcessingNeeded();
+    syncState();
+  });
+
+  if (resetSpeedBtn) {
+    resetSpeedBtn.addEventListener("click", () => {
+      speedSlider.value = 1.0;
+      speedValue.textContent = "1.0x";
+      speedToggle.checked = false;
+      masterToggle.checked = isProcessingNeeded();
+      syncState();
+    });
+  }
+
+  resetBassBtn.addEventListener("click", () => {
+    bassSlider.value = 0;
+    bassValue.textContent = "0dB";
+    bassToggle.checked = false;
+    masterToggle.checked = isProcessingNeeded();
+    syncState();
+  });
+
+  resetBalanceBtn.addEventListener("click", () => {
+    balanceSlider.value = 0;
+    balanceValue.textContent = "C";
+    balanceToggle.checked = false;
+    masterToggle.checked = isProcessingNeeded();
+    syncState();
+  });
+
+  pitchSlider.addEventListener("input", () => {
+    let pVal = parseInt(pitchSlider.value);
+    pitchValue.textContent = (pVal > 0 ? "+" + pVal : pVal) + "st";
+    if (pVal === 0) {
+      pitchToggle.checked = false;
+    } else if (!pitchToggle.checked) {
+      pitchToggle.checked = true;
+    }
+    updateUIText();
+    masterToggle.checked = isProcessingNeeded();
+  });
+  pitchSlider.addEventListener("change", () => syncState());
+  pitchToggle.addEventListener("change", () => {
+    if (parseInt(pitchSlider.value) === 0) {
+      pitchToggle.checked = false;
+    }
+    masterToggle.checked = isProcessingNeeded();
+    syncState();
+  });
+
+  resetPitchBtn.addEventListener("click", () => {
+    pitchSlider.value = 0;
+    pitchValue.textContent = "0st";
+    pitchToggle.checked = false;
+    masterToggle.checked = isProcessingNeeded();
+    syncState();
+  });
+  reverbToggle.addEventListener("change", () => { masterToggle.checked = isProcessingNeeded(); syncState(); });
+
+  compareBtn.addEventListener("mousedown", () => sendBypass(true));
+  compareBtn.addEventListener("mouseup", () => sendBypass(false));
+  compareBtn.addEventListener("mouseleave", () => sendBypass(false));
+
+  function sendBypass(isBypassed) {
+    if (!storageKey) return;
+    browser.tabs.sendMessage(tabId, { action: "bypassFilters", bypassed: isBypassed }).catch(() => { });
+  }
+
+  // EQ Presets
+  const predefinedPresets = {
+    acoustic: [5, 5, 4, 1, 1, 1, 3, 4, 4, 3],
+    electronic: [6, 5, 1, -2, -3, 1, 2, 4, 5, 6],
+    pop: [-1, -1, 0, 2, 4, 4, 2, 0, -1, -1],
+    rock: [5, 4, 3, 1, -1, -1, 1, 3, 4, 5],
+    vocal: [-2, -2, -1, 2, 5, 5, 4, 1, -1, -2],
+    treble: [0, 0, 0, 0, 0, -1, -2, -3, -4, -5],
+    spoken: [-4, -2, 0, 2, 4, 4, 2, 0, -2, -4]
+  };
+  let customPresets = {};
+
+  async function loadCustomPresets() {
+    const data = await browser.storage.local.get("customEqPresets");
+    if (data.customEqPresets) {
+      customPresets = data.customEqPresets;
+    }
+    renderCustomPresets();
+    checkAndSelectMatchingPreset();
+  }
+
+  function renderCustomPresets() {
+    customPresetsGroup.innerHTML = "";
+    for (const name in customPresets) {
+      const opt = document.createElement("option");
+      opt.value = "custom_" + name;
+      opt.textContent = name;
+      customPresetsGroup.appendChild(opt);
+    }
+  }
+
+  loadCustomPresets();
+
+  eqPresetSelect.addEventListener("change", (e) => {
+    const val = e.target.value;
+
+    if (val.startsWith("custom_")) {
+      deletePresetBtn.style.display = "inline-block";
+      const name = val.replace("custom_", "");
+      if (customPresets[name]) {
+        setEqValues(customPresets[name]);
+        eqToggle.checked = true;
+        eqSection.style.opacity = "1";
+        masterToggle.checked = isProcessingNeeded();
+        syncState();
+      }
+    } else {
+      deletePresetBtn.style.display = "none";
+      if (val === "custom") return;
+      const preset = predefinedPresets[val];
+      if (preset) {
+        setEqValues(preset);
+        eqToggle.checked = true;
+        eqSection.style.opacity = "1";
+        masterToggle.checked = isProcessingNeeded();
+        syncState();
+      }
+    }
+  });
+
+  const customModalOverlay = document.getElementById("customModalOverlay");
+  const modalTitle = document.getElementById("modalTitle");
+  const modalMessage = document.getElementById("modalMessage");
+  const modalInput = document.getElementById("modalInput");
+  const modalCancel = document.getElementById("modalCancel");
+  const modalConfirm = document.getElementById("modalConfirm");
+
+  function showModal(title, message, isPrompt, isAlert = false) {
+    return new Promise((resolve) => {
+      modalTitle.textContent = title;
+      modalMessage.textContent = message;
+      if (isPrompt) {
+        modalInput.style.display = "block";
+        modalInput.value = "";
+        setTimeout(() => modalInput.focus(), 50);
+      } else {
+        modalInput.style.display = "none";
+      }
+      if (isAlert) {
+        modalCancel.style.display = "none";
+      } else {
+        modalCancel.style.display = "inline-block";
+      }
+      customModalOverlay.style.display = "flex";
+
+      const cleanup = () => {
+        modalCancel.removeEventListener("click", onCancel);
+        modalConfirm.removeEventListener("click", onConfirm);
+        customModalOverlay.style.display = "none";
+      };
+
+      const onCancel = () => { cleanup(); resolve(null); };
+      const onConfirm = () => { cleanup(); resolve(isPrompt ? modalInput.value : true); };
+
+      modalCancel.addEventListener("click", onCancel);
+      modalConfirm.addEventListener("click", onConfirm);
+    });
+  }
+  savePresetBtn.addEventListener("click", async () => {
+    const defaultMsg = getMessage("promptPresetName") || "Enter name for new EQ preset:";
+    const titleMsg = getMessage("extName") || "Sound Master";
+    const name = await showModal(titleMsg, defaultMsg, true);
+
+    if (name && name.trim()) {
+      const trimmedName = name.trim();
+      customPresets[trimmedName] = getEqValues();
+      await browser.storage.local.set({ customEqPresets: customPresets });
+      renderCustomPresets();
+      eqPresetSelect.value = "custom_" + trimmedName;
+      deletePresetBtn.style.display = "inline-block";
+    }
+  });
+
+  deletePresetBtn.addEventListener("click", async () => {
+    const val = eqPresetSelect.value;
+    if (val.startsWith("custom_")) {
+      const name = val.replace("custom_", "");
+      const confirmMsg = getMessage("confirmDeletePreset") || "Delete this preset permanently?";
+      const titleMsg = getMessage("extName") || "Sound Master";
+      const isConfirmed = await showModal(titleMsg, confirmMsg, false);
+
+      if (isConfirmed) {
+        delete customPresets[name];
+        await browser.storage.local.set({ customEqPresets: customPresets });
+        renderCustomPresets();
+        eqPresetSelect.value = "custom";
+        deletePresetBtn.style.display = "none";
+      }
+    }
+  });
 
   bassToggle.addEventListener("change", () => {
     if (bassToggle.checked && bassSlider.value === "0") {
@@ -610,13 +936,48 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   resetEqBtn.addEventListener("click", () => {
     setEqValues([0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+    eqToggle.checked = false;
+    eqSection.style.opacity = "0.5";
+    if (eqPresetSelect.value !== "custom") eqPresetSelect.value = "custom";
+    deletePresetBtn.style.display = "none";
     masterToggle.checked = isProcessingNeeded();
     syncState();
   });
 
+  function checkAndSelectMatchingPreset() {
+    const currentEq = getEqValues();
+
+    for (const [key, values] of Object.entries(predefinedPresets)) {
+      if (eqArraysEqual(currentEq, values)) {
+        if (eqPresetSelect.value !== key) {
+          eqPresetSelect.value = key;
+          deletePresetBtn.style.display = "none";
+        }
+        return;
+      }
+    }
+
+    for (const [name, values] of Object.entries(customPresets)) {
+      if (eqArraysEqual(currentEq, values)) {
+        const val = "custom_" + name;
+        if (eqPresetSelect.value !== val) {
+          eqPresetSelect.value = val;
+          deletePresetBtn.style.display = "inline-block";
+        }
+        return;
+      }
+    }
+
+    if (eqPresetSelect.value !== "custom") {
+      eqPresetSelect.value = "custom";
+      deletePresetBtn.style.display = "none";
+    }
+  }
+
   eqSliders.forEach((slider, index) => {
     slider.addEventListener("input", () => {
       eqNums[index].value = slider.value;
+      checkAndSelectMatchingPreset();
       const allZero = Array.from(eqSliders).every(s => parseInt(s.value, 10) === 0);
       if (allZero) {
         eqToggle.checked = false;
@@ -638,7 +999,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (val > 12) val = 12;
       numInput.value = val;
       eqSliders[index].value = val;
-      
+      checkAndSelectMatchingPreset();
+
       const allZero = Array.from(eqSliders).every(s => parseInt(s.value, 10) === 0);
       if (allZero) {
         eqToggle.checked = false;
@@ -647,7 +1009,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         eqToggle.checked = true;
         eqSection.style.opacity = "1";
       }
-      
       masterToggle.checked = isProcessingNeeded();
       syncState();
     });
@@ -680,10 +1041,14 @@ document.addEventListener("DOMContentLoaded", async () => {
           masterToggle.checked = isProcessingNeeded();
           syncState();
         } else {
-          alert("Invalid EQ file format.");
+          const titleMsg = getMessage("extName") || "Sound Master";
+          const errorMsg = getMessage("errorInvalidEq") || "Invalid EQ file format.";
+          showModal(titleMsg, errorMsg, false, true);
         }
       } catch (err) {
-        alert("Error parsing file.");
+        const titleMsg = getMessage("extName") || "Sound Master";
+        const errorMsg = getMessage("errorParseEq") || "Error parsing file.";
+        showModal(titleMsg, errorMsg, false, true);
       }
     };
     reader.readAsText(file);

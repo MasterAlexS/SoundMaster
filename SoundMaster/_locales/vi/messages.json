@@ -102,10 +102,10 @@
     "message": "Quản lý"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Tăng âm lượng"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Giảm âm lượng"
   },
   "shortcutPanicMute": {
     "message": "Tắt tiếng hoảng loạn"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Đã đồng bộ!"
+  },
+  "presetCustom": {
+    "message": "Phong tục"
+  },
+  "presetAcoustic": {
+    "message": "Âm học"
+  },
+  "presetElectronic": {
+    "message": "điện tử"
+  },
+  "presetPop": {
+    "message": "Nhạc pop"
+  },
+  "presetRock": {
+    "message": "Đá"
+  },
+  "presetVocal": {
+    "message": "tăng cường giọng hát"
+  },
+  "presetTreble": {
+    "message": "Giảm âm treble"
+  },
+  "presetSpoken": {
+    "message": "Lời nói"
+  },
+  "compareBtnTitle": {
+    "message": "Giữ để so sánh (Bỏ qua)"
+  },
+  "speedTitle": {
+    "message": "Tốc độ phát lại"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Đặt lại tốc độ"
+  },
+  "pitchShiftTitle": {
+    "message": "Thay đổi cao độ"
+  },
+  "reverbTitle": {
+    "message": "Phòng hòa nhạc (Reverb 3D)"
+  },
+  "customPresetsGroup": {
+    "message": "Cài đặt trước tùy chỉnh"
+  },
+  "defaultPresetsGroup": {
+    "message": "Cài đặt trước được xác định trước"
+  },
+  "savePresetTitle": {
+    "message": "Lưu cài đặt trước"
+  },
+  "deletePresetTitle": {
+    "message": "Xóa cài sẵn"
+  },
+  "promptPresetName": {
+    "message": "Nhập tên cho cài đặt trước EQ mới:"
+  },
+  "confirmDeletePreset": {
+    "message": "Xóa giá trị đặt trước này vĩnh viễn?"
+  },
+  "modalCancel": {
+    "message": "Hủy"
+  },
+  "modalConfirm": {
+    "message": "OK"
+  },
+  "errorInvalidEq": {
+    "message": "Định dạng tệp EQ không hợp lệ."
+  },
+  "errorParseEq": {
+    "message": "Lỗi phân tích cú pháp tệp."
   }
 }

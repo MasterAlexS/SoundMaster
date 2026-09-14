@@ -102,10 +102,10 @@
     "message": "Керувати"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Збільшити гучність"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Зменшити гучність"
   },
   "shortcutPanicMute": {
     "message": "Панічний звук"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Синхронізовано!"
+  },
+  "presetCustom": {
+    "message": "Свій"
+  },
+  "presetAcoustic": {
+    "message": "Акустика"
+  },
+  "presetElectronic": {
+    "message": "Електроніка"
+  },
+  "presetPop": {
+    "message": "Поп"
+  },
+  "presetRock": {
+    "message": "Рок"
+  },
+  "presetVocal": {
+    "message": "Вокал"
+  },
+  "presetTreble": {
+    "message": "Редуктор високих частот"
+  },
+  "presetSpoken": {
+    "message": "Мовлення"
+  },
+  "compareBtnTitle": {
+    "message": "Порівняти"
+  },
+  "speedTitle": {
+    "message": "Швидкість відтворення"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Скинути швидкість"
+  },
+  "pitchShiftTitle": {
+    "message": "Зміна тону"
+  },
+  "reverbTitle": {
+    "message": "Концертний зал (3D Reverb)"
+  },
+  "customPresetsGroup": {
+    "message": "Користувацькі пресети"
+  },
+  "defaultPresetsGroup": {
+    "message": "Попередньо встановлені налаштування"
+  },
+  "savePresetTitle": {
+    "message": "Зберегти попередні налаштування"
+  },
+  "deletePresetTitle": {
+    "message": "Видалити попередні налаштування"
+  },
+  "promptPresetName": {
+    "message": "Введіть назву нового попереднього налаштування еквалайзера:"
+  },
+  "confirmDeletePreset": {
+    "message": "Видалити цей стиль назавжди?"
+  },
+  "modalCancel": {
+    "message": "Скасувати"
+  },
+  "modalConfirm": {
+    "message": "ОК"
+  },
+  "errorInvalidEq": {
+    "message": "Недійсний формат файлу EQ."
+  },
+  "errorParseEq": {
+    "message": "Помилка аналізу файлу."
   }
 }

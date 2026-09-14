@@ -102,13 +102,13 @@
     "message": "Upravljaj"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Povečaj glasnost"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Zmanjšaj glasnost"
   },
   "shortcutPanicMute": {
-    "message": "Panic Mute"
+    "message": "Utišaj vse"
   },
   "shortcutToggle": {
     "message": "Preklopi"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Sinhronizirano!"
+  },
+  "presetCustom": {
+    "message": "Po meri"
+  },
+  "presetAcoustic": {
+    "message": "Akustična"
+  },
+  "presetElectronic": {
+    "message": "Elektronski"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetRock": {
+    "message": "Rock"
+  },
+  "presetVocal": {
+    "message": "Vokal"
+  },
+  "presetTreble": {
+    "message": "Reduktor visokih tonov"
+  },
+  "presetSpoken": {
+    "message": "Govor"
+  },
+  "compareBtnTitle": {
+    "message": "Pridržite za primerjavo (Bypass)"
+  },
+  "speedTitle": {
+    "message": "Hitrost predvajanja"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Ponastavi hitrost"
+  },
+  "pitchShiftTitle": {
+    "message": "Sprememba višine tona"
+  },
+  "reverbTitle": {
+    "message": "Koncertna dvorana (3D odmev)"
+  },
+  "customPresetsGroup": {
+    "message": "Prednastavitve po meri"
+  },
+  "defaultPresetsGroup": {
+    "message": "Prednastavljene prednastavitve"
+  },
+  "savePresetTitle": {
+    "message": "Shrani prednastavitev"
+  },
+  "deletePresetTitle": {
+    "message": "Izbriši prednastavitev"
+  },
+  "promptPresetName": {
+    "message": "Vnesite ime za novo prednastavitev EQ:"
+  },
+  "confirmDeletePreset": {
+    "message": "Trajno izbriši to prednastavitev?"
+  },
+  "modalCancel": {
+    "message": "Prekliči"
+  },
+  "modalConfirm": {
+    "message": "V redu"
+  },
+  "errorInvalidEq": {
+    "message": "Neveljaven format datoteke EQ."
+  },
+  "errorParseEq": {
+    "message": "Napaka pri razčlenjevanju datoteke."
   }
 }

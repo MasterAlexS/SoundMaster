@@ -102,10 +102,10 @@
     "message": "Tvarkyti"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Padidinti garsą"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Sumažinti garsą"
   },
   "shortcutPanicMute": {
     "message": "Panikos nutildymas"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Sinchronizuota!"
+  },
+  "presetCustom": {
+    "message": "Pasirinktinis"
+  },
+  "presetAcoustic": {
+    "message": "Akustinis"
+  },
+  "presetElectronic": {
+    "message": "Elektroninė"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetRock": {
+    "message": "Rokas"
+  },
+  "presetVocal": {
+    "message": "Vokalo stiprintuvas"
+  },
+  "presetTreble": {
+    "message": "Treble reduktorius"
+  },
+  "presetSpoken": {
+    "message": "Ištartas žodis"
+  },
+  "compareBtnTitle": {
+    "message": "Laikykite, kad palygintumėte (apeiti)"
+  },
+  "speedTitle": {
+    "message": "Atkūrimo greitis"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Iš naujo nustatyti greitį"
+  },
+  "pitchShiftTitle": {
+    "message": "Tono keitimas"
+  },
+  "reverbTitle": {
+    "message": "Koncertų salė (3D Reverb)"
+  },
+  "customPresetsGroup": {
+    "message": "Pasirinktiniai išankstiniai nustatymai"
+  },
+  "defaultPresetsGroup": {
+    "message": "Iš anksto nustatyti išankstiniai nustatymai"
+  },
+  "savePresetTitle": {
+    "message": "Išsaugoti išankstinį nustatymą"
+  },
+  "deletePresetTitle": {
+    "message": "Ištrinti išankstinį nustatymą"
+  },
+  "promptPresetName": {
+    "message": "Įveskite naujo EQ išankstinio nustatymo pavadinimą:"
+  },
+  "confirmDeletePreset": {
+    "message": "Ištrinti šį išankstinį nustatymą visam laikui?"
+  },
+  "modalCancel": {
+    "message": "Atšaukti"
+  },
+  "modalConfirm": {
+    "message": "Gerai"
+  },
+  "errorInvalidEq": {
+    "message": "Neteisingas EQ failo formatas."
+  },
+  "errorParseEq": {
+    "message": "Failo nagrinėjimo klaida."
   }
 }

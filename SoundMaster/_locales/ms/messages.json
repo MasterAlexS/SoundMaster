@@ -6,7 +6,7 @@
     "message": "Studio Audio Lanjutan dengan EQ, Rangsangan Bes, Mono Downmix, Panic Mute dan Penggalak Kelantangan."
   },
   "standardMode": {
-    "message": "Standard"
+    "message": "Mod Standard"
   },
   "extremeMode": {
     "message": "Ekstrem"
@@ -96,16 +96,16 @@
     "message": "Eksport EQ"
   },
   "importEqTitle": {
-    "message": "Import EQ"
+    "message": "Import Profil"
   },
   "manageShortcuts": {
     "message": "Uruskan"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Kuatkan Kelantangan"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Perlahankan Kelantangan"
   },
   "shortcutPanicMute": {
     "message": "Panik Bisu"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Disegerakkan!"
+  },
+  "presetCustom": {
+    "message": "Adat"
+  },
+  "presetAcoustic": {
+    "message": "Akustik"
+  },
+  "presetElectronic": {
+    "message": "elektronik"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetRock": {
+    "message": "Rock"
+  },
+  "presetVocal": {
+    "message": "Penggalak Vokal"
+  },
+  "presetTreble": {
+    "message": "Pengurangan Treble"
+  },
+  "presetSpoken": {
+    "message": "Perkataan yang Diucapkan"
+  },
+  "compareBtnTitle": {
+    "message": "Tahan untuk Membandingkan (Pintas)"
+  },
+  "speedTitle": {
+    "message": "Kelajuan Main Semula"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Tetapkan Semula Kelajuan"
+  },
+  "pitchShiftTitle": {
+    "message": "Anjakan Padang"
+  },
+  "reverbTitle": {
+    "message": "Dewan Konsert (3D Reverb)"
+  },
+  "customPresetsGroup": {
+    "message": "Pratetap Tersuai"
+  },
+  "defaultPresetsGroup": {
+    "message": "Pratetap Pratakrif"
+  },
+  "savePresetTitle": {
+    "message": "Simpan Pratetap"
+  },
+  "deletePresetTitle": {
+    "message": "Padam Pratetap"
+  },
+  "promptPresetName": {
+    "message": "Masukkan nama untuk pratetap EQ baharu:"
+  },
+  "confirmDeletePreset": {
+    "message": "Padamkan pratetap ini secara kekal?"
+  },
+  "modalCancel": {
+    "message": "Batal"
+  },
+  "modalConfirm": {
+    "message": "OK"
+  },
+  "errorInvalidEq": {
+    "message": "Format fail EQ tidak sah."
+  },
+  "errorParseEq": {
+    "message": "Ralat menghuraikan fail."
   }
 }

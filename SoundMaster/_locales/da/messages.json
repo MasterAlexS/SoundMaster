@@ -6,7 +6,7 @@
     "message": "Avanceret lydstudie med EQ, basforstærkning, Mono Downmix, Panic Mute og Volume Booster."
   },
   "standardMode": {
-    "message": "Standard"
+    "message": "Standardtilstand"
   },
   "extremeMode": {
     "message": "Ekstrem"
@@ -48,7 +48,7 @@
     "message": "Lydstyrke"
   },
   "tabEQ": {
-    "message": "Equalizer"
+    "message": "EQ"
   },
   "tabUtils": {
     "message": "Værktøjer"
@@ -102,10 +102,10 @@
     "message": "Styre"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Skru op for lyden"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Skru ned for lyden"
   },
   "shortcutPanicMute": {
     "message": "Panik mute"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Synkroniseret!"
+  },
+  "presetCustom": {
+    "message": "Skik"
+  },
+  "presetAcoustic": {
+    "message": "Akustisk"
+  },
+  "presetElectronic": {
+    "message": "Elektronisk"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetRock": {
+    "message": "Rock"
+  },
+  "presetVocal": {
+    "message": "Vokal"
+  },
+  "presetTreble": {
+    "message": "Diskantreduktion"
+  },
+  "presetSpoken": {
+    "message": "Tale"
+  },
+  "compareBtnTitle": {
+    "message": "Hold for at sammenligne (omgå)"
+  },
+  "speedTitle": {
+    "message": "Afspilningshastighed"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Nulstil hastighed"
+  },
+  "pitchShiftTitle": {
+    "message": "Tonehøjde"
+  },
+  "reverbTitle": {
+    "message": "3D Rumklang"
+  },
+  "customPresetsGroup": {
+    "message": "Brugerdefinerede forudindstillinger"
+  },
+  "defaultPresetsGroup": {
+    "message": "Standard Forudindstillinger"
+  },
+  "savePresetTitle": {
+    "message": "Gem Forudindstilling"
+  },
+  "deletePresetTitle": {
+    "message": "Slet Forudindstilling"
+  },
+  "promptPresetName": {
+    "message": "Indtast navn på ny EQ-forudindstilling:"
+  },
+  "confirmDeletePreset": {
+    "message": "Slet denne forudindstilling permanent?"
+  },
+  "modalCancel": {
+    "message": "Annuller"
+  },
+  "modalConfirm": {
+    "message": "OK"
+  },
+  "errorInvalidEq": {
+    "message": "Ugyldigt EQ-filformat."
+  },
+  "errorParseEq": {
+    "message": "Fejl ved tolkning af fil."
   }
 }

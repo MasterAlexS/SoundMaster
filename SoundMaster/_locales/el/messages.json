@@ -102,10 +102,10 @@
     "message": "Διαχειρίζομαι"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Αύξηση έντασης"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Μείωση έντασης"
   },
   "shortcutPanicMute": {
     "message": "Σίγαση πανικού"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Συγχρονίστηκε!"
+  },
+  "presetCustom": {
+    "message": "Εθιμο"
+  },
+  "presetAcoustic": {
+    "message": "Ακουστικός"
+  },
+  "presetElectronic": {
+    "message": "Ηλεκτρονικός"
+  },
+  "presetPop": {
+    "message": "Ποπ"
+  },
+  "presetRock": {
+    "message": "Ροκ"
+  },
+  "presetVocal": {
+    "message": "Φωνητικά"
+  },
+  "presetTreble": {
+    "message": "Μειωτήρας πρίμων"
+  },
+  "presetSpoken": {
+    "message": "Ομιλία"
+  },
+  "compareBtnTitle": {
+    "message": "Αναμονή για σύγκριση (Παράκαμψη)"
+  },
+  "speedTitle": {
+    "message": "Ταχύτητα αναπαραγωγής"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Επαναφορά ταχύτητας"
+  },
+  "pitchShiftTitle": {
+    "message": "Αλλαγή τόνου"
+  },
+  "reverbTitle": {
+    "message": "Μέγαρο Μουσικής (3D Reverb)"
+  },
+  "customPresetsGroup": {
+    "message": "Προσαρμοσμένες προεπιλογές"
+  },
+  "defaultPresetsGroup": {
+    "message": "Προκαθορισμένα"
+  },
+  "savePresetTitle": {
+    "message": "Αποθήκευση"
+  },
+  "deletePresetTitle": {
+    "message": "Διαγραφή"
+  },
+  "promptPresetName": {
+    "message": "Εισαγάγετε όνομα για νέο EQ:"
+  },
+  "confirmDeletePreset": {
+    "message": "Οριστική διαγραφή αυτής της προεπιλογής;"
+  },
+  "modalCancel": {
+    "message": "Ακύρωση"
+  },
+  "modalConfirm": {
+    "message": "ΟΚ"
+  },
+  "errorInvalidEq": {
+    "message": "Μη έγκυρη μορφή αρχείου EQ."
+  },
+  "errorParseEq": {
+    "message": "Σφάλμα κατά την ανάλυση του αρχείου."
   }
 }

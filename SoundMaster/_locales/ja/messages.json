@@ -102,10 +102,10 @@
     "message": "管理"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "音量を上げる"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "音量を下げる"
   },
   "shortcutPanicMute": {
     "message": "パニックミュート"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ 同期完了！"
+  },
+  "presetCustom": {
+    "message": "カスタム"
+  },
+  "presetAcoustic": {
+    "message": "音響"
+  },
+  "presetElectronic": {
+    "message": "電子"
+  },
+  "presetPop": {
+    "message": "ポップ"
+  },
+  "presetRock": {
+    "message": "ロック"
+  },
+  "presetVocal": {
+    "message": "ボーカルブースター"
+  },
+  "presetTreble": {
+    "message": "トレブルリデューサー"
+  },
+  "presetSpoken": {
+    "message": "話し言葉"
+  },
+  "compareBtnTitle": {
+    "message": "押し続けて比較 (バイパス)"
+  },
+  "speedTitle": {
+    "message": "再生速度"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "リセット速度"
+  },
+  "pitchShiftTitle": {
+    "message": "ピッチシフト"
+  },
+  "reverbTitle": {
+    "message": "コンサートホール（3Dリバーブ）"
+  },
+  "customPresetsGroup": {
+    "message": "カスタムプリセット"
+  },
+  "defaultPresetsGroup": {
+    "message": "定義済みのプリセット"
+  },
+  "savePresetTitle": {
+    "message": "プリセットの保存"
+  },
+  "deletePresetTitle": {
+    "message": "プリセットの削除"
+  },
+  "promptPresetName": {
+    "message": "新しい EQ プリセットの名前を入力してください:"
+  },
+  "confirmDeletePreset": {
+    "message": "このプリセットを完全に削除しますか?"
+  },
+  "modalCancel": {
+    "message": "キャンセル"
+  },
+  "modalConfirm": {
+    "message": "はい"
+  },
+  "errorInvalidEq": {
+    "message": "無効なEQファイル形式です。"
+  },
+  "errorParseEq": {
+    "message": "ファイルの解析エラー。"
   }
 }

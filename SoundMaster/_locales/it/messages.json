@@ -6,13 +6,13 @@
     "message": "Studio audio avanzato con EQ, potenziamento bassi, downmix mono, silenziamento rapido e amplificatore di volume."
   },
   "standardMode": {
-    "message": "Standard"
+    "message": "Modalità Standard"
   },
   "extremeMode": {
     "message": "Estremo"
   },
   "resetBtn": {
-    "message": "Reset"
+    "message": "Reimposta"
   },
   "applyLastBtn": {
     "message": "Applica Ultimo"
@@ -102,10 +102,10 @@
     "message": "Maneggio"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Alza il volume"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Abbassa il volume"
   },
   "shortcutPanicMute": {
     "message": "Muto del panico"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Sincronizzato!"
+  },
+  "presetCustom": {
+    "message": "Costume"
+  },
+  "presetAcoustic": {
+    "message": "Acustico"
+  },
+  "presetElectronic": {
+    "message": "Elettronico"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetRock": {
+    "message": "Roccia"
+  },
+  "presetVocal": {
+    "message": "Amplificatore vocale"
+  },
+  "presetTreble": {
+    "message": "Riduttore degli acuti"
+  },
+  "presetSpoken": {
+    "message": "Parola parlata"
+  },
+  "compareBtnTitle": {
+    "message": "Tieni premuto per confrontare (bypass)"
+  },
+  "speedTitle": {
+    "message": "Velocità di riproduzione"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Reimposta velocità"
+  },
+  "pitchShiftTitle": {
+    "message": "Cambio di tono"
+  },
+  "reverbTitle": {
+    "message": "Sala da concerto (riverbero 3D)"
+  },
+  "customPresetsGroup": {
+    "message": "Preimpostazioni personalizzate"
+  },
+  "defaultPresetsGroup": {
+    "message": "Preset predefiniti"
+  },
+  "savePresetTitle": {
+    "message": "Salva preimpostazione"
+  },
+  "deletePresetTitle": {
+    "message": "Elimina preimpostazione"
+  },
+  "promptPresetName": {
+    "message": "Inserisci il nome per la nuova preimpostazione EQ:"
+  },
+  "confirmDeletePreset": {
+    "message": "Eliminare questa preimpostazione in modo permanente?"
+  },
+  "modalCancel": {
+    "message": "Annulla"
+  },
+  "modalConfirm": {
+    "message": "OK"
+  },
+  "errorInvalidEq": {
+    "message": "Formato file EQ non valido."
+  },
+  "errorParseEq": {
+    "message": "Errore durante l'analisi del file."
   }
 }

@@ -102,10 +102,10 @@
     "message": "Управлявайте"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Увеличаване на звука"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Намаляване на звука"
   },
   "shortcutPanicMute": {
     "message": "Паник заглушаване"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Синхронизирано!"
+  },
+  "presetCustom": {
+    "message": "По поръчка"
+  },
+  "presetAcoustic": {
+    "message": "Акустичен"
+  },
+  "presetElectronic": {
+    "message": "Електронен"
+  },
+  "presetPop": {
+    "message": "Поп"
+  },
+  "presetRock": {
+    "message": "Рок"
+  },
+  "presetVocal": {
+    "message": "Усилвател на гласа"
+  },
+  "presetTreble": {
+    "message": "Редуктор на високите честоти"
+  },
+  "presetSpoken": {
+    "message": "Говорена дума"
+  },
+  "compareBtnTitle": {
+    "message": "Задръжте за сравнение (Байпас)"
+  },
+  "speedTitle": {
+    "message": "Скорост на възпроизвеждане"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Нулиране на скоростта"
+  },
+  "pitchShiftTitle": {
+    "message": "Изместване на височината"
+  },
+  "reverbTitle": {
+    "message": "Концертна зала (3D реверберация)"
+  },
+  "customPresetsGroup": {
+    "message": "Персонализирани предварително зададени настройки"
+  },
+  "defaultPresetsGroup": {
+    "message": "Предварително зададени настройки"
+  },
+  "savePresetTitle": {
+    "message": "Запазване на предварителна настройка"
+  },
+  "deletePresetTitle": {
+    "message": "Изтриване на предварителна настройка"
+  },
+  "promptPresetName": {
+    "message": "Въведете име за новата предварителна настройка на EQ:"
+  },
+  "confirmDeletePreset": {
+    "message": "Да се ​​изтрие ли тази предварителна настройка за постоянно?"
+  },
+  "modalCancel": {
+    "message": "Отказ"
+  },
+  "modalConfirm": {
+    "message": "Добре"
+  },
+  "errorInvalidEq": {
+    "message": "Невалиден формат на EQ файл."
+  },
+  "errorParseEq": {
+    "message": "Грешка при анализиране на файла."
   }
 }

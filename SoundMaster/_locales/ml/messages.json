@@ -102,10 +102,10 @@
     "message": "കൈകാര്യം ചെയ്യുക"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "വോളിയം കൂട്ടുക"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "വോളിയം കുറയ്ക്കുക"
   },
   "shortcutPanicMute": {
     "message": "പരിഭ്രാന്തി നിശബ്ദമാക്കുക"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ സമന്വയിപ്പിച്ചു!"
+  },
+  "presetCustom": {
+    "message": "കസ്റ്റം"
+  },
+  "presetAcoustic": {
+    "message": "അക്കോസ്റ്റിക്"
+  },
+  "presetElectronic": {
+    "message": "ഇലക്ട്രോണിക്"
+  },
+  "presetPop": {
+    "message": "പോപ്പ്"
+  },
+  "presetRock": {
+    "message": "പാറ"
+  },
+  "presetVocal": {
+    "message": "വോക്കൽ ബൂസ്റ്റർ"
+  },
+  "presetTreble": {
+    "message": "ട്രെബിൾ റിഡ്യൂസർ"
+  },
+  "presetSpoken": {
+    "message": "സംസാരിച്ച വാക്ക്"
+  },
+  "compareBtnTitle": {
+    "message": "താരതമ്യം ചെയ്യാൻ പിടിക്കുക (ബൈപാസ്)"
+  },
+  "speedTitle": {
+    "message": "പ്ലേബാക്ക് വേഗത"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "വേഗത പുനഃസജ്ജമാക്കുക"
+  },
+  "pitchShiftTitle": {
+    "message": "പിച്ച് ഷിഫ്റ്റ്"
+  },
+  "reverbTitle": {
+    "message": "കൺസേർട്ട് ഹാൾ (3D റിവേർബ്)"
+  },
+  "customPresetsGroup": {
+    "message": "ഇഷ്‌ടാനുസൃത പ്രീസെറ്റുകൾ"
+  },
+  "defaultPresetsGroup": {
+    "message": "മുൻകൂട്ടി നിശ്ചയിച്ച പ്രീസെറ്റുകൾ"
+  },
+  "savePresetTitle": {
+    "message": "പ്രീസെറ്റ് സംരക്ഷിക്കുക"
+  },
+  "deletePresetTitle": {
+    "message": "പ്രീസെറ്റ് ഇല്ലാതാക്കുക"
+  },
+  "promptPresetName": {
+    "message": "പുതിയ EQ പ്രീസെറ്റിന് പേര് നൽകുക:"
+  },
+  "confirmDeletePreset": {
+    "message": "ഈ പ്രീസെറ്റ് ശാശ്വതമായി ഇല്ലാതാക്കണോ?"
+  },
+  "modalCancel": {
+    "message": "റദ്ദാക്കുക"
+  },
+  "modalConfirm": {
+    "message": "ശരി"
+  },
+  "errorInvalidEq": {
+    "message": "അസാധുവായ EQ ഫയൽ ഫോർമാറ്റ്."
+  },
+  "errorParseEq": {
+    "message": "ഫയൽ പാഴ്‌സ് ചെയ്യുന്നതിൽ പിശക്."
   }
 }

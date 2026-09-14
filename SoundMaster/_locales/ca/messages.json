@@ -102,10 +102,10 @@
     "message": "Gestionar"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Pujar volum"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Abaixar volum"
   },
   "shortcutPanicMute": {
     "message": "Pànic Mut"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Sincronitzat!"
+  },
+  "presetCustom": {
+    "message": "Personalitzat"
+  },
+  "presetAcoustic": {
+    "message": "Acústica"
+  },
+  "presetElectronic": {
+    "message": "Electrònica"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetRock": {
+    "message": "Roca"
+  },
+  "presetVocal": {
+    "message": "Potenciador vocal"
+  },
+  "presetTreble": {
+    "message": "Reductor d'aguts"
+  },
+  "presetSpoken": {
+    "message": "Paraula parlada"
+  },
+  "compareBtnTitle": {
+    "message": "Mantén premut per comparar (Bypass)"
+  },
+  "speedTitle": {
+    "message": "Velocitat de reproducció"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Restableix la velocitat"
+  },
+  "pitchShiftTitle": {
+    "message": "Canvi de to"
+  },
+  "reverbTitle": {
+    "message": "Sala de concerts (reverb 3D)"
+  },
+  "customPresetsGroup": {
+    "message": "Preajustos personalitzats"
+  },
+  "defaultPresetsGroup": {
+    "message": "Presets predefinits"
+  },
+  "savePresetTitle": {
+    "message": "Desa el preajust"
+  },
+  "deletePresetTitle": {
+    "message": "Suprimeix Preset"
+  },
+  "promptPresetName": {
+    "message": "Introduïu el nom per al nou preajust d'EQ:"
+  },
+  "confirmDeletePreset": {
+    "message": "Vols suprimir aquest valor predefinit permanentment?"
+  },
+  "modalCancel": {
+    "message": "Cancel·lar"
+  },
+  "modalConfirm": {
+    "message": "D'acord"
+  },
+  "errorInvalidEq": {
+    "message": "Format de fitxer EQ no vàlid."
+  },
+  "errorParseEq": {
+    "message": "Error en analitzar el fitxer."
   }
 }

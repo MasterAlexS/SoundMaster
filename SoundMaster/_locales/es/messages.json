@@ -102,10 +102,10 @@
     "message": "Administrar"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Subir volumen"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Bajar volumen"
   },
   "shortcutPanicMute": {
     "message": "Silencio de pánico"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ ¡Sincronizado!"
+  },
+  "presetCustom": {
+    "message": "Costumbre"
+  },
+  "presetAcoustic": {
+    "message": "Acústico"
+  },
+  "presetElectronic": {
+    "message": "Electrónico"
+  },
+  "presetPop": {
+    "message": "Estallido"
+  },
+  "presetRock": {
+    "message": "Roca"
+  },
+  "presetVocal": {
+    "message": "refuerzo vocal"
+  },
+  "presetTreble": {
+    "message": "Reductor de agudos"
+  },
+  "presetSpoken": {
+    "message": "palabra hablada"
+  },
+  "compareBtnTitle": {
+    "message": "Mantenga presionado para comparar (omitir)"
+  },
+  "speedTitle": {
+    "message": "Velocidad de reproducción"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Restablecer velocidad"
+  },
+  "pitchShiftTitle": {
+    "message": "Cambio de tono"
+  },
+  "reverbTitle": {
+    "message": "Sala de conciertos (reverberación 3D)"
+  },
+  "customPresetsGroup": {
+    "message": "Preajustes Personalizados"
+  },
+  "defaultPresetsGroup": {
+    "message": "Preajustes Predeterminados"
+  },
+  "savePresetTitle": {
+    "message": "Guardar Preajuste"
+  },
+  "deletePresetTitle": {
+    "message": "Eliminar Preajuste"
+  },
+  "promptPresetName": {
+    "message": "Ingrese el nombre para el nuevo ajuste preestablecido de EQ:"
+  },
+  "confirmDeletePreset": {
+    "message": "¿Eliminar este ajuste preestablecido permanentemente?"
+  },
+  "modalCancel": {
+    "message": "Cancelar"
+  },
+  "modalConfirm": {
+    "message": "Aceptar"
+  },
+  "errorInvalidEq": {
+    "message": "Formato de archivo EQ no válido."
+  },
+  "errorParseEq": {
+    "message": "Error al analizar el archivo."
   }
 }

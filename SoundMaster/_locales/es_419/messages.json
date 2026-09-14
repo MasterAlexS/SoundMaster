@@ -93,19 +93,19 @@
     "message": "Restablecer EQ"
   },
   "exportEqTitle": {
-    "message": "Exportar ecualizador"
+    "message": "Exportar perfil"
   },
   "importEqTitle": {
-    "message": "Importar ecualizador"
+    "message": "Importar perfil"
   },
   "manageShortcuts": {
-    "message": "Administrar"
+    "message": "Administrar Atajos"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Subir Volumen"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Bajar Volumen"
   },
   "shortcutPanicMute": {
     "message": "Silencio de pánico"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ ¡Sincronizado!"
+  },
+  "presetCustom": {
+    "message": "Personalizado"
+  },
+  "presetAcoustic": {
+    "message": "Acústico"
+  },
+  "presetElectronic": {
+    "message": "Electrónica"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetRock": {
+    "message": "Rock"
+  },
+  "presetVocal": {
+    "message": "Voz"
+  },
+  "presetTreble": {
+    "message": "Agudos"
+  },
+  "presetSpoken": {
+    "message": "Hablado"
+  },
+  "compareBtnTitle": {
+    "message": "Comparar"
+  },
+  "speedTitle": {
+    "message": "Velocidad"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Restablecer Velocidad"
+  },
+  "pitchShiftTitle": {
+    "message": "Ajuste de Tono"
+  },
+  "reverbTitle": {
+    "message": "Reverberación 3D"
+  },
+  "customPresetsGroup": {
+    "message": "Preajustes Personalizados"
+  },
+  "defaultPresetsGroup": {
+    "message": "Preajustes Predeterminados"
+  },
+  "savePresetTitle": {
+    "message": "Guardar Preajuste"
+  },
+  "deletePresetTitle": {
+    "message": "Eliminar Preajuste"
+  },
+  "promptPresetName": {
+    "message": "Ingrese el nombre para el nuevo preajuste EQ:"
+  },
+  "confirmDeletePreset": {
+    "message": "¿Eliminar este preajuste permanentemente?"
+  },
+  "modalCancel": {
+    "message": "Cancelar"
+  },
+  "modalConfirm": {
+    "message": "Aceptar"
+  },
+  "errorInvalidEq": {
+    "message": "Formato de archivo EQ no válido."
+  },
+  "errorParseEq": {
+    "message": "Error al analizar el archivo."
   }
 }

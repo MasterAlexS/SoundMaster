@@ -93,33 +93,102 @@
     "message": "Redefinir EQ"
   },
   "exportEqTitle": {
-    "message": "Exportar equalizador"
+    "message": "Exportar perfil"
   },
   "importEqTitle": {
-    "message": "Importar equalizador"
+    "message": "Importar perfil"
   },
   "manageShortcuts": {
-    "message": "Gerenciar"
+    "message": "Gerir Atalhos"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Aumentar Volume"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Diminuir Volume"
   },
   "shortcutPanicMute": {
-    "message": "Pânico mudo"
+    "message": "Silenciar Tudo"
   },
   "shortcutToggle": {
-    "message": "Alternar"
+    "message": "Alternar Extensão"
   },
   "syncTabsText": {
     "message": "Sincronizar todos os separadores"
   },
   "syncTabsTitle": {
-    "message": "Aplicar o volume atual a todos os separadores deste domínio"
+    "message": "Sincronizar"
   },
   "syncSuccess": {
     "message": "✓ Sincronizado!"
+  },
+  "presetCustom": {
+    "message": "Personalizado"
+  },
+  "presetAcoustic": {
+    "message": "Acústico"
+  },
+  "presetElectronic": {
+    "message": "Eletrónica"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetRock": {
+    "message": "Rock"
+  },
+  "presetVocal": {
+    "message": "Vocal"
+  },
+  "presetTreble": {
+    "message": "Agudos"
+  },
+  "presetSpoken": {
+    "message": "Falado"
+  },
+  "compareBtnTitle": {
+    "message": "Comparar"
+  },
+  "speedTitle": {
+    "message": "Velocidade"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Repor Velocidade"
+  },
+  "pitchShiftTitle": {
+    "message": "Ajuste de Tom"
+  },
+  "reverbTitle": {
+    "message": "Reverberação 3D"
+  },
+  "customPresetsGroup": {
+    "message": "Predefinições Personalizadas"
+  },
+  "defaultPresetsGroup": {
+    "message": "Predefinições Padrão"
+  },
+  "savePresetTitle": {
+    "message": "Guardar Predefinição"
+  },
+  "deletePresetTitle": {
+    "message": "Eliminar Predefinição"
+  },
+  "promptPresetName": {
+    "message": "Insira o nome da nova predefinição EQ:"
+  },
+  "confirmDeletePreset": {
+    "message": "Eliminar esta predefinição permanentemente?"
+  },
+  "modalCancel": {
+    "message": "Cancelar"
+  },
+  "modalConfirm": {
+    "message": "OK"
+  },
+  "errorInvalidEq": {
+    "message": "Formato de ficheiro EQ inválido."
+  },
+  "errorParseEq": {
+    "message": "Erro ao analisar o ficheiro."
   }
 }

@@ -6,7 +6,7 @@
     "message": "Studio audio avancé avec égaliseur, amplification des basses, mixage mono, sourdine d'urgence et amplificateur de volume."
   },
   "standardMode": {
-    "message": "Standard"
+    "message": "Mode Standard"
   },
   "extremeMode": {
     "message": "Extrême"
@@ -102,10 +102,10 @@
     "message": "Gérer"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Augmenter le volume"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Diminuer le volume"
   },
   "shortcutPanicMute": {
     "message": "Panique muet"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Synchronisé !"
+  },
+  "presetCustom": {
+    "message": "Coutume"
+  },
+  "presetAcoustic": {
+    "message": "Acoustique"
+  },
+  "presetElectronic": {
+    "message": "Électronique"
+  },
+  "presetPop": {
+    "message": "Populaire"
+  },
+  "presetRock": {
+    "message": "Rocher"
+  },
+  "presetVocal": {
+    "message": "Booster vocal"
+  },
+  "presetTreble": {
+    "message": "Réducteur d'aigus"
+  },
+  "presetSpoken": {
+    "message": "Parole parlée"
+  },
+  "compareBtnTitle": {
+    "message": "Tenir pour comparer (contourner)"
+  },
+  "speedTitle": {
+    "message": "Vitesse de lecture"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Réinitialiser la vitesse"
+  },
+  "pitchShiftTitle": {
+    "message": "Changement de hauteur"
+  },
+  "reverbTitle": {
+    "message": "Salle de concert (réverbération 3D)"
+  },
+  "customPresetsGroup": {
+    "message": "Préréglages personnalisés"
+  },
+  "defaultPresetsGroup": {
+    "message": "Préréglages prédéfinis"
+  },
+  "savePresetTitle": {
+    "message": "Enregistrer le préréglage"
+  },
+  "deletePresetTitle": {
+    "message": "Supprimer le préréglage"
+  },
+  "promptPresetName": {
+    "message": "Entrez le nom du nouveau préréglage d'égalisation :"
+  },
+  "confirmDeletePreset": {
+    "message": "Supprimer définitivement ce préréglage ?"
+  },
+  "modalCancel": {
+    "message": "Annuler"
+  },
+  "modalConfirm": {
+    "message": "OK"
+  },
+  "errorInvalidEq": {
+    "message": "Format de fichier EQ invalide."
+  },
+  "errorParseEq": {
+    "message": "Erreur lors de l'analyse du fichier."
   }
 }

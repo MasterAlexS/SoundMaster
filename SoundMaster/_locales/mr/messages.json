@@ -102,10 +102,10 @@
     "message": "व्यवस्थापित करा"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "आवाज वाढवा"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "आवाज कमी करा"
   },
   "shortcutPanicMute": {
     "message": "घाबरून नि:शब्द"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ समक्रमित केले!"
+  },
+  "presetCustom": {
+    "message": "सानुकूल"
+  },
+  "presetAcoustic": {
+    "message": "ध्वनिक"
+  },
+  "presetElectronic": {
+    "message": "इलेक्ट्रॉनिक"
+  },
+  "presetPop": {
+    "message": "पॉप"
+  },
+  "presetRock": {
+    "message": "खडक"
+  },
+  "presetVocal": {
+    "message": "व्होकल बूस्टर"
+  },
+  "presetTreble": {
+    "message": "ट्रेबल रेड्युसर"
+  },
+  "presetSpoken": {
+    "message": "स्पोकन शब्द"
+  },
+  "compareBtnTitle": {
+    "message": "तुलना करण्यासाठी धरा (बायपास)"
+  },
+  "speedTitle": {
+    "message": "प्लेबॅक गती"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "गती रीसेट करा"
+  },
+  "pitchShiftTitle": {
+    "message": "खेळपट्टी शिफ्ट"
+  },
+  "reverbTitle": {
+    "message": "कॉन्सर्ट हॉल (3D रिव्हर्ब)"
+  },
+  "customPresetsGroup": {
+    "message": "सानुकूल प्रीसेट"
+  },
+  "defaultPresetsGroup": {
+    "message": "पूर्वनिर्धारित प्रीसेट"
+  },
+  "savePresetTitle": {
+    "message": "प्रीसेट सेव्ह करा"
+  },
+  "deletePresetTitle": {
+    "message": "प्रीसेट हटवा"
+  },
+  "promptPresetName": {
+    "message": "नवीन EQ प्रीसेटसाठी नाव प्रविष्ट करा:"
+  },
+  "confirmDeletePreset": {
+    "message": "हा प्रीसेट कायमचा हटवायचा?"
+  },
+  "modalCancel": {
+    "message": "रद्द करा"
+  },
+  "modalConfirm": {
+    "message": "ठीक आहे"
+  },
+  "errorInvalidEq": {
+    "message": "अवैध EQ फाईल स्वरूप."
+  },
+  "errorParseEq": {
+    "message": "फाईल पार्स करताना त्रुटी."
   }
 }

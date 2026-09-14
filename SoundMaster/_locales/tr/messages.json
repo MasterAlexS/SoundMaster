@@ -102,10 +102,10 @@
     "message": "Üstesinden gelmek"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Sesi Aç"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Sesi Kıs"
   },
   "shortcutPanicMute": {
     "message": "Panik Susturma"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Senkronize edildi!"
+  },
+  "presetCustom": {
+    "message": "Gelenek"
+  },
+  "presetAcoustic": {
+    "message": "Akustik"
+  },
+  "presetElectronic": {
+    "message": "Elektronik"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetRock": {
+    "message": "Rock"
+  },
+  "presetVocal": {
+    "message": "Vokal"
+  },
+  "presetTreble": {
+    "message": "Tiz Düşürücü"
+  },
+  "presetSpoken": {
+    "message": "Konuşulan Söz"
+  },
+  "compareBtnTitle": {
+    "message": "Karşılaştır"
+  },
+  "speedTitle": {
+    "message": "Hız"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Hızı Sıfırla"
+  },
+  "pitchShiftTitle": {
+    "message": "Perde Değiştirme"
+  },
+  "reverbTitle": {
+    "message": "Konser Salonu (3D Reverb)"
+  },
+  "customPresetsGroup": {
+    "message": "Özel Ön Ayarlar"
+  },
+  "defaultPresetsGroup": {
+    "message": "Önceden Tanımlanmış Ön Ayarlar"
+  },
+  "savePresetTitle": {
+    "message": "Ön Ayarı Kaydet"
+  },
+  "deletePresetTitle": {
+    "message": "Ön Ayarı Sil"
+  },
+  "promptPresetName": {
+    "message": "Yeni EQ ön ayarının adını girin:"
+  },
+  "confirmDeletePreset": {
+    "message": "Bu ön ayar kalıcı olarak silinsin mi?"
+  },
+  "modalCancel": {
+    "message": "İptal"
+  },
+  "modalConfirm": {
+    "message": "Tamam"
+  },
+  "errorInvalidEq": {
+    "message": "Geçersiz EQ dosya formatı."
+  },
+  "errorParseEq": {
+    "message": "Dosya ayrıştırma hatası."
   }
 }

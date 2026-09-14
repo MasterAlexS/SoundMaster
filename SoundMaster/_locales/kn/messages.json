@@ -102,10 +102,10 @@
     "message": "ನಿರ್ವಹಿಸಿ"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "ವಾಲ್ಯೂಮ್ ಹೆಚ್ಚಿಸಿ"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "ವಾಲ್ಯೂಮ್ ಕಡಿಮೆ ಮಾಡಿ"
   },
   "shortcutPanicMute": {
     "message": "ಪ್ಯಾನಿಕ್ ಮ್ಯೂಟ್"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ ಸಿಂಕ್ ಆಗಿದೆ!"
+  },
+  "presetCustom": {
+    "message": "ಕಸ್ಟಮ್"
+  },
+  "presetAcoustic": {
+    "message": "ಅಕೌಸ್ಟಿಕ್"
+  },
+  "presetElectronic": {
+    "message": "ಎಲೆಕ್ಟ್ರಾನಿಕ್"
+  },
+  "presetPop": {
+    "message": "ಪಾಪ್"
+  },
+  "presetRock": {
+    "message": "ರಾಕ್"
+  },
+  "presetVocal": {
+    "message": "ಗಾಯನ ಬೂಸ್ಟರ್"
+  },
+  "presetTreble": {
+    "message": "ಟ್ರಿಬಲ್ ರಿಡ್ಯೂಸರ್"
+  },
+  "presetSpoken": {
+    "message": "ಮಾತನಾಡುವ ಮಾತು"
+  },
+  "compareBtnTitle": {
+    "message": "ಹೋಲಿಸಲು ಹಿಡಿದುಕೊಳ್ಳಿ (ಬೈಪಾಸ್)"
+  },
+  "speedTitle": {
+    "message": "ಪ್ಲೇಬ್ಯಾಕ್ ವೇಗ"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "ವೇಗವನ್ನು ಮರುಹೊಂದಿಸಿ"
+  },
+  "pitchShiftTitle": {
+    "message": "ಪಿಚ್ ಶಿಫ್ಟ್"
+  },
+  "reverbTitle": {
+    "message": "ಕನ್ಸರ್ಟ್ ಹಾಲ್ (3D ರಿವರ್ಬ್)"
+  },
+  "customPresetsGroup": {
+    "message": "ಕಸ್ಟಮ್ ಪೂರ್ವನಿಗದಿಗಳು"
+  },
+  "defaultPresetsGroup": {
+    "message": "ಪೂರ್ವನಿರ್ಧರಿತ ಪೂರ್ವನಿಗದಿಗಳು"
+  },
+  "savePresetTitle": {
+    "message": "ಮೊದಲೇ ಉಳಿಸಿ"
+  },
+  "deletePresetTitle": {
+    "message": "ಮೊದಲೇ ಅಳಿಸಿ"
+  },
+  "promptPresetName": {
+    "message": "ಹೊಸ EQ ಪೂರ್ವನಿಗದಿಗಾಗಿ ಹೆಸರನ್ನು ನಮೂದಿಸಿ:"
+  },
+  "confirmDeletePreset": {
+    "message": "ಈ ಪೂರ್ವನಿಗದಿಯನ್ನು ಶಾಶ್ವತವಾಗಿ ಅಳಿಸುವುದೇ?"
+  },
+  "modalCancel": {
+    "message": "ರದ್ದುಮಾಡು"
+  },
+  "modalConfirm": {
+    "message": "ಸರಿ"
+  },
+  "errorInvalidEq": {
+    "message": "ಅಮಾನ್ಯ EQ ಫೈಲ್ ಫಾರ್ಮ್ಯಾಟ್."
+  },
+  "errorParseEq": {
+    "message": "ಫೈಲ್ ಪಾರ್ಸ್ ಮಾಡುವಲ್ಲಿ ದೋಷ."
   }
 }

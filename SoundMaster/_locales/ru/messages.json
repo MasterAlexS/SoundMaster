@@ -102,10 +102,10 @@
     "message": "Управлять"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Увеличить громкость"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Уменьшить громкость"
   },
   "shortcutPanicMute": {
     "message": "Паника немая"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Синхронизировано!"
+  },
+  "presetCustom": {
+    "message": "Обычай"
+  },
+  "presetAcoustic": {
+    "message": "Акустический"
+  },
+  "presetElectronic": {
+    "message": "Электронный"
+  },
+  "presetPop": {
+    "message": "Поп"
+  },
+  "presetRock": {
+    "message": "Камень"
+  },
+  "presetVocal": {
+    "message": "Вокальный усилитель"
+  },
+  "presetTreble": {
+    "message": "Тройной редуктор"
+  },
+  "presetSpoken": {
+    "message": "Разговорное слово"
+  },
+  "compareBtnTitle": {
+    "message": "Удерживайте для сравнения (обход)"
+  },
+  "speedTitle": {
+    "message": "Скорость воспроизведения"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Сбросить скорость"
+  },
+  "pitchShiftTitle": {
+    "message": "Сдвиг высоты тона"
+  },
+  "reverbTitle": {
+    "message": "Концертный зал (3D-реверберация)"
+  },
+  "customPresetsGroup": {
+    "message": "Пользовательские пресеты"
+  },
+  "defaultPresetsGroup": {
+    "message": "Предопределенные пресеты"
+  },
+  "savePresetTitle": {
+    "message": "Сохранить предустановку"
+  },
+  "deletePresetTitle": {
+    "message": "Удалить предустановку"
+  },
+  "promptPresetName": {
+    "message": "Введите имя для нового пресета эквалайзера:"
+  },
+  "confirmDeletePreset": {
+    "message": "Удалить эту предустановку навсегда?"
+  },
+  "modalCancel": {
+    "message": "Отмена"
+  },
+  "modalConfirm": {
+    "message": "ОК"
+  },
+  "errorInvalidEq": {
+    "message": "Неверный формат файла EQ."
+  },
+  "errorParseEq": {
+    "message": "Ошибка при чтении файла."
   }
 }

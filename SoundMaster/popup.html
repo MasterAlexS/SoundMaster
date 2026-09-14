@@ -12,6 +12,7 @@
         <div id="activeTabInfo" class="tab-info" data-i18n="loading">Loading...</div>
       </div>
       <div class="header-controls">
+        <button id="compareBtn" class="icon-btn" data-i18n-title="compareBtnTitle" title="Hold to Compare (Bypass)">🔄</button>
         <button id="themeToggle" class="icon-btn" data-i18n-title="themeToggleTitle" title="Toggle Light/Dark Mode">🌓</button>
         <label class="switch" data-i18n-title="boostToggleTitle" title="Toggle Boost ON/OFF">
           <input type="checkbox" id="masterToggle">
@@ -38,7 +39,10 @@
 
       <div class="slider-wrapper">
         <div id="volumeValue" class="glow-green">100%</div>
-        <input type="range" id="volumeSlider" min="0" max="600" step="10" value="100">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <input type="range" id="volumeSlider" min="0" max="600" step="10" value="100" style="flex: 1;">
+          <button id="resetVolumeBtn" class="small-btn" title="Reset Volume">↺</button>
+        </div>
       </div>
 
       <div class="button-group" style="margin-top: 5px;">
@@ -70,7 +74,10 @@
           </span>
           <span id="bassValue">0dB</span>
         </div>
-        <input type="range" id="bassSlider" min="0" max="15" step="1" value="0">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <input type="range" id="bassSlider" min="0" max="15" step="1" value="0" style="flex: 1;">
+          <button id="resetBassBtn" class="small-btn" title="Reset Bass">↺</button>
+        </div>
       </div>
 
       <div class="eq-section">
@@ -82,11 +89,30 @@
               <span class="slider round"></span>
             </label>
           </div>
-          <div class="eq-actions">
-            <button id="exportEqBtn" class="small-btn" data-i18n-title="exportEqTitle" title="Export EQ">📤</button>
-            <button id="importEqBtn" class="small-btn" data-i18n-title="importEqTitle" title="Import EQ">📥</button>
-            <button id="resetEqBtn" class="small-btn" data-i18n="eqReset">Reset EQ</button>
-            <input type="file" id="importEqFile" accept=".json" style="display: none;">
+          <div class="eq-actions" style="margin-top: 8px; display: flex; align-items: center; justify-content: space-between;">
+            <select id="eqPresetSelect" style="flex: 1; min-width: 0; width: 0; margin-right: 5px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color); border-radius: 4px; padding: 2px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+              <option value="custom" data-i18n="presetCustom">Custom</option>
+              <optgroup label="Custom Presets" id="customPresetsGroup" data-i18n="customPresetsGroup"></optgroup>
+              <optgroup label="Predefined Presets" id="defaultPresetsGroup" data-i18n="defaultPresetsGroup">
+                <option value="acoustic" data-i18n="presetAcoustic">Acoustic</option>
+                <option value="electronic" data-i18n="presetElectronic">Electronic</option>
+                <option value="pop" data-i18n="presetPop">Pop</option>
+                <option value="rock" data-i18n="presetRock">Rock</option>
+                <option value="vocal" data-i18n="presetVocal">Vocal Booster</option>
+                <option value="treble" data-i18n="presetTreble">Treble Reducer</option>
+                <option value="spoken" data-i18n="presetSpoken">Spoken Word</option>
+              </optgroup>
+            </select>
+            <div style="display: flex; gap: 4px; margin-right: 10px;">
+              <button id="savePresetBtn" class="small-btn" data-i18n-title="savePresetTitle" title="Save Preset">➕</button>
+              <button id="deletePresetBtn" class="small-btn" data-i18n-title="deletePresetTitle" title="Delete Preset" style="display: none; color: #d32f2f;">🗑️</button>
+            </div>
+            <div style="display: flex; gap: 4px;">
+              <button id="exportEqBtn" class="small-btn" data-i18n-title="exportEqTitle" title="Export EQ">📤</button>
+              <button id="importEqBtn" class="small-btn" data-i18n-title="importEqTitle" title="Import EQ">📥</button>
+              <button id="resetEqBtn" class="small-btn" data-i18n="eqReset">Reset EQ</button>
+              <input type="file" id="importEqFile" accept=".json" style="display: none;">
+            </div>
           </div>
         </div>
         <div class="eq-sliders">
@@ -113,7 +139,10 @@
           </span>
           <span id="balanceValue">C</span>
         </div>
-        <input type="range" id="balanceSlider" min="-1" max="1" step="0.1" value="0">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <input type="range" id="balanceSlider" min="-1" max="1" step="0.1" value="0" style="flex: 1;">
+          <button id="resetBalanceBtn" class="small-btn" title="Reset Balance">↺</button>
+        </div>
       </div>
 
       <div class="toggle-group-row" style="margin-top: 8px;">
@@ -126,6 +155,51 @@
     </div>
 
     <div class="tab-content" id="tab-utils">
+      <!-- Speed Section -->
+      <div class="slider-group">
+        <div class="slider-header">
+          <span style="display: flex; align-items: center; gap: 8px;">
+            <strong data-i18n="speedTitle">Playback Speed</strong>
+            <label class="switch small" title="Toggle Speed">
+              <input type="checkbox" id="speedToggle">
+              <span class="slider round"></span>
+            </label>
+          </span>
+          <span id="speedValue">1.0x</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <input type="range" id="speedSlider" min="0.1" max="10" step="0.1" value="1.0" style="flex: 1;">
+          <button id="resetSpeedBtn" class="small-btn" data-i18n-title="resetSpeedBtnTitle" title="Reset Speed">↺</button>
+        </div>
+      </div>
+      
+      <!-- Pitch Section -->
+      <div class="slider-group">
+        <div class="slider-header">
+          <span style="display: flex; align-items: center; gap: 8px;">
+            <strong data-i18n="pitchShiftTitle">Pitch Shift</strong>
+            <label class="switch small" title="Toggle Pitch Shift">
+              <input type="checkbox" id="pitchToggle">
+              <span class="slider round"></span>
+            </label>
+          </span>
+          <span id="pitchValue">0st</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <input type="range" id="pitchSlider" min="-12" max="12" step="1" value="0" style="flex: 1;">
+          <button id="resetPitchBtn" class="small-btn" title="Reset Pitch">↺</button>
+        </div>
+      </div>
+
+      <!-- Reverb Section -->
+      <div class="toggle-group-row">
+        <span class="label"><span data-i18n="reverbTitle">Concert Hall (3D Reverb)</span></span>
+        <label class="switch small">
+          <input type="checkbox" id="reverbToggle">
+          <span class="slider round"></span>
+        </label>
+      </div>
+
       <div class="utils-section">
         <button id="panicMuteBtn" class="danger-btn">Panic Mute (Others)</button>
         <p class="help-text" data-i18n="panicMuteDesc">Mutes all other tabs playing audio.</p>
@@ -147,6 +221,19 @@
       </div>
     </div>
   </div>
+  <!-- Custom Modal Overlay -->
+  <div id="customModalOverlay" class="modal-overlay" style="display: none;">
+    <div class="modal-content">
+      <h3 id="modalTitle" style="margin-top: 0;" data-i18n="extName">Sound Master</h3>
+      <p id="modalMessage" style="margin-bottom: 10px;"></p>
+      <input type="text" id="modalInput" class="slider-val" style="display: none; width: 100%; margin-bottom: 10px; padding: 5px; box-sizing: border-box;" />
+      <div style="display: flex; justify-content: flex-end; gap: 10px;">
+        <button id="modalCancel" class="danger-btn" style="background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color);" data-i18n="modalCancel">Cancel</button>
+        <button id="modalConfirm" class="danger-btn" style="background-color: var(--accent-color); color: var(--bg-color);" data-i18n="modalConfirm">OK</button>
+      </div>
+    </div>
+  </div>
+  
   <script src="popup.js"></script>
 </body>
 </html>

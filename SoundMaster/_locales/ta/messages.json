@@ -102,10 +102,10 @@
     "message": "நிர்வகிக்கவும்"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "ஒலியை அதிகரி"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "ஒலியை குறை"
   },
   "shortcutPanicMute": {
     "message": "பீதி ஊமை"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ ஒத்திசைக்கப்பட்டது!"
+  },
+  "presetCustom": {
+    "message": "தனிப்பயன்"
+  },
+  "presetAcoustic": {
+    "message": "ஒலியியல்"
+  },
+  "presetElectronic": {
+    "message": "மின்னணு"
+  },
+  "presetPop": {
+    "message": "பாப்"
+  },
+  "presetRock": {
+    "message": "பாறை"
+  },
+  "presetVocal": {
+    "message": "குரல் பூஸ்டர்"
+  },
+  "presetTreble": {
+    "message": "மும்மடங்கு குறைப்பான்"
+  },
+  "presetSpoken": {
+    "message": "பேசப்படும் வார்த்தை"
+  },
+  "compareBtnTitle": {
+    "message": "ஒப்பிட பிடி (பைபாஸ்)"
+  },
+  "speedTitle": {
+    "message": "பின்னணி வேகம்"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "வேகத்தை மீட்டமைக்கவும்"
+  },
+  "pitchShiftTitle": {
+    "message": "பிட்ச் ஷிப்ட்"
+  },
+  "reverbTitle": {
+    "message": "கச்சேரி அரங்கம் (3D Reverb)"
+  },
+  "customPresetsGroup": {
+    "message": "தனிப்பயன்"
+  },
+  "defaultPresetsGroup": {
+    "message": "முன் வரையறுக்கப்பட்ட முன்னமைவுகள்"
+  },
+  "savePresetTitle": {
+    "message": "முன்னமைவை சேமிக்கவும்"
+  },
+  "deletePresetTitle": {
+    "message": "நீக்கு"
+  },
+  "promptPresetName": {
+    "message": "பெயரை உள்ளிடவும்:"
+  },
+  "confirmDeletePreset": {
+    "message": "இந்த முன்னமைவை நிரந்தரமாக நீக்கவா?"
+  },
+  "modalCancel": {
+    "message": "ரத்துசெய்"
+  },
+  "modalConfirm": {
+    "message": "சரி"
+  },
+  "errorInvalidEq": {
+    "message": "தவறான EQ கோப்பு வடிவம்."
+  },
+  "errorParseEq": {
+    "message": "கோப்பை பாகுபடுத்துவதில் பிழை."
   }
 }

@@ -102,13 +102,13 @@
     "message": "مدیریت کنید"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "افزایش صدا"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "کاهش صدا"
   },
   "shortcutPanicMute": {
-    "message": "Panic Mute"
+    "message": "بی‌صدا کردن همه"
   },
   "shortcutToggle": {
     "message": "تغییر وضعیت دهید"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ همگام‌سازی شد!"
+  },
+  "presetCustom": {
+    "message": "سفارشی"
+  },
+  "presetAcoustic": {
+    "message": "آکوستیک"
+  },
+  "presetElectronic": {
+    "message": "الکترونیکی"
+  },
+  "presetPop": {
+    "message": "پاپ"
+  },
+  "presetRock": {
+    "message": "سنگ"
+  },
+  "presetVocal": {
+    "message": "تقویت کننده صدا"
+  },
+  "presetTreble": {
+    "message": "کاهش دهنده سه گانه"
+  },
+  "presetSpoken": {
+    "message": "کلمه گفتاری"
+  },
+  "compareBtnTitle": {
+    "message": "برای مقایسه نگه دارید (دور زدن)"
+  },
+  "speedTitle": {
+    "message": "سرعت پخش"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "تنظیم مجدد سرعت"
+  },
+  "pitchShiftTitle": {
+    "message": "تغییر گام"
+  },
+  "reverbTitle": {
+    "message": "سالن کنسرت (3D Reverb)"
+  },
+  "customPresetsGroup": {
+    "message": "پیش‌تنظیم‌های سفارشی"
+  },
+  "defaultPresetsGroup": {
+    "message": "پیش‌تنظیم‌های پیش‌فرض"
+  },
+  "savePresetTitle": {
+    "message": "ذخیره از پیش تعیین شده"
+  },
+  "deletePresetTitle": {
+    "message": "حذف پیش‌تنظیم"
+  },
+  "promptPresetName": {
+    "message": "نام پیش تنظیم EQ جدید را وارد کنید:"
+  },
+  "confirmDeletePreset": {
+    "message": "این از پیش تنظیم برای همیشه حذف شود؟"
+  },
+  "modalCancel": {
+    "message": "لغو"
+  },
+  "modalConfirm": {
+    "message": "تأیید"
+  },
+  "errorInvalidEq": {
+    "message": "فرمت فایل EQ نامعتبر است."
+  },
+  "errorParseEq": {
+    "message": "خطا در تجزیه فایل."
   }
 }

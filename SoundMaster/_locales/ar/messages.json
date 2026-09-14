@@ -102,10 +102,10 @@
     "message": "يدير"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "رفع مستوى الصوت"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "خفض مستوى الصوت"
   },
   "shortcutPanicMute": {
     "message": "كتم الذعر"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ تمت المزامنة!"
+  },
+  "presetCustom": {
+    "message": "مخصص"
+  },
+  "presetAcoustic": {
+    "message": "صوتي"
+  },
+  "presetElectronic": {
+    "message": "الكترونية"
+  },
+  "presetPop": {
+    "message": "البوب"
+  },
+  "presetRock": {
+    "message": "صخر"
+  },
+  "presetVocal": {
+    "message": "الداعم الصوتي"
+  },
+  "presetTreble": {
+    "message": "المخفض الثلاثي"
+  },
+  "presetSpoken": {
+    "message": "الكلمة المنطوقة"
+  },
+  "compareBtnTitle": {
+    "message": "اضغط للمقارنة (التجاوز)"
+  },
+  "speedTitle": {
+    "message": "سرعة التشغيل"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "إعادة ضبط السرعة"
+  },
+  "pitchShiftTitle": {
+    "message": "التحول الملعب"
+  },
+  "reverbTitle": {
+    "message": "قاعة الحفلات الموسيقية (تردد ثلاثي الأبعاد)"
+  },
+  "customPresetsGroup": {
+    "message": "الإعدادات المسبقة المخصصة"
+  },
+  "defaultPresetsGroup": {
+    "message": "الإعدادات المسبقة المحددة مسبقًا"
+  },
+  "savePresetTitle": {
+    "message": "حفظ الإعداد المسبق"
+  },
+  "deletePresetTitle": {
+    "message": "حذف الإعداد المسبق"
+  },
+  "promptPresetName": {
+    "message": "أدخل اسمًا لإعداد EQ الجديد مسبقًا:"
+  },
+  "confirmDeletePreset": {
+    "message": "هل تريد حذف هذا الإعداد المسبق نهائيًا؟"
+  },
+  "modalCancel": {
+    "message": "إلغاء"
+  },
+  "modalConfirm": {
+    "message": "موافق"
+  },
+  "errorInvalidEq": {
+    "message": "تنسيق ملف EQ غير صالح."
+  },
+  "errorParseEq": {
+    "message": "خطأ في تحليل الملف."
   }
 }

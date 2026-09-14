@@ -102,10 +102,10 @@
     "message": "አስተዳድር"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "ድምጽ ጨምር"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "ድምጽ ቀንስ"
   },
   "shortcutPanicMute": {
     "message": "ድንጋጤ ድምጸ-ከል አድርግ"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ ተመሳስሏል!"
+  },
+  "presetCustom": {
+    "message": "ብጁ"
+  },
+  "presetAcoustic": {
+    "message": "አኮስቲክ"
+  },
+  "presetElectronic": {
+    "message": "ኤሌክትሮኒክ"
+  },
+  "presetPop": {
+    "message": "ፖፕ"
+  },
+  "presetRock": {
+    "message": "ሮክ"
+  },
+  "presetVocal": {
+    "message": "የድምፅ ማበልጸጊያ"
+  },
+  "presetTreble": {
+    "message": "ትሬብል መቀነሻ"
+  },
+  "presetSpoken": {
+    "message": "የሚነገር ቃል"
+  },
+  "compareBtnTitle": {
+    "message": "ለማነጻጸር ይያዙ (ማለፊያ)"
+  },
+  "speedTitle": {
+    "message": "የመልሶ ማጫወት ፍጥነት"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "ፍጥነትን ዳግም አስጀምር"
+  },
+  "pitchShiftTitle": {
+    "message": "የፒች ሽግግር"
+  },
+  "reverbTitle": {
+    "message": "የኮንሰርት አዳራሽ (3D Reverb)"
+  },
+  "customPresetsGroup": {
+    "message": "ብጁ ቅድመ-ቅምጦች"
+  },
+  "defaultPresetsGroup": {
+    "message": "አስቀድሞ የተገለጹ ቅድመ-ቅምጦች"
+  },
+  "savePresetTitle": {
+    "message": "ቅድመ ዝግጅትን አስቀምጥ"
+  },
+  "deletePresetTitle": {
+    "message": "ቅድመ ዝግጅትን ሰርዝ"
+  },
+  "promptPresetName": {
+    "message": "ለአዲሱ EQ ቅድመ ዝግጅት ስም ያስገቡ፡-"
+  },
+  "confirmDeletePreset": {
+    "message": "ይህ ቅድመ ዝግጅት እስከመጨረሻው ይሰረዝ?"
+  },
+  "modalCancel": {
+    "message": "ሰርዝ"
+  },
+  "modalConfirm": {
+    "message": "እሺ"
+  },
+  "errorInvalidEq": {
+    "message": "ልክ ያልሆነ የኢኩ ፋይል ቅርጸት።"
+  },
+  "errorParseEq": {
+    "message": "ፋይልን በመተንተን ላይ ስህተት።"
   }
 }

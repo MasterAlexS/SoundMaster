@@ -102,10 +102,10 @@
     "message": "Hallitse"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Lisää äänenvoimakkuutta"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Vähennä äänenvoimakkuutta"
   },
   "shortcutPanicMute": {
     "message": "Paniikkimykistys"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Synkronoitu!"
+  },
+  "presetCustom": {
+    "message": "Mukautettu"
+  },
+  "presetAcoustic": {
+    "message": "Akustinen"
+  },
+  "presetElectronic": {
+    "message": "Elektroninen"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetRock": {
+    "message": "Rock"
+  },
+  "presetVocal": {
+    "message": "Laulu"
+  },
+  "presetTreble": {
+    "message": "Diskantin vähentäjä"
+  },
+  "presetSpoken": {
+    "message": "Puhe"
+  },
+  "compareBtnTitle": {
+    "message": "Vertaile pitämällä (ohita)"
+  },
+  "speedTitle": {
+    "message": "Toistonopeus"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Nollaa nopeus"
+  },
+  "pitchShiftTitle": {
+    "message": "Sävelkorkeuden muutos"
+  },
+  "reverbTitle": {
+    "message": "Konserttitalo (3D Reverb)"
+  },
+  "customPresetsGroup": {
+    "message": "Omat esiasetukset"
+  },
+  "defaultPresetsGroup": {
+    "message": "Ennalta määritetyt esiasetukset"
+  },
+  "savePresetTitle": {
+    "message": "Tallenna esiasetus"
+  },
+  "deletePresetTitle": {
+    "message": "Poista esiasetus"
+  },
+  "promptPresetName": {
+    "message": "Anna uuden EQ-esiasetuksen nimi:"
+  },
+  "confirmDeletePreset": {
+    "message": "Poistetaanko tämä esiasetus pysyvästi?"
+  },
+  "modalCancel": {
+    "message": "Peruuta"
+  },
+  "modalConfirm": {
+    "message": "OK"
+  },
+  "errorInvalidEq": {
+    "message": "Virheellinen EQ-tiedostomuoto."
+  },
+  "errorParseEq": {
+    "message": "Virhe tiedoston jäsentämisessä."
   }
 }

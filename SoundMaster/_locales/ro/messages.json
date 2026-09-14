@@ -6,7 +6,7 @@
     "message": "Studio Audio Avansat cu EQ, Amplificare Bass, Mono Downmix, Mute Instant și Amplificator Volum."
   },
   "standardMode": {
-    "message": "Standard"
+    "message": "Mod Standard"
   },
   "extremeMode": {
     "message": "Extrem"
@@ -102,10 +102,10 @@
     "message": "Gestionează"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Crește volumul"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Scade volumul"
   },
   "shortcutPanicMute": {
     "message": "Oprire de Panică"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Sincronizat!"
+  },
+  "presetCustom": {
+    "message": "Personalizat"
+  },
+  "presetAcoustic": {
+    "message": "Acustic"
+  },
+  "presetElectronic": {
+    "message": "Electronică"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetRock": {
+    "message": "stâncă"
+  },
+  "presetVocal": {
+    "message": "Amplificator vocal"
+  },
+  "presetTreble": {
+    "message": "Reductor de înalte"
+  },
+  "presetSpoken": {
+    "message": "Cuvânt rostit"
+  },
+  "compareBtnTitle": {
+    "message": "Țineți apăsat pentru a compara (ocolire)"
+  },
+  "speedTitle": {
+    "message": "Viteza de redare"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Resetați viteza"
+  },
+  "pitchShiftTitle": {
+    "message": "Schimbare Ton"
+  },
+  "reverbTitle": {
+    "message": "Sala de concerte (reverb 3D)"
+  },
+  "customPresetsGroup": {
+    "message": "Presetari personalizate"
+  },
+  "defaultPresetsGroup": {
+    "message": "Presetări predefinite"
+  },
+  "savePresetTitle": {
+    "message": "Salvați presetarea"
+  },
+  "deletePresetTitle": {
+    "message": "Ștergeți presetarea"
+  },
+  "promptPresetName": {
+    "message": "Introduceți numele pentru noua presetare EQ:"
+  },
+  "confirmDeletePreset": {
+    "message": "Ștergeți definitiv această presetare?"
+  },
+  "modalCancel": {
+    "message": "Anulați"
+  },
+  "modalConfirm": {
+    "message": "OK"
+  },
+  "errorInvalidEq": {
+    "message": "Format de fișier EQ invalid."
+  },
+  "errorParseEq": {
+    "message": "Eroare la citirea fișierului."
   }
 }

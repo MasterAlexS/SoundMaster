@@ -32,7 +32,7 @@ browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
         sendResponse(state);
         updateTabBadge(tabId, state.enabled, state.volume);
       } else {
-        sendResponse({ enabled: false, volume: 100, bass: 0, bassEnabled: true, eq: [0,0,0,0,0,0,0,0,0,0], eqEnabled: true, balance: 0, balanceEnabled: true, mono: false, compressor: false });
+        sendResponse({ enabled: false, volume: 100, bass: 0, bassEnabled: false, eq: [0,0,0,0,0,0,0,0,0,0], eqEnabled: false, balance: 0, balanceEnabled: false, mono: false, compressor: false, speed: 1.0, pitch: false, reverb: false });
       }
     });
     return true;
@@ -58,7 +58,10 @@ browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
               balance: state.balance || 0,
               balanceEnabled: state.balanceEnabled !== false,
               mono: state.mono || false,
-              compressor: state.compressor || false
+              compressor: state.compressor || false,
+              speed: state.speed || 1.0,
+              pitch: state.pitch || false,
+              reverb: state.reverb || false
             }).catch(()=>{});
           }
         } catch(e){}
@@ -90,7 +93,7 @@ browser.commands.onCommand.addListener(async (command) => {
   let storageKey = `tab_${tabId}`;
 
   const data = await browser.storage.local.get([storageKey, "globalLastVolume"]);
-  let state = data[storageKey] || { enabled: false, volume: 100, extremeMode: false, bass: 0, bassEnabled: true, eq: [0,0,0,0,0,0,0,0,0,0], eqEnabled: true, balance: 0, balanceEnabled: true, mono: false, compressor: false };
+  let state = data[storageKey] || { enabled: false, volume: 100, extremeMode: false, bass: 0, bassEnabled: false, eq: [0,0,0,0,0,0,0,0,0,0], eqEnabled: false, balance: 0, balanceEnabled: false, mono: false, compressor: false, speed: 1.0, pitch: false, reverb: false };
 
   if (command === "toggle-boost") {
     state.enabled = !state.enabled;

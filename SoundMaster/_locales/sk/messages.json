@@ -93,7 +93,7 @@
     "message": "Obnoviť EQ"
   },
   "exportEqTitle": {
-    "message": "Export EQ"
+    "message": "Exportovať profil"
   },
   "importEqTitle": {
     "message": "Importovať EQ"
@@ -102,13 +102,13 @@
     "message": "Spravovať"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Zvýšiť hlasitosť"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Znížiť hlasitosť"
   },
   "shortcutPanicMute": {
-    "message": "Panic Mute"
+    "message": "Stlmiť všetko"
   },
   "shortcutToggle": {
     "message": "Prepnúť"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Synchronizované!"
+  },
+  "presetCustom": {
+    "message": "Vlastné"
+  },
+  "presetAcoustic": {
+    "message": "Akustické"
+  },
+  "presetElectronic": {
+    "message": "Elektronické"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetRock": {
+    "message": "Rock"
+  },
+  "presetVocal": {
+    "message": "Vokály"
+  },
+  "presetTreble": {
+    "message": "Redukcia výšok"
+  },
+  "presetSpoken": {
+    "message": "Hovorené slovo"
+  },
+  "compareBtnTitle": {
+    "message": "Porovnanie podržaním (vynechanie)"
+  },
+  "speedTitle": {
+    "message": "Rýchlosť prehrávania"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Obnoviť rýchlosť"
+  },
+  "pitchShiftTitle": {
+    "message": "Zmena výšky tónu"
+  },
+  "reverbTitle": {
+    "message": "Koncertná sieň (3D Reverb)"
+  },
+  "customPresetsGroup": {
+    "message": "Vlastné predvoľby"
+  },
+  "defaultPresetsGroup": {
+    "message": "Preddefinované predvoľby"
+  },
+  "savePresetTitle": {
+    "message": "Uložiť predvoľbu"
+  },
+  "deletePresetTitle": {
+    "message": "Odstrániť predvoľbu"
+  },
+  "promptPresetName": {
+    "message": "Zadajte názov pre novú predvoľbu EQ:"
+  },
+  "confirmDeletePreset": {
+    "message": "Natrvalo odstrániť túto predvoľbu?"
+  },
+  "modalCancel": {
+    "message": "Zrušiť"
+  },
+  "modalConfirm": {
+    "message": "OK"
+  },
+  "errorInvalidEq": {
+    "message": "Neplatný formát súboru EQ."
+  },
+  "errorParseEq": {
+    "message": "Chyba pri analýze súboru."
   }
 }

@@ -102,10 +102,10 @@
     "message": "จัดการ"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "เพิ่มระดับเสียง"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "ลดระดับเสียง"
   },
   "shortcutPanicMute": {
     "message": "ปิดเสียงตื่นตระหนก"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ ซิงค์แล้ว!"
+  },
+  "presetCustom": {
+    "message": "กำหนดเอง"
+  },
+  "presetAcoustic": {
+    "message": "อะคูสติก"
+  },
+  "presetElectronic": {
+    "message": "อิเล็กทรอนิกส์"
+  },
+  "presetPop": {
+    "message": "โผล่"
+  },
+  "presetRock": {
+    "message": "หิน"
+  },
+  "presetVocal": {
+    "message": "บูสเตอร์เสียง"
+  },
+  "presetTreble": {
+    "message": "ตัวลดเสียงแหลม"
+  },
+  "presetSpoken": {
+    "message": "คำพูด"
+  },
+  "compareBtnTitle": {
+    "message": "กดค้างไว้เพื่อเปรียบเทียบ (บายพาส)"
+  },
+  "speedTitle": {
+    "message": "ความเร็วในการเล่น"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "รีเซ็ตความเร็ว"
+  },
+  "pitchShiftTitle": {
+    "message": "การเปลี่ยนแปลงระดับเสียง"
+  },
+  "reverbTitle": {
+    "message": "คอนเสิร์ตฮอลล์ (3D Reverb)"
+  },
+  "customPresetsGroup": {
+    "message": "ค่าที่ตั้งล่วงหน้าแบบกำหนดเอง"
+  },
+  "defaultPresetsGroup": {
+    "message": "ค่าเริ่มต้น"
+  },
+  "savePresetTitle": {
+    "message": "บันทึกค่าที่ตั้งล่วงหน้า"
+  },
+  "deletePresetTitle": {
+    "message": "ลบค่าที่ตั้งล่วงหน้า"
+  },
+  "promptPresetName": {
+    "message": "ป้อนชื่อสำหรับค่าที่ตั้งล่วงหน้า EQ ใหม่:"
+  },
+  "confirmDeletePreset": {
+    "message": "ลบค่าที่กำหนดล่วงหน้านี้อย่างถาวรใช่ไหม"
+  },
+  "modalCancel": {
+    "message": "ยกเลิก"
+  },
+  "modalConfirm": {
+    "message": "ตกลง"
+  },
+  "errorInvalidEq": {
+    "message": "รูปแบบไฟล์ EQ ไม่ถูกต้อง"
+  },
+  "errorParseEq": {
+    "message": "เกิดข้อผิดพลาดในการแยกวิเคราะห์ไฟล์"
   }
 }

@@ -6,7 +6,7 @@
     "message": "Zaawansowane studio audio z korektorem, wzmocnieniem basów, miksowaniem do mono, natychmiastowym wyciszeniem i wzmacniaczem głośności."
   },
   "standardMode": {
-    "message": "Standard"
+    "message": "Tryb Standardowy"
   },
   "extremeMode": {
     "message": "Ekstremalny"
@@ -102,10 +102,10 @@
     "message": "Zarządzać"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Zwiększ głośność"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Zmniejsz głośność"
   },
   "shortcutPanicMute": {
     "message": "Wyciszenie paniki"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Zsynchronizowano!"
+  },
+  "presetCustom": {
+    "message": "Zwyczaj"
+  },
+  "presetAcoustic": {
+    "message": "Akustyczny"
+  },
+  "presetElectronic": {
+    "message": "Elektroniczny"
+  },
+  "presetPop": {
+    "message": "Muzyka pop"
+  },
+  "presetRock": {
+    "message": "Głaz"
+  },
+  "presetVocal": {
+    "message": "Wzmacniacz wokalu"
+  },
+  "presetTreble": {
+    "message": "Reduktor wysokich tonów"
+  },
+  "presetSpoken": {
+    "message": "Wypowiedziane Słowo"
+  },
+  "compareBtnTitle": {
+    "message": "Przytrzymaj, aby porównać (pominięcie)"
+  },
+  "speedTitle": {
+    "message": "Szybkość odtwarzania"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Zresetuj prędkość"
+  },
+  "pitchShiftTitle": {
+    "message": "Zmiana wysokości dźwięku"
+  },
+  "reverbTitle": {
+    "message": "Sala koncertowa (pogłos 3D)"
+  },
+  "customPresetsGroup": {
+    "message": "Niestandardowe ustawienia wstępne"
+  },
+  "defaultPresetsGroup": {
+    "message": "Predefiniowane ustawienia wstępne"
+  },
+  "savePresetTitle": {
+    "message": "Zapisz ustawienie wstępne"
+  },
+  "deletePresetTitle": {
+    "message": "Usuń ustawienie wstępne"
+  },
+  "promptPresetName": {
+    "message": "Wprowadź nazwę nowego ustawienia wstępnego EQ:"
+  },
+  "confirmDeletePreset": {
+    "message": "Trwale usunąć to ustawienie wstępne?"
+  },
+  "modalCancel": {
+    "message": "Anuluj"
+  },
+  "modalConfirm": {
+    "message": "OK"
+  },
+  "errorInvalidEq": {
+    "message": "Nieprawidłowy format pliku EQ."
+  },
+  "errorParseEq": {
+    "message": "Błąd parsowania pliku."
   }
 }

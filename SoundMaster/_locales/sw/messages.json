@@ -102,10 +102,10 @@
     "message": "Dhibiti"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Ongeza Sauti"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Punguza Sauti"
   },
   "shortcutPanicMute": {
     "message": "Hofu Nyamaza"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Imesawazishwa!"
+  },
+  "presetCustom": {
+    "message": "Desturi"
+  },
+  "presetAcoustic": {
+    "message": "Akustiki"
+  },
+  "presetElectronic": {
+    "message": "Kielektroniki"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetRock": {
+    "message": "Mwamba"
+  },
+  "presetVocal": {
+    "message": "Nyongeza ya Sauti"
+  },
+  "presetTreble": {
+    "message": "Kipunguza treble"
+  },
+  "presetSpoken": {
+    "message": "Neno lililosemwa"
+  },
+  "compareBtnTitle": {
+    "message": "Shikilia Ili Kulinganisha (Bypass)"
+  },
+  "speedTitle": {
+    "message": "Kasi ya Uchezaji"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Weka upya Kasi"
+  },
+  "pitchShiftTitle": {
+    "message": "Shift ya lami"
+  },
+  "reverbTitle": {
+    "message": "Ukumbi wa Tamasha (Kitenzi cha 3D)"
+  },
+  "customPresetsGroup": {
+    "message": "Mipangilio Maalum"
+  },
+  "defaultPresetsGroup": {
+    "message": "Viwango vya Awali"
+  },
+  "savePresetTitle": {
+    "message": "Hifadhi"
+  },
+  "deletePresetTitle": {
+    "message": "Futa"
+  },
+  "promptPresetName": {
+    "message": "Ingiza jina:"
+  },
+  "confirmDeletePreset": {
+    "message": "Ungependa kufuta uwekaji mapema huu kabisa?"
+  },
+  "modalCancel": {
+    "message": "Ghairi"
+  },
+  "modalConfirm": {
+    "message": "Sawa"
+  },
+  "errorInvalidEq": {
+    "message": "Muundo batili wa faili ya EQ."
+  },
+  "errorParseEq": {
+    "message": "Hitilafu katika kuchanganua faili."
   }
 }

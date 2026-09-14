@@ -6,7 +6,7 @@
     "message": "Täiustatud audiostuudio EQ, bassivõimenduse, Mono Downmixi, Panic Mute'i ja helivõimendiga."
   },
   "standardMode": {
-    "message": "Standard"
+    "message": "Standardrežiim"
   },
   "extremeMode": {
     "message": "Ekstreemne"
@@ -96,16 +96,16 @@
     "message": "Ekspordi EQ"
   },
   "importEqTitle": {
-    "message": "Import EQ"
+    "message": "Impordi profiil"
   },
   "manageShortcuts": {
     "message": "Halda"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Helitugevus üles"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Helitugevus alla"
   },
   "shortcutPanicMute": {
     "message": "Paanika vaigistus"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Sünkroonitud!"
+  },
+  "presetCustom": {
+    "message": "Kohandatud"
+  },
+  "presetAcoustic": {
+    "message": "Akustiline"
+  },
+  "presetElectronic": {
+    "message": "Elektrooniline"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetRock": {
+    "message": "Rock"
+  },
+  "presetVocal": {
+    "message": "Vokaal"
+  },
+  "presetTreble": {
+    "message": "Kõrgete helide reduktor"
+  },
+  "presetSpoken": {
+    "message": "Kõne"
+  },
+  "compareBtnTitle": {
+    "message": "Võrdlemiseks hoidke all (möödasõit)"
+  },
+  "speedTitle": {
+    "message": "Taasesituse kiirus"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Lähtestage kiirus"
+  },
+  "pitchShiftTitle": {
+    "message": "Kõrguse muutmine"
+  },
+  "reverbTitle": {
+    "message": "Kontserdisaal (3D Reverb)"
+  },
+  "customPresetsGroup": {
+    "message": "Kohandatud eelseaded"
+  },
+  "defaultPresetsGroup": {
+    "message": "Eelmääratud"
+  },
+  "savePresetTitle": {
+    "message": "Salvesta eelseadistus"
+  },
+  "deletePresetTitle": {
+    "message": "Kustuta eelseadistus"
+  },
+  "promptPresetName": {
+    "message": "Sisestage uue EQ nimi:"
+  },
+  "confirmDeletePreset": {
+    "message": "Kustutada see eelseadistus jäädavalt?"
+  },
+  "modalCancel": {
+    "message": "Tühista"
+  },
+  "modalConfirm": {
+    "message": "OK"
+  },
+  "errorInvalidEq": {
+    "message": "Vigane EQ failivorming."
+  },
+  "errorParseEq": {
+    "message": "Viga faili parsimisel."
   }
 }

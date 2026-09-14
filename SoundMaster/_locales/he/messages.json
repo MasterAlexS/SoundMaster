@@ -93,25 +93,25 @@
     "message": "איפוס EQ"
   },
   "exportEqTitle": {
-    "message": "Export EQ"
+    "message": "ייצא פרופיל"
   },
   "importEqTitle": {
-    "message": "Import EQ"
+    "message": "ייבא פרופיל"
   },
   "manageShortcuts": {
-    "message": "Manage"
+    "message": "נהל קיצורי דרך"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "הגבר עוצמת קול"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "הנמך עוצמת קול"
   },
   "shortcutPanicMute": {
-    "message": "Panic Mute"
+    "message": "השתק הכל"
   },
   "shortcutToggle": {
-    "message": "Toggle"
+    "message": "החלף מצב"
   },
   "syncTabsText": {
     "message": "סנכרן את כל הכרטיסיות"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ מסונכרן!"
+  },
+  "presetCustom": {
+    "message": "מִנְהָג"
+  },
+  "presetAcoustic": {
+    "message": "אֲקוּסְטִי"
+  },
+  "presetElectronic": {
+    "message": "אֶלֶקטרוֹנִי"
+  },
+  "presetPop": {
+    "message": "פּוֹפּ"
+  },
+  "presetRock": {
+    "message": "רוֹק"
+  },
+  "presetVocal": {
+    "message": "בוסטר ווקאלי"
+  },
+  "presetTreble": {
+    "message": "מפחית טרבל"
+  },
+  "presetSpoken": {
+    "message": "ספוקן וורד"
+  },
+  "compareBtnTitle": {
+    "message": "החזק כדי להשוות (עקוף)"
+  },
+  "speedTitle": {
+    "message": "מהירות השמעה"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "איפוס מהירות"
+  },
+  "pitchShiftTitle": {
+    "message": "שינוי גובה הצליל"
+  },
+  "reverbTitle": {
+    "message": "אולם קונצרטים (הדהוד תלת מימדי)"
+  },
+  "customPresetsGroup": {
+    "message": "הגדרות מותאמות אישית"
+  },
+  "defaultPresetsGroup": {
+    "message": "הגדרות מוגדרות מראש"
+  },
+  "savePresetTitle": {
+    "message": "שמור הגדרה מראש"
+  },
+  "deletePresetTitle": {
+    "message": "מחק הגדרה מראש"
+  },
+  "promptPresetName": {
+    "message": "הזן שם עבור EQ חדש מראש:"
+  },
+  "confirmDeletePreset": {
+    "message": "למחוק את הקביעה המוגדרת מראש זו לצמיתות?"
+  },
+  "modalCancel": {
+    "message": "ביטול"
+  },
+  "modalConfirm": {
+    "message": "אישור"
+  },
+  "errorInvalidEq": {
+    "message": "פורמט קובץ EQ לא חוקי."
+  },
+  "errorParseEq": {
+    "message": "שגיאה בפיענוח הקובץ."
   }
 }

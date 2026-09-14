@@ -6,7 +6,7 @@
     "message": "Avansert lydstudio med EQ, bassforsterkning, mono-nedmiksing, panikkdemping og volumforsterker."
   },
   "standardMode": {
-    "message": "Standard"
+    "message": "Standardmodus"
   },
   "extremeMode": {
     "message": "Ekstrem"
@@ -42,13 +42,13 @@
     "message": "Sett til standard"
   },
   "langSelectTitle": {
-    "message": "Change Language"
+    "message": "Språk"
   },
   "tabVolume": {
     "message": "Volum"
   },
   "tabEQ": {
-    "message": "Equalizer"
+    "message": "EQ"
   },
   "tabUtils": {
     "message": "Verktøy"
@@ -102,10 +102,10 @@
     "message": "Administrer"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Volum opp"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Volum ned"
   },
   "shortcutPanicMute": {
     "message": "Panikk dempet"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Synkronisert!"
+  },
+  "presetCustom": {
+    "message": "Skikk"
+  },
+  "presetAcoustic": {
+    "message": "Akustisk"
+  },
+  "presetElectronic": {
+    "message": "Elektronisk"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetRock": {
+    "message": "Rock"
+  },
+  "presetVocal": {
+    "message": "Vokal"
+  },
+  "presetTreble": {
+    "message": "Diskantredusering"
+  },
+  "presetSpoken": {
+    "message": "Tale"
+  },
+  "compareBtnTitle": {
+    "message": "Hold for å sammenligne (omgå)"
+  },
+  "speedTitle": {
+    "message": "Avspillingshastighet"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Tilbakestill hastighet"
+  },
+  "pitchShiftTitle": {
+    "message": "Tonehøyde"
+  },
+  "reverbTitle": {
+    "message": "Konsertsal (3D Reverb)"
+  },
+  "customPresetsGroup": {
+    "message": "Egendefinerte forhåndsinnstillinger"
+  },
+  "defaultPresetsGroup": {
+    "message": "Standard forhåndsinnstillinger"
+  },
+  "savePresetTitle": {
+    "message": "Lagre forhåndsinnstilling"
+  },
+  "deletePresetTitle": {
+    "message": "Slett forhåndsinnstilling"
+  },
+  "promptPresetName": {
+    "message": "Skriv inn navn på ny EQ-forhåndsinnstilling:"
+  },
+  "confirmDeletePreset": {
+    "message": "Slett denne forhåndsinnstillingen permanent?"
+  },
+  "modalCancel": {
+    "message": "Avbryt"
+  },
+  "modalConfirm": {
+    "message": "OK"
+  },
+  "errorInvalidEq": {
+    "message": "Ugyldig EQ-filformat."
+  },
+  "errorParseEq": {
+    "message": "Feil ved analysering av fil."
   }
 }

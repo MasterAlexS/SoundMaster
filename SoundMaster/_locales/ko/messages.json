@@ -102,10 +102,10 @@
     "message": "관리하다"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "볼륨 높이기"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "볼륨 낮추기"
   },
   "shortcutPanicMute": {
     "message": "패닉 뮤트"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ 동기화됨!"
+  },
+  "presetCustom": {
+    "message": "관습"
+  },
+  "presetAcoustic": {
+    "message": "음향학"
+  },
+  "presetElectronic": {
+    "message": "전자"
+  },
+  "presetPop": {
+    "message": "팝"
+  },
+  "presetRock": {
+    "message": "바위"
+  },
+  "presetVocal": {
+    "message": "보컬 부스터"
+  },
+  "presetTreble": {
+    "message": "고음 감속기"
+  },
+  "presetSpoken": {
+    "message": "음성된 말씀"
+  },
+  "compareBtnTitle": {
+    "message": "비교하려면 길게 누르세요(우회)"
+  },
+  "speedTitle": {
+    "message": "재생 속도"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "속도 재설정"
+  },
+  "pitchShiftTitle": {
+    "message": "피치 시프트"
+  },
+  "reverbTitle": {
+    "message": "콘서트홀(3D 리버브)"
+  },
+  "customPresetsGroup": {
+    "message": "사용자 정의 사전 설정"
+  },
+  "defaultPresetsGroup": {
+    "message": "사전 정의된 사전 설정"
+  },
+  "savePresetTitle": {
+    "message": "사전 설정 저장"
+  },
+  "deletePresetTitle": {
+    "message": "프리셋 삭제"
+  },
+  "promptPresetName": {
+    "message": "새 EQ 사전 설정 이름 입력:"
+  },
+  "confirmDeletePreset": {
+    "message": "이 사전 설정을 영구적으로 삭제하시겠습니까?"
+  },
+  "modalCancel": {
+    "message": "취소"
+  },
+  "modalConfirm": {
+    "message": "확인"
+  },
+  "errorInvalidEq": {
+    "message": "잘못된 EQ 파일 형식입니다."
+  },
+  "errorParseEq": {
+    "message": "파일 구문 분석 오류."
   }
 }

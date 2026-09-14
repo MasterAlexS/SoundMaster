@@ -102,10 +102,10 @@
     "message": "Управљај"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Појачај звук"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Смањи звук"
   },
   "shortcutPanicMute": {
     "message": "Паниц Муте"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Синхронизовано!"
+  },
+  "presetCustom": {
+    "message": "Цустом"
+  },
+  "presetAcoustic": {
+    "message": "Ацоустиц"
+  },
+  "presetElectronic": {
+    "message": "Елецтрониц"
+  },
+  "presetPop": {
+    "message": "Поп"
+  },
+  "presetRock": {
+    "message": "Роцк"
+  },
+  "presetVocal": {
+    "message": "Воцал Боостер"
+  },
+  "presetTreble": {
+    "message": "Требле Редуцер"
+  },
+  "presetSpoken": {
+    "message": "Изговорена реч"
+  },
+  "compareBtnTitle": {
+    "message": "Задржите за упоређивање (заобиђите)"
+  },
+  "speedTitle": {
+    "message": "Брзина репродукције"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Ресетујте брзину"
+  },
+  "pitchShiftTitle": {
+    "message": "Питцх Схифт"
+  },
+  "reverbTitle": {
+    "message": "Концертна сала (3Д реверб)"
+  },
+  "customPresetsGroup": {
+    "message": "Цустом Пресетс"
+  },
+  "defaultPresetsGroup": {
+    "message": "Унапред дефинисана подешавања"
+  },
+  "savePresetTitle": {
+    "message": "Саве Пресет"
+  },
+  "deletePresetTitle": {
+    "message": "Делете Пресет"
+  },
+  "promptPresetName": {
+    "message": "Унесите назив за нови ЕК унапред подешен:"
+  },
+  "confirmDeletePreset": {
+    "message": "Trajno izbrisati?"
+  },
+  "modalCancel": {
+    "message": "Одустани"
+  },
+  "modalConfirm": {
+    "message": "У реду"
+  },
+  "errorInvalidEq": {
+    "message": "Неважећи формат EQ датотеке."
+  },
+  "errorParseEq": {
+    "message": "Грешка при анализирању датотеке."
   }
 }

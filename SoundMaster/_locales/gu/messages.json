@@ -102,10 +102,10 @@
     "message": "મેનેજ કરો"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "વોલ્યુમ વધારો"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "વોલ્યુમ ઘટાડો"
   },
   "shortcutPanicMute": {
     "message": "ગભરાટ મ્યૂટ"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ સમન્વયિત!"
+  },
+  "presetCustom": {
+    "message": "કસ્ટમ"
+  },
+  "presetAcoustic": {
+    "message": "એકોસ્ટિક"
+  },
+  "presetElectronic": {
+    "message": "ઈલેક્ટ્રોનિક"
+  },
+  "presetPop": {
+    "message": "પૉપ"
+  },
+  "presetRock": {
+    "message": "રોક"
+  },
+  "presetVocal": {
+    "message": "વોકલ બૂસ્ટર"
+  },
+  "presetTreble": {
+    "message": "ટ્રબલ રિડ્યુસર"
+  },
+  "presetSpoken": {
+    "message": "સ્પોકન વર્ડ"
+  },
+  "compareBtnTitle": {
+    "message": "સરખામણી કરવા માટે પકડી રાખો (બાયપાસ)"
+  },
+  "speedTitle": {
+    "message": "પ્લેબેક ઝડપ"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "રીસેટ ઝડપ"
+  },
+  "pitchShiftTitle": {
+    "message": "પિચ શિફ્ટ"
+  },
+  "reverbTitle": {
+    "message": "કોન્સર્ટ હોલ (3D રિવર્બ)"
+  },
+  "customPresetsGroup": {
+    "message": "કસ્ટમ પ્રીસેટ્સ"
+  },
+  "defaultPresetsGroup": {
+    "message": "પૂર્વવ્યાખ્યાયિત પ્રીસેટ્સ"
+  },
+  "savePresetTitle": {
+    "message": "પ્રીસેટ સાચવો"
+  },
+  "deletePresetTitle": {
+    "message": "પ્રીસેટ કાઢી નાખો"
+  },
+  "promptPresetName": {
+    "message": "નવા EQ પ્રીસેટ માટે નામ દાખલ કરો:"
+  },
+  "confirmDeletePreset": {
+    "message": "આ પ્રીસેટ કાયમ માટે કાઢી નાખીએ?"
+  },
+  "modalCancel": {
+    "message": "રદ કરો"
+  },
+  "modalConfirm": {
+    "message": "બરાબર"
+  },
+  "errorInvalidEq": {
+    "message": "અમાન્ય EQ ફાઇલ ફોર્મેટ."
+  },
+  "errorParseEq": {
+    "message": "ફાઇલ પદચ્છેદન કરવામાં ભૂલ."
   }
 }

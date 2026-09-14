@@ -48,7 +48,7 @@
     "message": "Volume"
   },
   "tabEQ": {
-    "message": "Equalizer"
+    "message": "EQ"
   },
   "tabUtils": {
     "message": "Hulpmiddelen"
@@ -102,10 +102,10 @@
     "message": "Beheren"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Volume omhoog"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Volume omlaag"
   },
   "shortcutPanicMute": {
     "message": "Paniek dempen"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Gesynchroniseerd!"
+  },
+  "presetCustom": {
+    "message": "Aangepast"
+  },
+  "presetAcoustic": {
+    "message": "Akoestisch"
+  },
+  "presetElectronic": {
+    "message": "Elektronisch"
+  },
+  "presetPop": {
+    "message": "Knal"
+  },
+  "presetRock": {
+    "message": "Steen"
+  },
+  "presetVocal": {
+    "message": "Vocale booster"
+  },
+  "presetTreble": {
+    "message": "Treble-reductiemiddel"
+  },
+  "presetSpoken": {
+    "message": "Gesproken Woord"
+  },
+  "compareBtnTitle": {
+    "message": "Houd ingedrukt om te vergelijken (bypass)"
+  },
+  "speedTitle": {
+    "message": "Afspeelsnelheid"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Snelheid opnieuw instellen"
+  },
+  "pitchShiftTitle": {
+    "message": "Toonhoogteverschuiving"
+  },
+  "reverbTitle": {
+    "message": "Concertzaal (3D Reverb)"
+  },
+  "customPresetsGroup": {
+    "message": "Aangepaste voorinstellingen"
+  },
+  "defaultPresetsGroup": {
+    "message": "Voorgedefinieerde voorinstellingen"
+  },
+  "savePresetTitle": {
+    "message": "Voorinstelling opslaan"
+  },
+  "deletePresetTitle": {
+    "message": "Voorinstelling verwijderen"
+  },
+  "promptPresetName": {
+    "message": "Voer een naam in voor de nieuwe EQ-preset:"
+  },
+  "confirmDeletePreset": {
+    "message": "Deze voorinstelling definitief verwijderen?"
+  },
+  "modalCancel": {
+    "message": "Annuleren"
+  },
+  "modalConfirm": {
+    "message": "OK"
+  },
+  "errorInvalidEq": {
+    "message": "Ongeldig EQ-bestandsformaat."
+  },
+  "errorParseEq": {
+    "message": "Fout bij het parseren van bestand."
   }
 }

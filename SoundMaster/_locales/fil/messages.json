@@ -6,13 +6,13 @@
     "message": "Advanced Audio Studio na may EQ, Bass Boost, Mono Downmix, Panic Mute, at Volume Booster."
   },
   "standardMode": {
-    "message": "Standard"
+    "message": "Karaniwang Mode"
   },
   "extremeMode": {
-    "message": "Extreme"
+    "message": "Matinding Mode"
   },
   "resetBtn": {
-    "message": "Reset"
+    "message": "I-reset"
   },
   "applyLastBtn": {
     "message": "Ilapat ang huli"
@@ -48,7 +48,7 @@
     "message": "Dami"
   },
   "tabEQ": {
-    "message": "Equalizer"
+    "message": "EQ"
   },
   "tabUtils": {
     "message": "Mga Tool"
@@ -84,34 +84,34 @@
     "message": "Na-unmute na!"
   },
   "compressorMode": {
-    "message": "Anti-Distortion"
+    "message": "Compressor"
   },
   "eqTitle": {
-    "message": "10-Band Equalizer"
+    "message": "Equalizer"
   },
   "eqReset": {
     "message": "I-reset ang EQ"
   },
   "exportEqTitle": {
-    "message": "Export EQ"
+    "message": "I-export ang profile"
   },
   "importEqTitle": {
-    "message": "Import EQ"
+    "message": "I-import ang profile"
   },
   "manageShortcuts": {
-    "message": "Manage"
+    "message": "Pamahalaan ang mga Shortcut"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Lakasan ang Volume"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Hinaan ang Volume"
   },
   "shortcutPanicMute": {
-    "message": "Panic Mute"
+    "message": "I-mute Lahat"
   },
   "shortcutToggle": {
-    "message": "Toggle"
+    "message": "I-toggle"
   },
   "syncTabsText": {
     "message": "I-sync ang lahat ng Tab"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Naka-sync!"
+  },
+  "presetCustom": {
+    "message": "Pasadyang"
+  },
+  "presetAcoustic": {
+    "message": "Akustiko"
+  },
+  "presetElectronic": {
+    "message": "Elektroniko"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetRock": {
+    "message": "Bato"
+  },
+  "presetVocal": {
+    "message": "Boses"
+  },
+  "presetTreble": {
+    "message": "Treble"
+  },
+  "presetSpoken": {
+    "message": "Salita"
+  },
+  "compareBtnTitle": {
+    "message": "I-hold upang Ihambing (Bypass)"
+  },
+  "speedTitle": {
+    "message": "Bilis"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "I-reset ang Bilis"
+  },
+  "pitchShiftTitle": {
+    "message": "Pitch Shift"
+  },
+  "reverbTitle": {
+    "message": "3D Reverb"
+  },
+  "customPresetsGroup": {
+    "message": "Mga Custom na Preset"
+  },
+  "defaultPresetsGroup": {
+    "message": "Mga Predefine na Preset"
+  },
+  "savePresetTitle": {
+    "message": "I-save ang Preset"
+  },
+  "deletePresetTitle": {
+    "message": "Tanggalin ang Preset"
+  },
+  "promptPresetName": {
+    "message": "Maglagay ng pangalan para sa bagong preset ng EQ:"
+  },
+  "confirmDeletePreset": {
+    "message": "Permanenteng tanggalin ang preset na ito?"
+  },
+  "modalCancel": {
+    "message": "Kanselahin"
+  },
+  "modalConfirm": {
+    "message": "OK"
+  },
+  "errorInvalidEq": {
+    "message": "Di-wastong format ng EQ file."
+  },
+  "errorParseEq": {
+    "message": "Error sa pag-parse ng file."
   }
 }

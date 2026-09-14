@@ -10,11 +10,14 @@ Built natively with Manifest V3 and the Web Audio API, this extension was develo
 
 * **Advanced Audio Controls:**
     * **10-Band Equalizer:** Fine-tune frequencies from 32Hz to 16kHz to perfectly match your headphones or speakers.
-    * **EQ Profiles:** Export and import your custom Equalizer settings as `.json` files to share or backup.
+    * **EQ Profiles (Predefined & Custom):** Includes classic predefined presets (Acoustic, Pop, Rock, etc.) and allows you to create, save, and delete your own custom presets locally!
     * **Anti-Distortion Compressor:** A dynamic compressor that prevents audio clipping and distortion when boosting volume.
-    * **Audio Balance (L/R):** Adjust the panning between the left and right audio channels.
-    * **Mono Mode:** Force stereo audio into a single mono channel (great for podcasts or hearing accessibility).
+    * **Pitch Shifter:** Alter the pitch/tonality of the audio dynamically in real-time.
+    * **Playback Speed Controller:** Granular control over the video/audio speed (from 0.1x to 10.0x).
+    * **Concert Hall (3D Reverb):** Add immersive spatial reverb effects to any audio.
+    * **Audio Balance (L/R) & Mono Mode:** Adjust panning between left and right channels, or force stereo audio into a single mono channel.
     * **Bass Boost:** Dedicated slider for punchy low-frequency enhancement.
+    * **A/B Bypass Toggle:** Instantly toggle all audio effects on/off to compare the processed sound with the original.
 * **Volume Amplification:**
     * 🟢 **Standard Mode:** Boost up to **600%** (Safe, high-quality amplification).
     * 🔴 **Extreme Mode:** Unlock the limit up to **1000%** for those ultra-quiet videos.
@@ -22,7 +25,9 @@ Built natively with Manifest V3 and the Web Audio API, this extension was develo
 * **Customizable Keyboard Shortcuts:** Quickly adjust volume, toggle boost, or trigger the "Panic Mute" feature to instantly mute all background tabs.
 * **Universal Translation (56 Languages):** Full support for almost every major language worldwide. A custom-built manual language selector in the UI allows you to change the extension's language instantly on the fly.
 * **Smart Audio Routing (CPU Optimized):** Automatically detects new videos and dynamically bypasses unused audio nodes. When effects are disabled, the routing physically bypasses the Web Audio API to ensure **0% CPU usage**.
-* **Dynamic UI:** Clean, responsive design with manual toggle for **Dark Mode** (Default) and **Light Mode**.
+* **Dynamic UI & Smart Interactions:** Clean, responsive design with manual toggle for **Dark Mode** (Default) and **Light Mode**. Sliders intelligently disable their respective effects when returned to default values to optimize workflow.
+* **Import/Export EQ Presets:** Share your custom 10-Band Equalizer setups with others or back them up locally via JSON files, complete with format validation.
+* **Strict Cross-Browser Compatibility:** Carefully engineered to support strict JS environments by avoiding unhandled modern syntax exceptions.
 * **Privacy First:** No tracking, no data collection, and no external server calls. See our [Privacy Policy](PRIVACY.md) for full details.
 
 ---

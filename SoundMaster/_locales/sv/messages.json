@@ -6,7 +6,7 @@
     "message": "Avancerad ljudstudio med EQ, basförstärkning, mono-nedmixning, panikdämpning och volymförstärkare."
   },
   "standardMode": {
-    "message": "Standard"
+    "message": "Standardläge"
   },
   "extremeMode": {
     "message": "Extrem"
@@ -48,7 +48,7 @@
     "message": "Volym"
   },
   "tabEQ": {
-    "message": "Equalizer"
+    "message": "EQ"
   },
   "tabUtils": {
     "message": "Verktyg"
@@ -102,13 +102,13 @@
     "message": "Hantera"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Höj volymen"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Sänk volymen"
   },
   "shortcutPanicMute": {
-    "message": "Panic Mute"
+    "message": "Dämpa alla"
   },
   "shortcutToggle": {
     "message": "Växla"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Synkroniserad!"
+  },
+  "presetCustom": {
+    "message": "Beställnings"
+  },
+  "presetAcoustic": {
+    "message": "Akustisk"
+  },
+  "presetElectronic": {
+    "message": "Elektronisk"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetRock": {
+    "message": "Rock"
+  },
+  "presetVocal": {
+    "message": "Vokal"
+  },
+  "presetTreble": {
+    "message": "Diskantreducerare"
+  },
+  "presetSpoken": {
+    "message": "Tal"
+  },
+  "compareBtnTitle": {
+    "message": "Håll ned för att jämföra (förbigå)"
+  },
+  "speedTitle": {
+    "message": "Uppspelningshastighet"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Återställ hastighet"
+  },
+  "pitchShiftTitle": {
+    "message": "Tonhöjdsändring"
+  },
+  "reverbTitle": {
+    "message": "Konserthus (3D Reverb)"
+  },
+  "customPresetsGroup": {
+    "message": "Anpassade förinställningar"
+  },
+  "defaultPresetsGroup": {
+    "message": "Fördefinierade Förinställningar"
+  },
+  "savePresetTitle": {
+    "message": "Spara Förinställning"
+  },
+  "deletePresetTitle": {
+    "message": "Ta bort Förinställning"
+  },
+  "promptPresetName": {
+    "message": "Ange namn för ny EQ-förinställning:"
+  },
+  "confirmDeletePreset": {
+    "message": "Ta bort denna förinställning permanent?"
+  },
+  "modalCancel": {
+    "message": "Avbryt"
+  },
+  "modalConfirm": {
+    "message": "OK"
+  },
+  "errorInvalidEq": {
+    "message": "Ogiltigt EQ-filformat."
+  },
+  "errorParseEq": {
+    "message": "Fel vid tolkning av fil."
   }
 }

@@ -102,10 +102,10 @@
     "message": "Mengelola"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Volume Naik"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Volume Turun"
   },
   "shortcutPanicMute": {
     "message": "Panik Bisu"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Disinkronkan!"
+  },
+  "presetCustom": {
+    "message": "Kebiasaan"
+  },
+  "presetAcoustic": {
+    "message": "Akustik"
+  },
+  "presetElectronic": {
+    "message": "Elektronik"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetRock": {
+    "message": "Batu"
+  },
+  "presetVocal": {
+    "message": "Penguat Vokal"
+  },
+  "presetTreble": {
+    "message": "Peredam Treble"
+  },
+  "presetSpoken": {
+    "message": "Kata yang Diucapkan"
+  },
+  "compareBtnTitle": {
+    "message": "Tahan untuk Membandingkan (Melewati)"
+  },
+  "speedTitle": {
+    "message": "Kecepatan Pemutaran"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Atur Ulang Kecepatan"
+  },
+  "pitchShiftTitle": {
+    "message": "Pergeseran Nada"
+  },
+  "reverbTitle": {
+    "message": "Aula Konser (Gema 3D)"
+  },
+  "customPresetsGroup": {
+    "message": "Preset Kustom"
+  },
+  "defaultPresetsGroup": {
+    "message": "Preset yang telah ditentukan sebelumnya"
+  },
+  "savePresetTitle": {
+    "message": "Simpan Prasetel"
+  },
+  "deletePresetTitle": {
+    "message": "Hapus Prasetel"
+  },
+  "promptPresetName": {
+    "message": "Masukkan nama untuk preset EQ baru:"
+  },
+  "confirmDeletePreset": {
+    "message": "Hapus preset ini secara permanen?"
+  },
+  "modalCancel": {
+    "message": "Batal"
+  },
+  "modalConfirm": {
+    "message": "Oke"
+  },
+  "errorInvalidEq": {
+    "message": "Format file EQ tidak valid."
+  },
+  "errorParseEq": {
+    "message": "Kesalahan saat mengurai file."
   }
 }

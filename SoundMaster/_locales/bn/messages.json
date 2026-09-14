@@ -102,10 +102,10 @@
     "message": "পরিচালনা করুন"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "ভলিউম বাড়ান"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "ভলিউম কমান"
   },
   "shortcutPanicMute": {
     "message": "আতঙ্কিত নিঃশব্দ"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ সিঙ্ক হয়েছে!"
+  },
+  "presetCustom": {
+    "message": "কাস্টম"
+  },
+  "presetAcoustic": {
+    "message": "অ্যাকোস্টিক"
+  },
+  "presetElectronic": {
+    "message": "ইলেকট্রনিক"
+  },
+  "presetPop": {
+    "message": "পপ"
+  },
+  "presetRock": {
+    "message": "শিলা"
+  },
+  "presetVocal": {
+    "message": "ভোকাল বুস্টার"
+  },
+  "presetTreble": {
+    "message": "ট্রেবল রিডুসার"
+  },
+  "presetSpoken": {
+    "message": "কথা"
+  },
+  "compareBtnTitle": {
+    "message": "তুলনা করতে হোল্ড করুন (বাইপাস)"
+  },
+  "speedTitle": {
+    "message": "গতি"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "গতি রিসেট করুন"
+  },
+  "pitchShiftTitle": {
+    "message": "পিচ শিফট"
+  },
+  "reverbTitle": {
+    "message": "কনসার্ট হল (3D Reverb)"
+  },
+  "customPresetsGroup": {
+    "message": "কাস্টম প্রিসেট"
+  },
+  "defaultPresetsGroup": {
+    "message": "পূর্বনির্ধারিত প্রিসেট"
+  },
+  "savePresetTitle": {
+    "message": "প্রিসেট সংরক্ষণ করুন"
+  },
+  "deletePresetTitle": {
+    "message": "প্রিসেট মুছুন"
+  },
+  "promptPresetName": {
+    "message": "নতুন EQ প্রিসেটের জন্য নাম লিখুন:"
+  },
+  "confirmDeletePreset": {
+    "message": "এই প্রিসেটটি স্থায়ীভাবে মুছবেন?"
+  },
+  "modalCancel": {
+    "message": "বাতিল করুন"
+  },
+  "modalConfirm": {
+    "message": "ঠিক আছে"
+  },
+  "errorInvalidEq": {
+    "message": "অবৈধ EQ ফাইল ফর্ম্যাট।"
+  },
+  "errorParseEq": {
+    "message": "ফাইল পার্স করতে ত্রুটি।"
   }
 }

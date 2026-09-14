@@ -6,10 +6,10 @@
     "message": "具有均衡器、低音增强、单声道缩混、紧急静音和音量增强器的高级音频工作室。"
   },
   "standardMode": {
-    "message": "标准"
+    "message": "标准模式"
   },
   "extremeMode": {
-    "message": "极限"
+    "message": "极限模式"
   },
   "resetBtn": {
     "message": "重置"
@@ -84,7 +84,7 @@
     "message": "已取消静音！"
   },
   "compressorMode": {
-    "message": "防破音"
+    "message": "压缩器"
   },
   "eqTitle": {
     "message": "10段均衡器"
@@ -93,25 +93,25 @@
     "message": "重置EQ"
   },
   "exportEqTitle": {
-    "message": "Export EQ"
+    "message": "导出配置"
   },
   "importEqTitle": {
-    "message": "Import EQ"
+    "message": "导入配置"
   },
   "manageShortcuts": {
-    "message": "Manage"
+    "message": "管理快捷键"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "提高音量"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "降低音量"
   },
   "shortcutPanicMute": {
-    "message": "Panic Mute"
+    "message": "一键静音"
   },
   "shortcutToggle": {
-    "message": "Toggle"
+    "message": "切换扩展"
   },
   "syncTabsText": {
     "message": "同步所有标签页"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ 已同步！"
+  },
+  "presetCustom": {
+    "message": "自定义"
+  },
+  "presetAcoustic": {
+    "message": "原声"
+  },
+  "presetElectronic": {
+    "message": "电子"
+  },
+  "presetPop": {
+    "message": "流行"
+  },
+  "presetRock": {
+    "message": "摇滚"
+  },
+  "presetVocal": {
+    "message": "人声"
+  },
+  "presetTreble": {
+    "message": "高音"
+  },
+  "presetSpoken": {
+    "message": "口语"
+  },
+  "compareBtnTitle": {
+    "message": "对比"
+  },
+  "speedTitle": {
+    "message": "播放速度"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "重置速度"
+  },
+  "pitchShiftTitle": {
+    "message": "音高调节"
+  },
+  "reverbTitle": {
+    "message": "3D混响"
+  },
+  "customPresetsGroup": {
+    "message": "自定义预设"
+  },
+  "defaultPresetsGroup": {
+    "message": "默认预设"
+  },
+  "savePresetTitle": {
+    "message": "保存预设"
+  },
+  "deletePresetTitle": {
+    "message": "删除预设"
+  },
+  "promptPresetName": {
+    "message": "输入新EQ预设的名称:"
+  },
+  "confirmDeletePreset": {
+    "message": "永久删除此预设？"
+  },
+  "modalCancel": {
+    "message": "取消"
+  },
+  "modalConfirm": {
+    "message": "确定"
+  },
+  "errorInvalidEq": {
+    "message": "无效的EQ文件格式。"
+  },
+  "errorParseEq": {
+    "message": "解析文件时出错。"
   }
 }

@@ -6,7 +6,7 @@
     "message": "Erweitertes Audiostudio mit EQ, Bass-Boost, Mono-Downmix, Panic-Mute und Lautstärkebooster."
   },
   "standardMode": {
-    "message": "Standard"
+    "message": "Standardmodus"
   },
   "extremeMode": {
     "message": "Extrem"
@@ -48,7 +48,7 @@
     "message": "Lautstärke"
   },
   "tabEQ": {
-    "message": "Equalizer"
+    "message": "EQ"
   },
   "tabUtils": {
     "message": "Werkzeuge"
@@ -57,7 +57,7 @@
     "message": "Bass-Verstärker"
   },
   "balanceLR": {
-    "message": "Balance (L/R)"
+    "message": "Audio-Balance"
   },
   "monoMode": {
     "message": "Mono-Modus"
@@ -102,10 +102,10 @@
     "message": "Verwalten"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Lauter"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Leiser"
   },
   "shortcutPanicMute": {
     "message": "Panik-Stummschaltung"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Synchronisiert!"
+  },
+  "presetCustom": {
+    "message": "Brauch"
+  },
+  "presetAcoustic": {
+    "message": "Akustisch"
+  },
+  "presetElectronic": {
+    "message": "Elektronisch"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetRock": {
+    "message": "Rock"
+  },
+  "presetVocal": {
+    "message": "Gesang"
+  },
+  "presetTreble": {
+    "message": "Höhenreduzierer"
+  },
+  "presetSpoken": {
+    "message": "Sprache"
+  },
+  "compareBtnTitle": {
+    "message": "Zum Vergleichen gedrückt halten (umgehen)"
+  },
+  "speedTitle": {
+    "message": "Geschwindigkeit"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Geschwindigkeit zurücksetzen"
+  },
+  "pitchShiftTitle": {
+    "message": "Tonhöhenänderung"
+  },
+  "reverbTitle": {
+    "message": "Konzertsaal (3D-Hall)"
+  },
+  "customPresetsGroup": {
+    "message": "Benutzerdefinierte Voreinstellungen"
+  },
+  "defaultPresetsGroup": {
+    "message": "Vordefinierte Voreinstellungen"
+  },
+  "savePresetTitle": {
+    "message": "Voreinstellung speichern"
+  },
+  "deletePresetTitle": {
+    "message": "Voreinstellung löschen"
+  },
+  "promptPresetName": {
+    "message": "Geben Sie einen Namen für die neue EQ-Voreinstellung ein:"
+  },
+  "confirmDeletePreset": {
+    "message": "Diese Voreinstellung dauerhaft löschen?"
+  },
+  "modalCancel": {
+    "message": "Abbrechen"
+  },
+  "modalConfirm": {
+    "message": "OK"
+  },
+  "errorInvalidEq": {
+    "message": "Ungültiges EQ-Dateiformat."
+  },
+  "errorParseEq": {
+    "message": "Fehler beim Parsen der Datei."
   }
 }

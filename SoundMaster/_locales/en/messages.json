@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Synced!"
+  },
+  "presetCustom": {
+    "message": "Custom"
+  },
+  "presetAcoustic": {
+    "message": "Acoustic"
+  },
+  "presetElectronic": {
+    "message": "Electronic"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetRock": {
+    "message": "Rock"
+  },
+  "presetVocal": {
+    "message": "Vocal Booster"
+  },
+  "presetTreble": {
+    "message": "Treble Reducer"
+  },
+  "presetSpoken": {
+    "message": "Spoken Word"
+  },
+  "compareBtnTitle": {
+    "message": "Hold to Compare (Bypass)"
+  },
+  "speedTitle": {
+    "message": "Playback Speed"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Reset Speed"
+  },
+  "pitchShiftTitle": {
+    "message": "Pitch Shift"
+  },
+  "reverbTitle": {
+    "message": "Concert Hall (3D Reverb)"
+  },
+  "customPresetsGroup": {
+    "message": "Custom Presets"
+  },
+  "defaultPresetsGroup": {
+    "message": "Predefined Presets"
+  },
+  "savePresetTitle": {
+    "message": "Save Preset"
+  },
+  "deletePresetTitle": {
+    "message": "Delete Preset"
+  },
+  "promptPresetName": {
+    "message": "Enter name for new EQ preset:"
+  },
+  "confirmDeletePreset": {
+    "message": "Delete this preset permanently?"
+  },
+  "modalCancel": {
+    "message": "Cancel"
+  },
+  "modalConfirm": {
+    "message": "OK"
+  },
+  "errorInvalidEq": {
+    "message": "Invalid EQ file format."
+  },
+  "errorParseEq": {
+    "message": "Error parsing file."
   }
 }

@@ -12,7 +12,7 @@
     "message": "Extrém"
   },
   "resetBtn": {
-    "message": "Reset"
+    "message": "Visszaállítás"
   },
   "applyLastBtn": {
     "message": "Utolsó alkalmazása"
@@ -93,19 +93,19 @@
     "message": "EQ visszaállítása"
   },
   "exportEqTitle": {
-    "message": "Export EQ"
+    "message": "Profil exportálása"
   },
   "importEqTitle": {
-    "message": "Import EQ"
+    "message": "Profil importálása"
   },
   "manageShortcuts": {
     "message": "Kezelése"
   },
   "shortcutVolUp": {
-    "message": "Vol +"
+    "message": "Hangerő fel"
   },
   "shortcutVolDown": {
-    "message": "Vol -"
+    "message": "Hangerő le"
   },
   "shortcutPanicMute": {
     "message": "Pánik némítás"
@@ -121,5 +121,74 @@
   },
   "syncSuccess": {
     "message": "✓ Szinkronizálva!"
+  },
+  "presetCustom": {
+    "message": "Szokás"
+  },
+  "presetAcoustic": {
+    "message": "Akusztikus"
+  },
+  "presetElectronic": {
+    "message": "Elektronikus"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetRock": {
+    "message": "Rock"
+  },
+  "presetVocal": {
+    "message": "Ének"
+  },
+  "presetTreble": {
+    "message": "Magashangcsökkentő"
+  },
+  "presetSpoken": {
+    "message": "Beszéd"
+  },
+  "compareBtnTitle": {
+    "message": "Tartsa lenyomva az összehasonlításhoz (kihagyás)"
+  },
+  "speedTitle": {
+    "message": "Lejátszási sebesség"
+  },
+  "resetSpeedBtnTitle": {
+    "message": "Sebesség visszaállítása"
+  },
+  "pitchShiftTitle": {
+    "message": "Hangmagasság-eltolás"
+  },
+  "reverbTitle": {
+    "message": "Koncertterem (3D Reverb)"
+  },
+  "customPresetsGroup": {
+    "message": "Egyéni előbeállítások"
+  },
+  "defaultPresetsGroup": {
+    "message": "Előre meghatározott beállítások"
+  },
+  "savePresetTitle": {
+    "message": "Előbeállítás mentése"
+  },
+  "deletePresetTitle": {
+    "message": "Előbeállítás törlése"
+  },
+  "promptPresetName": {
+    "message": "Adja meg az új EQ beállítás nevét:"
+  },
+  "confirmDeletePreset": {
+    "message": "Véglegesen törli ezt az előre beállított beállítást?"
+  },
+  "modalCancel": {
+    "message": "Mégse"
+  },
+  "modalConfirm": {
+    "message": "Rendben"
+  },
+  "errorInvalidEq": {
+    "message": "Érvénytelen EQ fájlformátum."
+  },
+  "errorParseEq": {
+    "message": "Hiba a fájl elemzésekor."
   }
 }
