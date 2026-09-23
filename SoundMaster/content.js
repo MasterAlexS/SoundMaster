@@ -29,9 +29,6 @@ let isPitchEnabled = false;
 let isBypassed = false;
 let pitchNode = null;
 
-
-let speedInterval = null;
-
 let eqNodes = [];
 const eqFrequencies = [32, 64, 125, 250, 500, 1000, 2000, 4000, 8000, 16000];
 
@@ -212,20 +209,32 @@ function updateAudioNodes() {
   applySpeedAndPitch();
 }
 
+let wasSpeedOverridden = false;
+
 function applySpeedAndPitch() {
-  const targetSpeed = (isBoostEnabled && isSpeedEnabled && !isBypassed) ? currentSpeed : 1.0;
-  
+  const shouldOverride = isBoostEnabled && isSpeedEnabled && !isBypassed;
   const els = [...document.getElementsByTagName('video'), ...document.getElementsByTagName('audio')];
-  els.forEach(el => {
-    if (el.playbackRate !== targetSpeed) {
-      el.playbackRate = targetSpeed;
+  
+  if (shouldOverride) {
+    els.forEach(el => {
+      if (el.playbackRate !== currentSpeed) {
+        el.playbackRate = currentSpeed;
+      }
+      if (el.preservesPitch !== true) {
+        el.preservesPitch = true;
+        if (el.mozPreservesPitch !== undefined) el.mozPreservesPitch = true;
+        if (el.webkitPreservesPitch !== undefined) el.webkitPreservesPitch = true;
+      }
+    });
+    wasSpeedOverridden = true;
+  } else {
+    if (wasSpeedOverridden) {
+      els.forEach(el => {
+        el.playbackRate = 1.0;
+      });
+      wasSpeedOverridden = false;
     }
-    if (el.preservesPitch !== true) {
-      el.preservesPitch = true;
-      if (el.mozPreservesPitch !== undefined) el.mozPreservesPitch = true;
-      if (el.webkitPreservesPitch !== undefined) el.webkitPreservesPitch = true;
-    }
-  });
+  }
 }
 
 function resumeAudioContext() {
@@ -390,6 +399,24 @@ function hookMediaElements() {
         }
         connectedElements.add(el);
         newlyHooked = true;
+        
+        const enforceSpeed = (e) => {
+          const shouldOverride = isBoostEnabled && isSpeedEnabled && !isBypassed;
+          if (shouldOverride && e.target.playbackRate !== currentSpeed) {
+            e.target.playbackRate = currentSpeed;
+          }
+        };
+
+        el.addEventListener('ratechange', enforceSpeed);
+        el.addEventListener('play', enforceSpeed);
+        el.addEventListener('playing', enforceSpeed);
+        el.addEventListener('loadeddata', enforceSpeed);
+        el.addEventListener('loadedmetadata', enforceSpeed);
+        
+        const shouldOverride = isBoostEnabled && isSpeedEnabled && !isBypassed;
+        if (shouldOverride && el.playbackRate !== currentSpeed) {
+          el.playbackRate = currentSpeed;
+        }
       } catch (error) {
         console.warn("Sound Master: Could not hook media element.", error);
       }
@@ -467,9 +494,6 @@ async function autoInit() {
     hookMediaElements();
     updateAudioNodes();
     startObserver();
-    
-    if (speedInterval) clearInterval(speedInterval);
-    speedInterval = setInterval(applySpeedAndPitch, 500);
   }
 }
 
@@ -506,11 +530,9 @@ browser.runtime.onMessage.addListener((message) => {
       hookMediaElements();
       updateAudioNodes();
       startObserver();
-      if (!speedInterval) speedInterval = setInterval(applySpeedAndPitch, 500);
     } else {
       updateAudioNodes();
       stopObserver();
-      if (speedInterval) { clearInterval(speedInterval); speedInterval = null; }
     }
   } else if (message.action === "bypassFilters") {
     isBypassed = message.bypassed;
