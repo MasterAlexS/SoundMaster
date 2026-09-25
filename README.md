@@ -21,13 +21,14 @@ Built natively with Manifest V3 and the Web Audio API, this extension was develo
 * **Volume Amplification:**
     * 🟢 **Standard Mode:** Boost up to **600%** (Safe, high-quality amplification).
     * 🔴 **Extreme Mode:** Unlock the limit up to **1000%** for those ultra-quiet videos.
-* **Smart Domain Memory:** The extension remembers your volume and EQ settings for specific websites (e.g., youtube.com). If you close a tab and come back later, your preferences remain intact.
-* **Customizable Keyboard Shortcuts:** Quickly adjust volume, toggle boost, or trigger the "Panic Mute" feature to instantly mute all background tabs.
 * **Universal Translation (56 Languages):** Full support for almost every major language worldwide. A custom-built manual language selector in the UI allows you to change the extension's language instantly on the fly.
-* **Smart Audio Routing (CPU Optimized):** Automatically detects new videos and dynamically bypasses unused audio nodes. When effects are disabled, the routing physically bypasses the Web Audio API to ensure **0% CPU usage**.
+* **Smart Domain Memory & Sync:** The extension remembers your volume and EQ settings for specific websites (e.g., youtube.com). Includes a **"Sync All Tabs"** utility to instantly apply your current settings to all open tabs of the same domain.
+* **Iframe Support:** Seamlessly processes audio for embedded video players (e.g., YouTube videos embedded on third-party blogs or news sites).
+* **Smart Audio Routing (CPU & SPA Optimized):** Automatically detects new videos and dynamically bypasses unused audio nodes. Fully optimized for Single Page Applications (SPAs) like YouTube, ensuring effects transition seamlessly between videos. When effects are disabled, the routing physically bypasses the Web Audio API to ensure **0% CPU usage**.
 * **Dynamic UI & Smart Interactions:** Clean, responsive design with manual toggle for **Dark Mode** (Default) and **Light Mode**. Sliders intelligently disable their respective effects when returned to default values to optimize workflow.
+* **Customizable Keyboard Shortcuts:** Quickly adjust volume, toggle boost, or trigger the "Panic Mute" feature to instantly mute all background tabs.
 * **Import/Export EQ Presets:** Share your custom 10-Band Equalizer setups with others or back them up locally via JSON files, complete with format validation.
-* **Strict Cross-Browser Compatibility:** Carefully engineered to support strict JS environments by avoiding unhandled modern syntax exceptions.
+* **Cross-Browser Native:** Carefully engineered to support strict JS environments and perform identically on both Firefox and Chromium-based browsers (Chrome, Edge, Brave, ...).
 * **Privacy First:** No tracking, no data collection, and no external server calls. See our [Privacy Policy](PRIVACY.md) for full details.
 
 ---
