@@ -13,18 +13,19 @@ The extension operates 100% locally on your machine and does not communicate wit
 
 ## 2. Information We Store Locally
 To provide a seamless experience, the Extension stores a minimal amount of configuration data directly on your device using the browser's native `storage` API:
-- **Domain Audio Settings:** The volume percentage, EQ sliders, Bass boost, Balance, Mono, and Compressor settings you configure for specific websites (e.g., youtube.com) so your preferences are remembered when you return.
-- **Theme Preferences:** Your choice between light mode and dark mode.
+- **Domain Audio Settings (Passive Memory):** The volume percentage, 10-Band EQ sliders, Custom EQ Presets, Bass boost, Balance, Mono, Anti-Distortion Compressor, Playback Speed, Pitch Shift, and 3D Reverb settings you used on a specific website (e.g., youtube.com). This is kept in passive memory so you can easily restore it using the "Apply Last" button.
+- **Global Preferences:** Your chosen theme (light/dark mode) and interface language.
 - **Keyboard Shortcuts:** Your enabled/disabled states for specific keyboard shortcuts.
-- **Global State:** The last applied volume level and the main on/off toggle status.
+- **Global State & Extreme Mode:** The last applied global volume level, the main on/off toggle status, and whether the 1000% Extreme Mode is toggled on.
 
 This data never leaves your computer. It is entirely under your control and can be wiped at any time by clearing your browser's local extension data.
 
 ## 3. Required Permissions Explained
 The Extension requests the following minimal permissions to function:
 - **`activeTab`**: Allows the Extension to temporarily interact with the current tab solely to connect to the audio stream for processing (EQ, Volume, etc.), and to read the domain name for saving your preference locally. It does not monitor your activity across tabs.
-- **`storage`**: Used exclusively to save your audio settings and preferences locally on your hard drive.
+- **`storage`**: Used exclusively to save your audio settings, custom presets, and preferences locally on your hard drive.
 - **`tabs`**: Used exclusively to locate and mute background tabs when triggering the "Panic Mute" keyboard shortcut.
+- **Host Permission (`<all_urls>`)**: Strictly used to inject the audio processing script into the webpage (and its iframes) so it can locate and apply effects to the `<video>` or `<audio>` elements.
 
 ## 4. Third-Party Services
 We do not integrate any third-party tracking scripts, analytics tools, or advertising networks into the Extension.
