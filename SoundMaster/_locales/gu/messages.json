@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "સ્પોકન વર્ડ"
   },
+  "presetHipHop": {
+    "message": "હિપ-હૉપ / આર એન્ડ બી"
+  },
+  "presetCinema": {
+    "message": "સિનેમા / મૂવી"
+  },
+  "presetJazz": {
+    "message": "જાઝ / શાસ્ત્રીય"
+  },
+  "presetLaptop": {
+    "message": "લેપટોપ સ્પીકર્સ"
+  },
   "compareBtnTitle": {
     "message": "સરખામણી કરવા માટે પકડી રાખો (બાયપાસ)"
   },

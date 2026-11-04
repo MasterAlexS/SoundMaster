@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "Говорена дума"
   },
+  "presetHipHop": {
+    "message": "Хип-хоп / R&B"
+  },
+  "presetCinema": {
+    "message": "Кино / Филм"
+  },
+  "presetJazz": {
+    "message": "Джаз / Класика"
+  },
+  "presetLaptop": {
+    "message": "Високоговорители на лаптоп"
+  },
   "compareBtnTitle": {
     "message": "Задръжте за сравнение (Байпас)"
   },

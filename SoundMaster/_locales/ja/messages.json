@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "話し言葉"
   },
+  "presetHipHop": {
+    "message": "ヒップホップ / R&B"
+  },
+  "presetCinema": {
+    "message": "映画 / シネマ"
+  },
+  "presetJazz": {
+    "message": "ジャズ / クラシック"
+  },
+  "presetLaptop": {
+    "message": "ノートPCスピーカー"
+  },
   "compareBtnTitle": {
     "message": "押し続けて比較 (バイパス)"
   },

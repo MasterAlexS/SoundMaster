@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "Ištartas žodis"
   },
+  "presetHipHop": {
+    "message": "Hip-hopas / R&B"
+  },
+  "presetCinema": {
+    "message": "Kinas / Filmas"
+  },
+  "presetJazz": {
+    "message": "Džiazas / Klasika"
+  },
+  "presetLaptop": {
+    "message": "Nešiojamojo kompiuterio garsiakalbiai"
+  },
   "compareBtnTitle": {
     "message": "Laikykite, kad palygintumėte (apeiti)"
   },

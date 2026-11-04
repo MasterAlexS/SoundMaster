@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "음성된 말씀"
   },
+  "presetHipHop": {
+    "message": "힙합 / R&B"
+  },
+  "presetCinema": {
+    "message": "영화 / 시네마"
+  },
+  "presetJazz": {
+    "message": "재즈 / 클래식"
+  },
+  "presetLaptop": {
+    "message": "노트북 스피커"
+  },
   "compareBtnTitle": {
     "message": "비교하려면 길게 누르세요(우회)"
   },

@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="Sound%20Master.svg" alt="Sound Master Logo" width="128" height="128">
+</p>
+
 # Sound Master 🎛️🔊
 
 A powerful, lightweight, and strictly privacy-focused advanced audio control extension for **Mozilla Firefox** and **Google Chrome**. 
@@ -10,14 +14,14 @@ Built natively with Manifest V3 and the Web Audio API, this extension was develo
 
 * **Advanced Audio Controls:**
     * **10-Band Equalizer:** Fine-tune frequencies from 32Hz to 16kHz to perfectly match your headphones or speakers.
-    * **EQ Profiles (Predefined & Custom):** Includes classic predefined presets (Acoustic, Pop, Rock, etc.) and allows you to create, save, and delete your own custom presets locally!
+    * **EQ Profiles (Predefined & Custom):** Includes 11 acoustically tuned predefined presets (Acoustic, Electronic, Pop, Rock, Vocal Booster, Treble Reducer, Spoken Word, Hip-Hop / R&B, Cinema / Movie, Jazz / Classical, Laptop Speakers) and allows you to create, save, and delete your own custom presets locally!
     * **Anti-Distortion Compressor:** A dynamic compressor that prevents audio clipping and distortion when boosting volume.
     * **Pitch Shifter:** Alter the pitch/tonality of the audio dynamically in real-time.
-    * **Playback Speed Controller:** Granular control over the video/audio speed (from 0.1x to 10.0x).
+    * **Playback Speed Controller:** Granular control over the video/audio speed (from 0.1x to 8.0x).
     * **Concert Hall (3D Reverb):** Add immersive spatial reverb effects to any audio.
     * **Audio Balance (L/R) & Mono Mode:** Adjust panning between left and right channels, or force stereo audio into a single mono channel.
     * **Bass Boost:** Dedicated slider for punchy low-frequency enhancement.
-    * **A/B Bypass Toggle:** Instantly toggle all audio effects on/off to compare the processed sound with the original.
+    * **A/B Bypass Toggle (Soft Bypass):** Seamlessly compare processed audio with the original stream using smooth parameter ramps and zero audio drops or graph reconstruction.
 * **Volume Amplification:**
     * 🟢 **Standard Mode:** Boost up to **600%** (Safe, high-quality amplification).
     * 🔴 **Extreme Mode:** Unlock the limit up to **1000%** for those ultra-quiet videos.
@@ -28,26 +32,30 @@ Built natively with Manifest V3 and the Web Audio API, this extension was develo
 * **Dynamic UI & Smart Interactions:** Clean, responsive design with manual toggle for **Dark Mode** (Default) and **Light Mode**. Sliders intelligently disable their respective effects when returned to default values to optimize workflow.
 * **Customizable Keyboard Shortcuts:** Quickly adjust volume, toggle boost, or trigger the "Panic Mute" feature to instantly mute all background tabs.
 * **Import/Export EQ Presets:** Share your custom 10-Band Equalizer setups with others or back them up locally via JSON files, complete with format validation.
-* **Cross-Browser Native:** Carefully engineered to support strict JS environments and perform identically on both Firefox and Chromium-based browsers (Chrome, Edge, Brave, ...).
+* **Cross-Browser Native (Big 3 Engines):** Carefully engineered to support strict JS environments and perform identically across all three major browser engines: **Blink** (Chrome, Edge, Brave, Opera, Vivaldi), **Gecko** (Firefox, LibreWolf, Zen, Waterfox), and **WebKit** (Safari, Orion Browser, GNOME Web / Epiphany).
 * **Privacy First:** No tracking, no data collection, and no external server calls. See our [Privacy Policy](PRIVACY.md) for full details.
 
 ---
 
 ## 🛠 Installation
 
-Because this extension is cross-browser compatible, you can install it manually on either Firefox or Chrome:
+Because this extension is cross-browser compatible, you can install it manually on any major browser engine:
 
-### **Mozilla Firefox**
+### **Mozilla Firefox (Gecko)**
 1. Go to `about:debugging#/runtime/this-firefox`.
 2. Click **Load Temporary Add-on...**.
 3. Select the `manifest.json` file from the extracted project folder.
 *(Note: For permanent Firefox installation, you must zip the files into an `.xpi` format, go to `about:config`, set `xpinstall.signatures.required` to `false`, and install it via `about:addons` > Install Add-on From File).*
 
-### **Google Chrome / Microsoft Edge / Brave / ...**
+### **Google Chrome / Microsoft Edge / Brave / Opera (Blink)**
 1. Download the repository as a ZIP and extract it to a folder.
 2. Open your browser and go to `chrome://extensions/` (or `edge://extensions/`).
 3. Turn on **Developer mode** (usually a toggle in the top-right corner).
 4. Click **Load unpacked** and select the folder you extracted in step 1.
+
+### **WebKit (Orion Browser / Safari / Epiphany)**
+1. **Orion Browser (macOS / iOS / Linux):** Open Orion Settings > Extensions, click **Install from disk** (or drag & drop the `.xpi` / `.zip`), and select the extension file or `manifest.json`.
+2. **Safari (macOS):** Can be packaged into a native Safari extension app using Apple's official `xcrun safari-web-extension-converter`.
 
 ---
 

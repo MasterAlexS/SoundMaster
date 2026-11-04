@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "Govor"
   },
+  "presetHipHop": {
+    "message": "Hip-hop / R&B"
+  },
+  "presetCinema": {
+    "message": "Kino / Film"
+  },
+  "presetJazz": {
+    "message": "Jazz / Klasika"
+  },
+  "presetLaptop": {
+    "message": "Zvočniki prenosnika"
+  },
   "compareBtnTitle": {
     "message": "Pridržite za primerjavo (Bypass)"
   },

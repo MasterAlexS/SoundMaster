@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "Tale"
   },
+  "presetHipHop": {
+    "message": "Hip-hop / R&B"
+  },
+  "presetCinema": {
+    "message": "Biograf / Film"
+  },
+  "presetJazz": {
+    "message": "Jazz / Klassisk"
+  },
+  "presetLaptop": {
+    "message": "Bærbare højttalere"
+  },
   "compareBtnTitle": {
     "message": "Hold for at sammenligne (omgå)"
   },

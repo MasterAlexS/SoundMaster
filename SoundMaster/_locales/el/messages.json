@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "Ομιλία"
   },
+  "presetHipHop": {
+    "message": "Χιπ-χοπ / R&B"
+  },
+  "presetCinema": {
+    "message": "Σινεμά / Ταινία"
+  },
+  "presetJazz": {
+    "message": "Τζαζ / Κλασική"
+  },
+  "presetLaptop": {
+    "message": "Ηχεία φορητού υπολογιστή"
+  },
   "compareBtnTitle": {
     "message": "Αναμονή για σύγκριση (Παράκαμψη)"
   },

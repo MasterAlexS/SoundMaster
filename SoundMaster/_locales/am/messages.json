@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "የሚነገር ቃል"
   },
+  "presetHipHop": {
+    "message": "ሂፕ-ሆፕ / አር ኤንድ ቢ"
+  },
+  "presetCinema": {
+    "message": "ሲኒማ / ፊልም"
+  },
+  "presetJazz": {
+    "message": "ጃዝ / ክላሲካል"
+  },
+  "presetLaptop": {
+    "message": "የላፕቶፕ ድምጽ ማጉያዎች"
+  },
   "compareBtnTitle": {
     "message": "ለማነጻጸር ይያዙ (ማለፊያ)"
   },

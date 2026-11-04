@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "Kõne"
   },
+  "presetHipHop": {
+    "message": "Hip-Hop / R&B"
+  },
+  "presetCinema": {
+    "message": "Kino / Film"
+  },
+  "presetJazz": {
+    "message": "Jazz / Klassikaline"
+  },
+  "presetLaptop": {
+    "message": "Sülearvuti kõlarid"
+  },
   "compareBtnTitle": {
     "message": "Võrdlemiseks hoidke all (möödasõit)"
   },

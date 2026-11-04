@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "الكلمة المنطوقة"
   },
+  "presetHipHop": {
+    "message": "هيب هوب / آند بي"
+  },
+  "presetCinema": {
+    "message": "سينما / فيلم"
+  },
+  "presetJazz": {
+    "message": "جاز / كلاسيكي"
+  },
+  "presetLaptop": {
+    "message": "مكبرات صوت الحاسوب المحمول"
+  },
   "compareBtnTitle": {
     "message": "اضغط للمقارنة (التجاوز)"
   },

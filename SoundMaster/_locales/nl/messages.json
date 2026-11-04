@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "Gesproken Woord"
   },
+  "presetHipHop": {
+    "message": "Hip-Hop / R&B"
+  },
+  "presetCinema": {
+    "message": "Bioscoop / Film"
+  },
+  "presetJazz": {
+    "message": "Jazz / Klassiek"
+  },
+  "presetLaptop": {
+    "message": "Laptopluidsprekers"
+  },
   "compareBtnTitle": {
     "message": "Houd ingedrukt om te vergelijken (bypass)"
   },

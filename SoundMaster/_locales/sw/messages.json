@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "Neno lililosemwa"
   },
+  "presetHipHop": {
+    "message": "Hip-Hop / R&B"
+  },
+  "presetCinema": {
+    "message": "Sinema / Filamu"
+  },
+  "presetJazz": {
+    "message": "Jazz / Muziki wa Asili"
+  },
+  "presetLaptop": {
+    "message": "Spika za Laptop"
+  },
   "compareBtnTitle": {
     "message": "Shikilia Ili Kulinganisha (Bypass)"
   },

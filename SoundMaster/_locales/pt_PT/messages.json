@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "Falado"
   },
+  "presetHipHop": {
+    "message": "Hip-Hop / R&B"
+  },
+  "presetCinema": {
+    "message": "Cinema / Filme"
+  },
+  "presetJazz": {
+    "message": "Jazz / Clássico"
+  },
+  "presetLaptop": {
+    "message": "Alto-falantes do portátil"
+  },
   "compareBtnTitle": {
     "message": "Comparar"
   },

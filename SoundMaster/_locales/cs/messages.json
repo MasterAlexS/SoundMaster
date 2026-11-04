@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "Mluvené slovo"
   },
+  "presetHipHop": {
+    "message": "Hip-Hop / R&B"
+  },
+  "presetCinema": {
+    "message": "Kino / Film"
+  },
+  "presetJazz": {
+    "message": "Jazz / Klasika"
+  },
+  "presetLaptop": {
+    "message": "Reproduktory notebooku"
+  },
   "compareBtnTitle": {
     "message": "Podržením porovnáte (obejít)"
   },

@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "Perkataan yang Diucapkan"
   },
+  "presetHipHop": {
+    "message": "Hip-Hop / R&B"
+  },
+  "presetCinema": {
+    "message": "Pawagam / Filem"
+  },
+  "presetJazz": {
+    "message": "Jazz / Klasik"
+  },
+  "presetLaptop": {
+    "message": "Pembesar Suara Komputer Riba"
+  },
   "compareBtnTitle": {
     "message": "Tahan untuk Membandingkan (Pintas)"
   },

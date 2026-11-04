@@ -13,10 +13,11 @@ The extension operates 100% locally on your machine and does not communicate wit
 
 ## 2. Information We Store Locally
 To provide a seamless experience, the Extension stores a minimal amount of configuration data directly on your device using the browser's native `storage` API:
-- **Domain Audio Settings (Passive Memory):** The volume percentage, 10-Band EQ sliders, Custom EQ Presets, Bass boost, Balance, Mono, Anti-Distortion Compressor, Playback Speed, Pitch Shift, and 3D Reverb settings you used on a specific website (e.g., youtube.com). This is kept in passive memory so you can easily restore it using the "Apply Last" button.
+- **Active Tab States:** The volume, EQ, and audio effects are saved per individual tab (`tab_id`), ensuring tabs operate independently. This data is automatically deleted when you close the tab or restart the browser.
+- **Domain Audio Settings (Passive Memory):** The volume percentage, 10-Band EQ sliders, Bass boost, Balance, Mono, Anti-Distortion Compressor, Playback Speed, Pitch Shift, 3D Reverb, and mode settings you used on a specific website (e.g., youtube.com). This is kept in passive memory so you can easily restore it using the "Apply Last" button.
+- **Custom EQ Presets:** Your saved custom equalizer presets.
 - **Global Preferences:** Your chosen theme (light/dark mode) and interface language.
 - **Keyboard Shortcuts:** Your enabled/disabled states for specific keyboard shortcuts.
-- **Global State & Extreme Mode:** The last applied global volume level, the main on/off toggle status, and whether the 1000% Extreme Mode is toggled on.
 
 This data never leaves your computer. It is entirely under your control and can be wiped at any time by clearing your browser's local extension data.
 

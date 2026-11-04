@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "ספוקן וורד"
   },
+  "presetHipHop": {
+    "message": "היפ-הופ / R&B"
+  },
+  "presetCinema": {
+    "message": "קולנוע / סרט"
+  },
+  "presetJazz": {
+    "message": "ג'אז / קלאסי"
+  },
+  "presetLaptop": {
+    "message": "רמקולים למחשב נייד"
+  },
   "compareBtnTitle": {
     "message": "החזק כדי להשוות (עקוף)"
   },

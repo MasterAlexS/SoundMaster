@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "Beszéd"
   },
+  "presetHipHop": {
+    "message": "Hip-hop / R&B"
+  },
+  "presetCinema": {
+    "message": "Mozi / Film"
+  },
+  "presetJazz": {
+    "message": "Jazz / Klasszikus"
+  },
+  "presetLaptop": {
+    "message": "Laptop hangszórók"
+  },
   "compareBtnTitle": {
     "message": "Tartsa lenyomva az összehasonlításhoz (kihagyás)"
   },

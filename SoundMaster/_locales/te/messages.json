@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "మాట్లాడిన మాట"
   },
+  "presetHipHop": {
+    "message": "హిప్-హాప్ / ఆర్&బి"
+  },
+  "presetCinema": {
+    "message": "సినిమా / చిత్రం"
+  },
+  "presetJazz": {
+    "message": "జాజ్ / క్లాసికల్"
+  },
+  "presetLaptop": {
+    "message": "ల్యాప్‌టాప్ స్పీకర్లు"
+  },
   "compareBtnTitle": {
     "message": "సరిపోల్చడానికి పట్టుకోండి (బైపాస్)"
   },

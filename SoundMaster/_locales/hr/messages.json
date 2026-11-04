@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "Govor"
   },
+  "presetHipHop": {
+    "message": "Hip-Hop / R&B"
+  },
+  "presetCinema": {
+    "message": "Kino / Film"
+  },
+  "presetJazz": {
+    "message": "Jazz / Klasika"
+  },
+  "presetLaptop": {
+    "message": "Zvučnici prijenosnog računala"
+  },
   "compareBtnTitle": {
     "message": "Držite za usporedbu (zaobilaženje)"
   },

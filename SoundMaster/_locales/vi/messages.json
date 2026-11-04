@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "Lời nói"
   },
+  "presetHipHop": {
+    "message": "Hip-Hop / R&B"
+  },
+  "presetCinema": {
+    "message": "Rạp chiếu phim / Phim"
+  },
+  "presetJazz": {
+    "message": "Jazz / Cổ điển"
+  },
+  "presetLaptop": {
+    "message": "Loa máy tính xách tay"
+  },
   "compareBtnTitle": {
     "message": "Giữ để so sánh (Bỏ qua)"
   },

@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "Izrunātais vārds"
   },
+  "presetHipHop": {
+    "message": "Hiphops / R&B"
+  },
+  "presetCinema": {
+    "message": "Kino / Filma"
+  },
+  "presetJazz": {
+    "message": "Džezs / Klasiskā"
+  },
+  "presetLaptop": {
+    "message": "Klēpjdatora skaļruņi"
+  },
   "compareBtnTitle": {
     "message": "Turiet, lai salīdzinātu (apiet)"
   },

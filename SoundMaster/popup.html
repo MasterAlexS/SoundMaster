@@ -101,6 +101,10 @@
                 <option value="vocal" data-i18n="presetVocal">Vocal Booster</option>
                 <option value="treble" data-i18n="presetTreble">Treble Reducer</option>
                 <option value="spoken" data-i18n="presetSpoken">Spoken Word</option>
+                <option value="hiphop" data-i18n="presetHipHop">Hip-Hop / R&B</option>
+                <option value="cinema" data-i18n="presetCinema">Cinema / Movie</option>
+                <option value="jazz" data-i18n="presetJazz">Jazz / Classical</option>
+                <option value="laptop" data-i18n="presetLaptop">Laptop Speakers</option>
               </optgroup>
             </select>
             <div style="display: flex; gap: 4px; margin-right: 10px;">
@@ -168,7 +172,7 @@
           <span id="speedValue">1.0x</span>
         </div>
         <div style="display: flex; align-items: center; gap: 8px;">
-          <input type="range" id="speedSlider" min="0.1" max="10" step="0.1" value="1.0" style="flex: 1;">
+          <input type="range" id="speedSlider" min="0.1" max="8.0" step="0.1" value="1.0" style="flex: 1;">
           <button id="resetSpeedBtn" class="small-btn" data-i18n-title="resetSpeedBtnTitle" title="Reset Speed">↺</button>
         </div>
       </div>
@@ -228,7 +232,7 @@
       <p id="modalMessage" style="margin-bottom: 10px;"></p>
       <input type="text" id="modalInput" class="slider-val" style="display: none; width: 100%; margin-bottom: 10px; padding: 5px; box-sizing: border-box;" />
       <div style="display: flex; justify-content: flex-end; gap: 10px;">
-        <button id="modalCancel" class="danger-btn" style="background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color);" data-i18n="modalCancel">Cancel</button>
+        <button id="modalCancel" class="danger-btn" style="background-color: var(--panel-bg); border: 1px solid var(--border-color); color: var(--text-color);" data-i18n="modalCancel">Cancel</button>
         <button id="modalConfirm" class="danger-btn" style="background-color: var(--accent-color); color: var(--bg-color);" data-i18n="modalConfirm">OK</button>
       </div>
     </div>

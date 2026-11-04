@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "কথা"
   },
+  "presetHipHop": {
+    "message": "হিপ-হপ / আরঅ্যান্ডবি"
+  },
+  "presetCinema": {
+    "message": "সিনেমা / চলচ্চিত্র"
+  },
+  "presetJazz": {
+    "message": "জ্যাজ / ধ্রুপদী"
+  },
+  "presetLaptop": {
+    "message": "ল্যাপটপ স্পিকার"
+  },
   "compareBtnTitle": {
     "message": "তুলনা করতে হোল্ড করুন (বাইপাস)"
   },

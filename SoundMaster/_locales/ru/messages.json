@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "Разговорное слово"
   },
+  "presetHipHop": {
+    "message": "Хип-хоп / R&B"
+  },
+  "presetCinema": {
+    "message": "Кино / Фильм"
+  },
+  "presetJazz": {
+    "message": "Джаз / Классика"
+  },
+  "presetLaptop": {
+    "message": "Динамики ноутбука"
+  },
   "compareBtnTitle": {
     "message": "Удерживайте для сравнения (обход)"
   },

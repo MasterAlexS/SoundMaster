@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "Sprache"
   },
+  "presetHipHop": {
+    "message": "Hip-Hop / R&B"
+  },
+  "presetCinema": {
+    "message": "Kino / Film"
+  },
+  "presetJazz": {
+    "message": "Jazz / Klassik"
+  },
+  "presetLaptop": {
+    "message": "Laptop-Lautsprecher"
+  },
   "compareBtnTitle": {
     "message": "Zum Vergleichen gedrückt halten (umgehen)"
   },

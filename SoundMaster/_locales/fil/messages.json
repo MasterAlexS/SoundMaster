@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "Salita"
   },
+  "presetHipHop": {
+    "message": "Hip-Hop / R&B"
+  },
+  "presetCinema": {
+    "message": "Sine / Pelikula"
+  },
+  "presetJazz": {
+    "message": "Jazz / Klasiko"
+  },
+  "presetLaptop": {
+    "message": "Mga Speaker ng Laptop"
+  },
   "compareBtnTitle": {
     "message": "I-hold upang Ihambing (Bypass)"
   },

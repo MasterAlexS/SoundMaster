@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Gradient principal Neon (Cyan -> Verde -> Portocaliu) -->
+    <linearGradient id="smGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e5ff" />
+      <stop offset="50%" stop-color="#22ff66" />
+      <stop offset="100%" stop-color="#ff6d00" />
+    </linearGradient>
+
+    <!-- Gradient con difuzor (Dark Metallic) -->
+    <radialGradient id="coneGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="70%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </radialGradient>
+
+    <!-- Gradient calotă centrală (Dust Cap) -->
+    <radialGradient id="capGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6" />
+      <stop offset="40%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </radialGradient>
+
+    <!-- Efect de Glow subtil pentru vizibilitate pe teme dark/light -->
+    <filter id="neonGlow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000000" flood-opacity="0.65" />
+    </filter>
+  </defs>
+
+  <g filter="url(#neonGlow)">
+    <!-- BARE EGALIZATOR SUS (10-Band EQ) -->
+    <g fill="url(#smGrad)">
+      <!-- Coloana 1 (Stânga extrem) -->
+      <rect x="136" y="136" width="20" height="10" rx="3" />
+      <rect x="136" y="152" width="20" height="10" rx="3" />
+      <rect x="136" y="168" width="20" height="10" rx="3" />
+      <!-- Coloana 2 -->
+      <rect x="166" y="88" width="20" height="10" rx="3" />
+      <rect x="166" y="104" width="20" height="10" rx="3" />
+      <rect x="166" y="120" width="20" height="10" rx="3" />
+      <rect x="166" y="136" width="20" height="10" rx="3" />
+      <rect x="166" y="152" width="20" height="10" rx="3" />
+      <!-- Coloana 3 -->
+      <rect x="196" y="112" width="20" height="10" rx="3" />
+      <rect x="196" y="128" width="20" height="10" rx="3" />
+      <!-- Coloana 4 -->
+      <rect x="226" y="56" width="24" height="10" rx="3" />
+      <rect x="226" y="72" width="24" height="10" rx="3" />
+      <rect x="226" y="88" width="24" height="10" rx="3" />
+      <rect x="226" y="104" width="24" height="10" rx="3" />
+      <rect x="226" y="120" width="24" height="10" rx="3" />
+      <!-- Coloana 5 -->
+      <rect x="262" y="72" width="24" height="10" rx="3" />
+      <rect x="262" y="88" width="24" height="10" rx="3" />
+      <rect x="262" y="104" width="24" height="10" rx="3" />
+      <rect x="262" y="120" width="24" height="10" rx="3" />
+      <!-- Coloana 6 -->
+      <rect x="296" y="112" width="20" height="10" rx="3" />
+      <rect x="296" y="128" width="20" height="10" rx="3" />
+      <!-- Coloana 7 -->
+      <rect x="326" y="88" width="20" height="10" rx="3" />
+      <rect x="326" y="104" width="20" height="10" rx="3" />
+      <rect x="326" y="120" width="20" height="10" rx="3" />
+      <rect x="326" y="136" width="20" height="10" rx="3" />
+      <rect x="326" y="152" width="20" height="10" rx="3" />
+      <!-- Coloana 8 (Dreapta extrem) -->
+      <rect x="356" y="136" width="20" height="10" rx="3" />
+      <rect x="356" y="152" width="20" height="10" rx="3" />
+      <rect x="356" y="168" width="20" height="10" rx="3" />
+    </g>
+
+    <!-- BARE EGALIZATOR JOS (Simetrice) -->
+    <g fill="url(#smGrad)">
+      <!-- Coloana 1 -->
+      <rect x="136" y="334" width="20" height="10" rx="3" />
+      <rect x="136" y="350" width="20" height="10" rx="3" />
+      <rect x="136" y="366" width="20" height="10" rx="3" />
+      <!-- Coloana 2 -->
+      <rect x="166" y="350" width="20" height="10" rx="3" />
+      <rect x="166" y="366" width="20" height="10" rx="3" />
+      <rect x="166" y="382" width="20" height="10" rx="3" />
+      <rect x="166" y="398" width="20" height="10" rx="3" />
+      <rect x="166" y="414" width="20" height="10" rx="3" />
+      <!-- Coloana 3 -->
+      <rect x="196" y="374" width="20" height="10" rx="3" />
+      <rect x="196" y="390" width="20" height="10" rx="3" />
+      <!-- Coloana 4 -->
+      <rect x="226" y="382" width="24" height="10" rx="3" />
+      <rect x="226" y="398" width="24" height="10" rx="3" />
+      <rect x="226" y="414" width="24" height="10" rx="3" />
+      <rect x="226" y="430" width="24" height="10" rx="3" />
+      <rect x="226" y="446" width="24" height="10" rx="3" />
+      <!-- Coloana 5 -->
+      <rect x="262" y="382" width="24" height="10" rx="3" />
+      <rect x="262" y="398" width="24" height="10" rx="3" />
+      <rect x="262" y="414" width="24" height="10" rx="3" />
+      <rect x="262" y="430" width="24" height="10" rx="3" />
+      <!-- Coloana 6 -->
+      <rect x="296" y="374" width="20" height="10" rx="3" />
+      <rect x="296" y="390" width="20" height="10" rx="3" />
+      <!-- Coloana 7 -->
+      <rect x="326" y="350" width="20" height="10" rx="3" />
+      <rect x="326" y="366" width="20" height="10" rx="3" />
+      <rect x="326" y="382" width="20" height="10" rx="3" />
+      <rect x="326" y="398" width="20" height="10" rx="3" />
+      <rect x="326" y="414" width="20" height="10" rx="3" />
+      <!-- Coloana 8 -->
+      <rect x="356" y="334" width="20" height="10" rx="3" />
+      <rect x="356" y="350" width="20" height="10" rx="3" />
+      <rect x="356" y="366" width="20" height="10" rx="3" />
+    </g>
+
+    <!-- UNDA AUDIO STÂNGA (Cyan) -->
+    <path d="M 16 256 L 52 256 L 68 218 L 86 298 L 106 164 L 122 332 L 138 220 L 152 256" fill="none" stroke="#00e5ff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- UNDA AUDIO DREAPTA (Portocaliu) -->
+    <path d="M 360 256 L 374 220 L 390 332 L 406 164 L 426 298 L 444 218 L 460 256 L 496 256" fill="none" stroke="#ff6d00" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- DIFUZOR CENTRAL (Subwoofer / Studio Monitor) -->
+    <!-- Șasiu exterior -->
+    <circle cx="256" cy="256" r="126" fill="url(#coneGrad)" stroke="#0f172a" stroke-width="8" />
+    <!-- Inel exterior Neon -->
+    <circle cx="256" cy="256" r="116" fill="none" stroke="url(#smGrad)" stroke-width="8" />
+    <!-- Suspensie membrană -->
+    <circle cx="256" cy="256" r="98" fill="none" stroke="#334155" stroke-width="10" />
+    <!-- Inel interior Neon -->
+    <circle cx="256" cy="256" r="82" fill="none" stroke="url(#smGrad)" stroke-width="6" />
+    <!-- Calotă centrală (Dust Cap) -->
+    <circle cx="256" cy="256" r="42" fill="url(#capGrad)" stroke="url(#smGrad)" stroke-width="5" />
+    <!-- Reflexie lumină pe calotă -->
+    <ellipse cx="244" cy="242" rx="12" ry="7" transform="rotate(-30 244 242)" fill="#ffffff" fill-opacity="0.35" />
+  </g>
+</svg>

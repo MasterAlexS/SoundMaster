@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "स्पोकन शब्द"
   },
+  "presetHipHop": {
+    "message": "हिप-हॉप / आर&बी"
+  },
+  "presetCinema": {
+    "message": "सिनेमा / चित्रपट"
+  },
+  "presetJazz": {
+    "message": "जाझ / शास्त्रीय"
+  },
+  "presetLaptop": {
+    "message": "लॅपटॉप स्पीकर्स"
+  },
   "compareBtnTitle": {
     "message": "तुलना करण्यासाठी धरा (बायपास)"
   },

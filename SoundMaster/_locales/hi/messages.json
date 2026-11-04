@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "बोला हुआ शब्द"
   },
+  "presetHipHop": {
+    "message": "हिप-हॉप / आरएंडबी"
+  },
+  "presetCinema": {
+    "message": "सिनेमा / मूवी"
+  },
+  "presetJazz": {
+    "message": "जैज़ / शास्त्रीय"
+  },
+  "presetLaptop": {
+    "message": "लैपटॉप स्पीकर"
+  },
   "compareBtnTitle": {
     "message": "तुलना करने के लिए दबाए रखें (बाईपास)"
   },

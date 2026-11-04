@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "Puhe"
   },
+  "presetHipHop": {
+    "message": "Hip-hop / R&B"
+  },
+  "presetCinema": {
+    "message": "Elokuvateatteri / Elokuva"
+  },
+  "presetJazz": {
+    "message": "Jazz / Klassinen"
+  },
+  "presetLaptop": {
+    "message": "Kannettavan kaiuttimet"
+  },
   "compareBtnTitle": {
     "message": "Vertaile pitämällä (ohita)"
   },

@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "کلمه گفتاری"
   },
+  "presetHipHop": {
+    "message": "هیپ‌هاپ / آراندبی"
+  },
+  "presetCinema": {
+    "message": "سینما / فیلم"
+  },
+  "presetJazz": {
+    "message": "جاز / کلاسیک"
+  },
+  "presetLaptop": {
+    "message": "بلندگوهای لپ‌تاپ"
+  },
   "compareBtnTitle": {
     "message": "برای مقایسه نگه دارید (دور زدن)"
   },

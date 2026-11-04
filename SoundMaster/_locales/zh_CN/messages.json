@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "口语"
   },
+  "presetHipHop": {
+    "message": "嘻哈 / R&B"
+  },
+  "presetCinema": {
+    "message": "影院 / 电影"
+  },
+  "presetJazz": {
+    "message": "爵士 / 古典"
+  },
+  "presetLaptop": {
+    "message": "笔记本扬声器"
+  },
   "compareBtnTitle": {
     "message": "对比"
   },

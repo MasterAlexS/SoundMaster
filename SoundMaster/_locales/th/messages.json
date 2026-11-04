@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "คำพูด"
   },
+  "presetHipHop": {
+    "message": "ฮิปฮอป / อาร์แอนด์บี"
+  },
+  "presetCinema": {
+    "message": "ภาพยนตร์ / โรงหนัง"
+  },
+  "presetJazz": {
+    "message": "แจ๊ส / คลาสสิก"
+  },
+  "presetLaptop": {
+    "message": "ลำโพงแล็ปท็อป"
+  },
   "compareBtnTitle": {
     "message": "กดค้างไว้เพื่อเปรียบเทียบ (บายพาส)"
   },

@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "സംസാരിച്ച വാക്ക്"
   },
+  "presetHipHop": {
+    "message": "ഹിപ്പ്-ഹോപ്പ് / ആർ&ബി"
+  },
+  "presetCinema": {
+    "message": "സിനിമ / ചലച്ചിത്രം"
+  },
+  "presetJazz": {
+    "message": "ജാസ് / ക്ലാസിക്കൽ"
+  },
+  "presetLaptop": {
+    "message": "ലാപ്‌ടോപ്പ് സ്പീക്കറുകൾ"
+  },
   "compareBtnTitle": {
     "message": "താരതമ്യം ചെയ്യാൻ പിടിക്കുക (ബൈപാസ്)"
   },

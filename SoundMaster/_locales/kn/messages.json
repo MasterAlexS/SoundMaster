@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "ಮಾತನಾಡುವ ಮಾತು"
   },
+  "presetHipHop": {
+    "message": "ಹಿಪ್-ಹಾಪ್ / ಆರ್&ಬಿ"
+  },
+  "presetCinema": {
+    "message": "ಸಿನಿಮಾ / ಚಲನಚಿತ್ರ"
+  },
+  "presetJazz": {
+    "message": "ಜಾಝ್ / ಶಾಸ್ತ್ರೀಯ"
+  },
+  "presetLaptop": {
+    "message": "ಲ್ಯಾಪ್‌ಟಾಪ್ ಸ್ಪೀಕರ್ಸ್"
+  },
   "compareBtnTitle": {
     "message": "ಹೋಲಿಸಲು ಹಿಡಿದುಕೊಳ್ಳಿ (ಬೈಪಾಸ್)"
   },

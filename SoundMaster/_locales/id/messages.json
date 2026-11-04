@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "Kata yang Diucapkan"
   },
+  "presetHipHop": {
+    "message": "Hip-Hop / R&B"
+  },
+  "presetCinema": {
+    "message": "Bioskop / Film"
+  },
+  "presetJazz": {
+    "message": "Jazz / Klasik"
+  },
+  "presetLaptop": {
+    "message": "Speaker Laptop"
+  },
   "compareBtnTitle": {
     "message": "Tahan untuk Membandingkan (Melewati)"
   },

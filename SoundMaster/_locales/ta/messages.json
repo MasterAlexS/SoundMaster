@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "பேசப்படும் வார்த்தை"
   },
+  "presetHipHop": {
+    "message": "ஹிப்-ஹாப் / ஆர்&பி"
+  },
+  "presetCinema": {
+    "message": "சினிமா / திரைப்படம்"
+  },
+  "presetJazz": {
+    "message": "ஜாஸ் / பாரம்பரிய"
+  },
+  "presetLaptop": {
+    "message": "மடிக்கணினி ஸ்பீக்கர்கள்"
+  },
   "compareBtnTitle": {
     "message": "ஒப்பிட பிடி (பைபாஸ்)"
   },

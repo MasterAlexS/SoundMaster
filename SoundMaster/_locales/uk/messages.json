@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "Мовлення"
   },
+  "presetHipHop": {
+    "message": "Хіп-хоп / R&B"
+  },
+  "presetCinema": {
+    "message": "Кіно / Фільм"
+  },
+  "presetJazz": {
+    "message": "Джаз / Класика"
+  },
+  "presetLaptop": {
+    "message": "Динаміки ноутбука"
+  },
   "compareBtnTitle": {
     "message": "Порівняти"
   },

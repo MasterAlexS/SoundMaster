@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "Konuşulan Söz"
   },
+  "presetHipHop": {
+    "message": "Hip-Hop / R&B"
+  },
+  "presetCinema": {
+    "message": "Sinema / Film"
+  },
+  "presetJazz": {
+    "message": "Caz / Klasik"
+  },
+  "presetLaptop": {
+    "message": "Dizüstü Bilgisayar Hoparlörleri"
+  },
   "compareBtnTitle": {
     "message": "Karşılaştır"
   },

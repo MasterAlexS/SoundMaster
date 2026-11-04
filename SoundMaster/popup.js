@@ -1,4 +1,5 @@
 globalThis.browser = globalThis.browser || chrome;
+
 document.addEventListener("DOMContentLoaded", async () => {
   const masterToggle = document.getElementById("masterToggle");
   const limitToggle = document.getElementById("limitToggle");
@@ -59,7 +60,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   });
 
-  let manageShortcutsLink = document.getElementById("manageShortcutsLink");
+  const manageShortcutsLink = document.getElementById("manageShortcutsLink");
   if (manageShortcutsLink) {
     manageShortcutsLink.addEventListener("click", () => {
       const isFirefox = navigator.userAgent.toLowerCase().includes("firefox");
@@ -129,7 +130,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           });
         });
       }
-    } catch (e) { }
+    } catch (e) {}
   }
 
   function eqArraysEqual(arr1, arr2) {
@@ -150,6 +151,26 @@ document.addEventListener("DOMContentLoaded", async () => {
       slider.value = values[i];
       eqNums[i].value = values[i];
     });
+  }
+
+  function isStateActive(state) {
+    if (!state) return false;
+    const hasEq = state.eqEnabled !== false && Array.isArray(state.eq) && state.eq.some(v => v !== 0);
+    const hasBass = state.bassEnabled !== false && (state.bass || 0) !== 0;
+    const hasBalance = state.balanceEnabled !== false && (state.balance || 0) !== 0;
+    const hasSpeed = state.speedEnabled !== false && state.speed && state.speed !== 1.0;
+    const hasPitch = state.pitchEnabled !== false && state.pitch && state.pitch !== 0;
+    return (
+      (state.volume !== undefined && state.volume !== 100) ||
+      hasBass ||
+      hasEq ||
+      hasBalance ||
+      Boolean(state.mono) ||
+      Boolean(state.compressor) ||
+      hasSpeed ||
+      hasPitch ||
+      Boolean(state.reverb)
+    );
   }
 
   function isProcessingNeeded(vol = null) {
@@ -198,6 +219,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const availableLangs = {
     "auto": "🌐 Auto (Browser)", "en": "🇬🇧 English", "ro": "🇷🇴 Română", "es": "🇪🇸 Español", "fr": "🇫🇷 Français",
     "de": "🇩🇪 Deutsch", "it": "🇮🇹 Italiano", "pt_BR": "🇧🇷 Português", "ru": "🇷🇺 Русский", "zh_CN": "🇨🇳 中文",
+    "zh_TW": "🇹🇼 繁體中文",
     "ja": "🇯🇵 日本語", "ko": "🇰🇷 한국어", "ar": "🇸🇦 العربية", "hi": "🇮🇳 हिन्दी", "tr": "🇹🇷 Türkçe",
     "nl": "🇳🇱 Nederlands", "pl": "🇵🇱 Polski", "sv": "🇸🇪 Svenska", "fi": "🇫🇮 Suomi", "da": "🇩🇰 Dansk",
     "no": "🇳🇴 Norsk", "el": "🇬🇷 Ελληνικά", "cs": "🇨🇿 Čeština", "hu": "🇭🇺 Magyar", "bg": "🇧🇬 Български",
@@ -208,54 +230,27 @@ document.addEventListener("DOMContentLoaded", async () => {
     "kn": "🇮🇳 ಕನ್ನಡ", "ml": "🇮🇳 മലയാളം", "mr": "🇮🇳 मराठी", "ta": "🇮🇳 தமிழ்", "te": "🇮🇳 తెలుగు"
   };
 
-  // Populate langSelect
+  const langFragment = document.createDocumentFragment();
   for (const [code, name] of Object.entries(availableLangs)) {
     const opt = document.createElement("option");
     opt.value = code;
     opt.textContent = name;
-    langSelect.appendChild(opt);
+    langFragment.appendChild(opt);
   }
+  langSelect.appendChild(langFragment);
 
-  const storageData = await browser.storage.local.get(["globalLastVolume", "themePreference", "languagePreference"]);
-  let globalLastVolume = storageData.globalLastVolume || 100;
+  const [storageData, tabs] = await Promise.all([
+    browser.storage.local.get(["themePreference", "languagePreference"]),
+    browser.tabs.query({ active: true, currentWindow: true })
+  ]);
+
   let isLightMode = storageData.themePreference === "light";
   let langPref = storageData.languagePreference || "auto";
 
   langSelect.value = langPref;
-
   if (isLightMode) document.body.classList.add("light-mode");
 
   let customMessages = null;
-
-  browser.runtime.onMessage.addListener((msg) => {
-    if (msg.action === "stateUpdatedFromBackground" && msg.state) {
-      const state = msg.state;
-      masterToggle.checked = state.enabled;
-      limitToggle.checked = state.extremeMode;
-      volumeSlider.max = state.extremeMode ? "1000" : "600";
-      volumeSlider.value = state.volume;
-      bassSlider.value = state.bass || 0;
-      bassToggle.checked = state.bassEnabled !== false;
-      setEqValues(state.eq || [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
-      eqToggle.checked = state.eqEnabled !== false;
-      eqSection.style.opacity = eqToggle.checked ? "1" : "0.5";
-      eqSliders.forEach(s => s.disabled = !eqToggle.checked);
-      eqNums.forEach(n => n.disabled = !eqToggle.checked);
-      balanceSlider.value = state.balance || 0;
-      balanceToggle.checked = state.balanceEnabled !== false;
-      monoToggle.checked = state.mono || false;
-      compressorToggle.checked = state.compressor || false;
-      speedSlider.value = state.speed || 1.0;
-      speedValue.textContent = (state.speed || 1.0).toFixed(1) + "x";
-      speedToggle.checked = state.speedEnabled !== false && state.speed !== 1.0;
-      pitchSlider.value = state.pitch || 0;
-      let pVal = state.pitch || 0;
-      pitchValue.textContent = (pVal > 0 ? "+" + pVal : pVal) + "st";
-      pitchToggle.checked = state.pitchEnabled !== false && state.pitch !== 0;
-      reverbToggle.checked = state.reverb || false;
-      updateUIText();
-    }
-  });
 
   async function loadTranslations(lang) {
     if (lang === "auto") {
@@ -263,7 +258,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       return;
     }
     try {
-      const url = browser.runtime.getURL("_locales/" + lang + "/messages.json");
+      const url = browser.runtime.getURL(`_locales/${lang}/messages.json`);
       const response = await fetch(url);
       customMessages = await response.json();
     } catch (e) {
@@ -280,18 +275,18 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   function applyTranslations() {
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-      const msg = getMessage(el.getAttribute('data-i18n'));
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const msg = getMessage(el.getAttribute("data-i18n"));
       if (msg) {
-        if (el.tagName === 'OPTGROUP') {
+        if (el.tagName === "OPTGROUP") {
           el.label = msg;
         } else {
           el.textContent = msg;
         }
       }
     });
-    document.querySelectorAll('[data-i18n-title]').forEach(el => {
-      const msg = getMessage(el.getAttribute('data-i18n-title'));
+    document.querySelectorAll("[data-i18n-title]").forEach(el => {
+      const msg = getMessage(el.getAttribute("data-i18n-title"));
       if (msg) el.title = msg;
     });
 
@@ -316,12 +311,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     await browser.storage.local.set({ languagePreference: langPref });
     await loadTranslations(langPref);
     applyTranslations();
-    updateTabInfoDisplay(); // refresh dynamic domain text
+    updateTabInfoDisplay();
   });
 
-  const tabs = await browser.tabs.query({ active: true, currentWindow: true });
   const currentTab = tabs[0];
-
   let tabId = null;
   let storageKey = null;
   let domainKey = null;
@@ -335,7 +328,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const activeOnMsg = getMessage("activeOn") || "Active on: ";
     const activeCurrentMsg = getMessage("activeCurrent") || "Active on: current page";
     if (urlObj && urlObj.hostname) {
-      activeTabInfo.textContent = activeOnMsg + urlObj.hostname.replace(/^www\./, '');
+      activeTabInfo.textContent = activeOnMsg + urlObj.hostname.replace(/^www\./, "");
     } else {
       activeTabInfo.textContent = activeCurrentMsg;
     }
@@ -349,7 +342,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (urlObj.hostname) {
         domainKey = "domain_" + urlObj.hostname;
       }
-    } catch (e) { }
+    } catch (e) {}
   }
 
   if (!domainKey && syncTabsBtn) {
@@ -358,49 +351,81 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   updateTabInfoDisplay();
 
-  let tabState = { enabled: false, volume: 100, extremeMode: false, bass: 0, bassEnabled: false, eq: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], eqEnabled: false, balance: 0, balanceEnabled: false, mono: false, compressor: false, speed: 1.0, speedEnabled: false, pitch: 0, pitchEnabled: false, reverb: false };
+  let tabState = {
+    enabled: false,
+    volume: 100,
+    extremeMode: false,
+    bass: 0,
+    bassEnabled: false,
+    eq: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    eqEnabled: false,
+    balance: 0,
+    balanceEnabled: false,
+    mono: false,
+    compressor: false,
+    speed: 1.0,
+    speedEnabled: false,
+    pitch: 0,
+    pitchEnabled: false,
+    reverb: false
+  };
   let domainState = null;
 
   if (storageKey) {
-    const tabData = await browser.storage.local.get([storageKey]);
-    if (tabData[storageKey]) {
-      tabState = { ...tabState, ...tabData[storageKey] };
+    const keysToLoad = [storageKey];
+    if (domainKey) keysToLoad.push(domainKey);
+    const loadedData = await browser.storage.local.get(keysToLoad);
+
+    if (loadedData[storageKey]) {
+      tabState = { ...tabState, ...loadedData[storageKey] };
+    }
+    if (domainKey && loadedData[domainKey] && isStateActive(loadedData[domainKey])) {
+      domainState = loadedData[domainKey];
     }
   }
 
-  if (domainKey) {
-    const dData = await browser.storage.local.get([domainKey]);
-    if (dData[domainKey]) {
-      domainState = dData[domainKey];
-    }
+  function applyStateToUI(state) {
+    masterToggle.checked = Boolean(state.enabled);
+    limitToggle.checked = Boolean(state.extremeMode);
+    volumeSlider.max = state.extremeMode ? "1000" : "600";
+    volumeSlider.value = state.volume ?? 100;
+    bassSlider.value = state.bass || 0;
+    bassToggle.checked = state.bassEnabled !== false && (state.bass || 0) !== 0;
+    setEqValues(state.eq || [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+    const hasNonZeroEq = Array.isArray(state.eq) && state.eq.some(v => v !== 0);
+    eqToggle.checked = state.eqEnabled !== false && hasNonZeroEq;
+    eqSection.style.opacity = eqToggle.checked ? "1" : "0.5";
+    balanceSlider.value = state.balance || 0;
+    balanceToggle.checked = state.balanceEnabled !== false && (state.balance || 0) !== 0;
+    monoToggle.checked = Boolean(state.mono);
+    compressorToggle.checked = Boolean(state.compressor);
+    speedSlider.value = state.speed || 1.0;
+    speedValue.textContent = parseFloat(speedSlider.value).toFixed(1) + "x";
+    speedToggle.checked = state.speedEnabled !== false && (state.speed || 1.0) !== 1.0;
+    pitchSlider.value = state.pitch || 0;
+    const pVal = parseInt(pitchSlider.value, 10) || 0;
+    pitchValue.textContent = (pVal > 0 ? "+" + pVal : pVal) + "st";
+    pitchToggle.checked = state.pitchEnabled !== false && pVal !== 0;
+    reverbToggle.checked = Boolean(state.reverb);
   }
 
-  masterToggle.checked = tabState.enabled;
-  limitToggle.checked = tabState.extremeMode;
-  volumeSlider.max = tabState.extremeMode ? "1000" : "600";
-  volumeSlider.value = tabState.volume;
-  bassSlider.value = tabState.bass || 0;
-  bassToggle.checked = tabState.bassEnabled !== false;
-  setEqValues(tabState.eq || [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
-  eqToggle.checked = tabState.eqEnabled !== false;
-  eqSection.style.opacity = eqToggle.checked ? "1" : "0.5";
-  balanceSlider.value = tabState.balance || 0;
-  balanceToggle.checked = tabState.balanceEnabled !== false;
-  monoToggle.checked = tabState.mono || false;
-  compressorToggle.checked = tabState.compressor || false;
-  speedSlider.value = tabState.speed || 1.0;
-  speedValue.textContent = (tabState.speed || 1.0).toFixed(1) + "x";
-  speedToggle.checked = tabState.speedEnabled !== false && tabState.speed !== 1.0;
-  pitchSlider.value = tabState.pitch || 0;
-  let pVal = tabState.pitch || 0;
-  pitchValue.textContent = (pVal > 0 ? "+" + pVal : pVal) + "st";
-  pitchToggle.checked = tabState.pitchEnabled !== false && tabState.pitch !== 0;
-  reverbToggle.checked = tabState.reverb || false;
+  applyStateToUI(tabState);
+  volumeValue.className = "";
 
-  updateUIText();
+  browser.runtime.onMessage.addListener((msg) => {
+    if (msg.action === "stateUpdatedFromBackground" && msg.state) {
+      tabState = { ...tabState, ...msg.state };
+      if (domainKey && isStateActive(tabState)) {
+        domainState = { ...tabState };
+      }
+      applyStateToUI(tabState);
+      checkAndSelectMatchingPreset();
+      updateUIText();
+    }
+  });
 
   function updateBalanceText() {
-    let balVal = parseFloat(balanceSlider.value);
+    const balVal = parseFloat(balanceSlider.value);
     if (balVal === 0) balanceValue.textContent = "C";
     else if (balVal < 0) balanceValue.textContent = "L" + Math.round(Math.abs(balVal) * 100);
     else balanceValue.textContent = "R" + Math.round(balVal * 100);
@@ -408,116 +433,100 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   function formatStateSummary(state) {
     if (!state) return "100%";
-    let parts = [];
-    if (state.volume !== 100) parts.push(state.volume + "%");
+    const parts = [];
+    if (state.volume !== undefined && state.volume !== 100) parts.push(state.volume + "%");
     if (state.compressor) parts.push("AD");
     if (state.bassEnabled !== false && state.bass > 0) parts.push("BB " + state.bass + "dB");
     if (state.eqEnabled !== false && state.eq && state.eq.some(v => v !== 0)) parts.push("CEQ");
     if (state.balanceEnabled !== false && state.balance !== 0) {
-      let b = state.balance;
+      const b = state.balance;
       parts.push("B " + (b < 0 ? "L" + Math.round(Math.abs(b) * 100) : "R" + Math.round(b * 100)));
     }
     if (state.mono) parts.push("MM");
-    if (state.speedEnabled !== false && state.speed && state.speed !== 1.0) parts.push(state.speed.toFixed(1) + "xS");
+    if (state.speedEnabled !== false && state.speed && state.speed !== 1.0) parts.push(Number(state.speed).toFixed(1) + "xS");
     if (state.pitchEnabled !== false && state.pitch && state.pitch !== 0) parts.push((state.pitch > 0 ? "+" + state.pitch : state.pitch) + "stP");
     if (state.reverb) parts.push("3DR");
 
-    if (parts.length === 0) return "100%";
-    return parts.join(", ");
+    return parts.length === 0 ? "100%" : parts.join(", ");
   }
 
   function updateUIText(val = null) {
-    const currentVol = val !== null ? val : parseInt(volumeSlider.value, 10);
-    volumeValue.textContent = currentVol + "%";
+    const currentVal = val !== null ? val : parseInt(volumeSlider.value, 10);
+    volumeValue.textContent = currentVal + "%";
 
     let hue;
-    if (currentVol <= 100) {
+    if (currentVal <= 100) {
       hue = 150;
-    } else if (currentVol <= 600) {
-      hue = 150 - ((currentVol - 100) / 500) * 90;
+    } else if (currentVal <= 600) {
+      hue = 150 - ((currentVal - 100) / 500) * 90;
     } else {
-      hue = 60 - ((currentVol - 600) / 400) * 60;
+      hue = 60 - ((currentVal - 600) / 400) * 60;
     }
 
     const lightness = isLightMode ? 35 : 50;
     const dynamicColor = `hsl(${hue}, 100%, ${lightness}%)`;
     volumeValue.style.color = dynamicColor;
     volumeValue.style.textShadow = `0 0 12px hsla(${hue}, 100%, ${lightness}%, 0.4)`;
-    volumeValue.className = "";
-    document.documentElement.style.setProperty('--dynamic-accent', dynamicColor);
+    document.documentElement.style.setProperty("--dynamic-accent", dynamicColor);
 
     if (lastVolText) {
-      if (domainState) {
-        lastVolText.textContent = formatStateSummary(domainState);
-      } else {
-        lastVolText.textContent = globalLastVolume === 100 ? (getMessage("resetBtn") || "Reset") : globalLastVolume + "%";
-      }
+      lastVolText.textContent = domainState ? formatStateSummary(domainState) : "100%";
     }
 
     bassValue.textContent = bassSlider.value + "dB";
     updateBalanceText();
   }
 
+  updateUIText();
+
+  function buildCurrentStateObject(volOverride = null) {
+    const currentVol = volOverride !== null ? volOverride : parseInt(volumeSlider.value, 10);
+    return {
+      enabled: masterToggle.checked,
+      volume: currentVol,
+      extremeMode: limitToggle.checked,
+      bass: parseInt(bassSlider.value, 10),
+      bassEnabled: bassToggle.checked,
+      eq: getEqValues(),
+      eqEnabled: eqToggle.checked,
+      balance: parseFloat(balanceSlider.value),
+      balanceEnabled: balanceToggle.checked,
+      mono: monoToggle.checked,
+      compressor: compressorToggle.checked,
+      speed: parseFloat(speedSlider.value),
+      speedEnabled: speedToggle.checked,
+      pitch: parseInt(pitchSlider.value, 10),
+      pitchEnabled: pitchToggle.checked,
+      reverb: reverbToggle.checked
+    };
+  }
+
   async function syncState() {
     if (!storageKey) return;
-    const currentVol = parseInt(volumeSlider.value);
-    const isEnabled = masterToggle.checked;
-    const isExtreme = limitToggle.checked;
-    const currentBass = parseInt(bassSlider.value);
-    const isBassEnabled = bassToggle.checked;
-    const currentEq = getEqValues();
-    const isEqEnabled = eqToggle.checked;
-    const currentBalance = parseFloat(balanceSlider.value);
-    const isBalanceEnabled = balanceToggle.checked;
-    const isMono = monoToggle.checked;
-    const isCompressor = compressorToggle.checked;
-    const isSpeedEnabled = speedToggle.checked;
-    const currentSpeed = parseFloat(speedSlider.value);
-    const isPitchEnabled = pitchToggle.checked;
-    const currentPitch = parseInt(pitchSlider.value);
-    const isReverb = reverbToggle.checked;
-
-    tabState = { enabled: isEnabled, volume: currentVol, extremeMode: isExtreme, bass: currentBass, bassEnabled: isBassEnabled, eq: currentEq, eqEnabled: isEqEnabled, balance: currentBalance, balanceEnabled: isBalanceEnabled, mono: isMono, compressor: isCompressor, speed: currentSpeed, speedEnabled: isSpeedEnabled, pitch: currentPitch, pitchEnabled: isPitchEnabled, reverb: isReverb };
+    tabState = buildCurrentStateObject();
 
     const dataToSave = { [storageKey]: tabState };
-    if (domainKey) {
-      domainState = tabState;
-      dataToSave[domainKey] = tabState;
+    if (domainKey && isStateActive(tabState)) {
+      domainState = { ...tabState };
+      dataToSave[domainKey] = domainState;
     }
-    if (isEnabled && currentVol !== 100) {
-      globalLastVolume = currentVol;
-      dataToSave.globalLastVolume = globalLastVolume;
-    }
+
     await browser.storage.local.set(dataToSave);
-    updateUIText();
+    updateUIText(tabState.volume);
 
-    try {
-      await browser.tabs.sendMessage(tabId, {
+    if (tabId) {
+      browser.tabs.sendMessage(tabId, {
         action: "updateVolume",
-        volume: currentVol,
-        enabled: isEnabled,
-        bass: currentBass,
-        bassEnabled: isBassEnabled,
-        speed: currentSpeed,
-        speedEnabled: isSpeedEnabled,
-        pitch: currentPitch,
-        pitchEnabled: isPitchEnabled,
-        reverb: isReverb,
-        eq: currentEq,
-        eqEnabled: isEqEnabled,
-        balance: currentBalance,
-        balanceEnabled: isBalanceEnabled,
-        mono: isMono,
-        compressor: isCompressor
-      });
-    } catch (err) { }
+        ...tabState
+      }).catch(() => {});
 
-    browser.runtime.sendMessage({
-      action: "updateBadge",
-      tabId: tabId,
-      volume: currentVol,
-      enabled: isEnabled
-    });
+      browser.runtime.sendMessage({
+        action: "updateBadge",
+        tabId: tabId,
+        volume: tabState.volume,
+        enabled: tabState.enabled
+      });
+    }
   }
 
   themeToggle.addEventListener("click", () => {
@@ -527,116 +536,101 @@ document.addEventListener("DOMContentLoaded", async () => {
     updateUIText();
   });
 
-  volumeSlider.addEventListener("input", async () => {
+  let rafId = null;
+  function scheduleLiveUpdate() {
+    const liveState = buildCurrentStateObject();
+    if (domainKey && isStateActive(liveState)) {
+      domainState = liveState;
+    }
+    updateUIText(liveState.volume);
+
+    if (rafId) return;
+    rafId = requestAnimationFrame(() => {
+      rafId = null;
+      if (!tabId) return;
+      const stateToSend = buildCurrentStateObject();
+
+      browser.runtime.sendMessage({
+        action: "updateBadge",
+        tabId: tabId,
+        volume: stateToSend.volume,
+        enabled: stateToSend.enabled
+      });
+
+      browser.tabs.sendMessage(tabId, {
+        action: "updateVolume",
+        ...stateToSend
+      }).catch(() => {});
+    });
+  }
+
+  volumeSlider.addEventListener("input", () => {
     const currentVol = parseInt(volumeSlider.value, 10);
     masterToggle.checked = isProcessingNeeded(currentVol);
-    updateUIText(currentVol);
-
-    browser.runtime.sendMessage({
-      action: "updateBadge",
-      tabId: tabId,
-      volume: currentVol,
-      enabled: masterToggle.checked
-    });
-
-    try {
-      await browser.tabs.sendMessage(tabId, {
-        action: "updateVolume",
-        volume: currentVol,
-        enabled: masterToggle.checked,
-        bass: parseInt(bassSlider.value),
-        bassEnabled: bassToggle.checked,
-        speed: parseFloat(speedSlider.value),
-        speedEnabled: speedToggle.checked,
-        pitch: parseInt(pitchSlider.value),
-        pitchEnabled: pitchToggle.checked,
-        reverb: reverbToggle.checked,
-        eq: getEqValues(),
-        eqEnabled: eqToggle.checked,
-        balance: parseFloat(balanceSlider.value),
-        balanceEnabled: balanceToggle.checked,
-        mono: monoToggle.checked,
-        compressor: compressorToggle.checked
-      });
-    } catch (err) { }
+    scheduleLiveUpdate();
   });
 
   volumeSlider.addEventListener("change", () => syncState());
+
   masterToggle.addEventListener("change", () => {
     if (!isProcessingNeeded()) masterToggle.checked = false;
     syncState();
   });
+
   limitToggle.addEventListener("change", () => {
     const isExtreme = limitToggle.checked;
     volumeSlider.max = isExtreme ? "1000" : "600";
-    if (!isExtreme && parseInt(volumeSlider.value) > 600) volumeSlider.value = "600";
-    syncState();
-  });
-  applyLastBtn.addEventListener("click", async () => {
-    if (domainKey) {
-      const data = await browser.storage.local.get([domainKey]);
-      if (data[domainKey]) {
-        const dState = data[domainKey];
-        if (dState.extremeMode) { limitToggle.checked = true; volumeSlider.max = "1000"; }
-        volumeSlider.value = dState.volume;
-        bassSlider.value = dState.bass || 0;
-        bassToggle.checked = dState.bassEnabled !== false;
-        setEqValues(dState.eq || [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
-        eqToggle.checked = dState.eqEnabled !== false;
-        balanceSlider.value = dState.balance || 0;
-        balanceToggle.checked = dState.balanceEnabled !== false;
-        speedSlider.value = dState.speed || 1.0;
-        speedValue.textContent = parseFloat(speedSlider.value).toFixed(1) + "x";
-        speedToggle.checked = dState.speedEnabled !== false;
-        pitchSlider.value = dState.pitch || 0;
-        let pVal = parseInt(pitchSlider.value);
-        pitchValue.textContent = (pVal > 0 ? "+" + pVal : pVal) + "st";
-        pitchToggle.checked = dState.pitchEnabled !== false;
-        reverbToggle.checked = dState.reverb || false;
-        masterToggle.checked = isProcessingNeeded();
-        syncState();
-        return;
-      }
-    }
-    if (globalLastVolume > 600) { limitToggle.checked = true; volumeSlider.max = "1000"; }
-    volumeSlider.value = globalLastVolume;
-    masterToggle.checked = isProcessingNeeded(globalLastVolume);
+    if (!isExtreme && parseInt(volumeSlider.value, 10) > 600) volumeSlider.value = "600";
     syncState();
   });
 
+  applyLastBtn.addEventListener("click", async () => {
+    if (!domainKey) return;
+    let dState = domainState;
+    if (!dState) {
+      const data = await browser.storage.local.get([domainKey]);
+      if (data[domainKey] && isStateActive(data[domainKey])) {
+        dState = data[domainKey];
+      }
+    }
+    if (!dState || !isStateActive(dState)) return;
+
+    applyStateToUI(dState);
+    checkAndSelectMatchingPreset();
+    masterToggle.checked = isProcessingNeeded();
+    syncState();
+  });
+
+  let syncBtnTimeout = null;
   if (syncTabsBtn) {
     syncTabsBtn.addEventListener("click", () => {
       if (urlObj && urlObj.hostname) {
-        const originalHtml = syncTabsBtn.innerHTML;
-        syncTabsBtn.innerHTML = getMessage("syncSuccess") || "✓ Synced!";
+        clearTimeout(syncBtnTimeout);
+        syncTabsBtn.textContent = getMessage("syncSuccess") || "✓ Synced!";
         browser.runtime.sendMessage({
           action: "syncDomainTabs",
           domain: urlObj.hostname,
           state: tabState
         });
-        setTimeout(() => {
-          syncTabsBtn.innerHTML = originalHtml;
-        }, 2000);
+        syncBtnTimeout = setTimeout(() => {
+          syncTabsBtn.textContent = getMessage("syncTabsText") || "Sync All Tabs";
+        }, 1500);
       }
     });
   }
 
   function resetAll() {
     masterToggle.checked = false;
-    volumeSlider.value = "100";
-    volumeValue.textContent = "100%";
-    volumeValue.className = "glow-green";
-    volumeValue.style.color = "";
-    volumeValue.style.textShadow = "";
-    document.documentElement.style.setProperty('--dynamic-accent', 'var(--accent-color)');
-
     limitToggle.checked = false;
+    volumeSlider.max = "600";
+    volumeSlider.value = "100";
 
     bassToggle.checked = false;
     bassSlider.value = "0";
     bassValue.textContent = "0dB";
 
     eqToggle.checked = false;
+    eqSection.style.opacity = "0.5";
     setEqValues([0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
     eqPresetSelect.value = "custom";
     deletePresetBtn.style.display = "none";
@@ -651,12 +645,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     speedToggle.checked = false;
     speedSlider.value = "1.0";
     speedValue.textContent = "1.0x";
+
     pitchToggle.checked = false;
     pitchSlider.value = "0";
     pitchValue.textContent = "0st";
+
     reverbToggle.checked = false;
 
-    masterToggle.checked = isProcessingNeeded(100);
     syncState();
   }
 
@@ -675,8 +670,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     } else if (!bassToggle.checked) {
       bassToggle.checked = true;
     }
-    updateUIText();
     masterToggle.checked = isProcessingNeeded();
+    scheduleLiveUpdate();
   });
   bassSlider.addEventListener("change", () => syncState());
 
@@ -688,9 +683,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       balanceToggle.checked = true;
     }
     masterToggle.checked = isProcessingNeeded();
+    scheduleLiveUpdate();
   });
   balanceSlider.addEventListener("change", () => syncState());
-  balanceToggle.addEventListener("change", () => { masterToggle.checked = isProcessingNeeded(); syncState(); });
+
   monoToggle.addEventListener("change", () => { masterToggle.checked = isProcessingNeeded(); syncState(); });
   compressorToggle.addEventListener("change", () => { masterToggle.checked = isProcessingNeeded(); syncState(); });
 
@@ -701,8 +697,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     } else if (!speedToggle.checked) {
       speedToggle.checked = true;
     }
-    updateUIText();
     masterToggle.checked = isProcessingNeeded();
+    scheduleLiveUpdate();
   });
   speedSlider.addEventListener("change", () => syncState());
   speedToggle.addEventListener("change", () => {
@@ -740,19 +736,19 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 
   pitchSlider.addEventListener("input", () => {
-    let pVal = parseInt(pitchSlider.value);
+    const pVal = parseInt(pitchSlider.value, 10);
     pitchValue.textContent = (pVal > 0 ? "+" + pVal : pVal) + "st";
     if (pVal === 0) {
       pitchToggle.checked = false;
     } else if (!pitchToggle.checked) {
       pitchToggle.checked = true;
     }
-    updateUIText();
     masterToggle.checked = isProcessingNeeded();
+    scheduleLiveUpdate();
   });
   pitchSlider.addEventListener("change", () => syncState());
   pitchToggle.addEventListener("change", () => {
-    if (parseInt(pitchSlider.value) === 0) {
+    if (parseInt(pitchSlider.value, 10) === 0) {
       pitchToggle.checked = false;
     }
     masterToggle.checked = isProcessingNeeded();
@@ -766,6 +762,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     masterToggle.checked = isProcessingNeeded();
     syncState();
   });
+
   reverbToggle.addEventListener("change", () => { masterToggle.checked = isProcessingNeeded(); syncState(); });
 
   compareBtn.addEventListener("mousedown", () => sendBypass(true));
@@ -773,19 +770,23 @@ document.addEventListener("DOMContentLoaded", async () => {
   compareBtn.addEventListener("mouseleave", () => sendBypass(false));
 
   function sendBypass(isBypassed) {
-    if (!storageKey) return;
-    browser.tabs.sendMessage(tabId, { action: "bypassFilters", bypassed: isBypassed }).catch(() => { });
+    if (!storageKey || !tabId) return;
+    browser.tabs.sendMessage(tabId, { action: "bypassFilters", bypassed: isBypassed }).catch(() => {});
   }
 
-  // EQ Presets
+  // Acoustically tuned 10-band equalizer presets ([32Hz, 64Hz, 125Hz, 250Hz, 500Hz, 1kHz, 2kHz, 4kHz, 8kHz, 16kHz])
   const predefinedPresets = {
-    acoustic: [5, 5, 4, 1, 1, 1, 3, 4, 4, 3],
-    electronic: [6, 5, 1, -2, -3, 1, 2, 4, 5, 6],
-    pop: [-1, -1, 0, 2, 4, 4, 2, 0, -1, -1],
-    rock: [5, 4, 3, 1, -1, -1, 1, 3, 4, 5],
-    vocal: [-2, -2, -1, 2, 5, 5, 4, 1, -1, -2],
-    treble: [0, 0, 0, 0, 0, -1, -2, -3, -4, -5],
-    spoken: [-4, -2, 0, 2, 4, 4, 2, 0, -2, -4]
+    acoustic:   [ 3,  3,  2,  0,  0,  1,  3,  4,  3,  2],
+    electronic: [ 6,  5,  1, -2, -3,  1,  2,  4,  5,  6],
+    pop:        [ 2,  3,  2,  0, -1,  1,  3,  3,  2,  2],
+    rock:       [ 5,  4,  3,  1, -1, -1,  2,  3,  4,  5],
+    vocal:      [-3, -2,  0,  1,  2,  4,  5,  4,  2,  0],
+    treble:     [ 0,  0,  0,  0,  0, -1, -2, -3, -4, -5],
+    spoken:     [-6, -4, -2,  0,  1,  3,  5,  4,  1, -2],
+    hiphop:     [ 6,  6,  3,  0, -2, -1,  1,  2,  4,  4],
+    cinema:     [ 5,  4,  2, -1, -2,  1,  3,  4,  3,  2],
+    jazz:       [ 3,  2,  1,  2, -1, -1,  0,  2,  3,  3],
+    laptop:     [-6, -3,  3,  4,  2,  1,  3,  4,  3,  1]
   };
   let customPresets = {};
 
@@ -855,11 +856,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       } else {
         modalInput.style.display = "none";
       }
-      if (isAlert) {
-        modalCancel.style.display = "none";
-      } else {
-        modalCancel.style.display = "inline-block";
-      }
+      modalCancel.style.display = isAlert ? "none" : "inline-block";
       customModalOverlay.style.display = "flex";
 
       const cleanup = () => {
@@ -875,6 +872,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       modalConfirm.addEventListener("click", onConfirm);
     });
   }
+
   savePresetBtn.addEventListener("click", async () => {
     const defaultMsg = getMessage("promptPresetName") || "Enter name for new EQ preset:";
     const titleMsg = getMessage("extName") || "Sound Master";
@@ -987,6 +985,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         eqSection.style.opacity = "1";
       }
       masterToggle.checked = isProcessingNeeded();
+      scheduleLiveUpdate();
     });
     slider.addEventListener("change", () => syncState());
   });
@@ -1017,7 +1016,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   exportEqBtn.addEventListener("click", () => {
     const eq = getEqValues();
     const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(eq));
-    const downloadAnchorNode = document.createElement('a');
+    const downloadAnchorNode = document.createElement("a");
     downloadAnchorNode.setAttribute("href", dataStr);
     downloadAnchorNode.setAttribute("download", "soundmaster_eq.json");
     document.body.appendChild(downloadAnchorNode);
@@ -1038,6 +1037,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         const importedEq = JSON.parse(event.target.result);
         if (Array.isArray(importedEq) && importedEq.length === 10) {
           setEqValues(importedEq);
+          const hasNonZero = importedEq.some(v => v !== 0);
+          eqToggle.checked = hasNonZero;
+          eqSection.style.opacity = hasNonZero ? "1" : "0.5";
+          checkAndSelectMatchingPreset();
           masterToggle.checked = isProcessingNeeded();
           syncState();
         } else {

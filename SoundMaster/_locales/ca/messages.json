@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "Paraula parlada"
   },
+  "presetHipHop": {
+    "message": "Hip-Hop / R&B"
+  },
+  "presetCinema": {
+    "message": "Cinema / Pel·lícula"
+  },
+  "presetJazz": {
+    "message": "Jazz / Clàssica"
+  },
+  "presetLaptop": {
+    "message": "Altavells de portàtil"
+  },
   "compareBtnTitle": {
     "message": "Mantén premut per comparar (Bypass)"
   },

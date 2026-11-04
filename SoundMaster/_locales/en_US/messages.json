@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "Spoken Word"
   },
+  "presetHipHop": {
+    "message": "Hip-Hop / R&B"
+  },
+  "presetCinema": {
+    "message": "Cinema / Movie"
+  },
+  "presetJazz": {
+    "message": "Jazz / Classical"
+  },
+  "presetLaptop": {
+    "message": "Laptop Speakers"
+  },
   "compareBtnTitle": {
     "message": "Hold to Compare (Bypass)"
   },

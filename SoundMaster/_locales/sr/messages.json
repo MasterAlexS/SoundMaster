@@ -146,6 +146,18 @@
   "presetSpoken": {
     "message": "Изговорена реч"
   },
+  "presetHipHop": {
+    "message": "Хип-хоп / R&B"
+  },
+  "presetCinema": {
+    "message": "Биоскоп / Филм"
+  },
+  "presetJazz": {
+    "message": "Џез / Класика"
+  },
+  "presetLaptop": {
+    "message": "Звучници лаптопа"
+  },
   "compareBtnTitle": {
     "message": "Задржите за упоређивање (заобиђите)"
   },
